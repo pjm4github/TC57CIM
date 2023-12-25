@@ -1,0 +1,15 @@
+Serializable
+pandas
+openpyxl
+SPARQLWrapper
+pypyodbc
+lxml
+mockito
+paho-mqtt
+stomp.py
+openai
+requests
+psutil
+mqueue
+PyJWT
+psycopg
