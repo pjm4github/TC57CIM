@@ -5,13 +5,17 @@ This code cas been converted using the code generation from the EAP Zip file whi
 
 https://cimug.ucaiug.org
 
-The EAp file is opened by Enterprise Architect from Sparx Systems (https://www.sparxsystems.com/)
+**The [EAP model](https://cimug.ucaiug.org/CIM%20Model%20Releases/iec61970cim17v40_iec61968cim13v13b_iec62325cim03v17b_CIM100.1.1.1.eap)**
+
+The EAP file, once downloaded, is opened by Enterprise Architect from Sparx Systems (https://www.sparxsystems.com/)
+
+Look in the IEC61970/Base/Wires package for the electric distribution grid components.
+
+This is based on the July 4th, 2022 Version of the model. 
 
 ## See also:
+This link is confusing but seems to have all the components. 
 
-iec61970cim17v40_iec61968cim13v13b_iec62325cim03v17b_CIM100.1.1.1.eap
+https://zepben.github.io/evolve/docs/cim/cim100/
 
-https://zepben.github.io/evolve/docs/cim/cim100/TC57CIM/IEC61970/Base/Domain/VoltagePerReactivePower
-
-Look in the IEC61970/Base/Wires package for the electric distribution grid components. 
 
