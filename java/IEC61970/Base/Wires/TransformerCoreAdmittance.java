@@ -1,15 +1,15 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Domain.Susceptance;
-import TC57CIM.IEC61970.Base.Domain.Conductance;
-import TC57CIM.IEC61970.Base.Core.IdentifiedObject;
+import IEC61970.Base.Domain.Susceptance;
+import IEC61970.Base.Domain.Conductance;
+import IEC61970.Base.Core.IdentifiedObject;
 
 /**
  * The transformer core admittance.  Used to specify the core admittance of a
  * transformer in a manner that can be shared among power transformers.
  * @author T. Kostic
  * @version 1.0
- * @created 15-Dec-2023 4:38:30 PM
+ * @created 25-Dec-2023 8:32:04 PM
  */
 public class TransformerCoreAdmittance extends IdentifiedObject {
 
@@ -37,9 +37,4 @@ public class TransformerCoreAdmittance extends IdentifiedObject {
 	public TransformerCoreAdmittance(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end TransformerCoreAdmittance

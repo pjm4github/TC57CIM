@@ -1,4 +1,4 @@
-package TC57CIM.IEC61970.Base.Generation.Production;
+package IEC61970.Base.Generation.Production;
 
 
 /**
@@ -6,7 +6,7 @@ package TC57CIM.IEC61970.Base.Generation.Production;
  * machine.  May be used to represent a single turbine or an aggregation.
  * @author kdd
  * @version 1.0
- * @created 15-Dec-2023 4:38:30 PM
+ * @created 25-Dec-2023 8:32:05 PM
  */
 public class WindGeneratingUnit extends GeneratingUnit {
 
@@ -18,9 +18,4 @@ public class WindGeneratingUnit extends GeneratingUnit {
 	public WindGeneratingUnit(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end WindGeneratingUnit

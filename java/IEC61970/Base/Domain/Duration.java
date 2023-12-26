@@ -1,4 +1,4 @@
-package TC57CIM.IEC61970.Base.Domain;
+package IEC61970.Base.Domain;
 
 
 /**
@@ -10,16 +10,11 @@ package TC57CIM.IEC61970.Base.Domain;
  * numbers are integers.
  * @author kdemaree
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:56 PM
  */
 public class Duration {
 
 	public Duration(){
 
 	}
-
-	public void finalize() throws Throwable {
-
-	}
-
-}
+}//end Duration

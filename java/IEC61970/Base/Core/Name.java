@@ -1,6 +1,6 @@
-package TC57CIM.IEC61970.Base.Core;
+package IEC61970.Base.Core;
 
-import TC57CIM.IEC61970.Base.Domain.String;
+import IEC61970.Base.Domain.String;
 
 /**
  * The Name class provides the means to define any number of human readable  names
@@ -9,7 +9,7 @@ import TC57CIM.IEC61970.Base.Domain.String;
  * identification 'mRID'.
  * @author T. Kostic
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:32:00 PM
  */
 public class Name {
 
@@ -29,9 +29,4 @@ public class Name {
 	public Name(){
 
 	}
-
-	public void finalize() throws Throwable {
-
-	}
-
-}
+}//end Name

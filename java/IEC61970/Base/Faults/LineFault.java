@@ -1,13 +1,13 @@
-package TC57CIM.IEC61970.Base.Faults;
+package IEC61970.Base.Faults;
 
-import TC57CIM.IEC61970.Base.Domain.Length;
-import TC57CIM.IEC61970.Base.Wires.ACLineSegment;
+import IEC61970.Base.Domain.Length;
+import IEC61970.Base.Wires.ACLineSegment;
 
 /**
  * A fault that occurs on an AC line segment at some point along the length.
  * @author kdemaree
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:31:59 PM
  */
 public class LineFault extends Fault {
 
@@ -24,9 +24,4 @@ public class LineFault extends Fault {
 	public LineFault(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end LineFault

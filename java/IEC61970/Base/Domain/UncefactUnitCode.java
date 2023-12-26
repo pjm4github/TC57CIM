@@ -1,4 +1,4 @@
-package TC57CIM.IEC61970.Base.Domain;
+package IEC61970.Base.Domain;
 
 
 /**
@@ -8,7 +8,7 @@ package TC57CIM.IEC61970.Base.Domain;
  * 
  * @author SELAOST1
  * @version 1.0
- * @created 15-Dec-2023 4:38:30 PM
+ * @created 25-Dec-2023 8:32:04 PM
  */
 public class UncefactUnitCode {
 
@@ -17,9 +17,4 @@ public class UncefactUnitCode {
 	public UncefactUnitCode(){
 
 	}
-
-	public void finalize() throws Throwable {
-
-	}
-
-}
+}//end UncefactUnitCode

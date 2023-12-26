@@ -1,13 +1,13 @@
-package TC57CIM.IEC61970.Base.DC;
+package IEC61970.Base.DC;
 
-import TC57CIM.IEC61970.Base.Core.IdentifiedObject;
+import IEC61970.Base.Core.IdentifiedObject;
 
 /**
  * DC nodes are points where terminals of DC conducting equipment are connected
  * together with zero impedance.
  * @author SELAOST1
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:55 PM
  */
 public class DCNode extends IdentifiedObject {
 
@@ -29,9 +29,4 @@ public class DCNode extends IdentifiedObject {
 	public DCNode(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end DCNode

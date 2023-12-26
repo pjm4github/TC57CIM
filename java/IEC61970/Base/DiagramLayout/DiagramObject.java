@@ -1,10 +1,10 @@
-package TC57CIM.IEC61970.Base.DiagramLayout;
+package IEC61970.Base.DiagramLayout;
 
-import TC57CIM.IEC61970.Base.Domain.Integer;
-import TC57CIM.IEC61970.Base.Domain.Boolean;
-import TC57CIM.IEC61970.Base.Domain.Float;
-import TC57CIM.IEC61970.Base.Domain.AngleDegrees;
-import TC57CIM.IEC61970.Base.Core.IdentifiedObject;
+import IEC61970.Base.Domain.Integer;
+import IEC61970.Base.Domain.Boolean;
+import IEC61970.Base.Domain.Float;
+import IEC61970.Base.Domain.AngleDegrees;
+import IEC61970.Base.Core.IdentifiedObject;
 
 /**
  * An object that defines one or more points in a given space. This object can be
@@ -13,7 +13,7 @@ import TC57CIM.IEC61970.Base.Core.IdentifiedObject;
  * disconnectors, power transformers, and transmission lines.
  * @author mcmorran
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:56 PM
  */
 public class DiagramObject extends IdentifiedObject {
 
@@ -77,9 +77,4 @@ public class DiagramObject extends IdentifiedObject {
 	public DiagramObject(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end DiagramObject

@@ -1,14 +1,14 @@
-package TC57CIM.IEC61970.Base.StateVariables;
+package IEC61970.Base.StateVariables;
 
-import TC57CIM.IEC61970.Base.Domain.Boolean;
-import TC57CIM.IEC61970.Base.Wires.SinglePhaseKind;
-import TC57CIM.IEC61970.Base.Core.ConductingEquipment;
+import IEC61970.Base.Domain.Boolean;
+import IEC61970.Base.Wires.SinglePhaseKind;
+import IEC61970.Base.Core.ConductingEquipment;
 
 /**
  * State variable for status.
  * @author kdd
  * @version 1.0
- * @created 15-Dec-2023 4:38:29 PM
+ * @created 25-Dec-2023 8:32:03 PM
  */
 public class SvStatus extends StateVariable {
 
@@ -29,9 +29,4 @@ public class SvStatus extends StateVariable {
 	public SvStatus(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end SvStatus

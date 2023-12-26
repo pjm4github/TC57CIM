@@ -1,4 +1,4 @@
-package TC57CIM.IEC61970.Base.DiagramLayout;
+package IEC61970.Base.DiagramLayout;
 
 
 /**
@@ -6,7 +6,7 @@ package TC57CIM.IEC61970.Base.DiagramLayout;
  * coordinate number system.
  * @author mcmorran
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:32:01 PM
  */
 public enum OrientationKind {
 	/**

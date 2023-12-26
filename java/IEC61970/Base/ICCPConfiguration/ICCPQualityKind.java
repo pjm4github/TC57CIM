@@ -1,4 +1,4 @@
-package TC57CIM.IEC61970.Base.ICCPConfiguration;
+package IEC61970.Base.ICCPConfiguration;
 
 
 /**
@@ -6,7 +6,7 @@ package TC57CIM.IEC61970.Base.ICCPConfiguration;
  * protection events the value shall be "none".
  * @author herb
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:59 PM
  */
 public enum ICCPQualityKind {
 	/**

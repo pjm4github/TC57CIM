@@ -1,4 +1,4 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
 
 /**
@@ -10,16 +10,11 @@ package TC57CIM.IEC61970.Base.Wires;
  * arctangent of half the total difference voltage.
  * @author SELAOST1
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:32:01 PM
  */
 public class PhaseTapChangerSymmetrical extends PhaseTapChangerNonLinear {
 
 	public PhaseTapChangerSymmetrical(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end PhaseTapChangerSymmetrical

@@ -1,14 +1,14 @@
-package TC57CIM.IEC61970.Base.Generation.Production;
+package IEC61970.Base.Generation.Production;
 
-import TC57CIM.IEC61970.Base.Domain.ActivePower;
-import TC57CIM.IEC61970.Base.Core.Equipment;
+import IEC61970.Base.Domain.ActivePower;
+import IEC61970.Base.Core.Equipment;
 
 /**
  * A generating unit or battery or aggregation that connects to the AC network
  * using power electronics rather than rotating machines.
  * @author selaost1
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:32:02 PM
  */
 public class PowerElectronicsUnit extends Equipment {
 
@@ -24,9 +24,4 @@ public class PowerElectronicsUnit extends Equipment {
 	public PowerElectronicsUnit(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end PowerElectronicsUnit

@@ -1,4 +1,4 @@
-package TC57CIM.IEC61970.Base.Generation.Production;
+package IEC61970.Base.Generation.Production;
 
 
 /**
@@ -6,16 +6,11 @@ package TC57CIM.IEC61970.Base.Generation.Production;
  * machine.  This class does not represent photovoltaic (PV) generation.
  * @author kdd
  * @version 1.0
- * @created 15-Dec-2023 4:38:29 PM
+ * @created 25-Dec-2023 8:32:03 PM
  */
 public class SolarGeneratingUnit extends GeneratingUnit {
 
 	public SolarGeneratingUnit(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end SolarGeneratingUnit

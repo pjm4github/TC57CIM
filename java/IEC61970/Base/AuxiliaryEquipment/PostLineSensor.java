@@ -1,4 +1,4 @@
-package TC57CIM.IEC61970.Base.AuxiliaryEquipment;
+package IEC61970.Base.AuxiliaryEquipment;
 
 
 /**
@@ -6,16 +6,11 @@ package TC57CIM.IEC61970.Base.AuxiliaryEquipment;
  * current and voltage measurements.
  * @author kdemaree
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:32:01 PM
  */
 public class PostLineSensor extends Sensor {
 
 	public PostLineSensor(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end PostLineSensor

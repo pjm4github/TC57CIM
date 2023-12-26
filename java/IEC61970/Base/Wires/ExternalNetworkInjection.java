@@ -1,20 +1,20 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Domain.ActivePowerPerFrequency;
-import TC57CIM.IEC61970.Base.Domain.Boolean;
-import TC57CIM.IEC61970.Base.Domain.CurrentFlow;
-import TC57CIM.IEC61970.Base.Domain.ActivePower;
-import TC57CIM.IEC61970.Base.Domain.ReactivePower;
-import TC57CIM.IEC61970.Base.Domain.Float;
-import TC57CIM.IEC61970.Base.Domain.Integer;
-import TC57CIM.IEC61970.Base.Domain.PU;
+import IEC61970.Base.Domain.ActivePowerPerFrequency;
+import IEC61970.Base.Domain.Boolean;
+import IEC61970.Base.Domain.CurrentFlow;
+import IEC61970.Base.Domain.ActivePower;
+import IEC61970.Base.Domain.ReactivePower;
+import IEC61970.Base.Domain.Float;
+import IEC61970.Base.Domain.Integer;
+import IEC61970.Base.Domain.PU;
 
 /**
  * This class represents external network and it is used for IEC 60909
  * calculations.
  * @author Jean-Luc
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:57 PM
  */
 public class ExternalNetworkInjection extends RegulatingCondEq {
 
@@ -119,9 +119,4 @@ public class ExternalNetworkInjection extends RegulatingCondEq {
 	public ExternalNetworkInjection(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end ExternalNetworkInjection

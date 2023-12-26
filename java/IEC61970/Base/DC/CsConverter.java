@@ -1,13 +1,13 @@
-package TC57CIM.IEC61970.Base.DC;
+package IEC61970.Base.DC;
 
-import TC57CIM.IEC61970.Base.Domain.AngleDegrees;
-import TC57CIM.IEC61970.Base.Domain.CurrentFlow;
+import IEC61970.Base.Domain.AngleDegrees;
+import IEC61970.Base.Domain.CurrentFlow;
 
 /**
  * DC side of the current source converter (CSC).
  * @author T. Kostic
  * @version 1.0
- * @created 15-Dec-2023 4:38:26 PM
+ * @created 25-Dec-2023 8:31:55 PM
  */
 public class CsConverter extends ACDCConverter {
 
@@ -73,9 +73,4 @@ public class CsConverter extends ACDCConverter {
 	public CsConverter(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end CsConverter

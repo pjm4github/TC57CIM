@@ -1,13 +1,13 @@
-package TC57CIM.IEC61970.Base.DC;
+package IEC61970.Base.DC;
 
-import TC57CIM.IEC61970.Base.Domain.Inductance;
-import TC57CIM.IEC61970.Base.Domain.Resistance;
+import IEC61970.Base.Domain.Inductance;
+import IEC61970.Base.Domain.Resistance;
 
 /**
  * A ground within a DC system.
  * @author selaost1
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:55 PM
  */
 public class DCGround extends DCConductingEquipment {
 
@@ -23,9 +23,4 @@ public class DCGround extends DCConductingEquipment {
 	public DCGround(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end DCGround

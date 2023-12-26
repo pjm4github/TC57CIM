@@ -1,4 +1,4 @@
-package TC57CIM.IEC61970.Base.Generation.Production;
+package IEC61970.Base.Generation.Production;
 
 
 /**
@@ -6,16 +6,11 @@ package TC57CIM.IEC61970.Base.Generation.Production;
  * rather than rotating machines or an aggregation of such units.
  * @author selaost1
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:32:02 PM
  */
 public class PowerElectronicsWindUnit extends PowerElectronicsUnit {
 
 	public PowerElectronicsWindUnit(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end PowerElectronicsWindUnit

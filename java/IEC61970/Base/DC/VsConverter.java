@@ -1,19 +1,19 @@
-package TC57CIM.IEC61970.Base.DC;
+package IEC61970.Base.DC;
 
-import TC57CIM.IEC61970.Base.Domain.AngleDegrees;
-import TC57CIM.IEC61970.Base.Domain.PU;
-import TC57CIM.IEC61970.Base.Domain.Resistance;
-import TC57CIM.IEC61970.Base.Domain.Float;
-import TC57CIM.IEC61970.Base.Domain.CurrentFlow;
-import TC57CIM.IEC61970.Base.Domain.PerCent;
-import TC57CIM.IEC61970.Base.Domain.ReactivePower;
-import TC57CIM.IEC61970.Base.Domain.Voltage;
+import IEC61970.Base.Domain.AngleDegrees;
+import IEC61970.Base.Domain.PU;
+import IEC61970.Base.Domain.Resistance;
+import IEC61970.Base.Domain.Float;
+import IEC61970.Base.Domain.CurrentFlow;
+import IEC61970.Base.Domain.PerCent;
+import IEC61970.Base.Domain.ReactivePower;
+import IEC61970.Base.Domain.Voltage;
 
 /**
  * DC side of the voltage source converter (VSC).
  * @author T. Kostic
  * @version 1.0
- * @created 15-Dec-2023 4:38:30 PM
+ * @created 25-Dec-2023 8:32:05 PM
  */
 public class VsConverter extends ACDCConverter {
 
@@ -70,9 +70,4 @@ public class VsConverter extends ACDCConverter {
 	public VsConverter(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end VsConverter

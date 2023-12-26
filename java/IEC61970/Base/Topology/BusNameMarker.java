@@ -1,9 +1,9 @@
-package TC57CIM.IEC61970.Base.Topology;
+package IEC61970.Base.Topology;
 
-import TC57CIM.IEC61970.Base.Domain.Integer;
-import TC57CIM.IEC61970.Base.Core.ReportingGroup;
-import TC57CIM.IEC61970.Base.Core.ACDCTerminal;
-import TC57CIM.IEC61970.Base.Core.IdentifiedObject;
+import IEC61970.Base.Domain.Integer;
+import IEC61970.Base.Core.ReportingGroup;
+import IEC61970.Base.Core.ACDCTerminal;
+import IEC61970.Base.Core.IdentifiedObject;
 
 /**
  * Used to apply user standard names to topology buses. Typically used for
@@ -16,7 +16,7 @@ import TC57CIM.IEC61970.Base.Core.IdentifiedObject;
  * normally only the main terminal at the busbar would be associated.
  * @author kdd
  * @version 1.0
- * @created 15-Dec-2023 4:38:26 PM
+ * @created 25-Dec-2023 8:31:54 PM
  */
 public class BusNameMarker extends IdentifiedObject {
 
@@ -44,9 +44,4 @@ public class BusNameMarker extends IdentifiedObject {
 	public BusNameMarker(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end BusNameMarker

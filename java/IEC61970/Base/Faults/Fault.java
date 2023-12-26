@@ -1,9 +1,9 @@
-package TC57CIM.IEC61970.Base.Faults;
+package IEC61970.Base.Faults;
 
-import TC57CIM.IEC61970.Base.Core.PhaseCode;
-import TC57CIM.IEC61970.Base.Core.IdentifiedObject;
-import TC57CIM.IEC61970.Base.Core.Equipment;
-import TC57CIM.IEC61968.Common.Location;
+import IEC61970.Base.Core.PhaseCode;
+import IEC61970.Base.Core.IdentifiedObject;
+import IEC61970.Base.Core.Equipment;
+import IEC61968.Common.Location;
 
 /**
  * Abnormal condition causing current flow through conducting equipment, such as
@@ -11,7 +11,7 @@ import TC57CIM.IEC61968.Common.Location;
  * modeled (for example, a tree falling on a line).
  * @author T. Kostic
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:57 PM
  */
 public class Fault extends IdentifiedObject {
 
@@ -45,9 +45,4 @@ public class Fault extends IdentifiedObject {
 	public Fault(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end Fault

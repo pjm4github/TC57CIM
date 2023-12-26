@@ -1,14 +1,14 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Domain.Susceptance;
-import TC57CIM.IEC61970.Base.Domain.Conductance;
-import TC57CIM.IEC61970.Base.Domain.Integer;
+import IEC61970.Base.Domain.Susceptance;
+import IEC61970.Base.Domain.Conductance;
+import IEC61970.Base.Domain.Integer;
 
 /**
  * A non linear shunt compensator bank or section admittance value.
  * @author selaost1
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:32:01 PM
  */
 public class NonlinearShuntCompensatorPoint {
 
@@ -36,9 +36,4 @@ public class NonlinearShuntCompensatorPoint {
 	public NonlinearShuntCompensatorPoint(){
 
 	}
-
-	public void finalize() throws Throwable {
-
-	}
-
-}
+}//end NonlinearShuntCompensatorPoint

@@ -1,11 +1,11 @@
-package TC57CIM.IEC61970.Base.Domain;
+package IEC61970.Base.Domain;
 
 
 /**
  * Reactance (imaginary part of impedance) per unit of length, at rated frequency.
  * @author T. Kostic
  * @version 1.0
- * @created 15-Dec-2023 4:38:29 PM
+ * @created 25-Dec-2023 8:32:03 PM
  */
 public class ReactancePerLength {
 
@@ -16,9 +16,4 @@ public class ReactancePerLength {
 	public ReactancePerLength(){
 
 	}
-
-	public void finalize() throws Throwable {
-
-	}
-
-}
+}//end ReactancePerLength

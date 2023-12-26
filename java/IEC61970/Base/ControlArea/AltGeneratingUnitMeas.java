@@ -1,15 +1,15 @@
-package TC57CIM.IEC61970.Base.ControlArea;
+package IEC61970.Base.ControlArea;
 
-import TC57CIM.IEC61970.Base.Domain.Integer;
-import TC57CIM.IEC61970.Base.Meas.AnalogValue;
-import TC57CIM.IEC61970.Base.Core.IdentifiedObject;
+import IEC61970.Base.Domain.Integer;
+import IEC61970.Base.Meas.AnalogValue;
+import IEC61970.Base.Core.IdentifiedObject;
 
 /**
  * A prioritized measurement to be used for the generating unit in the control
  * area specificaiton.
  * @author kdd
  * @version 1.0
- * @created 15-Dec-2023 4:38:26 PM
+ * @created 25-Dec-2023 8:31:54 PM
  */
 public class AltGeneratingUnitMeas extends IdentifiedObject {
 
@@ -25,9 +25,4 @@ public class AltGeneratingUnitMeas extends IdentifiedObject {
 	public AltGeneratingUnitMeas(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end AltGeneratingUnitMeas

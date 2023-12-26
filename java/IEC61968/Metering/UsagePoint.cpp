@@ -1,0 +1,12 @@
+///////////////////////////////////////////////////////////
+//  UsagePoint.cpp
+//  Implementation of the Class UsagePoint
+//  Created on:      25-Dec-2023 8:45:25 PM
+///////////////////////////////////////////////////////////
+
+#include "UsagePoint.h"
+
+
+UsagePoint::UsagePoint(){
+
+}

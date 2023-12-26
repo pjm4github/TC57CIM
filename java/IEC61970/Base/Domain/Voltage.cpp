@@ -1,0 +1,15 @@
+///////////////////////////////////////////////////////////
+//  Voltage.cpp
+//  Implementation of the Class Voltage
+//  Created on:      25-Dec-2023 8:32:04 PM
+///////////////////////////////////////////////////////////
+
+#include "Voltage.h"
+
+
+Voltage::Voltage(){
+
+}
+
+
+const UnitSymbol Voltage::unit = V;

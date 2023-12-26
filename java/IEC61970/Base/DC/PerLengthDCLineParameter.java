@@ -1,14 +1,14 @@
-package TC57CIM.IEC61970.Base.DC;
+package IEC61970.Base.DC;
 
-import TC57CIM.IEC61970.Base.Domain.CapacitancePerLength;
-import TC57CIM.IEC61970.Base.Domain.InductancePerLength;
-import TC57CIM.IEC61970.Base.Domain.ResistancePerLength;
-import TC57CIM.IEC61970.Base.Wires.PerLengthLineParameter;
+import IEC61970.Base.Domain.CapacitancePerLength;
+import IEC61970.Base.Domain.InductancePerLength;
+import IEC61970.Base.Domain.ResistancePerLength;
+import IEC61970.Base.Wires.PerLengthLineParameter;
 
 /**
  * @author T. Kostic
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:32:01 PM
  */
 public class PerLengthDCLineParameter extends PerLengthLineParameter {
 
@@ -33,9 +33,4 @@ public class PerLengthDCLineParameter extends PerLengthLineParameter {
 	public PerLengthDCLineParameter(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end PerLengthDCLineParameter

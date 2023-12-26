@@ -1,0 +1,12 @@
+///////////////////////////////////////////////////////////
+//  Structure.cpp
+//  Implementation of the Class Structure
+//  Created on:      25-Dec-2023 8:45:24 PM
+///////////////////////////////////////////////////////////
+
+#include "Structure.h"
+
+
+Structure::Structure(){
+
+}

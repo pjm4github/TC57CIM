@@ -1,13 +1,13 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Domain.PerCent;
+import IEC61970.Base.Domain.PerCent;
 
 /**
  * A tap changer that changes the voltage ratio impacting the voltage magnitude
  * but not the phase angle across the transformer.
  * @author kdd
  * @version 1.0
- * @created 15-Dec-2023 4:38:29 PM
+ * @created 25-Dec-2023 8:32:02 PM
  */
 public class RatioTapChanger extends TapChanger {
 
@@ -28,9 +28,4 @@ public class RatioTapChanger extends TapChanger {
 	public RatioTapChanger(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end RatioTapChanger

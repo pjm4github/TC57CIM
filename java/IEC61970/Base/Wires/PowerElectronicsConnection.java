@@ -1,19 +1,19 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Domain.ReactivePower;
-import TC57CIM.IEC61970.Base.Domain.ActivePower;
-import TC57CIM.IEC61970.Base.Domain.Resistance;
-import TC57CIM.IEC61970.Base.Domain.ApparentPower;
-import TC57CIM.IEC61970.Base.Domain.Voltage;
-import TC57CIM.IEC61970.Base.Domain.Reactance;
-import TC57CIM.IEC61970.Base.Generation.Production.PowerElectronicsUnit;
+import IEC61970.Base.Domain.ReactivePower;
+import IEC61970.Base.Domain.ActivePower;
+import IEC61970.Base.Domain.Resistance;
+import IEC61970.Base.Domain.ApparentPower;
+import IEC61970.Base.Domain.Voltage;
+import IEC61970.Base.Domain.Reactance;
+import IEC61970.Base.Generation.Production.PowerElectronicsUnit;
 
 /**
  * A connection to the AC network for energy production or consumption that uses
  * power electronics rather than rotating machines.
  * @author selaost1
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:32:02 PM
  */
 public class PowerElectronicsConnection extends RegulatingCondEq {
 
@@ -80,9 +80,4 @@ public class PowerElectronicsConnection extends RegulatingCondEq {
 	public PowerElectronicsConnection(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end PowerElectronicsConnection

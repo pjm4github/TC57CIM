@@ -6,9 +6,7 @@
 # Created on:      19-Dec-2023 8:52:15 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Boolean import Boolean
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.String import String
-from IEC61968.InfIEC61968.InfWork.WorkDocument import WorkDocument
+from IEC61968 import WorkDocument
 
 class OneCallRequest(WorkDocument):
     """A request for other utilities to mark their underground facilities prior to

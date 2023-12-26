@@ -1,9 +1,9 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Domain.SusceptancePerLength;
-import TC57CIM.IEC61970.Base.Domain.ConductancePerLength;
-import TC57CIM.IEC61970.Base.Domain.ResistancePerLength;
-import TC57CIM.IEC61970.Base.Domain.ReactancePerLength;
+import IEC61970.Base.Domain.SusceptancePerLength;
+import IEC61970.Base.Domain.ConductancePerLength;
+import IEC61970.Base.Domain.ResistancePerLength;
+import IEC61970.Base.Domain.ReactancePerLength;
 
 /**
  * Sequence impedance and admittance parameters per unit length, for transposed
@@ -11,7 +11,7 @@ import TC57CIM.IEC61970.Base.Domain.ReactancePerLength;
  * lines, define x=xs-xm and x0=xs+xm.
  * @author Tom
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:32:01 PM
  */
 public class PerLengthSequenceImpedance extends PerLengthImpedance {
 
@@ -51,9 +51,4 @@ public class PerLengthSequenceImpedance extends PerLengthImpedance {
 	public PerLengthSequenceImpedance(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end PerLengthSequenceImpedance

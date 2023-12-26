@@ -1,7 +1,7 @@
-package TC57CIM.IEC61970.Base.OperationalLimits;
+package IEC61970.Base.OperationalLimits;
 
-import TC57CIM.IEC61970.Base.Core.IdentifiedObject;
-import TC57CIM.IEC61970.InfIEC61970.InfOperationalLimits.LimitDependency;
+import IEC61970.Base.Core.IdentifiedObject;
+import IEC61970.InfIEC61970.InfOperationalLimits.LimitDependency;
 
 /**
  * A value associated with a specific kind of limit.
@@ -15,7 +15,7 @@ import TC57CIM.IEC61970.InfIEC61970.InfOperationalLimits.LimitDependency;
  * direction="low".
  * @author kdd
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:32:01 PM
  */
 public class OperationalLimit extends IdentifiedObject {
 
@@ -32,9 +32,4 @@ public class OperationalLimit extends IdentifiedObject {
 	public OperationalLimit(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end OperationalLimit

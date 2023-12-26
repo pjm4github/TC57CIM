@@ -1,11 +1,11 @@
-package TC57CIM.IEC61970.Base.Meas;
+package IEC61970.Base.Meas;
 
 
 /**
  * This command reset the counter value to zero.
  * @author selaost1
  * @version 1.0
- * @created 15-Dec-2023 4:38:26 PM
+ * @created 25-Dec-2023 8:31:53 PM
  */
 public class AccumulatorReset extends Control {
 
@@ -17,9 +17,4 @@ public class AccumulatorReset extends Control {
 	public AccumulatorReset(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end AccumulatorReset

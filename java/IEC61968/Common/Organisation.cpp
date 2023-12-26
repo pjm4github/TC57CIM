@@ -1,0 +1,12 @@
+///////////////////////////////////////////////////////////
+//  Organisation.cpp
+//  Implementation of the Class Organisation
+//  Created on:      25-Dec-2023 8:45:23 PM
+///////////////////////////////////////////////////////////
+
+#include "Organisation.h"
+
+
+Organisation::Organisation(){
+
+}

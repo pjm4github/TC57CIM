@@ -1,12 +1,12 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Domain.AngleDegrees;
+import IEC61970.Base.Domain.AngleDegrees;
 
 /**
  * Describes each tap step in the phase tap changer tabular curve.
  * @author SELAOST1
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:32:01 PM
  */
 public class PhaseTapChangerTablePoint extends TapChangerTablePoint {
 
@@ -24,9 +24,4 @@ public class PhaseTapChangerTablePoint extends TapChangerTablePoint {
 	public PhaseTapChangerTablePoint(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end PhaseTapChangerTablePoint

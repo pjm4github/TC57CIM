@@ -1,9 +1,9 @@
-package TC57CIM.IEC61970.Base.StateVariables;
+package IEC61970.Base.StateVariables;
 
-import TC57CIM.IEC61970.Base.Wires.SinglePhaseKind;
-import TC57CIM.IEC61970.Base.Domain.ActivePower;
-import TC57CIM.IEC61970.Base.Domain.ReactivePower;
-import TC57CIM.IEC61970.Base.Topology.TopologicalNode;
+import IEC61970.Base.Wires.SinglePhaseKind;
+import IEC61970.Base.Domain.ActivePower;
+import IEC61970.Base.Domain.ReactivePower;
+import IEC61970.Base.Topology.TopologicalNode;
 
 /**
  * The SvInjection is reporting the calculated bus injection minus the sum of the
@@ -13,7 +13,7 @@ import TC57CIM.IEC61970.Base.Topology.TopologicalNode;
  * 
  * @author kdd
  * @version 1.0
- * @created 15-Dec-2023 4:38:29 PM
+ * @created 25-Dec-2023 8:32:03 PM
  */
 public class SvInjection extends StateVariable {
 
@@ -40,9 +40,4 @@ public class SvInjection extends StateVariable {
 	public SvInjection(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end SvInjection

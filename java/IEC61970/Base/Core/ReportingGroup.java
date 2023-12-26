@@ -1,11 +1,11 @@
-package TC57CIM.IEC61970.Base.Core;
+package IEC61970.Base.Core;
 
 
 /**
  * A reporting group is used for various ad-hoc groupings used for reporting.
  * @author kdd
  * @version 1.0
- * @created 15-Dec-2023 4:38:29 PM
+ * @created 25-Dec-2023 8:32:03 PM
  */
 public class ReportingGroup extends IdentifiedObject {
 
@@ -17,9 +17,4 @@ public class ReportingGroup extends IdentifiedObject {
 	public ReportingGroup(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end ReportingGroup

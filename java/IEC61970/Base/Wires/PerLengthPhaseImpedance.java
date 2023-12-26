@@ -1,13 +1,13 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Domain.Integer;
+import IEC61970.Base.Domain.Integer;
 
 /**
  * Impedance and admittance parameters per unit length for n-wire unbalanced lines,
  * in matrix form.
  * @author Tom
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:32:01 PM
  */
 public class PerLengthPhaseImpedance extends PerLengthImpedance {
 
@@ -24,9 +24,4 @@ public class PerLengthPhaseImpedance extends PerLengthImpedance {
 	public PerLengthPhaseImpedance(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end PerLengthPhaseImpedance

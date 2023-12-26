@@ -1,12 +1,12 @@
-package TC57CIM.IEC61970.Base.AuxiliaryEquipment;
+package IEC61970.Base.AuxiliaryEquipment;
 
-import TC57CIM.IEC61970.Base.Domain.Float;
+import IEC61970.Base.Domain.Float;
 
 /**
  * The construction kind of the potential transformer.
  * @author kdemaree
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:32:01 PM
  */
 public enum PotentialTransformerKind {
 	/**

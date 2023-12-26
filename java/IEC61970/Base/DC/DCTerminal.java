@@ -1,20 +1,15 @@
-package TC57CIM.IEC61970.Base.DC;
+package IEC61970.Base.DC;
 
 
 /**
  * An electrical connection point to generic DC conducting equipment.
  * @author SELAOST1
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:55 PM
  */
 public class DCTerminal extends DCBaseTerminal {
 
 	public DCTerminal(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end DCTerminal

@@ -1,7 +1,7 @@
-package TC57CIM.IEC61970.Base.AuxiliaryEquipment;
+package IEC61970.Base.AuxiliaryEquipment;
 
-import TC57CIM.IEC61970.Base.Core.Equipment;
-import TC57CIM.IEC61970.Base.Core.Terminal;
+import IEC61970.Base.Core.Equipment;
+import IEC61970.Base.Core.Terminal;
 
 /**
  * AuxiliaryEquipment describe equipment that is not performing any primary
@@ -10,7 +10,7 @@ import TC57CIM.IEC61970.Base.Core.Terminal;
  * Terminal.
  * @author selaost1
  * @version 1.0
- * @created 15-Dec-2023 4:38:26 PM
+ * @created 25-Dec-2023 8:31:54 PM
  */
 public class AuxiliaryEquipment extends Equipment {
 
@@ -22,9 +22,4 @@ public class AuxiliaryEquipment extends Equipment {
 	public AuxiliaryEquipment(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end AuxiliaryEquipment

@@ -1,12 +1,12 @@
-package TC57CIM.IEC61970.Base.ICCPConfiguration;
+package IEC61970.Base.ICCPConfiguration;
 
-import TC57CIM.IEC61970.Base.Domain.String;
-import TC57CIM.IEC61970.Base.SCADA.CommunicationLink;
+import IEC61970.Base.Domain.String;
+import IEC61970.Base.SCADA.CommunicationLink;
 
 /**
  * @author SELAOST1
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:59 PM
  */
 public class IPAccessPoint extends CommunicationLink {
 
@@ -18,9 +18,4 @@ public class IPAccessPoint extends CommunicationLink {
 	public IPAccessPoint(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end IPAccessPoint

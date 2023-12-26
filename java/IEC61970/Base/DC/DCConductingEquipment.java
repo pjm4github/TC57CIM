@@ -1,14 +1,14 @@
-package TC57CIM.IEC61970.Base.DC;
+package IEC61970.Base.DC;
 
-import TC57CIM.IEC61970.Base.Domain.Voltage;
-import TC57CIM.IEC61970.Base.Core.Equipment;
+import IEC61970.Base.Domain.Voltage;
+import IEC61970.Base.Core.Equipment;
 
 /**
  * The parts of the DC power system that are designed to carry current or that are
  * conductively connected through DC terminals.
  * @author SELAOST1
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:55 PM
  */
 public class DCConductingEquipment extends Equipment {
 
@@ -24,9 +24,4 @@ public class DCConductingEquipment extends Equipment {
 	public DCConductingEquipment(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end DCConductingEquipment

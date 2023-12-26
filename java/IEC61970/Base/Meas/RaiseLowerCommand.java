@@ -1,4 +1,4 @@
-package TC57CIM.IEC61970.Base.Meas;
+package IEC61970.Base.Meas;
 
 
 /**
@@ -6,7 +6,7 @@ package TC57CIM.IEC61970.Base.Meas;
  * Unless otherwise specified, one pulse moves the set point by one.
  * @author selaost1
  * @version 1.0
- * @created 15-Dec-2023 4:38:29 PM
+ * @created 25-Dec-2023 8:32:02 PM
  */
 public class RaiseLowerCommand extends AnalogControl {
 
@@ -18,9 +18,4 @@ public class RaiseLowerCommand extends AnalogControl {
 	public RaiseLowerCommand(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end RaiseLowerCommand

@@ -1,6 +1,6 @@
-package TC57CIM.IEC61970.Base.Core;
+package IEC61970.Base.Core;
 
-import TC57CIM.IEC61970.Base.Domain.String;
+import IEC61970.Base.Domain.String;
 
 /**
  * Type of name. Possible values for attribute 'name' are implementation dependent
@@ -16,7 +16,7 @@ import TC57CIM.IEC61970.Base.Domain.String;
  * typically are unique among them.
  * @author T. Kostic
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:32:00 PM
  */
 public class NameType {
 
@@ -36,9 +36,4 @@ public class NameType {
 	public NameType(){
 
 	}
-
-	public void finalize() throws Throwable {
-
-	}
-
-}
+}//end NameType

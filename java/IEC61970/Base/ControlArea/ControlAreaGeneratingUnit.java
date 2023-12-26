@@ -1,7 +1,7 @@
-package TC57CIM.IEC61970.Base.ControlArea;
+package IEC61970.Base.ControlArea;
 
-import TC57CIM.IEC61970.Base.Generation.Production.GeneratingUnit;
-import TC57CIM.IEC61970.Base.Core.IdentifiedObject;
+import IEC61970.Base.Generation.Production.GeneratingUnit;
+import IEC61970.Base.Core.IdentifiedObject;
 
 /**
  * A control area generating unit. This class is needed so that alternate control
@@ -9,7 +9,7 @@ import TC57CIM.IEC61970.Base.Core.IdentifiedObject;
  * within a control area should reference a specific generating unit.
  * @author kdd
  * @version 1.0
- * @created 15-Dec-2023 4:38:26 PM
+ * @created 25-Dec-2023 8:31:55 PM
  */
 public class ControlAreaGeneratingUnit extends IdentifiedObject {
 
@@ -26,9 +26,4 @@ public class ControlAreaGeneratingUnit extends IdentifiedObject {
 	public ControlAreaGeneratingUnit(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end ControlAreaGeneratingUnit

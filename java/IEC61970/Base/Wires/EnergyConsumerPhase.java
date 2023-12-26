@@ -1,15 +1,15 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Domain.ActivePower;
-import TC57CIM.IEC61970.Base.Domain.PerCent;
-import TC57CIM.IEC61970.Base.Domain.ReactivePower;
-import TC57CIM.IEC61970.Base.Core.PowerSystemResource;
+import IEC61970.Base.Domain.ActivePower;
+import IEC61970.Base.Domain.PerCent;
+import IEC61970.Base.Domain.ReactivePower;
+import IEC61970.Base.Core.PowerSystemResource;
 
 /**
  * A single phase of an energy consumer.
  * @author selaost1
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:56 PM
  */
 public class EnergyConsumerPhase extends PowerSystemResource {
 
@@ -59,9 +59,4 @@ public class EnergyConsumerPhase extends PowerSystemResource {
 	public EnergyConsumerPhase(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end EnergyConsumerPhase

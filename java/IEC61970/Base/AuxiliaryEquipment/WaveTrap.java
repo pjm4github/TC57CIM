@@ -1,4 +1,4 @@
-package TC57CIM.IEC61970.Base.AuxiliaryEquipment;
+package IEC61970.Base.AuxiliaryEquipment;
 
 
 /**
@@ -6,16 +6,11 @@ package TC57CIM.IEC61970.Base.AuxiliaryEquipment;
  * yet present a negligible impedance at the main power frequency.
  * @author kdemaree
  * @version 1.0
- * @created 15-Dec-2023 4:38:30 PM
+ * @created 25-Dec-2023 8:32:05 PM
  */
 public class WaveTrap extends AuxiliaryEquipment {
 
 	public WaveTrap(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end WaveTrap

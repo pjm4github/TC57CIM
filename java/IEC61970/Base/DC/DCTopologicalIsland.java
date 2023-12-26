@@ -1,6 +1,6 @@
-package TC57CIM.IEC61970.Base.DC;
+package IEC61970.Base.DC;
 
-import TC57CIM.IEC61970.Base.Core.IdentifiedObject;
+import IEC61970.Base.Core.IdentifiedObject;
 
 /**
  * An electrically connected subset of the network. DC topological islands can
@@ -9,7 +9,7 @@ import TC57CIM.IEC61970.Base.Core.IdentifiedObject;
  * - manual creation, change or deletion of topological nodes in a planning tool.
  * @author SELAOST1
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:55 PM
  */
 public class DCTopologicalIsland extends IdentifiedObject {
 
@@ -21,9 +21,4 @@ public class DCTopologicalIsland extends IdentifiedObject {
 	public DCTopologicalIsland(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end DCTopologicalIsland

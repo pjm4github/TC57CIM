@@ -1,4 +1,4 @@
-package TC57CIM.IEC61970.Base.AuxiliaryEquipment;
+package IEC61970.Base.AuxiliaryEquipment;
 
 
 /**
@@ -6,16 +6,11 @@ package TC57CIM.IEC61970.Base.AuxiliaryEquipment;
  * that can be presented at displays, used in control or be recorded.
  * @author selaost1
  * @version 1.0
- * @created 15-Dec-2023 4:38:29 PM
+ * @created 25-Dec-2023 8:32:03 PM
  */
 public class Sensor extends AuxiliaryEquipment {
 
 	public Sensor(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end Sensor

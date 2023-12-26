@@ -1,13 +1,13 @@
-package TC57CIM.IEC61970.Base.Core;
+package IEC61970.Base.Core;
 
-import TC57CIM.IEC61970.Base.Domain.String;
+import IEC61970.Base.Domain.String;
 
 /**
  * Authority responsible for creation and management of names of a given type;
  * typically an organization or an enterprise system.
  * @author T. Kostic
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:32:00 PM
  */
 public class NameTypeAuthority {
 
@@ -23,9 +23,4 @@ public class NameTypeAuthority {
 	public NameTypeAuthority(){
 
 	}
-
-	public void finalize() throws Throwable {
-
-	}
-
-}
+}//end NameTypeAuthority

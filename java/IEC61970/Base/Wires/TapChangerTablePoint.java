@@ -1,13 +1,13 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Domain.PerCent;
-import TC57CIM.IEC61970.Base.Domain.Float;
-import TC57CIM.IEC61970.Base.Domain.Integer;
+import IEC61970.Base.Domain.PerCent;
+import IEC61970.Base.Domain.Float;
+import IEC61970.Base.Domain.Integer;
 
 /**
  * @author selaost1
  * @version 1.0
- * @created 15-Dec-2023 4:38:30 PM
+ * @created 25-Dec-2023 8:32:04 PM
  */
 public class TapChangerTablePoint {
 
@@ -61,9 +61,4 @@ public class TapChangerTablePoint {
 	public TapChangerTablePoint(){
 
 	}
-
-	public void finalize() throws Throwable {
-
-	}
-
-}
+}//end TapChangerTablePoint

@@ -1,13 +1,13 @@
-package TC57CIM.IEC61970.Base.ICCPConfiguration;
+package IEC61970.Base.ICCPConfiguration;
 
-import TC57CIM.IEC61970.Base.Domain.UnitMultiplier;
-import TC57CIM.IEC61970.Base.Domain.UnitSymbol;
-import TC57CIM.IEC61970.Base.Domain.String;
+import IEC61970.Base.Domain.UnitMultiplier;
+import IEC61970.Base.Domain.UnitSymbol;
+import IEC61970.Base.Domain.String;
 
 /**
  * @author selaost1
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:59 PM
  */
 public class ISOAPAddressing {
 
@@ -18,9 +18,4 @@ public class ISOAPAddressing {
 	public ISOAPAddressing(){
 
 	}
-
-	public void finalize() throws Throwable {
-
-	}
-
-}
+}//end ISOAPAddressing

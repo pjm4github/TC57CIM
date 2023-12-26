@@ -1,7 +1,7 @@
-package TC57CIM.IEC61970.Base.DiagramLayout;
+package IEC61970.Base.DiagramLayout;
 
-import TC57CIM.IEC61970.Base.Domain.Integer;
-import TC57CIM.IEC61970.Base.Domain.Float;
+import IEC61970.Base.Domain.Integer;
+import IEC61970.Base.Domain.Float;
 
 /**
  * A point in a given space defined by 3 coordinates and associated to a diagram
@@ -9,7 +9,7 @@ import TC57CIM.IEC61970.Base.Domain.Float;
  * have to be in the corner of a diagram.
  * @author mcmorran
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:56 PM
  */
 public class DiagramObjectPoint {
 
@@ -38,9 +38,4 @@ public class DiagramObjectPoint {
 	public DiagramObjectPoint(){
 
 	}
-
-	public void finalize() throws Throwable {
-
-	}
-
-}
+}//end DiagramObjectPoint

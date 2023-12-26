@@ -1,16 +1,16 @@
-package TC57CIM.IEC61970.Base.OperationalLimits;
+package IEC61970.Base.OperationalLimits;
 
-import TC57CIM.IEC61970.Base.Domain.ActivePower;
-import TC57CIM.IEC61970.Base.Domain.ReactivePower;
-import TC57CIM.IEC61970.Base.Domain.Boolean;
-import TC57CIM.IEC61970.Base.Core.IdentifiedObject;
+import IEC61970.Base.Domain.ActivePower;
+import IEC61970.Base.Domain.ReactivePower;
+import IEC61970.Base.Domain.Boolean;
+import IEC61970.Base.Core.IdentifiedObject;
 
 /**
  * A group of branch terminals whose directed flow summation is to be monitored. A
  * branch group need not form a cutset of the network.
  * @author kdd
  * @version 1.0
- * @created 15-Dec-2023 4:38:26 PM
+ * @created 25-Dec-2023 8:31:54 PM
  */
 public class BranchGroup extends IdentifiedObject {
 
@@ -46,9 +46,4 @@ public class BranchGroup extends IdentifiedObject {
 	public BranchGroup(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end BranchGroup

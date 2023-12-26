@@ -1,13 +1,13 @@
-package TC57CIM.IEC61970.Base.Faults;
+package IEC61970.Base.Faults;
 
-import TC57CIM.IEC61970.Base.Domain.Resistance;
-import TC57CIM.IEC61970.Base.Domain.Reactance;
+import IEC61970.Base.Domain.Resistance;
+import IEC61970.Base.Domain.Reactance;
 
 /**
  * Impedance description for the fault.
  * @author kdemaree
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:57 PM
  */
 public class FaultImpedance {
 
@@ -31,9 +31,4 @@ public class FaultImpedance {
 	public FaultImpedance(){
 
 	}
-
-	public void finalize() throws Throwable {
-
-	}
-
-}
+}//end FaultImpedance

@@ -1,11 +1,11 @@
-package TC57CIM.IEC61970.Base.ControlArea;
+package IEC61970.Base.ControlArea;
 
 
 /**
  * The type of control area.
  * @author kdd
  * @version 1.0
- * @created 15-Dec-2023 4:38:26 PM
+ * @created 25-Dec-2023 8:31:55 PM
  */
 public enum ControlAreaTypeKind {
 	/**

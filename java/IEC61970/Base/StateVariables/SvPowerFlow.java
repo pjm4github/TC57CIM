@@ -1,17 +1,17 @@
-package TC57CIM.IEC61970.Base.StateVariables;
+package IEC61970.Base.StateVariables;
 
-import TC57CIM.IEC61970.Base.Domain.ActivePower;
-import TC57CIM.IEC61970.Base.Wires.SinglePhaseKind;
-import TC57CIM.IEC61970.Base.Domain.ReactivePower;
-import TC57CIM.IEC61970.Base.Core.Terminal;
-import TC57CIM.IEC61970.InfIEC61970.EnergyArea.EnergyGroup;
+import IEC61970.Base.Domain.ActivePower;
+import IEC61970.Base.Wires.SinglePhaseKind;
+import IEC61970.Base.Domain.ReactivePower;
+import IEC61970.Base.Core.Terminal;
+import IEC61970.InfIEC61970.EnergyArea.EnergyGroup;
 
 /**
  * State variable for power flow. Load convention is used for flow direction. This
  * means flow out from the TopologicalNode into the equipment is positive.
  * @author kdd
  * @version 1.0
- * @created 15-Dec-2023 4:38:29 PM
+ * @created 25-Dec-2023 8:32:03 PM
  */
 public class SvPowerFlow extends StateVariable {
 
@@ -39,9 +39,4 @@ public class SvPowerFlow extends StateVariable {
 	public SvPowerFlow(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end SvPowerFlow

@@ -1,12 +1,12 @@
-package TC57CIM.IEC61970.Base.Meas;
+package IEC61970.Base.Meas;
 
-import TC57CIM.IEC61970.Base.Domain.Float;
+import IEC61970.Base.Domain.Float;
 
 /**
  * An analog control used for supervisory control.
  * @author selaost1
  * @version 1.0
- * @created 15-Dec-2023 4:38:26 PM
+ * @created 25-Dec-2023 8:31:54 PM
  */
 public class AnalogControl extends Control {
 
@@ -24,9 +24,4 @@ public class AnalogControl extends Control {
 	public AnalogControl(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end AnalogControl

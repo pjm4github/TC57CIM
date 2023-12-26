@@ -1,6 +1,6 @@
-package TC57CIM.IEC61970.Base.ICCPConfiguration;
+package IEC61970.Base.ICCPConfiguration;
 
-import TC57CIM.IEC61970.Base.Domain.String;
+import IEC61970.Base.Domain.String;
 
 /**
  * Used to convey information that will allow matching in order to determine which
@@ -8,7 +8,7 @@ import TC57CIM.IEC61970.Base.Domain.String;
  * exchange.
  * @author herb
  * @version 1.0
- * @created 15-Dec-2023 4:38:29 PM
+ * @created 25-Dec-2023 8:32:02 PM
  */
 public class PublicX509Certificate {
 
@@ -26,9 +26,4 @@ public class PublicX509Certificate {
 	public PublicX509Certificate(){
 
 	}
-
-	public void finalize() throws Throwable {
-
-	}
-
-}
+}//end PublicX509Certificate

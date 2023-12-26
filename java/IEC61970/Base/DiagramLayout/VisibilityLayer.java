@@ -1,7 +1,7 @@
-package TC57CIM.IEC61970.Base.DiagramLayout;
+package IEC61970.Base.DiagramLayout;
 
-import TC57CIM.IEC61970.Base.Domain.Integer;
-import TC57CIM.IEC61970.Base.Core.IdentifiedObject;
+import IEC61970.Base.Domain.Integer;
+import IEC61970.Base.Core.IdentifiedObject;
 
 /**
  * Layers are typically used for grouping diagram objects according to themes and
@@ -16,7 +16,7 @@ import TC57CIM.IEC61970.Base.Core.IdentifiedObject;
  * support m:n.
  * @author mcmorran
  * @version 1.0
- * @created 15-Dec-2023 4:38:30 PM
+ * @created 25-Dec-2023 8:32:04 PM
  */
 public class VisibilityLayer extends IdentifiedObject {
 
@@ -29,9 +29,4 @@ public class VisibilityLayer extends IdentifiedObject {
 	public VisibilityLayer(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end VisibilityLayer

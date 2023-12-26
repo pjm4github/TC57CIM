@@ -1,0 +1,12 @@
+///////////////////////////////////////////////////////////
+//  ValueToAlias.cpp
+//  Implementation of the Class ValueToAlias
+//  Created on:      25-Dec-2023 8:32:04 PM
+///////////////////////////////////////////////////////////
+
+#include "ValueToAlias.h"
+
+
+ValueToAlias::ValueToAlias(){
+
+}

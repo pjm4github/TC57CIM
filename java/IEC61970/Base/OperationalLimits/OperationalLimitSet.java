@@ -1,8 +1,8 @@
-package TC57CIM.IEC61970.Base.OperationalLimits;
+package IEC61970.Base.OperationalLimits;
 
-import TC57CIM.IEC61970.Base.Core.Equipment;
-import TC57CIM.IEC61970.Base.Core.IdentifiedObject;
-import TC57CIM.IEC61970.Base.Core.ACDCTerminal;
+import IEC61970.Base.Core.Equipment;
+import IEC61970.Base.Core.IdentifiedObject;
+import IEC61970.Base.Core.ACDCTerminal;
 
 /**
  * A set of limits associated with equipment.  Sets of limits might apply to a
@@ -13,7 +13,7 @@ import TC57CIM.IEC61970.Base.Core.ACDCTerminal;
  * together as a set.
  * @author kdd
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:32:01 PM
  */
 public class OperationalLimitSet extends IdentifiedObject {
 
@@ -30,9 +30,4 @@ public class OperationalLimitSet extends IdentifiedObject {
 	public OperationalLimitSet(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end OperationalLimitSet

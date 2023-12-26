@@ -1,7 +1,7 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Domain.Length;
-import TC57CIM.IEC61970.Base.Core.ConductingEquipment;
+import IEC61970.Base.Domain.Length;
+import IEC61970.Base.Core.ConductingEquipment;
 
 /**
  * A Clamp is a galvanic connection at a line segment where other equipment is
@@ -11,7 +11,7 @@ import TC57CIM.IEC61970.Base.Core.ConductingEquipment;
  * ConnectivityNode.
  * @author selaost1
  * @version 1.0
- * @created 15-Dec-2023 4:38:26 PM
+ * @created 25-Dec-2023 8:31:55 PM
  */
 public class Clamp extends ConductingEquipment {
 
@@ -25,9 +25,4 @@ public class Clamp extends ConductingEquipment {
 	public Clamp(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end Clamp

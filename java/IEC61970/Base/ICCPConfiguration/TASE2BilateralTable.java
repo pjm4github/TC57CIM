@@ -1,6 +1,6 @@
-package TC57CIM.IEC61970.Base.ICCPConfiguration;
+package IEC61970.Base.ICCPConfiguration;
 
-import TC57CIM.IEC61970.Base.Domain.String;
+import IEC61970.Base.Domain.String;
 
 /**
  * This class describe the sending (providing) side in a bilateral ICCP data
@@ -8,7 +8,7 @@ import TC57CIM.IEC61970.Base.Domain.String;
  * exchanging ICCP Provider data between the parties.
  * @author SELAOST1
  * @version 1.0
- * @created 15-Dec-2023 4:38:30 PM
+ * @created 25-Dec-2023 8:32:04 PM
  */
 public class TASE2BilateralTable extends BilateralExchangeAgreement {
 
@@ -34,9 +34,4 @@ public class TASE2BilateralTable extends BilateralExchangeAgreement {
 	public TASE2BilateralTable(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end TASE2BilateralTable

@@ -1,12 +1,12 @@
-package TC57CIM.IEC61970.Base.DC;
+package IEC61970.Base.DC;
 
-import TC57CIM.IEC61970.Base.Core.SubGeographicalRegion;
+import IEC61970.Base.Core.SubGeographicalRegion;
 
 /**
  * Overhead lines and/or cables connecting two or more HVDC substations.
  * @author selaost1
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:55 PM
  */
 public class DCLine extends DCEquipmentContainer {
 
@@ -18,9 +18,4 @@ public class DCLine extends DCEquipmentContainer {
 	public DCLine(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end DCLine

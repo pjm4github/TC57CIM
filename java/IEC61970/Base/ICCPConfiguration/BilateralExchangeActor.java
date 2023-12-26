@@ -1,11 +1,11 @@
-package TC57CIM.IEC61970.Base.ICCPConfiguration;
+package IEC61970.Base.ICCPConfiguration;
 
-import TC57CIM.IEC61970.Base.Core.IdentifiedObject;
+import IEC61970.Base.Core.IdentifiedObject;
 
 /**
  * @author selaost1
  * @version 1.0
- * @created 15-Dec-2023 4:38:26 PM
+ * @created 25-Dec-2023 8:31:54 PM
  */
 public class BilateralExchangeActor extends IdentifiedObject {
 
@@ -14,9 +14,4 @@ public class BilateralExchangeActor extends IdentifiedObject {
 	public BilateralExchangeActor(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end BilateralExchangeActor

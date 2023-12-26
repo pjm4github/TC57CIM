@@ -1,22 +1,17 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Core.IdentifiedObject;
+import IEC61970.Base.Core.IdentifiedObject;
 
 /**
  * Describes a curve for how the voltage magnitude and impedance varies with the
  * tap step.
  * @author SELAOST1
  * @version 1.0
- * @created 15-Dec-2023 4:38:29 PM
+ * @created 25-Dec-2023 8:32:02 PM
  */
 public class RatioTapChangerTable extends IdentifiedObject {
 
 	public RatioTapChangerTable(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end RatioTapChangerTable

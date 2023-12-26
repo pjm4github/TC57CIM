@@ -1,20 +1,15 @@
-package TC57CIM.IEC61970.Base.DC;
+package IEC61970.Base.DC;
 
 
 /**
  * A switch within the DC system.
  * @author selaost1
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:55 PM
  */
 public class DCSwitch extends DCConductingEquipment {
 
 	public DCSwitch(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end DCSwitch

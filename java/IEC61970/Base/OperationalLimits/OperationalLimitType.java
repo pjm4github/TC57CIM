@@ -1,13 +1,13 @@
-package TC57CIM.IEC61970.Base.OperationalLimits;
+package IEC61970.Base.OperationalLimits;
 
-import TC57CIM.IEC61970.Base.Domain.Seconds;
-import TC57CIM.IEC61970.Base.Core.IdentifiedObject;
+import IEC61970.Base.Domain.Seconds;
+import IEC61970.Base.Core.IdentifiedObject;
 
 /**
  * The operational meaning of a category of limits.
  * @author kdd
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:32:01 PM
  */
 public class OperationalLimitType extends IdentifiedObject {
 
@@ -26,9 +26,4 @@ public class OperationalLimitType extends IdentifiedObject {
 	public OperationalLimitType(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end OperationalLimitType

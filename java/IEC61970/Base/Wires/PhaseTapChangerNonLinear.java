@@ -1,7 +1,7 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Domain.PerCent;
-import TC57CIM.IEC61970.Base.Domain.Reactance;
+import IEC61970.Base.Domain.PerCent;
+import IEC61970.Base.Domain.Reactance;
 
 /**
  * The non-linear phase tap changer describes the non-linear behavior of a phase
@@ -10,7 +10,7 @@ import TC57CIM.IEC61970.Base.Domain.Reactance;
  * 301 document.
  * @author SELAOST1
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:32:01 PM
  */
 public class PhaseTapChangerNonLinear extends PhaseTapChanger {
 
@@ -33,9 +33,4 @@ public class PhaseTapChangerNonLinear extends PhaseTapChanger {
 	public PhaseTapChangerNonLinear(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end PhaseTapChangerNonLinear

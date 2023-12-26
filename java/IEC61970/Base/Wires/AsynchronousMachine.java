@@ -1,15 +1,15 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Domain.Boolean;
-import TC57CIM.IEC61970.Base.Domain.PerCent;
-import TC57CIM.IEC61970.Base.Domain.Float;
-import TC57CIM.IEC61970.Base.Domain.Frequency;
-import TC57CIM.IEC61970.Base.Domain.RotationSpeed;
-import TC57CIM.IEC61970.Base.Domain.Integer;
-import TC57CIM.IEC61970.Base.Domain.ActivePower;
-import TC57CIM.IEC61970.Base.Domain.Resistance;
-import TC57CIM.IEC61970.Base.Domain.Seconds;
-import TC57CIM.IEC61970.Base.Domain.Reactance;
+import IEC61970.Base.Domain.Boolean;
+import IEC61970.Base.Domain.PerCent;
+import IEC61970.Base.Domain.Float;
+import IEC61970.Base.Domain.Frequency;
+import IEC61970.Base.Domain.RotationSpeed;
+import IEC61970.Base.Domain.Integer;
+import IEC61970.Base.Domain.ActivePower;
+import IEC61970.Base.Domain.Resistance;
+import IEC61970.Base.Domain.Seconds;
+import IEC61970.Base.Domain.Reactance;
 
 /**
  * A rotating machine whose shaft rotates asynchronously with the electrical field.
@@ -17,7 +17,7 @@ import TC57CIM.IEC61970.Base.Domain.Reactance;
  * windings, e.g squirrel-cage induction machine.
  * @author tsaxton
  * @version 1.0
- * @created 15-Dec-2023 4:38:26 PM
+ * @created 25-Dec-2023 8:31:54 PM
  */
 public class AsynchronousMachine extends RotatingMachine {
 
@@ -113,9 +113,4 @@ public class AsynchronousMachine extends RotatingMachine {
 	public AsynchronousMachine(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end AsynchronousMachine

@@ -1,4 +1,4 @@
-package TC57CIM.IEC61970.Base.Generation.Production;
+package IEC61970.Base.Generation.Production;
 
 
 /**
@@ -6,7 +6,7 @@ package TC57CIM.IEC61970.Base.Generation.Production;
  * generator or pump.
  * @author kdd
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:59 PM
  */
 public enum HydroEnergyConversionKind {
 	/**

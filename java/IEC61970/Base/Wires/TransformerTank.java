@@ -1,6 +1,6 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Core.Equipment;
+import IEC61970.Base.Core.Equipment;
 
 /**
  * An assembly of two or more coupled windings that transform electrical power
@@ -9,7 +9,7 @@ import TC57CIM.IEC61970.Base.Core.Equipment;
  * phase transformers.
  * @author Tom
  * @version 1.0
- * @created 15-Dec-2023 4:38:30 PM
+ * @created 25-Dec-2023 8:32:04 PM
  */
 public class TransformerTank extends Equipment {
 
@@ -21,9 +21,4 @@ public class TransformerTank extends Equipment {
 	public TransformerTank(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end TransformerTank

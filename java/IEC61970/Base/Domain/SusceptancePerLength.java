@@ -1,11 +1,11 @@
-package TC57CIM.IEC61970.Base.Domain;
+package IEC61970.Base.Domain;
 
 
 /**
  * Imaginary part of admittance per unit of length.
  * @author T. Kostic
  * @version 1.0
- * @created 15-Dec-2023 4:38:29 PM
+ * @created 25-Dec-2023 8:32:03 PM
  */
 public class SusceptancePerLength {
 
@@ -16,9 +16,4 @@ public class SusceptancePerLength {
 	public SusceptancePerLength(){
 
 	}
-
-	public void finalize() throws Throwable {
-
-	}
-
-}
+}//end SusceptancePerLength

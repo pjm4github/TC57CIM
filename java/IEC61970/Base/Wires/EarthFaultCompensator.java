@@ -1,7 +1,7 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Domain.Resistance;
-import TC57CIM.IEC61970.Base.Core.ConductingEquipment;
+import IEC61970.Base.Domain.Resistance;
+import IEC61970.Base.Core.ConductingEquipment;
 
 /**
  * A conducting equipment used to represent a connection to ground which is
@@ -11,7 +11,7 @@ import TC57CIM.IEC61970.Base.Core.ConductingEquipment;
  * connection rules apply.
  * @author namstutz
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:56 PM
  */
 public class EarthFaultCompensator extends ConductingEquipment {
 
@@ -23,9 +23,4 @@ public class EarthFaultCompensator extends ConductingEquipment {
 	public EarthFaultCompensator(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end EarthFaultCompensator

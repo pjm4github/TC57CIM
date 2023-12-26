@@ -1,11 +1,11 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
 
 /**
  * Type of rotor, used by short circuit applications.
  * @author tsaxton
  * @version 1.0
- * @created 15-Dec-2023 4:38:29 PM
+ * @created 25-Dec-2023 8:32:03 PM
  */
 public enum ShortCircuitRotorKind {
 	/**

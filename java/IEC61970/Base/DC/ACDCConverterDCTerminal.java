@@ -1,4 +1,4 @@
-package TC57CIM.IEC61970.Base.DC;
+package IEC61970.Base.DC;
 
 
 /**
@@ -10,7 +10,7 @@ package TC57CIM.IEC61970.Base.DC;
  * conducting equipment can be connected to the AC side.
  * @author selaost1
  * @version 1.0
- * @created 15-Dec-2023 4:38:26 PM
+ * @created 25-Dec-2023 8:31:54 PM
  */
 public class ACDCConverterDCTerminal extends DCBaseTerminal {
 
@@ -26,9 +26,4 @@ public class ACDCConverterDCTerminal extends DCBaseTerminal {
 	public ACDCConverterDCTerminal(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end ACDCConverterDCTerminal

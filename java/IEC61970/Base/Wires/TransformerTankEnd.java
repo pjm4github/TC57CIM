@@ -1,6 +1,6 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Core.PhaseCode;
+import IEC61970.Base.Core.PhaseCode;
 
 /**
  * Transformer tank end represents an individual winding for unbalanced models or
@@ -8,7 +8,7 @@ import TC57CIM.IEC61970.Base.Core.PhaseCode;
  * PowerTransformer).
  * @author T. Kostic
  * @version 1.0
- * @created 15-Dec-2023 4:38:30 PM
+ * @created 25-Dec-2023 8:32:04 PM
  */
 public class TransformerTankEnd extends TransformerEnd {
 
@@ -24,9 +24,4 @@ public class TransformerTankEnd extends TransformerEnd {
 	public TransformerTankEnd(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end TransformerTankEnd

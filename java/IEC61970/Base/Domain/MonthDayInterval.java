@@ -1,11 +1,11 @@
-package TC57CIM.IEC61970.Base.Domain;
+package IEC61970.Base.Domain;
 
 
 /**
  * Interval between two times specified as mont and date.
  * @author selaost1
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:32:00 PM
  */
 public class MonthDayInterval {
 
@@ -21,9 +21,4 @@ public class MonthDayInterval {
 	public MonthDayInterval(){
 
 	}
-
-	public void finalize() throws Throwable {
-
-	}
-
-}
+}//end MonthDayInterval

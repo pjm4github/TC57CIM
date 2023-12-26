@@ -1,13 +1,13 @@
-package TC57CIM.IEC61970.Base.DiagramLayout;
+package IEC61970.Base.DiagramLayout;
 
-import TC57CIM.IEC61970.Base.Domain.String;
+import IEC61970.Base.Domain.String;
 
 /**
  * A diagram object for placing free-text or text derived from an associated
  * domain object.
  * @author mcmorran
  * @version 1.0
- * @created 15-Dec-2023 4:38:30 PM
+ * @created 25-Dec-2023 8:32:04 PM
  */
 public class TextDiagramObject extends DiagramObject {
 
@@ -19,9 +19,4 @@ public class TextDiagramObject extends DiagramObject {
 	public TextDiagramObject(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end TextDiagramObject

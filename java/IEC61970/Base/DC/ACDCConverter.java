@@ -1,15 +1,15 @@
-package TC57CIM.IEC61970.Base.DC;
+package IEC61970.Base.DC;
 
-import TC57CIM.IEC61970.Base.Domain.ApparentPower;
-import TC57CIM.IEC61970.Base.Domain.CurrentFlow;
-import TC57CIM.IEC61970.Base.Domain.ActivePower;
-import TC57CIM.IEC61970.Base.Domain.Voltage;
-import TC57CIM.IEC61970.Base.Domain.Integer;
-import TC57CIM.IEC61970.Base.Domain.ReactivePower;
-import TC57CIM.IEC61970.Base.Domain.Resistance;
-import TC57CIM.IEC61970.Base.Domain.ActivePowerPerCurrentFlow;
-import TC57CIM.IEC61970.Base.Core.Terminal;
-import TC57CIM.IEC61970.Base.Core.ConductingEquipment;
+import IEC61970.Base.Domain.ApparentPower;
+import IEC61970.Base.Domain.CurrentFlow;
+import IEC61970.Base.Domain.ActivePower;
+import IEC61970.Base.Domain.Voltage;
+import IEC61970.Base.Domain.Integer;
+import IEC61970.Base.Domain.ReactivePower;
+import IEC61970.Base.Domain.Resistance;
+import IEC61970.Base.Domain.ActivePowerPerCurrentFlow;
+import IEC61970.Base.Core.Terminal;
+import IEC61970.Base.Core.ConductingEquipment;
 
 /**
  * A unit with valves for three phases, together with unit control equipment,
@@ -17,7 +17,7 @@ import TC57CIM.IEC61970.Base.Core.ConductingEquipment;
  * reactors and auxiliaries, if any, used for conversion.
  * @author T. Kostic
  * @version 1.0
- * @created 15-Dec-2023 4:38:26 PM
+ * @created 25-Dec-2023 8:31:54 PM
  */
 public class ACDCConverter extends ConductingEquipment {
 
@@ -120,9 +120,4 @@ public class ACDCConverter extends ConductingEquipment {
 	public ACDCConverter(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end ACDCConverter

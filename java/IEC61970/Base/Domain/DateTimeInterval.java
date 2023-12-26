@@ -1,11 +1,11 @@
-package TC57CIM.IEC61970.Base.Domain;
+package IEC61970.Base.Domain;
 
 
 /**
  * Interval between two date and time points.
  * @author T. Kostic
  * @version 1.0
- * @created 15-Dec-2023 4:38:26 PM
+ * @created 25-Dec-2023 8:31:55 PM
  */
 public class DateTimeInterval {
 
@@ -21,9 +21,4 @@ public class DateTimeInterval {
 	public DateTimeInterval(){
 
 	}
-
-	public void finalize() throws Throwable {
-
-	}
-
-}
+}//end DateTimeInterval

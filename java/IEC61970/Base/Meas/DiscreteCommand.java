@@ -1,19 +1,14 @@
-package TC57CIM.IEC61970.Base.Meas;
+package IEC61970.Base.Meas;
 
 
 /**
  * @author selaost1
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:56 PM
  */
 public class DiscreteCommand extends Command {
 
 	public DiscreteCommand(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end DiscreteCommand

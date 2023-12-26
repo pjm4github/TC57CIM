@@ -1,17 +1,17 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Domain.ActivePower;
-import TC57CIM.IEC61970.Base.Domain.ReactivePower;
-import TC57CIM.IEC61970.Base.Domain.Float;
-import TC57CIM.IEC61970.Base.Domain.ApparentPower;
-import TC57CIM.IEC61970.Base.Domain.Voltage;
-import TC57CIM.IEC61970.Base.Generation.Production.HydroPump;
+import IEC61970.Base.Domain.ActivePower;
+import IEC61970.Base.Domain.ReactivePower;
+import IEC61970.Base.Domain.Float;
+import IEC61970.Base.Domain.ApparentPower;
+import IEC61970.Base.Domain.Voltage;
+import IEC61970.Base.Generation.Production.HydroPump;
 
 /**
  * A rotating machine which may be used as a generator or motor.
  * @author tsaxton
  * @version 1.0
- * @created 15-Dec-2023 4:38:29 PM
+ * @created 25-Dec-2023 8:32:03 PM
  */
 public class RotatingMachine extends RegulatingCondEq {
 
@@ -52,9 +52,4 @@ public class RotatingMachine extends RegulatingCondEq {
 	public RotatingMachine(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end RotatingMachine

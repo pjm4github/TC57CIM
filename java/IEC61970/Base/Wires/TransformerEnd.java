@@ -1,14 +1,14 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Domain.PerCent;
-import TC57CIM.IEC61970.Base.Domain.Integer;
-import TC57CIM.IEC61970.Base.Domain.Boolean;
-import TC57CIM.IEC61970.Base.Domain.Voltage;
-import TC57CIM.IEC61970.Base.Domain.Resistance;
-import TC57CIM.IEC61970.Base.Domain.Reactance;
-import TC57CIM.IEC61970.Base.Core.BaseVoltage;
-import TC57CIM.IEC61970.Base.Core.Terminal;
-import TC57CIM.IEC61970.Base.Core.IdentifiedObject;
+import IEC61970.Base.Domain.PerCent;
+import IEC61970.Base.Domain.Integer;
+import IEC61970.Base.Domain.Boolean;
+import IEC61970.Base.Domain.Voltage;
+import IEC61970.Base.Domain.Resistance;
+import IEC61970.Base.Domain.Reactance;
+import IEC61970.Base.Core.BaseVoltage;
+import IEC61970.Base.Core.Terminal;
+import IEC61970.Base.Core.IdentifiedObject;
 
 /**
  * A conducting connection point of a power transformer. It corresponds to a
@@ -18,7 +18,7 @@ import TC57CIM.IEC61970.Base.Core.IdentifiedObject;
  * ConductingEquipment.
  * @author T. Kostic
  * @version 1.0
- * @created 15-Dec-2023 4:38:30 PM
+ * @created 25-Dec-2023 8:32:04 PM
  */
 public class TransformerEnd extends IdentifiedObject {
 
@@ -82,9 +82,4 @@ public class TransformerEnd extends IdentifiedObject {
 	public TransformerEnd(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end TransformerEnd

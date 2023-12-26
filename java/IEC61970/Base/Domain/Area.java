@@ -1,11 +1,11 @@
-package TC57CIM.IEC61970.Base.Domain;
+package IEC61970.Base.Domain;
 
 
 /**
  * Area.
  * @author SELAOST1
  * @version 1.0
- * @created 15-Dec-2023 4:38:26 PM
+ * @created 25-Dec-2023 8:31:54 PM
  */
 public class Area {
 
@@ -16,9 +16,4 @@ public class Area {
 	public Area(){
 
 	}
-
-	public void finalize() throws Throwable {
-
-	}
-
-}
+}//end Area

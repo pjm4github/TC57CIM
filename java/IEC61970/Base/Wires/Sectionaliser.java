@@ -1,4 +1,4 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
 
 /**
@@ -8,16 +8,11 @@ package TC57CIM.IEC61970.Base.Wires;
  * low, for proper coordination of fuses.
  * @author T. Kostic
  * @version 1.0
- * @created 15-Dec-2023 4:38:29 PM
+ * @created 25-Dec-2023 8:32:03 PM
  */
 public class Sectionaliser extends Switch {
 
 	public Sectionaliser(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end Sectionaliser

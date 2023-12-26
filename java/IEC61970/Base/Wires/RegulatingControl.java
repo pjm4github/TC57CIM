@@ -1,10 +1,10 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Domain.Boolean;
-import TC57CIM.IEC61970.Base.Core.PhaseCode;
-import TC57CIM.IEC61970.Base.Domain.Float;
-import TC57CIM.IEC61970.Base.Domain.UnitMultiplier;
-import TC57CIM.IEC61970.Base.Core.PowerSystemResource;
+import IEC61970.Base.Domain.Boolean;
+import IEC61970.Base.Core.PhaseCode;
+import IEC61970.Base.Domain.Float;
+import IEC61970.Base.Domain.UnitMultiplier;
+import IEC61970.Base.Core.PowerSystemResource;
 
 /**
  * Specifies a set of equipment that works together to control a power system
@@ -19,7 +19,7 @@ import TC57CIM.IEC61970.Base.Core.PowerSystemResource;
  * out from a TopologicalNode (bus) into the conducting equipment.
  * @author kdd
  * @version 1.0
- * @created 15-Dec-2023 4:38:29 PM
+ * @created 25-Dec-2023 8:32:03 PM
  */
 public class RegulatingControl extends PowerSystemResource {
 
@@ -62,9 +62,4 @@ public class RegulatingControl extends PowerSystemResource {
 	public RegulatingControl(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end RegulatingControl

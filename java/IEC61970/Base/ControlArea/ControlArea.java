@@ -1,8 +1,8 @@
-package TC57CIM.IEC61970.Base.ControlArea;
+package IEC61970.Base.ControlArea;
 
-import TC57CIM.IEC61970.Base.Domain.ActivePower;
-import TC57CIM.IEC61970.Base.LoadModel.EnergyArea;
-import TC57CIM.IEC61970.Base.Core.PowerSystemResource;
+import IEC61970.Base.Domain.ActivePower;
+import IEC61970.Base.LoadModel.EnergyArea;
+import IEC61970.Base.Core.PowerSystemResource;
 
 /**
  * A control area is a grouping of generating units and/or loads and a cutset of
@@ -13,7 +13,7 @@ import TC57CIM.IEC61970.Base.Core.PowerSystemResource;
  * model.
  * @author kdd
  * @version 1.0
- * @created 15-Dec-2023 4:38:26 PM
+ * @created 25-Dec-2023 8:31:55 PM
  */
 public class ControlArea extends PowerSystemResource {
 
@@ -50,9 +50,4 @@ public class ControlArea extends PowerSystemResource {
 	public ControlArea(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end ControlArea

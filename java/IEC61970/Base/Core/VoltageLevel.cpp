@@ -1,0 +1,12 @@
+///////////////////////////////////////////////////////////
+//  VoltageLevel.cpp
+//  Implementation of the Class VoltageLevel
+//  Created on:      25-Dec-2023 8:32:05 PM
+///////////////////////////////////////////////////////////
+
+#include "VoltageLevel.h"
+
+
+VoltageLevel::VoltageLevel(){
+
+}

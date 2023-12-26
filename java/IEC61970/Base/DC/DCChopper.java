@@ -1,4 +1,4 @@
-package TC57CIM.IEC61970.Base.DC;
+package IEC61970.Base.DC;
 
 
 /**
@@ -6,16 +6,11 @@ package TC57CIM.IEC61970.Base.DC;
  * It has typically positive and negative pole terminals and a ground.
  * @author T. Kostic
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:55 PM
  */
 public class DCChopper extends DCConductingEquipment {
 
 	public DCChopper(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end DCChopper

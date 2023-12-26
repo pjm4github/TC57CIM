@@ -1,11 +1,11 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Domain.CurrentFlow;
-import TC57CIM.IEC61970.Base.Domain.Voltage;
-import TC57CIM.IEC61970.Base.Domain.AngleDegrees;
-import TC57CIM.IEC61970.Base.Domain.Boolean;
-import TC57CIM.IEC61970.Base.Domain.String;
-import TC57CIM.IEC61970.Base.Core.ConductingEquipment;
+import IEC61970.Base.Domain.CurrentFlow;
+import IEC61970.Base.Domain.Voltage;
+import IEC61970.Base.Domain.AngleDegrees;
+import IEC61970.Base.Domain.Boolean;
+import IEC61970.Base.Domain.String;
+import IEC61970.Base.Core.ConductingEquipment;
 
 /**
  * An electrical device consisting of  two or more coupled windings, with or
@@ -22,7 +22,7 @@ import TC57CIM.IEC61970.Base.Core.ConductingEquipment;
  * The association from TransformerEnd to BaseVoltage should be used instead.
  * @author Tom
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:32:02 PM
  */
 public class PowerTransformer extends ConductingEquipment {
 
@@ -99,9 +99,4 @@ public class PowerTransformer extends ConductingEquipment {
 	public PowerTransformer(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end PowerTransformer

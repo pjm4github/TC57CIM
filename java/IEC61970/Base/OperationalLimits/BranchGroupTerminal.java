@@ -1,13 +1,13 @@
-package TC57CIM.IEC61970.Base.OperationalLimits;
+package IEC61970.Base.OperationalLimits;
 
-import TC57CIM.IEC61970.Base.Domain.Boolean;
-import TC57CIM.IEC61970.Base.Core.Terminal;
+import IEC61970.Base.Domain.Boolean;
+import IEC61970.Base.Core.Terminal;
 
 /**
  * A specific directed terminal flow for a branch group.
  * @author kdd
  * @version 1.0
- * @created 15-Dec-2023 4:38:26 PM
+ * @created 25-Dec-2023 8:31:54 PM
  */
 public class BranchGroupTerminal {
 
@@ -24,9 +24,4 @@ public class BranchGroupTerminal {
 	public BranchGroupTerminal(){
 
 	}
-
-	public void finalize() throws Throwable {
-
-	}
-
-}
+}//end BranchGroupTerminal

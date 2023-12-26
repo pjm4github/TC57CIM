@@ -1,9 +1,9 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Domain.Voltage;
-import TC57CIM.IEC61970.Base.Domain.Boolean;
-import TC57CIM.IEC61970.Base.Domain.Resistance;
-import TC57CIM.IEC61970.Base.Domain.Reactance;
+import IEC61970.Base.Domain.Voltage;
+import IEC61970.Base.Domain.Boolean;
+import IEC61970.Base.Domain.Resistance;
+import IEC61970.Base.Domain.Reactance;
 
 /**
  * Describes behavior specific to tap changers, e.g. how the voltage at the end of
@@ -11,7 +11,7 @@ import TC57CIM.IEC61970.Base.Domain.Reactance;
  * adjustment.
  * @author Tom
  * @version 1.0
- * @created 15-Dec-2023 4:38:29 PM
+ * @created 25-Dec-2023 8:32:04 PM
  */
 public class TapChangerControl extends RegulatingControl {
 
@@ -44,9 +44,4 @@ public class TapChangerControl extends RegulatingControl {
 	public TapChangerControl(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end TapChangerControl

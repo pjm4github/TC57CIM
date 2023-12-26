@@ -1,7 +1,7 @@
-package TC57CIM.IEC61970.Base.Core;
+package IEC61970.Base.Core;
 
-import TC57CIM.IEC61970.Base.Domain.Boolean;
-import TC57CIM.IEC61970.Base.Domain.Integer;
+import IEC61970.Base.Domain.Boolean;
+import IEC61970.Base.Domain.Integer;
 
 /**
  * An electrical connection point (AC or DC) to a piece of conducting equipment.
@@ -9,7 +9,7 @@ import TC57CIM.IEC61970.Base.Domain.Integer;
  * 
  * @author selaost1
  * @version 1.0
- * @created 15-Dec-2023 4:38:26 PM
+ * @created 25-Dec-2023 8:31:54 PM
  */
 public class ACDCTerminal extends IdentifiedObject {
 
@@ -36,9 +36,4 @@ public class ACDCTerminal extends IdentifiedObject {
 	public ACDCTerminal(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end ACDCTerminal

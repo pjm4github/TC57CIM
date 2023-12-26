@@ -1,18 +1,18 @@
-package TC57CIM.IEC61970.Base.Equivalents;
+package IEC61970.Base.Equivalents;
 
-import TC57CIM.IEC61970.Base.Domain.ActivePower;
-import TC57CIM.IEC61970.Base.Domain.ReactivePower;
-import TC57CIM.IEC61970.Base.Domain.Resistance;
-import TC57CIM.IEC61970.Base.Domain.Boolean;
-import TC57CIM.IEC61970.Base.Domain.Voltage;
-import TC57CIM.IEC61970.Base.Domain.Reactance;
+import IEC61970.Base.Domain.ActivePower;
+import IEC61970.Base.Domain.ReactivePower;
+import IEC61970.Base.Domain.Resistance;
+import IEC61970.Base.Domain.Boolean;
+import IEC61970.Base.Domain.Voltage;
+import IEC61970.Base.Domain.Reactance;
 
 /**
  * This class represents equivalent injections (generation or load).  Voltage
  * regulation is allowed only at the point of connection.
  * @author KLH
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:56 PM
  */
 public class EquivalentInjection extends EquivalentEquipment {
 
@@ -100,9 +100,4 @@ public class EquivalentInjection extends EquivalentEquipment {
 	public EquivalentInjection(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end EquivalentInjection

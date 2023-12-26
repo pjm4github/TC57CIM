@@ -1,11 +1,11 @@
-package TC57CIM.IEC61970.Base.Domain;
+package IEC61970.Base.Domain;
 
 
 /**
  * Unit of displacement relative a reference position, hence can be negative.
  * @author LOO
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:56 PM
  */
 public class Displacement {
 
@@ -16,9 +16,4 @@ public class Displacement {
 	public Displacement(){
 
 	}
-
-	public void finalize() throws Throwable {
-
-	}
-
-}
+}//end Displacement

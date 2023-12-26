@@ -1,13 +1,13 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Domain.Susceptance;
-import TC57CIM.IEC61970.Base.Domain.Conductance;
+import IEC61970.Base.Domain.Susceptance;
+import IEC61970.Base.Domain.Conductance;
 
 /**
  * A linear shunt compensator has banks or sections with equal admittance values.
  * @author selaost1
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:31:59 PM
  */
 public class LinearShuntCompensator extends ShuntCompensator {
 
@@ -31,9 +31,4 @@ public class LinearShuntCompensator extends ShuntCompensator {
 	public LinearShuntCompensator(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end LinearShuntCompensator

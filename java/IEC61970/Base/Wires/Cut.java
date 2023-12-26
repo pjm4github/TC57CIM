@@ -1,6 +1,6 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Domain.Length;
+import IEC61970.Base.Domain.Length;
 
 /**
  * A cut separates a line segment into two parts. The cut appears as a switch
@@ -16,7 +16,7 @@ import TC57CIM.IEC61970.Base.Domain.Length;
  * equipment can be connected at them.
  * @author selaost1
  * @version 1.0
- * @created 15-Dec-2023 4:38:26 PM
+ * @created 25-Dec-2023 8:31:55 PM
  */
 public class Cut extends Switch {
 
@@ -33,9 +33,4 @@ public class Cut extends Switch {
 	public Cut(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end Cut

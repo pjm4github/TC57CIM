@@ -1,0 +1,13 @@
+///////////////////////////////////////////////////////////
+//  Feeder.cpp
+//  Implementation of the Class Feeder
+//  Created on:      25-Dec-2023 8:31:58 PM
+//  Original author: selaost1
+///////////////////////////////////////////////////////////
+
+#include "Feeder.h"
+
+
+Feeder::Feeder(){
+
+}

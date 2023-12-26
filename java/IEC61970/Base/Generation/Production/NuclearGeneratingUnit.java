@@ -1,20 +1,15 @@
-package TC57CIM.IEC61970.Base.Generation.Production;
+package IEC61970.Base.Generation.Production;
 
 
 /**
  * A nuclear generating unit.
  * @author kdd
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:32:01 PM
  */
 public class NuclearGeneratingUnit extends GeneratingUnit {
 
 	public NuclearGeneratingUnit(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end NuclearGeneratingUnit

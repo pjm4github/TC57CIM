@@ -1,0 +1,12 @@
+///////////////////////////////////////////////////////////
+//  GeneratingUnit.cpp
+//  Implementation of the Class GeneratingUnit
+//  Created on:      25-Dec-2023 8:31:58 PM
+///////////////////////////////////////////////////////////
+
+#include "GeneratingUnit.h"
+
+
+GeneratingUnit::GeneratingUnit(){
+
+}

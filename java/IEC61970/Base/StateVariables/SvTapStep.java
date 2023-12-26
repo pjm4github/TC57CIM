@@ -1,13 +1,13 @@
-package TC57CIM.IEC61970.Base.StateVariables;
+package IEC61970.Base.StateVariables;
 
-import TC57CIM.IEC61970.Base.Domain.Float;
-import TC57CIM.IEC61970.Base.Wires.TapChanger;
+import IEC61970.Base.Domain.Float;
+import IEC61970.Base.Wires.TapChanger;
 
 /**
  * State variable for transformer tap step.
  * @author kdd
  * @version 1.0
- * @created 15-Dec-2023 4:38:29 PM
+ * @created 25-Dec-2023 8:32:03 PM
  */
 public class SvTapStep extends StateVariable {
 
@@ -25,9 +25,4 @@ public class SvTapStep extends StateVariable {
 	public SvTapStep(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end SvTapStep

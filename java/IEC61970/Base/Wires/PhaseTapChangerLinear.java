@@ -1,7 +1,7 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Domain.AngleDegrees;
-import TC57CIM.IEC61970.Base.Domain.Reactance;
+import IEC61970.Base.Domain.AngleDegrees;
+import IEC61970.Base.Domain.Reactance;
 
 /**
  * Describes a tap changer with a linear relation between the tap step and the
@@ -11,7 +11,7 @@ import TC57CIM.IEC61970.Base.Domain.Reactance;
  * The secondary side voltage magnitude is the same as at the primary side.
  * @author SELAOST1
  * @version 1.0
- * @created 15-Dec-2023 4:38:28 PM
+ * @created 25-Dec-2023 8:32:01 PM
  */
 public class PhaseTapChangerLinear extends PhaseTapChanger {
 
@@ -38,9 +38,4 @@ public class PhaseTapChangerLinear extends PhaseTapChanger {
 	public PhaseTapChangerLinear(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end PhaseTapChangerLinear

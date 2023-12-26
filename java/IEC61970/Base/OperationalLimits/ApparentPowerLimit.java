@@ -1,12 +1,12 @@
-package TC57CIM.IEC61970.Base.OperationalLimits;
+package IEC61970.Base.OperationalLimits;
 
-import TC57CIM.IEC61970.Base.Domain.ApparentPower;
+import IEC61970.Base.Domain.ApparentPower;
 
 /**
  * Apparent power limit.
  * @author kdd
  * @version 1.0
- * @created 15-Dec-2023 4:38:26 PM
+ * @created 25-Dec-2023 8:31:54 PM
  */
 public class ApparentPowerLimit extends OperationalLimit {
 
@@ -22,9 +22,4 @@ public class ApparentPowerLimit extends OperationalLimit {
 	public ApparentPowerLimit(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end ApparentPowerLimit

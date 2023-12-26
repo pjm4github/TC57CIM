@@ -1,15 +1,15 @@
-package TC57CIM.IEC61970.Base.ICCPConfiguration;
+package IEC61970.Base.ICCPConfiguration;
 
-import TC57CIM.IEC61970.Base.Domain.Boolean;
-import TC57CIM.IEC61970.Base.Domain.Integer;
-import TC57CIM.IEC61970.Base.Domain.String;
+import IEC61970.Base.Domain.Boolean;
+import IEC61970.Base.Domain.Integer;
+import IEC61970.Base.Domain.String;
 
 /**
  * This contains the information that a particular actor exposes for a particular
  * agreed upon ICCP Bilateral Table.
  * @author herb
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:59 PM
  */
 public class ICCPVirtualControlCenter extends BilateralExchangeActor {
 
@@ -77,9 +77,4 @@ public class ICCPVirtualControlCenter extends BilateralExchangeActor {
 	public ICCPVirtualControlCenter(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end ICCPVirtualControlCenter

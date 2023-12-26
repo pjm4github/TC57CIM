@@ -1,12 +1,12 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
-import TC57CIM.IEC61970.Base.Domain.Susceptance;
-import TC57CIM.IEC61970.Base.Domain.Conductance;
-import TC57CIM.IEC61970.Base.Domain.Integer;
-import TC57CIM.IEC61970.Base.Domain.Resistance;
-import TC57CIM.IEC61970.Base.Domain.ApparentPower;
-import TC57CIM.IEC61970.Base.Domain.Voltage;
-import TC57CIM.IEC61970.Base.Domain.Reactance;
+import IEC61970.Base.Domain.Susceptance;
+import IEC61970.Base.Domain.Conductance;
+import IEC61970.Base.Domain.Integer;
+import IEC61970.Base.Domain.Resistance;
+import IEC61970.Base.Domain.ApparentPower;
+import IEC61970.Base.Domain.Voltage;
+import IEC61970.Base.Domain.Reactance;
 
 /**
  * A PowerTransformerEnd is associated with each Terminal of a PowerTransformer.
@@ -30,7 +30,7 @@ import TC57CIM.IEC61970.Base.Domain.Reactance;
  * PowerTransformers.
  * @author T. Kostic
  * @version 1.0
- * @created 15-Dec-2023 4:38:29 PM
+ * @created 25-Dec-2023 8:32:02 PM
  */
 public class PowerTransformerEnd extends TransformerEnd {
 
@@ -99,9 +99,4 @@ public class PowerTransformerEnd extends TransformerEnd {
 	public PowerTransformerEnd(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end PowerTransformerEnd

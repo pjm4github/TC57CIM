@@ -1,0 +1,12 @@
+///////////////////////////////////////////////////////////
+//  AssetFunction.cpp
+//  Implementation of the Class AssetFunction
+//  Created on:      25-Dec-2023 8:45:19 PM
+///////////////////////////////////////////////////////////
+
+#include "AssetFunction.h"
+
+
+AssetFunction::AssetFunction(){
+
+}

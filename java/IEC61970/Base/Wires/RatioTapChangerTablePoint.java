@@ -1,11 +1,11 @@
-package TC57CIM.IEC61970.Base.Wires;
+package IEC61970.Base.Wires;
 
 
 /**
  * Describes each tap step in the ratio tap changer tabular curve.
  * @author SELAOST1
  * @version 1.0
- * @created 15-Dec-2023 4:38:29 PM
+ * @created 25-Dec-2023 8:32:02 PM
  */
 public class RatioTapChangerTablePoint extends TapChangerTablePoint {
 
@@ -17,9 +17,4 @@ public class RatioTapChangerTablePoint extends TapChangerTablePoint {
 	public RatioTapChangerTablePoint(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end RatioTapChangerTablePoint

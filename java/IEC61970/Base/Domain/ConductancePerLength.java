@@ -1,11 +1,11 @@
-package TC57CIM.IEC61970.Base.Domain;
+package IEC61970.Base.Domain;
 
 
 /**
  * Real part of admittance per unit of length.
  * @author T. Kostic
  * @version 1.0
- * @created 15-Dec-2023 4:38:26 PM
+ * @created 25-Dec-2023 8:31:55 PM
  */
 public class ConductancePerLength {
 
@@ -16,9 +16,4 @@ public class ConductancePerLength {
 	public ConductancePerLength(){
 
 	}
-
-	public void finalize() throws Throwable {
-
-	}
-
-}
+}//end ConductancePerLength

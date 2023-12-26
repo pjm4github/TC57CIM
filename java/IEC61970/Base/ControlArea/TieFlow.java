@@ -1,14 +1,14 @@
-package TC57CIM.IEC61970.Base.ControlArea;
+package IEC61970.Base.ControlArea;
 
-import TC57CIM.IEC61970.Base.Domain.Boolean;
-import TC57CIM.IEC61970.Base.Core.Terminal;
-import TC57CIM.IEC61970.Base.Core.IdentifiedObject;
+import IEC61970.Base.Domain.Boolean;
+import IEC61970.Base.Core.Terminal;
+import IEC61970.Base.Core.IdentifiedObject;
 
 /**
  * A flow specification in terms of location and direction for a control area.
  * @author kdd
  * @version 1.0
- * @created 15-Dec-2023 4:38:30 PM
+ * @created 25-Dec-2023 8:32:04 PM
  */
 public class TieFlow extends IdentifiedObject {
 
@@ -32,9 +32,4 @@ public class TieFlow extends IdentifiedObject {
 	public TieFlow(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end TieFlow

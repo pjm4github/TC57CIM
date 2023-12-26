@@ -1,14 +1,14 @@
-package TC57CIM.IEC61970.Base.DC;
+package IEC61970.Base.DC;
 
-import TC57CIM.IEC61970.Base.Domain.Capacitance;
-import TC57CIM.IEC61970.Base.Domain.Resistance;
+import IEC61970.Base.Domain.Capacitance;
+import IEC61970.Base.Domain.Resistance;
 
 /**
  * A shunt device within the DC system, typically used for filtering.  Needed for
  * transient and short circuit studies.
  * @author selaost1
  * @version 1.0
- * @created 15-Dec-2023 4:38:27 PM
+ * @created 25-Dec-2023 8:31:55 PM
  */
 public class DCShunt extends DCConductingEquipment {
 
@@ -24,9 +24,4 @@ public class DCShunt extends DCConductingEquipment {
 	public DCShunt(){
 
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-}
+}//end DCShunt
