@@ -1,5 +1,5 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.ConductingEquipment import ConductingEquipment
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Length import Length
+from IEC61970.Base.Core.ConductingEquipment import ConductingEquipment
+from IEC61970.Base.Domain.Length import Length
 
 
 class Connector(ConductingEquipment):

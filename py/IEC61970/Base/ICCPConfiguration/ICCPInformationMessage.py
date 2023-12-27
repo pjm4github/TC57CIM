@@ -1,9 +1,9 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:37:34 2023
 from typing import Optional
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.ICCPConfiguration.ICCPScope import IccpScope
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.ICCPConfiguration.TASE2BilateralTable import Tase2BilateralTable
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.ICCPConfiguration.ICCPScope import IccpScope
+from IEC61970.Base.ICCPConfiguration.TASE2BilateralTable import Tase2BilateralTable
 
 
 class IccpInformationMessage(IdentifiedObject):

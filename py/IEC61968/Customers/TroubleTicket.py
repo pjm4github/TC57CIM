@@ -1,9 +1,9 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Document import Document
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Customers.Customer import Customer
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Customers.IncidentHazard import IncidentHazard
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Customers.TroubleReportingKind import TroubleReportingKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Operations.Incident import Incident
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.DateTime import DateTime
+from IEC61968.Common.Document import Document
+from IEC61968.Customers.Customer import Customer
+from IEC61968.Customers.IncidentHazard import IncidentHazard
+from IEC61968.Customers.TroubleReportingKind import TroubleReportingKind
+from IEC61968.Operations.Incident import Incident
+from IEC61970.Base.Domain.DateTime import DateTime
 
 
 class TroubleTicket(Document):

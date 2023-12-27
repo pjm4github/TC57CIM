@@ -1,10 +1,10 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Crew import Crew
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.FieldDispatchStep import FieldDispatchStep
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Operations.PlannedOutage import PlannedOutage
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Operations.UnplannedOutage import UnplannedOutage
+from IEC61968.Common.Crew import Crew
+from IEC61968.Common.FieldDispatchStep import FieldDispatchStep
+from IEC61968.Operations.PlannedOutage import PlannedOutage
+from IEC61968.Operations.UnplannedOutage import UnplannedOutage
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
 
 class FieldDispatchHistory(IdentifiedObject):

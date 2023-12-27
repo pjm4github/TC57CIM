@@ -1,13 +1,13 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 from typing import Optional
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.BaseVoltage import BaseVoltage
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Terminal import Terminal
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Reactance import Reactance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Resistance import Resistance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.PhaseTapChanger import PhaseTapChanger
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.RatioTapChanger import RatioTapChanger
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.TransformerStarImpedance import TransformerStarImpedance
+from IEC61970.Base.Core.BaseVoltage import BaseVoltage
+from IEC61970.Base.Core.Terminal import Terminal
+from IEC61970.Base.Domain.Reactance import Reactance
+from IEC61970.Base.Domain.Resistance import Resistance
+from IEC61970.Base.Wires.PhaseTapChanger import PhaseTapChanger
+from IEC61970.Base.Wires.RatioTapChanger import RatioTapChanger
+from IEC61970.Base.Wires.TransformerStarImpedance import TransformerStarImpedance
 
 
 class TransformerEnd:

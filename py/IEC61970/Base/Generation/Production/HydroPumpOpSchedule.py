@@ -6,7 +6,7 @@
 # Created on:      18-Dec-2023 1:24:25 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.RegularIntervalSchedule import RegularIntervalSchedule
+from IEC61970.Base.Core.RegularIntervalSchedule import RegularIntervalSchedule
 
 
 class HydroPumpOpSchedule(RegularIntervalSchedule):

@@ -2,7 +2,7 @@
 from datetime import datetime
 from typing import Any
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Terminal import Terminal
+from IEC61970.Base.Core.Terminal import Terminal
 
 
 class AuxiliaryEquipment:

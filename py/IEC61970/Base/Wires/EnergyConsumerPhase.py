@@ -1,8 +1,8 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ActivePower import ActivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.PerCent import PerCent
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ReactivePower import ReactivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.SinglePhaseKind import SinglePhaseKind
+from IEC61970.Base.Domain.ActivePower import ActivePower
+from IEC61970.Base.Domain.PerCent import PerCent
+from IEC61970.Base.Domain.ReactivePower import ReactivePower
+from IEC61970.Base.Wires.SinglePhaseKind import SinglePhaseKind
 
 
 class EnergyConsumerPhase:

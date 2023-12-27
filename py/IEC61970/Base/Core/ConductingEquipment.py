@@ -6,8 +6,8 @@
 # Created on:      17-Dec-2023 3:43:28 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Equipment import Equipment
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.InfSIPS.ProtectiveActionAdjustment import ProtectiveActionAdjustment
+from IEC61970.Base.Core.Equipment import Equipment
+from IEC61970.InfIEC61970.InfSIPS.ProtectiveActionAdjustment import ProtectiveActionAdjustment
 
 
 class ConductingEquipment(Equipment):

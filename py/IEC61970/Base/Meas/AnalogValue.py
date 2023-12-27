@@ -7,8 +7,8 @@
 # 
 #######################################################
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Meas.MeasurementValue import MeasurementValue
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Meas.AnalogControl import AnalogControl
+from IEC61970.Base.Meas.MeasurementValue import MeasurementValue
+from IEC61970.Base.Meas.AnalogControl import AnalogControl
 
 class AnalogValue(MeasurementValue):
     """AnalogValue represents an analog MeasurementValue.

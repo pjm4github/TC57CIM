@@ -5,7 +5,7 @@
 # Created on:      18-Dec-2023 12:36:20 AM
 # Original author: kdd
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
 
 class LoadResponseCharacteristic(IdentifiedObject):

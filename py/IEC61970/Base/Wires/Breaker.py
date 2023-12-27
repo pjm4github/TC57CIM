@@ -1,7 +1,7 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 from datetime import timedelta
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.ProtectedSwitch import ProtectedSwitch
+from IEC61970.Base.Wires.ProtectedSwitch import ProtectedSwitch
 
 
 class Breaker(ProtectedSwitch):

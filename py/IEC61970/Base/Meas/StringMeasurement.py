@@ -1,4 +1,4 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Meas.Measurement import Measurement
+from IEC61970.Base.Meas.Measurement import Measurement
 
 
 class StringMeasurement(Measurement):

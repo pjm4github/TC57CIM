@@ -1,7 +1,7 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:03:56 2023
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.EquipmentContainer import EquipmentContainer
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Substation import Substation
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Terminal import Terminal
+from IEC61970.Base.Core.EquipmentContainer import EquipmentContainer
+from IEC61970.Base.Core.Substation import Substation
+from IEC61970.Base.Core.Terminal import Terminal
 
 
 class Feeder(EquipmentContainer):

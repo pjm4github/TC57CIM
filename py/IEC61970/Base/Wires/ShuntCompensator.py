@@ -2,16 +2,17 @@
 from datetime import datetime
 from typing import Optional, Union
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Seconds import Seconds
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Voltage import Voltage
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.VoltagePerReactivePower import VoltagePerReactivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.PhaseShuntConnectionKind import PhaseShuntConnectionKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.ShuntCompensatorPhase import ShuntCompensatorPhase
+from IEC61970.Base.Domain.Seconds import Seconds
+from IEC61970.Base.Domain.Voltage import Voltage
+from IEC61970.Base.Domain.VoltagePerReactivePower import VoltagePerReactivePower
+from IEC61970.Base.Wires.PhaseShuntConnectionKind import PhaseShuntConnectionKind
+from IEC61970.Base.Wires.ShuntCompensatorPhase import ShuntCompensatorPhase
 
 
 class ShuntCompensator:
 
     def __init__(self):
+        super().__init__()
         self.a_vr_delay: Optional[Seconds] = Seconds() # Time delay required for the device to be connected or disconnected by AVR
         self.grounded: bool = False # Used for Yn and Zn connections. True if the neutral is solidly grounded.
         self.maximum_sections: Optional[int] = 0 # The maximum number of sections that may be switched in

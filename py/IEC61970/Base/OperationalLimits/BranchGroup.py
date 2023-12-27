@@ -1,10 +1,10 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:39:55 2023
 from datetime import datetime
 from typing import Optional
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ActivePower import ActivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ReactivePower import ReactivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.OperationalLimits.BranchGroupTerminal import BranchGroupTerminal
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Domain.ActivePower import ActivePower
+from IEC61970.Base.Domain.ReactivePower import ReactivePower
+from IEC61970.Base.OperationalLimits.BranchGroupTerminal import BranchGroupTerminal
 
 
 class BranchGroup(IdentifiedObject):

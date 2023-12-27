@@ -1,7 +1,7 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.BaseReading import BaseReading
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.ReadingReasonKind import ReadingReasonKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.ReadingType import ReadingType
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.MeterReading import MeterReading
+from IEC61968.Metering.BaseReading import BaseReading
+from IEC61968.Metering.ReadingReasonKind import ReadingReasonKind
+from IEC61968.Metering.ReadingType import ReadingType
+from IEC61968.Metering.MeterReading import MeterReading
 
 
 class Reading(BaseReading):

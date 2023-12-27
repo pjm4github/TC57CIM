@@ -1,11 +1,11 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:22:57 2023
 from typing import Optional
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.DC.ACDCConverter import ACDCConverter
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.DC.CsOperatingModeKind import CsOperatingModeKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.DC.CsPpccControlKind import CsPpccControlKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.AngleDegrees import AngleDegrees
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.CurrentFlow import CurrentFlow
+from IEC61970.Base.DC.ACDCConverter import ACDCConverter
+from IEC61970.Base.DC.CsOperatingModeKind import CsOperatingModeKind
+from IEC61970.Base.DC.CsPpccControlKind import CsPpccControlKind
+from IEC61970.Base.Domain.AngleDegrees import AngleDegrees
+from IEC61970.Base.Domain.CurrentFlow import CurrentFlow
 
 
 class CsConverter(ACDCConverter):

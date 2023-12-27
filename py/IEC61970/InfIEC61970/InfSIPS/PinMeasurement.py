@@ -7,8 +7,8 @@
 # Original author: sveinols
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Meas.Measurement import Measurement
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.InfSIPS.GateInputPin import GateInputPin
+from IEC61970.Base.Meas.Measurement import Measurement
+from IEC61970.InfIEC61970.InfSIPS.GateInputPin import GateInputPin
 
 class PinMeasurement(GateInputPin):
     """Gate input pin that is associated with a Measurement or a calculation of

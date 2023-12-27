@@ -6,8 +6,8 @@
 # Created on:      17-Dec-2023 11:34:46 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.ConnectivityNodeContainer import ConnectivityNodeContainer
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Core.ConnectivityNodeContainer import ConnectivityNodeContainer
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
 class ConnectivityNode(IdentifiedObject):
     """

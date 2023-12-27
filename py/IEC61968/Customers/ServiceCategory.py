@@ -1,7 +1,7 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.ConfigurationEvent import ConfigurationEvent
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Customers.PricingStructure import PricingStructure
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Customers.ServiceKind import ServiceKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61968.Common.ConfigurationEvent import ConfigurationEvent
+from IEC61968.Customers.PricingStructure import PricingStructure
+from IEC61968.Customers.ServiceKind import ServiceKind
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
 
 ###########################################################

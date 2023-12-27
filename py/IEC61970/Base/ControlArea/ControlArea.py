@@ -1,12 +1,12 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:02:59 2023
 from typing import Optional
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.ControlArea.ControlAreaGeneratingUnit import ControlAreaGeneratingUnit
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.ControlArea.ControlAreaTypeKind import ControlAreaTypeKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.ControlArea.TieFlow import TieFlow
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ActivePower import ActivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.LoadModel.EnergyArea import EnergyArea
+from IEC61970.Base.ControlArea.ControlAreaGeneratingUnit import ControlAreaGeneratingUnit
+from IEC61970.Base.ControlArea.ControlAreaTypeKind import ControlAreaTypeKind
+from IEC61970.Base.ControlArea.TieFlow import TieFlow
+from IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
+from IEC61970.Base.Domain.ActivePower import ActivePower
+from IEC61970.Base.LoadModel.EnergyArea import EnergyArea
 
 
 class ControlArea(PowerSystemResource):

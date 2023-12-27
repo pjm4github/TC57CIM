@@ -6,9 +6,9 @@
 # Created on:      17-Dec-2023 7:58:41 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UnitSymbol import UnitSymbol
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Float import Float
+from IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
+from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
+# from IEC61970.Base.Domain.Float import Float
 
 class AngleDegrees:
     """Measurement of angle in degrees.

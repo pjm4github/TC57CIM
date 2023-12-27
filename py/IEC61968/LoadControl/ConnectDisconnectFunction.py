@@ -1,6 +1,6 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.LoadControl.RemoteConnectDisconnectInfo import RemoteConnectDisconnectInfo
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.EndDeviceFunction import EndDeviceFunction
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.Switch import Switch
+from IEC61968.LoadControl.RemoteConnectDisconnectInfo import RemoteConnectDisconnectInfo
+from IEC61968.Metering.EndDeviceFunction import EndDeviceFunction
+from IEC61970.Base.Wires.Switch import Switch
 
 class ConnectDisconnectFunction(EndDeviceFunction):
     # 	/**

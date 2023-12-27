@@ -13,4 +13,5 @@ class CalculationKind:
     """Categorisation of calculation operation that can be done to Measurement.
     """
     def __init__(self):
+        super().__init__()
         pass

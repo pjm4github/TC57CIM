@@ -7,12 +7,12 @@
 # Original author: sveinols
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.PerCent import PerCent
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Float import Float
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.InfSIPS.ProtectiveActionAdjustmentKind import ProtectiveActionAdjustmentKind
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Boolean import Boolean
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.DC.DCConductingEquipment import DCConductingEquipment
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.InfSIPS.ProtectiveAction import ProtectiveAction
+from IEC61970.Base.Domain.PerCent import PerCent
+# from IEC61970.Base.Domain.Float import Float
+from IEC61970.InfIEC61970.InfSIPS.ProtectiveActionAdjustmentKind import ProtectiveActionAdjustmentKind
+# from IEC61970.Base.Domain.Boolean import Boolean
+from IEC61970.Base.DC.DCConductingEquipment import DCConductingEquipment
+from IEC61970.InfIEC61970.InfSIPS.ProtectiveAction import ProtectiveAction
 
 class ProtectiveActionAdjustment(ProtectiveAction):
     """

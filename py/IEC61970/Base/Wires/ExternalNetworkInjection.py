@@ -2,12 +2,12 @@
 from dataclasses import dataclass
 from typing import Optional, Union
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ActivePower import ActivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ActivePowerPerFrequency import ActivePowerPerFrequency
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.CurrentFlow import CurrentFlow
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.PU import PU
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ReactivePower import ReactivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.RegulatingCondEq import RegulatingCondEq
+from IEC61970.Base.Domain.ActivePower import ActivePower
+from IEC61970.Base.Domain.ActivePowerPerFrequency import ActivePowerPerFrequency
+from IEC61970.Base.Domain.CurrentFlow import CurrentFlow
+from IEC61970.Base.Domain.PU import PU
+from IEC61970.Base.Domain.ReactivePower import ReactivePower
+from IEC61970.Base.Wires.RegulatingCondEq import RegulatingCondEq
 
 
 @dataclass

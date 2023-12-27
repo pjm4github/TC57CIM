@@ -7,11 +7,11 @@
 # Original author: T. Kostic
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ActivePower import ActivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.DateTime import DateTime
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.RealEnergy import RealEnergy
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Seconds import Seconds
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Voltage import Voltage
+from IEC61970.Base.Domain.ActivePower import ActivePower
+from IEC61970.Base.Domain.DateTime import DateTime
+from IEC61970.Base.Domain.RealEnergy import RealEnergy
+from IEC61970.Base.Domain.Seconds import Seconds
+from IEC61970.Base.Domain.Voltage import Voltage
 
 
 class RemoteConnectDisconnectInfo:

@@ -1,9 +1,9 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61968.PaymentMetering.AuxiliaryAccount import AuxiliaryAccount
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.PerCent import PerCent
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Money import Money
+from IEC61968.PaymentMetering.AuxiliaryAccount import AuxiliaryAccount
+from IEC61970.Base.Domain.PerCent import PerCent
+from IEC61970.Base.Domain.Money import Money
 
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Agreement import Agreement
+from IEC61968.Common.Agreement import Agreement
 
 class AuxiliaryAgreement(Agreement):
     

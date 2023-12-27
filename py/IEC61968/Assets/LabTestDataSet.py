@@ -1,8 +1,8 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.AssetTestLab import AssetTestLab
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.ProcedureDataSet import ProcedureDataSet
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.Specimen import Specimen
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.TestReason import TestReason
+from IEC61968.Assets.AssetTestLab import AssetTestLab
+from IEC61968.Assets.ProcedureDataSet import ProcedureDataSet
+from IEC61968.Assets.Specimen import Specimen
+from IEC61968.Assets.TestReason import TestReason
 
 class LabTestDataSet(ProcedureDataSet):
     

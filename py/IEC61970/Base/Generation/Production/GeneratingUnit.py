@@ -6,21 +6,21 @@
 # Created on:      17-Dec-2023 7:48:10 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ActivePower import ActivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Seconds import Seconds
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ActivePowerChangeRate import ActivePowerChangeRate
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.PerCent import PerCent
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Generation.Production.GeneratorControlMode import GeneratorControlMode
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Generation.Production.GeneratorControlSource import GeneratorControlSource
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.PU import PU
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Float import Float
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Generation.Production.Classification import Classification
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Money import Money
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.RotatingMachine import RotatingMachine
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Equipment import Equipment
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Generation.Production.GenUnitOpSchedule import GenUnitOpSchedule
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Generation.Production.GrossToNetActivePowerCurve import GrossToNetActivePowerCurve
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Generation.Production.GenUnitOpCostCurve import GenUnitOpCostCurve
+from IEC61970.Base.Domain.ActivePower import ActivePower
+from IEC61970.Base.Domain.Seconds import Seconds
+from IEC61970.Base.Domain.ActivePowerChangeRate import ActivePowerChangeRate
+from IEC61970.Base.Domain.PerCent import PerCent
+from IEC61970.Base.Generation.Production.GeneratorControlMode import GeneratorControlMode
+from IEC61970.Base.Generation.Production.GeneratorControlSource import GeneratorControlSource
+from IEC61970.Base.Domain.PU import PU
+# from IEC61970.Base.Domain.Float import Float
+from IEC61970.Base.Generation.Production.Classification import Classification
+from IEC61970.Base.Domain.Money import Money
+from IEC61970.Base.Wires.RotatingMachine import RotatingMachine
+from IEC61970.Base.Core.Equipment import Equipment
+from IEC61970.Base.Generation.Production.GenUnitOpSchedule import GenUnitOpSchedule
+from IEC61970.Base.Generation.Production.GrossToNetActivePowerCurve import GrossToNetActivePowerCurve
+from IEC61970.Base.Generation.Production.GenUnitOpCostCurve import GenUnitOpCostCurve
 
 class GeneratingUnit(Equipment):
     """A single or set of synchronous machines for converting mechanical power into

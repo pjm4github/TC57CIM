@@ -1,6 +1,6 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 # Local import
-# from CIM_STD_PYTHON.TC57CIM.IEC61968.AssetInfo import ...
+# from IEC61968.AssetInfo import ...
 from enum import Enum
 
 

@@ -6,7 +6,7 @@
 # Created on:      25-Dec-2023 8:31:55 PM
 # 
 #######################################################
-from IEC61970.Base.Domain.String import String
+
 from IEC61970.Base.Domain.Boolean import Boolean
 from IEC61970.Base.Domain.DateTime import DateTime
 from IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier

@@ -8,8 +8,8 @@
 # */
 
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Generation.Production.GeneratingUnit import GeneratingUnit
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Generation.Production.WindGenUnitKind import WindGenUnitKind
+from IEC61970.Base.Generation.Production.GeneratingUnit import GeneratingUnit
+from IEC61970.Base.Generation.Production.WindGenUnitKind import WindGenUnitKind
 
 
 class WindGeneratingUnit(GeneratingUnit):

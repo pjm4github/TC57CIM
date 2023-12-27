@@ -2,7 +2,7 @@
 from enum import Enum
 from typing import Optional
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.SinglePhaseKind import SinglePhaseKind
+from IEC61970.Base.Wires.SinglePhaseKind import SinglePhaseKind
 
 
 class ShuntCompensatorPhase:

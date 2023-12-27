@@ -1,6 +1,6 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:03:56 2023
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.OperatingParticipant import OperatingParticipant
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
+from IEC61970.Base.Core.OperatingParticipant import OperatingParticipant
+from IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
 
 
 class OperatingShare:

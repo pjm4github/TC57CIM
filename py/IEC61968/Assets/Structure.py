@@ -1,6 +1,6 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.AssetContainer import AssetContainer
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Length import Length
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Voltage import Voltage
+from IEC61968.Assets.AssetContainer import AssetContainer
+from IEC61970.Base.Domain.Length import Length
+from IEC61970.Base.Domain.Voltage import Voltage
 
 
 class Structure(AssetContainer):

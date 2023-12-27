@@ -1,6 +1,6 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:36:32 2023
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Equipment import Equipment
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ActivePower import ActivePower
+from IEC61970.Base.Core.Equipment import Equipment
+from IEC61970.Base.Domain.ActivePower import ActivePower
 
 
 class PowerElectronicsUnit(Equipment):

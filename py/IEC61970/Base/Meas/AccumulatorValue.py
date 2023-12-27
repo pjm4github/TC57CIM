@@ -1,4 +1,4 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Meas.MeasurementValue import MeasurementValue
+from IEC61970.Base.Meas.MeasurementValue import MeasurementValue
 
 
 # AccumulatorValue represents an accumulated (counted) MeasurementValue.

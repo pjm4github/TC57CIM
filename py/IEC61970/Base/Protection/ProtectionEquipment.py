@@ -1,11 +1,11 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.ConductingEquipment import ConductingEquipment
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Equipment import Equipment
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Seconds import Seconds
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UnitSymbol import UnitSymbol
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.ProtectedSwitch import ProtectedSwitch
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.InfSIPS.ProtectiveAction import ProtectiveAction
+from IEC61970.Base.Core.ConductingEquipment import ConductingEquipment
+from IEC61970.Base.Core.Equipment import Equipment
+from IEC61970.Base.Domain.Seconds import Seconds
+from IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
+from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
+from IEC61970.Base.Wires.ProtectedSwitch import ProtectedSwitch
+from IEC61970.InfIEC61970.InfSIPS.ProtectiveAction import ProtectiveAction
 
 
 class ProtectionEquipment(Equipment):

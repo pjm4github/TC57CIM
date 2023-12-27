@@ -1,6 +1,6 @@
 # ServiceLocation.py
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Customers.TroubleTicket import TroubleTicket
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.UsagePoint import UsagePoint
+from IEC61968.Customers.TroubleTicket import TroubleTicket
+from IEC61968.Metering.UsagePoint import UsagePoint
 
 
 class ServiceLocation(WorkLocation):

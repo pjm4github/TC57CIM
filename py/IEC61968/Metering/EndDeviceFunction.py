@@ -6,7 +6,7 @@
 # Created on:      19-Dec-2023 9:29:33 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.AssetFunction import AssetFunction
+from IEC61968.Assets.AssetFunction import AssetFunction
 
 
 class EndDeviceFunction(AssetFunction):

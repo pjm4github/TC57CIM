@@ -6,8 +6,8 @@
 # Created on:      16-Dec-2023 5:41:16 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.ConnectivityNodeContainer import ConnectivityNodeContainer
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Equipment import Equipment
+from IEC61970.Base.Core.ConnectivityNodeContainer import ConnectivityNodeContainer
+from IEC61970.Base.Core.Equipment import Equipment
 
 
 class EquipmentContainer(ConnectivityNodeContainer):

@@ -2,9 +2,9 @@
 from enum import Enum
 from typing import Optional
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.PhaseCode import PhaseCode
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.RegulatingControlModeKind import RegulatingControlModeKind
+from IEC61970.Base.Core.PhaseCode import PhaseCode
+from IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
+from IEC61970.Base.Wires.RegulatingControlModeKind import RegulatingControlModeKind
 
 
 class RegulatingControl:

@@ -1,7 +1,7 @@
 # Meter.py
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.EndDevice import EndDevice
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.MeterMultiplier import MeterMultiplier
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.MeterReading import MeterReading
+from IEC61968.Metering.EndDevice import EndDevice
+from IEC61968.Metering.MeterMultiplier import MeterMultiplier
+from IEC61968.Metering.MeterReading import MeterReading
 
 
 class Meter(EndDevice):

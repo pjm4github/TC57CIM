@@ -1,7 +1,7 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.RealEnergy import RealEnergy
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Currency import Currency
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
+from IEC61970.Base.Domain.RealEnergy import RealEnergy
+from IEC61970.Base.Domain.Currency import Currency
+from IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
 
 
 class AccountingUnit:

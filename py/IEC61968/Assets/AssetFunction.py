@@ -1,5 +1,5 @@
 # AssetFunction.py
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
 
 class AssetFunction(IdentifiedObject):

@@ -6,7 +6,7 @@
 # Created on:      20-Dec-2023 5:41:21 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Document import Document
+from IEC61968.Common.Document import Document
 
 
 class Specification(Document):

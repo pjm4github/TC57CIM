@@ -1,4 +1,4 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.ProcedureDataSet import ProcedureDataSet
+from IEC61968.Assets.ProcedureDataSet import ProcedureDataSet
 
 
 class InspectionDataSet(ProcedureDataSet):

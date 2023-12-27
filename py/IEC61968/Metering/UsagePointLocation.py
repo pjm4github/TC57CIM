@@ -1,5 +1,5 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Location import Location
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.UsagePoint import UsagePoint
+from IEC61968.Common.Location import Location
+from IEC61968.Metering.UsagePoint import UsagePoint
 
 
 class UsagePointLocation(Location):

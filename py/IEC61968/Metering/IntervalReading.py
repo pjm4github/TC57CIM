@@ -1,4 +1,4 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.BaseReading import BaseReading
+from IEC61968.Metering.BaseReading import BaseReading
 
 
 class IntervalReading(BaseReading):

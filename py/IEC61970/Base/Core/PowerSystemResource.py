@@ -6,11 +6,11 @@
 # Created on:      17-Dec-2023 7:21:13 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Meas.Control import Control
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Meas.Measurement import Measurement
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.PSRType import PSRType
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.ConfigurationEvent import ConfigurationEvent
+from IEC61970.Base.Meas.Control import Control
+from IEC61970.Base.Meas.Measurement import Measurement
+from IEC61970.Base.Core.PSRType import PSRType
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61968.Common.ConfigurationEvent import ConfigurationEvent
 
 class PowerSystemResource(IdentifiedObject):
     """

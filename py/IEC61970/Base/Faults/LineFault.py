@@ -1,8 +1,8 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:35:24 2023
 # local import assuming type Length and ACLineSegment are available as Python library
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Length import Length
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Faults import Fault
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.ACLineSegment import ACLineSegment
+from IEC61970.Base.Domain.Length import Length
+from IEC61970.Base.Faults import Fault
+from IEC61970.Base.Wires.ACLineSegment import ACLineSegment
 
 
 class LineFault(Fault):

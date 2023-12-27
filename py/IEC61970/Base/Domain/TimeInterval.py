@@ -2,7 +2,7 @@
 
 from typing import Optional
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Time import Time
+from IEC61970.Base.Domain.Time import Time
 
 
 class TimeInterval:

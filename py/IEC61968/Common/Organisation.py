@@ -1,8 +1,8 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.ElectronicAddress import ElectronicAddress
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.ParentOrganization import ParentOrganization
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.StreetAddress import StreetAddress
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.TelephoneNumber import TelephoneNumber
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61968.Common.ElectronicAddress import ElectronicAddress
+from IEC61968.Common.ParentOrganization import ParentOrganization
+from IEC61968.Common.StreetAddress import StreetAddress
+from IEC61968.Common.TelephoneNumber import TelephoneNumber
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
 
 class Organisation(IdentifiedObject):

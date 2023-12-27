@@ -6,10 +6,10 @@
 # Created on:      17-Dec-2023 7:18:08 PM
 # 
 #######################################################
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Float import Float
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Boolean import Boolean
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.SCADA.RemotePoint import RemotePoint
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Meas.Control import Control
+# from IEC61970.Base.Domain.Float import Float
+# from IEC61970.Base.Domain.Boolean import Boolean
+from IEC61970.Base.SCADA.RemotePoint import RemotePoint
+from IEC61970.Base.Meas.Control import Control
 
 
 class RemoteControl(RemotePoint):

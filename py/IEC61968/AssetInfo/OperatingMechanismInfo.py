@@ -1,8 +1,8 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61968.AssetInfo.OperatingMechanismKind import OperatingMechanismKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.AssetInfo import AssetInfo
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.CurrentFlow import CurrentFlow
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Voltage import Voltage
+from IEC61968.AssetInfo.OperatingMechanismKind import OperatingMechanismKind
+from IEC61968.Assets.AssetInfo import AssetInfo
+from IEC61970.Base.Domain.CurrentFlow import CurrentFlow
+from IEC61970.Base.Domain.Voltage import Voltage
 
 class OperatingMechanismInfo(AssetInfo):
 

@@ -6,7 +6,7 @@
 # Created on:      17-Dec-2023 11:35:02 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
+from IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
 
 class ConnectivityNodeContainer(PowerSystemResource):
     """

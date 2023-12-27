@@ -8,14 +8,14 @@
 #######################################################
 
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Length import Length
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Status import Status
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfWork.MiscCostItem import MiscCostItem
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfWork.DesignLocationCU import DesignLocationCU
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfWork.Design import Design
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfWork.WorkIdentifiedObject import WorkIdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfWork.ConditionFactor import ConditionFactor
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Work.WorkLocation import WorkLocation
+from IEC61970.Base.Domain.Length import Length
+from IEC61968.Common.Status import Status
+from IEC61968.InfIEC61968.InfWork.MiscCostItem import MiscCostItem
+from IEC61968.InfIEC61968.InfWork.DesignLocationCU import DesignLocationCU
+from IEC61968.InfIEC61968.InfWork.Design import Design
+from IEC61968.InfIEC61968.InfWork.WorkIdentifiedObject import WorkIdentifiedObject
+from IEC61968.InfIEC61968.InfWork.ConditionFactor import ConditionFactor
+from IEC61968.Work.WorkLocation import WorkLocation
 
 class DesignLocation(WorkIdentifiedObject):
     """A logical part of the design (e.g., pole and all equipment on a pole). This

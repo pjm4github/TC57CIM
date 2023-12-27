@@ -1,10 +1,10 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 from typing import Optional
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Reactance import Reactance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Resistance import Resistance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Voltage import Voltage
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.RegulatingControl import RegulatingControl
+from IEC61970.Base.Domain.Reactance import Reactance
+from IEC61970.Base.Domain.Resistance import Resistance
+from IEC61970.Base.Domain.Voltage import Voltage
+from IEC61970.Base.Wires.RegulatingControl import RegulatingControl
 
 
 class TapChangerControl(RegulatingControl):

@@ -6,13 +6,13 @@
 # Created on:      19-Dec-2023 11:02:34 AM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Length import Length
-from CIM_STD_PYTHON.TC57CIM.IEC61968.AssetInfo.WireInsulationKind import WireInsulationKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.AssetInfo.WireMaterialKind import WireMaterialKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ResistancePerLength import ResistancePerLength
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.CurrentFlow import CurrentFlow
-from CIM_STD_PYTHON.TC57CIM.IEC61968.AssetInfo.WirePhaseInfo import WirePhaseInfo
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.AssetInfo import AssetInfo
+from IEC61970.Base.Domain.Length import Length
+from IEC61968.AssetInfo.WireInsulationKind import WireInsulationKind
+from IEC61968.AssetInfo.WireMaterialKind import WireMaterialKind
+from IEC61970.Base.Domain.ResistancePerLength import ResistancePerLength
+from IEC61970.Base.Domain.CurrentFlow import CurrentFlow
+from IEC61968.AssetInfo.WirePhaseInfo import WirePhaseInfo
+from IEC61968.Assets.AssetInfo import AssetInfo
 
 class WireInfo(AssetInfo):
     """Wire data that can be specified per line segment phase, or for the line segment

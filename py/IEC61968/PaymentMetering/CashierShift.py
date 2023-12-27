@@ -1,9 +1,9 @@
 # CashierShift.py
-from CIM_STD_PYTHON.TC57CIM.IEC61968.PaymentMetering.PointOfSale import PointOfSale
-from CIM_STD_PYTHON.TC57CIM.IEC61968.PaymentMetering.Receipt import Receipt
-from CIM_STD_PYTHON.TC57CIM.IEC61968.PaymentMetering.Shift import Shift
-from CIM_STD_PYTHON.TC57CIM.IEC61968.PaymentMetering.Transaction import Transaction
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Money import Money
+from IEC61968.PaymentMetering.PointOfSale import PointOfSale
+from IEC61968.PaymentMetering.Receipt import Receipt
+from IEC61968.PaymentMetering.Shift import Shift
+from IEC61968.PaymentMetering.Transaction import Transaction
+from IEC61970.Base.Domain.Money import Money
 
 
 class CashierShift(Shift):

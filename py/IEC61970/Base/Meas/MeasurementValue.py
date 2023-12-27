@@ -6,12 +6,12 @@
 # Created on:      17-Dec-2023 7:08:03 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.PerCent import PerCent
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.DateTime import DateTime
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.SCADA.RemoteSource import RemoteSource
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Meas.IOPoint import IOPoint
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.SCADA_EMS.Meas.MeasurementValueExt import MeasurementValueExt
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Meas.MeasurementValueQuality import MeasurementValueQuality
+from IEC61970.Base.Domain.PerCent import PerCent
+from IEC61970.Base.Domain.DateTime import DateTime
+from IEC61970.Base.SCADA.RemoteSource import RemoteSource
+from IEC61970.Base.Meas.IOPoint import IOPoint
+from IEC61970.InfIEC61970.SCADA_EMS.Meas.MeasurementValueExt import MeasurementValueExt
+from IEC61970.Base.Meas.MeasurementValueQuality import MeasurementValueQuality
 
 class MeasurementValue(IOPoint, MeasurementValueExt):
     """

@@ -1,10 +1,10 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Conductance import Conductance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Reactance import Reactance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Resistance import Resistance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Susceptance import Susceptance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Temperature import Temperature
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.Clamp import Clamp
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.Conductor import Conductor
+from IEC61970.Base.Domain.Conductance import Conductance
+from IEC61970.Base.Domain.Reactance import Reactance
+from IEC61970.Base.Domain.Resistance import Resistance
+from IEC61970.Base.Domain.Susceptance import Susceptance
+from IEC61970.Base.Domain.Temperature import Temperature
+from IEC61970.Base.Wires.Clamp import Clamp
+from IEC61970.Base.Wires.Conductor import Conductor
 
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 16:45:14 2023
 from typing import Optional

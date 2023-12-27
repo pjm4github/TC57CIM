@@ -7,7 +7,7 @@
 # 
 #######################################################
 
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.AssetContainer import AssetContainer
+from IEC61968.Assets.AssetContainer import AssetContainer
 
 class DuctBank(AssetContainer):
     """A duct contains individual wires in the layout as specified with associated

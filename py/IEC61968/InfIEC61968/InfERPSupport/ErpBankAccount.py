@@ -7,7 +7,7 @@
 # 
 #######################################################
 
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfCommon.BankAccount import BankAccount
+from IEC61968.InfIEC61968.InfCommon.BankAccount import BankAccount
 
 class ErpBankAccount(BankAccount):
     """Relationship under a particular name, usually evidenced by a deposit against

@@ -1,6 +1,6 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.CurrentFlow import CurrentFlow
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.Switch import Switch
+from IEC61970.Base.Domain.CurrentFlow import CurrentFlow
+from IEC61970.Base.Wires.Switch import Switch
 
 
 class RecloseSequence:

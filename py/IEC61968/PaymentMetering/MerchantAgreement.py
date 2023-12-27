@@ -1,6 +1,6 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Agreement import Agreement
-from CIM_STD_PYTHON.TC57CIM.IEC61968.PaymentMetering.MerchantAccount import MerchantAccount
+from IEC61968.Common.Agreement import Agreement
+from IEC61968.PaymentMetering.MerchantAccount import MerchantAccount
 
 
 class MerchantAgreement(Agreement):

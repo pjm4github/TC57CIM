@@ -1,9 +1,9 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.ConfigurationEvent import ConfigurationEvent
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.PhaseCode import PhaseCode
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ActivePower import ActivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.CurrentFlow import CurrentFlow
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Voltage import Voltage
+from IEC61968.Common.ConfigurationEvent import ConfigurationEvent
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Core.PhaseCode import PhaseCode
+from IEC61970.Base.Domain.ActivePower import ActivePower
+from IEC61970.Base.Domain.CurrentFlow import CurrentFlow
+from IEC61970.Base.Domain.Voltage import Voltage
 
 
 class UsagePoint(IdentifiedObject):

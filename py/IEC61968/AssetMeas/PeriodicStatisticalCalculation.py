@@ -1,6 +1,6 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61968.AssetMeas.CalculationIntervalUnitKind import CalculationIntervalUnitKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.AssetMeas.StatisticalCalculation import StatisticalCalculation
+from IEC61968.AssetMeas.CalculationIntervalUnitKind import CalculationIntervalUnitKind
+from IEC61968.AssetMeas.StatisticalCalculation import StatisticalCalculation
 
 
 class PeriodicStatisticalCalculation(StatisticalCalculation):

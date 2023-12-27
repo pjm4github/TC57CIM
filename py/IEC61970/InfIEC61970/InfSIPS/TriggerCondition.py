@@ -7,9 +7,9 @@
 # Original author: sveinols
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.InfSIPS.RemedialActionScheme import RemedialActionScheme
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.InfSIPS.Gate import Gate
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.InfIEC61970.InfSIPS.RemedialActionScheme import RemedialActionScheme
+from IEC61970.InfIEC61970.InfSIPS.Gate import Gate
 
 class TriggerCondition(IdentifiedObject):
     """

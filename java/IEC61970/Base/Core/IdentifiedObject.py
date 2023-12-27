@@ -6,7 +6,7 @@
 # Created on:      25-Dec-2023 8:31:59 PM
 # 
 #######################################################
-from IEC61970.Base.Domain.String import String
+
 from IEC61970.Base.DiagramLayout.DiagramObject import DiagramObject
 
 class IdentifiedObject:

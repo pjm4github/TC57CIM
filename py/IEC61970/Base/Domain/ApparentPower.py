@@ -6,9 +6,9 @@
 # Created on:      17-Dec-2023 7:53:18 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UncefactUnitCode import UncefactUnitCode
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UnitSymbol import UnitSymbol
+from IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
+from IEC61970.Base.Domain.UncefactUnitCode import UncefactUnitCode
+from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 
 class ApparentPower:
     """Product of the RMS value of the voltage and the RMS value of the current.

@@ -6,9 +6,9 @@
 # Created on:      17-Dec-2023 7:18:52 PM
 # 
 #######################################################
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Float import Float
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Seconds import Seconds
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.SCADA.RemotePoint import RemotePoint
+# from IEC61970.Base.Domain.Float import Float
+from IEC61970.Base.Domain.Seconds import Seconds
+from IEC61970.Base.SCADA.RemotePoint import RemotePoint
 
 class RemoteSource(RemotePoint):
     """Remote sources are state variables that are telemetered or calculated within

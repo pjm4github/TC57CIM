@@ -1,9 +1,9 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 from typing import Any
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Susceptance import Susceptance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.NonlinearShuntCompensatorPhasePoint import Conductance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.ShuntCompensator import ShuntCompensator
+from IEC61970.Base.Domain.Susceptance import Susceptance
+from IEC61970.Base.Wires.NonlinearShuntCompensatorPhasePoint import Conductance
+from IEC61970.Base.Wires.ShuntCompensator import ShuntCompensator
 
 
 class LinearShuntCompensator(ShuntCompensator):

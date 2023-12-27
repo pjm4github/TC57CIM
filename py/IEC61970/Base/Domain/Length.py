@@ -6,8 +6,8 @@
 # Created on:      16-Dec-2023 11:12:20 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UnitSymbol import UnitSymbol
+from IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
+from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 
 
 class Length:
@@ -15,6 +15,6 @@ class Length:
     """
     unit = UnitSymbol.M
 
-    def __init__(self) -> None:
+    def __init__(self, value=None) -> None:
         self.multiplier: UnitMultiplier = UnitMultiplier.none
-        self.value: float = 0.0
+        self.value: float = 0.0 if not value else value

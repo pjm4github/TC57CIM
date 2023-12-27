@@ -8,7 +8,7 @@
 #######################################################
 from IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
 from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
-from IEC61970.Base.Domain.String import String
+
 
 class StringQuantity:
     """Quantity with string value (when it is not important whether it is an integral

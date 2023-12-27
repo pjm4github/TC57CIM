@@ -6,14 +6,14 @@
 # Created on:      17-Dec-2023 11:27:47 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ActivePower import ActivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ReactivePower import ReactivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.ReportingGroup import ReportingGroup
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.ConnectivityNodeContainer import ConnectivityNodeContainer
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.BaseVoltage import BaseVoltage
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.ConnectivityNode import ConnectivityNode
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Terminal import Terminal
+from IEC61970.Base.Domain.ActivePower import ActivePower
+from IEC61970.Base.Domain.ReactivePower import ReactivePower
+from IEC61970.Base.Core.ReportingGroup import ReportingGroup
+from IEC61970.Base.Core.ConnectivityNodeContainer import ConnectivityNodeContainer
+from IEC61970.Base.Core.BaseVoltage import BaseVoltage
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Core.ConnectivityNode import ConnectivityNode
+from IEC61970.Base.Core.Terminal import Terminal
 
 class TopologicalNode(IdentifiedObject):
     """For a detailed substation model a topological node is a set of connectivity

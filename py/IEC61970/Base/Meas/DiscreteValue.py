@@ -1,5 +1,5 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Meas.Command import Command
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Meas.MeasurementValue import MeasurementValue
+from IEC61970.Base.Meas.Command import Command
+from IEC61970.Base.Meas.MeasurementValue import MeasurementValue
 
 
 class DiscreteValue(MeasurementValue):

@@ -1,7 +1,7 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.IntervalReading import IntervalReading
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.MeterReading import MeterReading
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.PendingCalculation import PendingCalculation
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.ReadingType import ReadingType
+from IEC61968.Metering.IntervalReading import IntervalReading
+from IEC61968.Metering.MeterReading import MeterReading
+from IEC61968.Metering.PendingCalculation import PendingCalculation
+from IEC61968.Metering.ReadingType import ReadingType
 
 
 class IntervalBlock:

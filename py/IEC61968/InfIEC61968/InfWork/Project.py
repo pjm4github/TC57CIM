@@ -6,7 +6,7 @@
 # Created on:      19-Dec-2023 8:45:01 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfWork.WorkDocument import WorkDocument
+from IEC61968.InfIEC61968.InfWork.WorkDocument import WorkDocument
 
 
 class Project(WorkDocument):

@@ -6,8 +6,8 @@
 # Created on:      19-Dec-2023 2:11:56 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Status import Status
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61968.Common.Status import Status
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
 
 class TypeAssetCatalogue(IdentifiedObject):

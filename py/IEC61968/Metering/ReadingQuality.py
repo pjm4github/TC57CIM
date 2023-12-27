@@ -1,6 +1,6 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.DateTime import DateTime
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.BaseReading import BaseReading
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.ReadingQualityType import ReadingQualityType
+from IEC61970.Base.Domain.DateTime import DateTime
+from IEC61968.Metering.BaseReading import BaseReading
+from IEC61968.Metering.ReadingQualityType import ReadingQualityType
 
 
 class ReadingQuality:

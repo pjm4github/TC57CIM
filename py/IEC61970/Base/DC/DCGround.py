@@ -1,6 +1,6 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.DC import DCConductingEquipment
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Inductance import Inductance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Resistance import Resistance
+from IEC61970.Base.DC import DCConductingEquipment
+from IEC61970.Base.Domain.Inductance import Inductance
+from IEC61970.Base.Domain.Resistance import Resistance
 
 
 class DCGround(DCConductingEquipment):

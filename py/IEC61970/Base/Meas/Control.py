@@ -6,12 +6,12 @@
 # Created on:      17-Dec-2023 7:23:14 PM
 # 
 #######################################################
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.String import String
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Boolean import Boolean
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.DateTime import DateTime
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UnitSymbol import UnitSymbol
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Meas.IOPoint import IOPoint
+# from IEC61970.Base.Domain.String import String
+# from IEC61970.Base.Domain.Boolean import Boolean
+from IEC61970.Base.Domain.DateTime import DateTime
+from IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
+from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
+from IEC61970.Base.Meas.IOPoint import IOPoint
 
 class Control(IOPoint):
     """Control is used for supervisory/device control. It represents control outputs

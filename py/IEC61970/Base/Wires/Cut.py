@@ -1,8 +1,8 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Length import Length
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.ACLineSegment import ACLineSegment
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.Switch import Switch
+from IEC61970.Base.Domain.Length import Length
+from IEC61970.Base.Wires.ACLineSegment import ACLineSegment
+from IEC61970.Base.Wires.Switch import Switch
 
 
 class Cut(Switch):

@@ -84,7 +84,7 @@ MAX_TOKENS = 10000  # Maximum number of tokens that can be used with the OPENAI 
 
 if __name__ == "__main__":
 
-    subdir = """/Documents/Git/GitHub/TC57CIM/IEC61968/Common/"""
+    subdir = """/Documents/Git/GitHub/TC57CIM/py/IEC62325/MarketOperations/ReferenceData/"""
     directory_path = f"{os.path.expanduser('~')}{subdir}"
     directory_path += '/' if not directory_path.endswith('/') else ""
     try:

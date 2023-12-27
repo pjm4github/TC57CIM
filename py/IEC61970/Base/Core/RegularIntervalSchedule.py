@@ -6,10 +6,10 @@
 # Created on:      17-Dec-2023 10:03:16 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.DateTime import DateTime
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Seconds import Seconds
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.RegularTimePoint import RegularTimePoint
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.BasicIntervalSchedule import BasicIntervalSchedule
+from IEC61970.Base.Domain.DateTime import DateTime
+from IEC61970.Base.Domain.Seconds import Seconds
+from IEC61970.Base.Core.RegularTimePoint import RegularTimePoint
+from IEC61970.Base.Core.BasicIntervalSchedule import BasicIntervalSchedule
 
 class RegularIntervalSchedule(BasicIntervalSchedule):
     """

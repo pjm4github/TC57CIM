@@ -1,7 +1,7 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:22:57 2023
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.DC.ACDCConverter import ACDCConverter
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.DC.DCPolarityKind import DCPolarityKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.DC.DCBaseTerminal import DCBaseTerminal
+from IEC61970.Base.DC.ACDCConverter import ACDCConverter
+from IEC61970.Base.DC.DCPolarityKind import DCPolarityKind
+from IEC61970.Base.DC.DCBaseTerminal import DCBaseTerminal
 
 
 class AcdcConverterDcTerminal(DCBaseTerminal):

@@ -2,11 +2,11 @@
 from datetime import datetime
 from typing import Any
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.ICCPConfiguration.ICCPAccessPrivilegeKind import IccpAccessPrivilegeKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.ICCPConfiguration.ICCPPointKind import IccpPointKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.ICCPConfiguration.ICCPQualityKind import IccpQualityKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.ICCPConfiguration.ICCPScope import IccpScope
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.ICCPConfiguration.ProvidedBilateralPoint import ProvidedBilateralPoint
+from IEC61970.Base.ICCPConfiguration.ICCPAccessPrivilegeKind import IccpAccessPrivilegeKind
+from IEC61970.Base.ICCPConfiguration.ICCPPointKind import IccpPointKind
+from IEC61970.Base.ICCPConfiguration.ICCPQualityKind import IccpQualityKind
+from IEC61970.Base.ICCPConfiguration.ICCPScope import IccpScope
+from IEC61970.Base.ICCPConfiguration.ProvidedBilateralPoint import ProvidedBilateralPoint
 
 
 class IccpProvidedPoint(ProvidedBilateralPoint):

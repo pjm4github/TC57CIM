@@ -1,10 +1,10 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:41:01 2023
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ActivePower import ActivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ReactivePower import ReactivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.StateVariables.StateVariable import StateVariable
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.StateVariables.SvVoltage import SinglePhaseKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Topology.TopologicalNode import TopologicalNode
+from IEC61970.Base.Domain.ActivePower import ActivePower
+from IEC61970.Base.Domain.ReactivePower import ReactivePower
+from IEC61970.Base.StateVariables.StateVariable import StateVariable
+from IEC61970.Base.StateVariables.SvVoltage import SinglePhaseKind
+from IEC61970.Base.Topology.TopologicalNode import TopologicalNode
 
 
 class SvInjection(StateVariable):

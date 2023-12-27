@@ -7,11 +7,11 @@
 # Original author: selaost1
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ActivePower import ActivePower
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Float import Float
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.EnergyArea.EnergyAreaTypeKind import EnergyAreaTypeKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.EnergyArea.EnergySchedulingAreaBoundary import EnergySchedulingAreaBoundary
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
+from IEC61970.Base.Domain.ActivePower import ActivePower
+# from IEC61970.Base.Domain.Float import Float
+from IEC61970.InfIEC61970.EnergyArea.EnergyAreaTypeKind import EnergyAreaTypeKind
+from IEC61970.InfIEC61970.EnergyArea.EnergySchedulingAreaBoundary import EnergySchedulingAreaBoundary
+from IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
 
 
 class EnergySchedulingArea(PowerSystemResource):

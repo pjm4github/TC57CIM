@@ -4,12 +4,12 @@ from typing import Any, Optional
 
 from openpyxl.pivot.table import Location
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Equipment import Equipment
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.PhaseCode import PhaseCode
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Faults.FaultCauseType import FaultCauseType
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Faults.FaultImpedance import FaultImpedance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Faults.PhaseConnectedFaultKind import PhaseConnectedFaultKind
+from IEC61970.Base.Core.Equipment import Equipment
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Core.PhaseCode import PhaseCode
+from IEC61970.Base.Faults.FaultCauseType import FaultCauseType
+from IEC61970.Base.Faults.FaultImpedance import FaultImpedance
+from IEC61970.Base.Faults.PhaseConnectedFaultKind import PhaseConnectedFaultKind
 
 
 class Fault(IdentifiedObject):

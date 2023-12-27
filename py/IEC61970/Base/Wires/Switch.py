@@ -2,10 +2,10 @@
 from datetime import datetime
 from typing import Optional
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.ConductingEquipment import ConductingEquipment
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.CurrentFlow import CurrentFlow
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.SwitchPhase import SwitchPhase
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.SwitchSchedule import SwitchSchedule
+from IEC61970.Base.Core.ConductingEquipment import ConductingEquipment
+from IEC61970.Base.Domain.CurrentFlow import CurrentFlow
+from IEC61970.Base.Wires.SwitchPhase import SwitchPhase
+from IEC61970.Base.Wires.SwitchSchedule import SwitchSchedule
 
 
 class Switch(ConductingEquipment):

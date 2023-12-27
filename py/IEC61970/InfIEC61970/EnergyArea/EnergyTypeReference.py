@@ -7,8 +7,8 @@
 # Original author: selaost1
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.EnergyArea.EnergyTypeKind import EnergyTypeKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.InfIEC61970.EnergyArea.EnergyTypeKind import EnergyTypeKind
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
 class EnergyTypeReference(IdentifiedObject):
 

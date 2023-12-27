@@ -1,12 +1,12 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.EndDevice import EndDevice
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.EndDeviceAction import EndDeviceAction
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.EndDeviceControlType import EndDeviceControlType
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.EndDeviceTiming import EndDeviceTiming
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.UsagePoint import UsagePoint
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.UsagePointGroup import UsagePointGroup
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.DateTimeInterval import DateTimeInterval
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.FloatQuantity import FloatQuantity
+from IEC61968.Metering.EndDevice import EndDevice
+from IEC61968.Metering.EndDeviceAction import EndDeviceAction
+from IEC61968.Metering.EndDeviceControlType import EndDeviceControlType
+from IEC61968.Metering.EndDeviceTiming import EndDeviceTiming
+from IEC61968.Metering.UsagePoint import UsagePoint
+from IEC61968.Metering.UsagePointGroup import UsagePointGroup
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Domain.DateTimeInterval import DateTimeInterval
+from IEC61970.Base.Domain.FloatQuantity import FloatQuantity
 
 
 class EndDeviceControl(IdentifiedObject):

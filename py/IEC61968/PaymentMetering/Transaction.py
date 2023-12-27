@@ -1,9 +1,9 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.Meter import Meter
-from CIM_STD_PYTHON.TC57CIM.IEC61968.PaymentMetering.LineDetail import LineDetail
-from CIM_STD_PYTHON.TC57CIM.IEC61968.PaymentMetering.TransactionKind import TransactionKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.RealEnergy import RealEnergy
+from IEC61968.Metering.Meter import Meter
+from IEC61968.PaymentMetering.LineDetail import LineDetail
+from IEC61968.PaymentMetering.TransactionKind import TransactionKind
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Domain.RealEnergy import RealEnergy
 
 
 class Transaction(IdentifiedObject):

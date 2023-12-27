@@ -1,8 +1,8 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Document import Document
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Customers.AccountNotification import AccountNotification
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Customers.CustomerAgreement import CustomerAgreement
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfERPSupport.ErpInvoice import ErpInvoice
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Money import Money
+from IEC61968.Common.Document import Document
+from IEC61968.Customers.AccountNotification import AccountNotification
+from IEC61968.Customers.CustomerAgreement import CustomerAgreement
+from IEC61968.InfIEC61968.InfERPSupport.ErpInvoice import ErpInvoice
+from IEC61970.Base.Domain.Money import Money
 
 
 class CustomerAccount(Document):

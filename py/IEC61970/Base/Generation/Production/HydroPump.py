@@ -6,10 +6,10 @@
 # Created on:      18-Dec-2023 1:19:17 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.VolumeFlowRate import VolumeFlowRate
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ActivePower import ActivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Equipment import Equipment
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Generation.Production.HydroPumpOpSchedule import HydroPumpOpSchedule
+from IEC61970.Base.Domain.VolumeFlowRate import VolumeFlowRate
+from IEC61970.Base.Domain.ActivePower import ActivePower
+from IEC61970.Base.Core.Equipment import Equipment
+from IEC61970.Base.Generation.Production.HydroPumpOpSchedule import HydroPumpOpSchedule
 
 class HydroPump(Equipment):
     """A synchronous motor-driven pump, typically associated with a pumped storage

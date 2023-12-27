@@ -2,20 +2,20 @@
 from datetime import timedelta
 from typing import Optional
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ActivePower import ActivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.CurrentFlow import CurrentFlow
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.PU import PU
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.PerCent import PerCent
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Reactance import Reactance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ReactivePower import ReactivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Resistance import Resistance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Seconds import Seconds
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Voltage import Voltage
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.CoolantType import CoolantType
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.RotatingMachine import RotatingMachine
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.ShortCircuitRotorKind import ShortCircuitRotorKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.SynchronousMachineKind import SynchronousMachineKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.SynchronousMachineOperatingMode import SynchronousMachineOperatingMode
+from IEC61970.Base.Domain.ActivePower import ActivePower
+from IEC61970.Base.Domain.CurrentFlow import CurrentFlow
+from IEC61970.Base.Domain.PU import PU
+from IEC61970.Base.Domain.PerCent import PerCent
+from IEC61970.Base.Domain.Reactance import Reactance
+from IEC61970.Base.Domain.ReactivePower import ReactivePower
+from IEC61970.Base.Domain.Resistance import Resistance
+from IEC61970.Base.Domain.Seconds import Seconds
+from IEC61970.Base.Domain.Voltage import Voltage
+from IEC61970.Base.Wires.CoolantType import CoolantType
+from IEC61970.Base.Wires.RotatingMachine import RotatingMachine
+from IEC61970.Base.Wires.ShortCircuitRotorKind import ShortCircuitRotorKind
+from IEC61970.Base.Wires.SynchronousMachineKind import SynchronousMachineKind
+from IEC61970.Base.Wires.SynchronousMachineOperatingMode import SynchronousMachineOperatingMode
 
 
 class SynchronousMachine(RotatingMachine):

@@ -1,9 +1,9 @@
 # EndDevice.py
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.AssetContainer import AssetContainer
-from CIM_STD_PYTHON.TC57CIM.IEC61968.DER.DispatchablePowerCapability import DispatchablePowerCapability
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.EndDeviceFunction import EndDeviceFunction
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.EndDeviceInfo import EndDeviceInfo
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Minutes import Minutes
+from IEC61968.Assets.AssetContainer import AssetContainer
+from IEC61968.DER.DispatchablePowerCapability import DispatchablePowerCapability
+from IEC61968.Metering.EndDeviceFunction import EndDeviceFunction
+from IEC61968.Metering.EndDeviceInfo import EndDeviceInfo
+from IEC61970.Base.Domain.Minutes import Minutes
 
 
 class EndDevice(AssetContainer):

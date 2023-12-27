@@ -1,7 +1,7 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.PhaseCode import PhaseCode
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.TransformerEnd import TransformerEnd
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.TransformerTank import TransformerTank
+from IEC61970.Base.Core.PhaseCode import PhaseCode
+from IEC61970.Base.Wires.TransformerEnd import TransformerEnd
+from IEC61970.Base.Wires.TransformerTank import TransformerTank
 
 
 class TransformerTankEnd(TransformerEnd):

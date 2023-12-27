@@ -7,10 +7,10 @@
 # Original author: selaost1
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ActivePower import ActivePower
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Integer import Integer
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.EnergyArea.BlockDispatchComponent import BlockDispatchComponent
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Domain.ActivePower import ActivePower
+# from IEC61970.Base.Domain.Integer import Integer
+from IEC61970.InfIEC61970.EnergyArea.BlockDispatchComponent import BlockDispatchComponent
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
 class BlockDispatchOrder(IdentifiedObject):
 

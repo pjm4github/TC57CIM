@@ -7,10 +7,10 @@
 # Original author: T. Kostic
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.DateTime import DateTime
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.String import String
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Faults.FaultCauseType import FaultCauseType
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.ActivityRecord import ActivityRecord
+from IEC61970.Base.Domain.DateTime import DateTime
+# from IEC61970.Base.Domain.String import String
+from IEC61970.Base.Faults.FaultCauseType import FaultCauseType
+from IEC61968.Common.ActivityRecord import ActivityRecord
 
 class ConfigurationEvent(ActivityRecord):
     """Used to report details on creation, change or deletion of an entity or its

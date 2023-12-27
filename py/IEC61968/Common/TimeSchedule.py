@@ -6,10 +6,10 @@
 # Created on:      19-Dec-2023 8:55:25 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Document import Document
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.TimePoint import TimePoint
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.DateTimeInterval import DateTimeInterval
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Seconds import Seconds
+from IEC61968.Common.Document import Document
+from IEC61968.Common.TimePoint import TimePoint
+from IEC61970.Base.Domain.DateTimeInterval import DateTimeInterval
+from IEC61970.Base.Domain.Seconds import Seconds
 
 
 class TimeSchedule(Document):

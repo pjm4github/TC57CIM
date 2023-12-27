@@ -7,7 +7,7 @@
 # 
 #######################################################
 from IEC61970.Base.Domain.DateTime import DateTime
-from IEC61970.Base.Domain.String import String
+
 
 class Status:
     """Current status information relevant to an entity.

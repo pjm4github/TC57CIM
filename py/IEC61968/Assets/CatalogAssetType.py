@@ -1,9 +1,9 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.AssetKind import AssetKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfERPSupport.ErpBomItemData import ErpBomItemData
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfERPSupport.ErpReqLineItem import ErpReqLineItem
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfTypeAsset.TypeAssetCatalogue import TypeAssetCatalogue
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Money import Money
+from IEC61968.Assets.AssetKind import AssetKind
+from IEC61968.InfIEC61968.InfERPSupport.ErpBomItemData import ErpBomItemData
+from IEC61968.InfIEC61968.InfERPSupport.ErpReqLineItem import ErpReqLineItem
+from IEC61968.InfIEC61968.InfTypeAsset.TypeAssetCatalogue import TypeAssetCatalogue
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Domain.Money import Money
 
 
 class CatalogAssetType(IdentifiedObject):

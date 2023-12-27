@@ -1,15 +1,15 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:22:57 2023
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.DC.ACDCConverter import ACDCConverter
+from IEC61970.Base.DC.ACDCConverter import ACDCConverter
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.DC.VsCapabilityCurve import VsCapabilityCurve
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.DC.VsPpccControlKind import VsPpccControlKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.DC.VsQpccControlKind import VsQpccControlKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.AngleDegrees import AngleDegrees
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.CurrentFlow import CurrentFlow
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.PerCent import PerCent
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ReactivePower import ReactivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Resistance import Resistance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Voltage import Voltage
+from IEC61970.Base.DC.VsCapabilityCurve import VsCapabilityCurve
+from IEC61970.Base.DC.VsPpccControlKind import VsPpccControlKind
+from IEC61970.Base.DC.VsQpccControlKind import VsQpccControlKind
+from IEC61970.Base.Domain.AngleDegrees import AngleDegrees
+from IEC61970.Base.Domain.CurrentFlow import CurrentFlow
+from IEC61970.Base.Domain.PerCent import PerCent
+from IEC61970.Base.Domain.ReactivePower import ReactivePower
+from IEC61970.Base.Domain.Resistance import Resistance
+from IEC61970.Base.Domain.Voltage import Voltage
 
 
 class VsConverter(ACDCConverter):

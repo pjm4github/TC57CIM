@@ -1,12 +1,12 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 from typing import Any, Optional
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Reactance import Reactance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ReactivePower import ReactivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Voltage import Voltage
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.VoltagePerReactivePower import VoltagePerReactivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.RegulatingCondEq import RegulatingCondEq
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.SVCControlMode import SVCControlMode
+from IEC61970.Base.Domain.Reactance import Reactance
+from IEC61970.Base.Domain.ReactivePower import ReactivePower
+from IEC61970.Base.Domain.Voltage import Voltage
+from IEC61970.Base.Domain.VoltagePerReactivePower import VoltagePerReactivePower
+from IEC61970.Base.Wires.RegulatingCondEq import RegulatingCondEq
+from IEC61970.Base.Wires.SVCControlMode import SVCControlMode
 
 
 class StaticVarCompensator(RegulatingCondEq):

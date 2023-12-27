@@ -1,11 +1,11 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 from typing import Any
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Length import Length
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Reactance import Reactance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Resistance import Resistance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Susceptance import Susceptance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.NonlinearShuntCompensatorPhasePoint import Conductance
+from IEC61970.Base.Domain.Length import Length
+from IEC61970.Base.Domain.Reactance import Reactance
+from IEC61970.Base.Domain.Resistance import Resistance
+from IEC61970.Base.Domain.Susceptance import Susceptance
+from IEC61970.Base.Wires.NonlinearShuntCompensatorPhasePoint import Conductance
 
 
 class MutualCoupling:

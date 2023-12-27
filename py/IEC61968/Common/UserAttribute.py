@@ -1,8 +1,8 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.ProcedureDataSet import ProcedureDataSet
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfAssets.Specification import Specification
-from CIM_STD_PYTHON.TC57CIM.IEC61968.PaymentMetering.Transaction import Transaction
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.StringQuantity import StringQuantity
+from IEC61968.Assets.ProcedureDataSet import ProcedureDataSet
+from IEC61968.InfIEC61968.InfAssets.Specification import Specification
+from IEC61968.PaymentMetering.Transaction import Transaction
+from IEC61970.Base.Domain.StringQuantity import StringQuantity
 
 
 class UserAttribute:

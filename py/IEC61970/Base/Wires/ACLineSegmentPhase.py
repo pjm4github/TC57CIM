@@ -1,5 +1,5 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.StateVariables.SvVoltage import SinglePhaseKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.ACLineSegment import ACLineSegment
+from IEC61970.Base.StateVariables.SvVoltage import SinglePhaseKind
+from IEC61970.Base.Wires.ACLineSegment import ACLineSegment
 
 
 class ACLineSegmentPhase:

@@ -7,13 +7,13 @@
 # Original author: T. Kostic
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Document import Document
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Priority import Priority
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Work.WorkActivityRecord import WorkActivityRecord
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Work.WorkKind import WorkKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Work.WorkLocation import WorkLocation
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Work.WorkStatusKind import WorkStatusKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Work.WorkTimeSchedule import WorkTimeSchedule
+from IEC61968.Common.Document import Document
+from IEC61968.Common.Priority import Priority
+from IEC61968.Work.WorkActivityRecord import WorkActivityRecord
+from IEC61968.Work.WorkKind import WorkKind
+from IEC61968.Work.WorkLocation import WorkLocation
+from IEC61968.Work.WorkStatusKind import WorkStatusKind
+from IEC61968.Work.WorkTimeSchedule import WorkTimeSchedule
 
 
 class BaseWork(Document):

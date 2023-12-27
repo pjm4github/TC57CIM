@@ -6,8 +6,8 @@
 # Created on:      19-Dec-2023 11:25:06 AM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.Asset import Asset
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.Seal import Seal
+from IEC61968.Assets.Asset import Asset
+from IEC61968.Assets.Seal import Seal
 
 
 class AssetContainer(Asset):

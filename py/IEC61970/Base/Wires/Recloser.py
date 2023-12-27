@@ -4,7 +4,7 @@
 # @author pmora
 # @version 1.0
 # @updated 15-Dec-2023 1:39:42 PM
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.ProtectedSwitch import ProtectedSwitch
+from IEC61970.Base.Wires.ProtectedSwitch import ProtectedSwitch
 
 
 class Recloser(ProtectedSwitch):

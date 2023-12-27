@@ -6,7 +6,7 @@
 # Created on:      25-Dec-2023 8:31:55 PM
 # 
 #######################################################
-from IEC61970.Base.Domain.String import String
+
 from IEC61970.Base.Domain.PerCent import PerCent
 from IEC61970.Base.Domain.ActivePower import ActivePower
 from IEC61970.Base.AuxiliaryEquipment.Sensor import Sensor

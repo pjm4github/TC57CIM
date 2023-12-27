@@ -6,7 +6,7 @@
 # Created on:      19-Dec-2023 4:08:01 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfERPSupport.ErpDocument import ErpDocument
+from IEC61968.InfIEC61968.InfERPSupport.ErpDocument import ErpDocument
 
 
 class ErpBOM(ErpDocument):

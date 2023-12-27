@@ -1,12 +1,12 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfERPSupport.ErpInvoice import ErpInvoice
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfERPSupport.ErpInvoiceLineItemKind import ErpInvoiceLineItemKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfERPSupport.ErpJournalEntry import ErpJournalEntry
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfERPSupport.ErpPayableLineItem import ErpPayableLineItem
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfERPSupport.ErpPayment import ErpPayment
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfERPSupport.ErpRecLineItem import ErpRecLineItem
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.DateTime import DateTime
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.DateTimeInterval import DateTimeInterval
+from IEC61968.InfIEC61968.InfERPSupport.ErpInvoice import ErpInvoice
+from IEC61968.InfIEC61968.InfERPSupport.ErpInvoiceLineItemKind import ErpInvoiceLineItemKind
+from IEC61968.InfIEC61968.InfERPSupport.ErpJournalEntry import ErpJournalEntry
+from IEC61968.InfIEC61968.InfERPSupport.ErpPayableLineItem import ErpPayableLineItem
+from IEC61968.InfIEC61968.InfERPSupport.ErpPayment import ErpPayment
+from IEC61968.InfIEC61968.InfERPSupport.ErpRecLineItem import ErpRecLineItem
+from IEC61970.Base.Domain.DateTime import DateTime
+from IEC61970.Base.Domain.DateTimeInterval import DateTimeInterval
 
 
 

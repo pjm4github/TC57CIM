@@ -7,10 +7,10 @@
 # Original author: selaost1
 # 
 #######################################################
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Boolean import Boolean
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.EnergyArea.EnergySchedulingAreaBoundary import EnergySchedulingAreaBoundary
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Terminal import Terminal
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+# from IEC61970.Base.Domain.Boolean import Boolean
+from IEC61970.InfIEC61970.EnergyArea.EnergySchedulingAreaBoundary import EnergySchedulingAreaBoundary
+from IEC61970.Base.Core.Terminal import Terminal
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
 class BoundaryFlow(IdentifiedObject):
 

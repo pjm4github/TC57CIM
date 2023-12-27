@@ -6,8 +6,8 @@
 # Created on:      16-Dec-2023 4:31:56 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ApparentPower import ApparentPower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Domain.ApparentPower import ApparentPower
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
 class BasePower(IdentifiedObject):
     """The BasePower class defines the base power used in the per unit calculations.

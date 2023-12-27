@@ -1,7 +1,7 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Document import Document
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Customers.RevenueKind import RevenueKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Customers.Tariff import Tariff
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.UsagePoint import UsagePoint
+from IEC61968.Common.Document import Document
+from IEC61968.Customers.RevenueKind import RevenueKind
+from IEC61968.Customers.Tariff import Tariff
+from IEC61968.Metering.UsagePoint import UsagePoint
 
 
 ###########################################################

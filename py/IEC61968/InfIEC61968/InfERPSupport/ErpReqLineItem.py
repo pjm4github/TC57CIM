@@ -1,9 +1,9 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Status import Status
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfERPSupport.ErpIdentifiedObject import ErpIdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfERPSupport.ErpPOLineItem import ErpPOLineItem
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfERPSupport.ErpRequisition import ErpRequisition
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Money import Money
+from IEC61968.Common.Status import Status
+from IEC61968.InfIEC61968.InfERPSupport.ErpIdentifiedObject import ErpIdentifiedObject
+from IEC61968.InfIEC61968.InfERPSupport.ErpPOLineItem import ErpPOLineItem
+from IEC61968.InfIEC61968.InfERPSupport.ErpRequisition import ErpRequisition
+from IEC61970.Base.Domain.Money import Money
 
 
 class ErpReqLineItem(ErpIdentifiedObject):

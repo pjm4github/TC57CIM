@@ -6,11 +6,11 @@
 # Created on:      16-Dec-2023 5:21:03 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.CurveStyle import CurveStyle
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UnitSymbol import UnitSymbol
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.CurveData import CurveData
+from IEC61970.Base.Core.CurveStyle import CurveStyle
+from IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
+from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Core.CurveData import CurveData
 
 class Curve(IdentifiedObject):
     """A multi-purpose curve or functional relationship between an independent

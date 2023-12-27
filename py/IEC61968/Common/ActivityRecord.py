@@ -6,10 +6,10 @@
 # Created on:      17-Dec-2023 7:27:25 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.DateTime import DateTime
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.String import String
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Status import Status
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Domain.DateTime import DateTime
+# from IEC61970.Base.Domain.String import String
+from IEC61968.Common.Status import Status
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
 class ActivityRecord(IdentifiedObject):
     """

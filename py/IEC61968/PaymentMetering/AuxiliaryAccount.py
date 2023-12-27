@@ -1,10 +1,10 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61968.PaymentMetering.AccountMovement import AccountMovement
-from CIM_STD_PYTHON.TC57CIM.IEC61968.PaymentMetering.Charge import Charge
-from CIM_STD_PYTHON.TC57CIM.IEC61968.PaymentMetering.Due import Due
-from CIM_STD_PYTHON.TC57CIM.IEC61968.PaymentMetering.Transaction import Transaction
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Money import Money
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Document import Document
+from IEC61968.PaymentMetering.AccountMovement import AccountMovement
+from IEC61968.PaymentMetering.Charge import Charge
+from IEC61968.PaymentMetering.Due import Due
+from IEC61968.PaymentMetering.Transaction import Transaction
+from IEC61970.Base.Domain.Money import Money
+from IEC61968.Common.Document import Document
 
 """
 Variable and dynamic part of auxiliary agreement, generally representing the

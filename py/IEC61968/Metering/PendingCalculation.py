@@ -1,4 +1,4 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.ReadingType import ReadingType
+from IEC61968.Metering.ReadingType import ReadingType
 
 
 class PendingCalculation:

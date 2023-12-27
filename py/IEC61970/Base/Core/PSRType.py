@@ -6,7 +6,7 @@
 # Created on:      17-Dec-2023 7:22:01 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
 class PSRType(IdentifiedObject):
     """Classifying instances of the same class, e.g. overhead and underground

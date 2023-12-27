@@ -1,8 +1,8 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:39:55 2023
 from datetime import timedelta
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.OperationalLimits.OperationalLimitDirectionKind import \
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.OperationalLimits.OperationalLimitDirectionKind import \
     OperationalLimitDirectionKind
 
 

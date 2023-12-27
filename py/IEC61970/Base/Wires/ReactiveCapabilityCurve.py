@@ -1,10 +1,10 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 from typing import Any
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Pressure import Pressure
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Temperature import Temperature
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Equivalents.EquivalentInjection import EquivalentInjection
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.SynchronousMachine import SynchronousMachine
+from IEC61970.Base.Domain.Pressure import Pressure
+from IEC61970.Base.Domain.Temperature import Temperature
+from IEC61970.Base.Equivalents.EquivalentInjection import EquivalentInjection
+from IEC61970.Base.Wires.SynchronousMachine import SynchronousMachine
 
 
 class ReactiveCapabilityCurve:

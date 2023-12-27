@@ -1,6 +1,6 @@
 # Tariff.py
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Document import Document
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Date import Date
+from IEC61968.Common.Document import Document
+from IEC61970.Base.Domain.Date import Date
 
 
 class Tariff(Document):

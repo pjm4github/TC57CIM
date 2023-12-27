@@ -7,8 +7,8 @@
 # Original author: herb
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Meas.MeasurementValue import MeasurementValue
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Meas.MeasurementValue import MeasurementValue
 
 class CalculationMethodHierarchy(IdentifiedObject):
     """The hierarchy of calculation methods used to derive this measurement.

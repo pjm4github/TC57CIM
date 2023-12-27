@@ -7,9 +7,9 @@
 # Original author: sveinols
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.InfSIPS.PinTerminalKind import PinTerminalKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Terminal import Terminal
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.InfSIPS.GateInputPin import GateInputPin
+from IEC61970.InfIEC61970.InfSIPS.PinTerminalKind import PinTerminalKind
+from IEC61970.Base.Core.Terminal import Terminal
+from IEC61970.InfIEC61970.InfSIPS.GateInputPin import GateInputPin
 
 class PinTerminal(GateInputPin):
     """Value associated with Terminal is used as compare.

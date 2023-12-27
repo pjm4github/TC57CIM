@@ -1,5 +1,5 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.AuxiliaryEquipment.PotentialTransformerKind import PotentialTransformerKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.AuxiliaryEquipment.Sensor import Sensor
+from IEC61970.Base.AuxiliaryEquipment.PotentialTransformerKind import PotentialTransformerKind
+from IEC61970.Base.AuxiliaryEquipment.Sensor import Sensor
 
 
 class PotentialTransformer(Sensor):

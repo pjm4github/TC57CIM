@@ -1,4 +1,4 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Curve import Curve
+from IEC61970.Base.Core.Curve import Curve
 
 
 class GrossToNetActivePowerCurve(Curve):

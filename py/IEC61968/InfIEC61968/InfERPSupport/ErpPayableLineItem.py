@@ -1,8 +1,8 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Status import Status
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfERPSupport.ErpIdentifiedObject import ErpIdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfERPSupport.ErpJournalEntry import ErpJournalEntry
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfERPSupport.ErpPayable import ErpPayable
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfERPSupport.ErpPayment import ErpPayment
+from IEC61968.Common.Status import Status
+from IEC61968.InfIEC61968.InfERPSupport.ErpIdentifiedObject import ErpIdentifiedObject
+from IEC61968.InfIEC61968.InfERPSupport.ErpJournalEntry import ErpJournalEntry
+from IEC61968.InfIEC61968.InfERPSupport.ErpPayable import ErpPayable
+from IEC61968.InfIEC61968.InfERPSupport.ErpPayment import ErpPayment
 
 
 class ErpPayableLineItem(ErpIdentifiedObject):

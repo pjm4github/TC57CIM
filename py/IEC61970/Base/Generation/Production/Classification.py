@@ -6,9 +6,9 @@
 # Created on:      17-Dec-2023 9:57:58 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UnitSymbol import UnitSymbol
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Integer import Integer
+from IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
+from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
+# from IEC61970.Base.Domain.Integer import Integer
 
 
 class Classification:

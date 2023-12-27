@@ -1,7 +1,7 @@
 # Analog.py
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Meas.AnalogLimitSet import AnalogLimitSet
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Meas.AnalogValue import AnalogValue
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Meas.Measurement import Measurement
+from IEC61970.Base.Meas.AnalogLimitSet import AnalogLimitSet
+from IEC61970.Base.Meas.AnalogValue import AnalogValue
+from IEC61970.Base.Meas.Measurement import Measurement
 
 
 class Analog(Measurement):

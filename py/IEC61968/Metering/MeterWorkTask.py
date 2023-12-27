@@ -1,6 +1,6 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Work.WorkTask import WorkTask
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.UsagePoint import UsagePoint
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.Meter import Meter
+from IEC61968.Work.WorkTask import WorkTask
+from IEC61968.Metering.UsagePoint import UsagePoint
+from IEC61968.Metering.Meter import Meter
 
 
 class MeterWorkTask(WorkTask):

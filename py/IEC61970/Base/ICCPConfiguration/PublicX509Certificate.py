@@ -1,8 +1,8 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:37:34 2023
 from typing import Optional
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.ICCPConfiguration.ISOUpperLayer import ISOUpperLayer
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.ICCPConfiguration.TCPAccessPoint import TCPAccessPoint
+from IEC61970.Base.ICCPConfiguration.ISOUpperLayer import ISOUpperLayer
+from IEC61970.Base.ICCPConfiguration.TCPAccessPoint import TCPAccessPoint
 
 
 class PublicX509Certificate:

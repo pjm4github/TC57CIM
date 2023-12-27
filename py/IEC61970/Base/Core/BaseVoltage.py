@@ -6,9 +6,9 @@
 # Created on:      16-Dec-2023 4:33:33 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Voltage import Voltage
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.ConductingEquipment import ConductingEquipment
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Domain.Voltage import Voltage
+from IEC61970.Base.Core.ConductingEquipment import ConductingEquipment
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
 class BaseVoltage(IdentifiedObject):
     """

@@ -6,8 +6,8 @@
 # Created on:      19-Dec-2023 8:49:57 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.ActivityRecord import ActivityRecord
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.PerCent import PerCent
+from IEC61968.Common.ActivityRecord import ActivityRecord
+from IEC61970.Base.Domain.PerCent import PerCent
 
 
 class WorkActivityRecord(ActivityRecord):

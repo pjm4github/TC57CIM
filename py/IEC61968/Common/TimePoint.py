@@ -6,11 +6,11 @@
 # Created on:      19-Dec-2023 9:00:24 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Status import Status
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.DateTime import DateTime
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.DateTimeInterval import DateTimeInterval
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Seconds import Seconds
+from IEC61968.Common.Status import Status
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Domain.DateTime import DateTime
+from IEC61970.Base.Domain.DateTimeInterval import DateTimeInterval
+from IEC61970.Base.Domain.Seconds import Seconds
 
 
 class TimePoint(IdentifiedObject):

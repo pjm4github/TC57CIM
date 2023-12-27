@@ -4,11 +4,11 @@ import IEC61970.Base.Core.curve_style
 import IEC61970.Base.Domain.integer
 import IEC61970.Base.Domain.date_time
 
-from CIM_STD_PYTHON.TC57CIM.IEC61968.DER.DERMonitorableParameter import DERMonitorableParameter
-from CIM_STD_PYTHON.TC57CIM.IEC61968.DER.TimeIntervalKind import TimeIntervalKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.CurveStyle import CurveStyle
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.DateTime import DateTime
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.PerCent import PerCent
+from IEC61968.DER.DERMonitorableParameter import DERMonitorableParameter
+from IEC61968.DER.TimeIntervalKind import TimeIntervalKind
+from IEC61970.Base.Core.CurveStyle import CurveStyle
+from IEC61970.Base.Domain.DateTime import DateTime
+from IEC61970.Base.Domain.PerCent import PerCent
 
 
 class DispatchSchedule:

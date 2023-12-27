@@ -2,8 +2,8 @@
 from datetime import datetime
 from typing import Optional
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.ICCPConfiguration.IPAddressKind import IPAddressKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.SCADA.CommunicationLink import CommunicationLink
+from IEC61970.Base.ICCPConfiguration.IPAddressKind import IPAddressKind
+from IEC61970.Base.SCADA.CommunicationLink import CommunicationLink
 
 
 class IPAccessPoint(CommunicationLink):

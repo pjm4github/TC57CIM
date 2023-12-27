@@ -6,8 +6,8 @@
 # Created on:      17-Dec-2023 7:14:51 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Meas.MeasurementValue import MeasurementValue
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Meas.MeasurementValue import MeasurementValue
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
 class MeasurementValueSource(IdentifiedObject):
     """MeasurementValueSource describes the alternative sources updating a

@@ -6,7 +6,7 @@
 # Created on:      19-Dec-2023 6:12:52 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.OrganisationRole import OrganisationRole
+from IEC61968.Common.OrganisationRole import OrganisationRole
 
 
 class Bank(OrganisationRole):

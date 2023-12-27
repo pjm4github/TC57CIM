@@ -7,9 +7,9 @@
 # 
 #######################################################
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.BreakerConfiguration import BreakerConfiguration
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.BusbarConfiguration import BusbarConfiguration
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.EquipmentContainer import EquipmentContainer
+from IEC61970.Base.Core.BreakerConfiguration import BreakerConfiguration
+from IEC61970.Base.Core.BusbarConfiguration import BusbarConfiguration
+from IEC61970.Base.Core.EquipmentContainer import EquipmentContainer
 
 class Bay(EquipmentContainer):
     """A collection of power system resources (within a given substation) including

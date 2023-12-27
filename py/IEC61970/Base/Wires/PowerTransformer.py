@@ -1,10 +1,10 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 from typing import Optional
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.AngleDegrees import AngleDegrees
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.CurrentFlow import CurrentFlow
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Voltage import Voltage
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.PowerTransformerEnd import PowerTransformerEnd
+from IEC61970.Base.Domain.AngleDegrees import AngleDegrees
+from IEC61970.Base.Domain.CurrentFlow import CurrentFlow
+from IEC61970.Base.Domain.Voltage import Voltage
+from IEC61970.Base.Wires.PowerTransformerEnd import PowerTransformerEnd
 
 
 class PowerTransformer:

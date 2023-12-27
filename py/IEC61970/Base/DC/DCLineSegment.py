@@ -6,11 +6,11 @@
 # Created on:      17-Dec-2023 9:03:42 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Capacitance import Capacitance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Inductance import Inductance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Length import Length
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Resistance import Resistance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.DC.DCConductingEquipment import DCConductingEquipment
+from IEC61970.Base.Domain.Capacitance import Capacitance
+from IEC61970.Base.Domain.Inductance import Inductance
+from IEC61970.Base.Domain.Length import Length
+from IEC61970.Base.Domain.Resistance import Resistance
+from IEC61970.Base.DC.DCConductingEquipment import DCConductingEquipment
 
 class DCLineSegment(DCConductingEquipment):
     """A wire or combination of wires not insulated from one another, with consistent

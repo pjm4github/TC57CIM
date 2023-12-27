@@ -1,14 +1,14 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 from typing import Optional
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ApparentPower import ApparentPower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Conductance import Conductance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Reactance import Reactance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Resistance import Resistance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Susceptance import Susceptance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Voltage import Voltage
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.TransformerEnd import TransformerEnd
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.WindingConnection import WindingConnection
+from IEC61970.Base.Domain.ApparentPower import ApparentPower
+from IEC61970.Base.Domain.Conductance import Conductance
+from IEC61970.Base.Domain.Reactance import Reactance
+from IEC61970.Base.Domain.Resistance import Resistance
+from IEC61970.Base.Domain.Susceptance import Susceptance
+from IEC61970.Base.Domain.Voltage import Voltage
+from IEC61970.Base.Wires.TransformerEnd import TransformerEnd
+from IEC61970.Base.Wires.WindingConnection import WindingConnection
 
 
 class PowerTransformerEnd(TransformerEnd):

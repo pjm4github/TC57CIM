@@ -6,10 +6,10 @@
 # Created on:      18-Dec-2023 8:53:00 PM
 # 
 #######################################################
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.String import String
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.PerCent import PerCent
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ActivePower import ActivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.AuxiliaryEquipment.Sensor import Sensor
+# from IEC61970.Base.Domain.String import String
+from IEC61970.Base.Domain.PerCent import PerCent
+from IEC61970.Base.Domain.ActivePower import ActivePower
+from IEC61970.Base.AuxiliaryEquipment.Sensor import Sensor
 
 class CurrentTransformer(Sensor):
     """Instrument transformer used to measure electrical qualities of the circuit that

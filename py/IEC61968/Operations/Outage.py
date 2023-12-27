@@ -1,15 +1,15 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Crew import Crew
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.CrewStatusKind import CrewStatusKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Document import Document
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.UsagePoint import UsagePoint
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Operations.OutageStatusKind import OutageStatusKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Operations.ServicePointOutageSummary import ServicePointOutageSummary
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Operations.SwitchAction import SwitchAction
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Equipment import Equipment
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.DateTimeInterval import DateTimeInterval
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Faults.Fault import Fault
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.Switch import Switch
+from IEC61968.Common.Crew import Crew
+from IEC61968.Common.CrewStatusKind import CrewStatusKind
+from IEC61968.Common.Document import Document
+from IEC61968.Metering.UsagePoint import UsagePoint
+from IEC61968.Operations.OutageStatusKind import OutageStatusKind
+from IEC61968.Operations.ServicePointOutageSummary import ServicePointOutageSummary
+from IEC61968.Operations.SwitchAction import SwitchAction
+from IEC61970.Base.Core.Equipment import Equipment
+from IEC61970.Base.Domain.DateTimeInterval import DateTimeInterval
+from IEC61970.Base.Faults.Fault import Fault
+from IEC61970.Base.Wires.Switch import Switch
 
 
 class Outage(Document):

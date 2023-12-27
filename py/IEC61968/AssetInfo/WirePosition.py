@@ -1,6 +1,6 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.AssetInfo.WirePhaseInfo import WirePhaseInfo
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Displacement import Displacement
+from IEC61968.AssetInfo.WirePhaseInfo import WirePhaseInfo
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Domain.Displacement import Displacement
 
 
 class WirePosition(IdentifiedObject):

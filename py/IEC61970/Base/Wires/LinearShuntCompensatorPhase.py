@@ -2,9 +2,9 @@
 # from shunt_compensator_phase import ShuntCompensatorPhase
 # from susceptance import Susceptance
 # from conductance import Conductance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Susceptance import Susceptance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.NonlinearShuntCompensatorPhasePoint import Conductance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.ShuntCompensatorPhase import ShuntCompensatorPhase
+from IEC61970.Base.Domain.Susceptance import Susceptance
+from IEC61970.Base.Wires.NonlinearShuntCompensatorPhasePoint import Conductance
+from IEC61970.Base.Wires.ShuntCompensatorPhase import ShuntCompensatorPhase
 
 class LinearShuntCompensatorPhase(ShuntCompensatorPhase):
     def __init__(self):

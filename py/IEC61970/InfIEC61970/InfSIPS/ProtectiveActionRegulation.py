@@ -7,10 +7,10 @@
 # Original author: sveinols
 # 
 #######################################################
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Boolean import Boolean
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Float import Float
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.RegulatingControl import RegulatingControl
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.InfSIPS.ProtectiveAction import ProtectiveAction
+# from IEC61970.Base.Domain.Boolean import Boolean
+# from IEC61970.Base.Domain.Float import Float
+from IEC61970.Base.Wires.RegulatingControl import RegulatingControl
+from IEC61970.InfIEC61970.InfSIPS.ProtectiveAction import ProtectiveAction
 
 
 class ProtectiveActionRegulation(ProtectiveAction):

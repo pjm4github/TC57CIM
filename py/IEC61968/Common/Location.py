@@ -1,17 +1,17 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 # local imports
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.ConfigurationEvent import ConfigurationEvent
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.CoordinateSystem import CoordinateSystem
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Crew import Crew
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.ElectronicAddress import ElectronicAddress
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.PositionPoint import PositionPoint
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Status import Status
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.StreetAddress import StreetAddress
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.TelephoneNumber import TelephoneNumber
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Meas.Measurement import Measurement
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Operations.SwitchingOrder import SwitchingOrder
+from IEC61968.Common.ConfigurationEvent import ConfigurationEvent
+from IEC61968.Common.CoordinateSystem import CoordinateSystem
+from IEC61968.Common.Crew import Crew
+from IEC61968.Common.ElectronicAddress import ElectronicAddress
+from IEC61968.Common.PositionPoint import PositionPoint
+from IEC61968.Common.Status import Status
+from IEC61968.Common.StreetAddress import StreetAddress
+from IEC61968.Common.TelephoneNumber import TelephoneNumber
+from IEC61970.Base.Meas.Measurement import Measurement
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
+from IEC61968.Operations.SwitchingOrder import SwitchingOrder
 
 
 

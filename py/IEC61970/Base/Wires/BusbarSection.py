@@ -1,9 +1,9 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 from typing import Optional
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.CurrentFlow import CurrentFlow
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.Connector import Connector
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.VoltageControlZone import VoltageControlZone
+from IEC61970.Base.Domain.CurrentFlow import CurrentFlow
+from IEC61970.Base.Wires.Connector import Connector
+from IEC61970.Base.Wires.VoltageControlZone import VoltageControlZone
 
 
 class BusbarSection(Connector):

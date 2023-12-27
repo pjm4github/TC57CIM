@@ -1,6 +1,6 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Substation import Substation
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.Line import Line
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Core.Substation import Substation
+from IEC61970.Base.Wires.Line import Line
 
 
 class SubGeographicalRegion(IdentifiedObject):

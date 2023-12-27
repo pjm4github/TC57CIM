@@ -1,13 +1,13 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 from typing import Any
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ActivePower import ActivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.AngleRadians import AngleRadians
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Reactance import Reactance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ReactivePower import ReactivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Resistance import Resistance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Voltage import Voltage
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.EnergyConnection import EnergyConnection
+from IEC61970.Base.Domain.ActivePower import ActivePower
+from IEC61970.Base.Domain.AngleRadians import AngleRadians
+from IEC61970.Base.Domain.Reactance import Reactance
+from IEC61970.Base.Domain.ReactivePower import ReactivePower
+from IEC61970.Base.Domain.Resistance import Resistance
+from IEC61970.Base.Domain.Voltage import Voltage
+from IEC61970.Base.Wires.EnergyConnection import EnergyConnection
 
 
 

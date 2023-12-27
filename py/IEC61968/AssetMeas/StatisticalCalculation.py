@@ -1,8 +1,8 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61968.AssetMeas.CalculationMethodOrder import CalculationMethodOrder
-from CIM_STD_PYTHON.TC57CIM.IEC61968.AssetMeas.CalculationModeKind import CalculationModeKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.AssetMeas.CalculationTechniqueKind import CalculationTechniqueKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61968.AssetMeas.CalculationMethodOrder import CalculationMethodOrder
+from IEC61968.AssetMeas.CalculationModeKind import CalculationModeKind
+from IEC61968.AssetMeas.CalculationTechniqueKind import CalculationTechniqueKind
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
 
 class StatisticalCalculation(IdentifiedObject):

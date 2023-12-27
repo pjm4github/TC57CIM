@@ -7,7 +7,7 @@
 # Original author: sveinols
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.InfSIPS.GateInputPin import GateInputPin
+from IEC61970.InfIEC61970.InfSIPS.GateInputPin import GateInputPin
 
 class PinGate(GateInputPin):
     """An output from one gate represent an input to another gate.

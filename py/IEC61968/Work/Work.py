@@ -6,10 +6,10 @@
 # Created on:      19-Dec-2023 6:01:06 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfERPSupport.ErpProjectAccounting import ErpProjectAccounting
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfWork.Project import Project
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Work.BaseWork import BaseWork
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Work.WorkTask import WorkTask
+from IEC61968.InfIEC61968.InfERPSupport.ErpProjectAccounting import ErpProjectAccounting
+from IEC61968.InfIEC61968.InfWork.Project import Project
+from IEC61968.Work.BaseWork import BaseWork
+from IEC61968.Work.WorkTask import WorkTask
 
 
 class Work(BaseWork):

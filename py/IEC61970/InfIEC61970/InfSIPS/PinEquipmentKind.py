@@ -13,4 +13,5 @@ class PinEquipmentKind:
     """Categorisation of type of compare done on Equipment.
     """
     def __init__(self):
+        super().__init__()
         pass

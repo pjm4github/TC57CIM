@@ -1,11 +1,11 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.Asset import Asset
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Crew import Crew
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Work.MaterialItem import MaterialItem
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Work.WorkTaskKind import WorkTaskKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.DateTime import DateTime
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Hours import Hours
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Money import Money
+from IEC61968.Assets.Asset import Asset
+from IEC61968.Common.Crew import Crew
+from IEC61968.Work.MaterialItem import MaterialItem
+from IEC61968.Work.WorkTaskKind import WorkTaskKind
+from IEC61970.Base.Domain.DateTime import DateTime
+from IEC61970.Base.Domain.Hours import Hours
+from IEC61970.Base.Domain.Money import Money
 
 
 class WorkTask:

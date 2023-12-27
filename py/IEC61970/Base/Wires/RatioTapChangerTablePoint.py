@@ -1,6 +1,6 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.RatioTapChangerTable import RatioTapChangerTable
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.TapChangerTablePoint import TapChangerTablePoint
+from IEC61970.Base.Wires.RatioTapChangerTable import RatioTapChangerTable
+from IEC61970.Base.Wires.TapChangerTablePoint import TapChangerTablePoint
 
 
 class RatioTapChangerTablePoint(TapChangerTablePoint):

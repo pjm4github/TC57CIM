@@ -7,10 +7,10 @@
 # Original author: sveinols
 # 
 #######################################################
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Boolean import Boolean
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.InfSIPS.RemedialActionSchemeKind import RemedialActionSchemeKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.InfSIPS.Stage import Stage
+# from IEC61970.Base.Domain.Boolean import Boolean
+from IEC61970.InfIEC61970.InfSIPS.RemedialActionSchemeKind import RemedialActionSchemeKind
+from IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
+from IEC61970.InfIEC61970.InfSIPS.Stage import Stage
 
 class RemedialActionScheme(PowerSystemResource):
     """Remedial Action Scheme (RAS), Special Protection Schemes (SPS), System

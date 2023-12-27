@@ -1,19 +1,19 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.ASTMStandard import ASTMStandard
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.CIGREStandard import CIGREStandard
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.DINStandard import DINStandard
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.DobleStandard import DobleStandard
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.EPAStandard import EPAStandard
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.IECStandard import IECStandard
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.IEEEStandard import IEEEStandard
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.ISOStandard import ISOStandard
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.LaborelecStandard import LaborelecStandard
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.TAPPIStandard import TAPPIStandard
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.TestMethod import TestMethod
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.TestVariantKind import TestVariantKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.UKMinistryOfDefenceStandard import UKMinistryOfDefenceStandard
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.WEPStandard import WEPStandard
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61968.Assets.ASTMStandard import ASTMStandard
+from IEC61968.Assets.CIGREStandard import CIGREStandard
+from IEC61968.Assets.DINStandard import DINStandard
+from IEC61968.Assets.DobleStandard import DobleStandard
+from IEC61968.Assets.EPAStandard import EPAStandard
+from IEC61968.Assets.IECStandard import IECStandard
+from IEC61968.Assets.IEEEStandard import IEEEStandard
+from IEC61968.Assets.ISOStandard import ISOStandard
+from IEC61968.Assets.LaborelecStandard import LaborelecStandard
+from IEC61968.Assets.TAPPIStandard import TAPPIStandard
+from IEC61968.Assets.TestMethod import TestMethod
+from IEC61968.Assets.TestVariantKind import TestVariantKind
+from IEC61968.Assets.UKMinistryOfDefenceStandard import UKMinistryOfDefenceStandard
+from IEC61968.Assets.WEPStandard import WEPStandard
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
 
 class TestStandard(IdentifiedObject):

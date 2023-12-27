@@ -3,11 +3,11 @@
 # from conducting_equipment import ConductingEquipment
 # from regulating_control import RegulatingControl
 # from ac_dc_terminal import ACDCTerminal
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.ACDCTerminal import ACDCTerminal
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.ConductingEquipment import ConductingEquipment
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.ConnectivityNode import ConnectivityNode
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.PhaseCode import PhaseCode
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.RegulatingControl import RegulatingControl
+from IEC61970.Base.Core.ACDCTerminal import ACDCTerminal
+from IEC61970.Base.Core.ConductingEquipment import ConductingEquipment
+from IEC61970.Base.Core.ConnectivityNode import ConnectivityNode
+from IEC61970.Base.Core.PhaseCode import PhaseCode
+from IEC61970.Base.Wires.RegulatingControl import RegulatingControl
 
 
 class Terminal(ACDCTerminal):

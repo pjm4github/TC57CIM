@@ -1,7 +1,7 @@
 from typing import Any
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.DC.DCTopologicalNode import DCTopologicalNode
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.DC.DCTopologicalNode import DCTopologicalNode
 
 
 class DCTopologicalIsland(IdentifiedObject):

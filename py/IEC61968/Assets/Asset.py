@@ -1,24 +1,24 @@
 # asset.py
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.AcceptanceTest import AcceptanceTest
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.AssetContainer import AssetContainer
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.AssetDeployment import AssetDeployment
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.AssetInfo import AssetInfo
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.AssetKind import AssetKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.AssetLifecycleStateKind import AssetLifecycleStateKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.AssetOrganisationRole import AssetOrganisationRole
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.InUseDate import InUseDate
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.InUseStateKind import InUseStateKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.LifecycleDate import LifecycleDate
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.ProductAssetModel import ProductAssetModel
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.RetiredReasonKind import RetiredReasonKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.ActivityRecord import ActivityRecord
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.ConfigurationEvent import ConfigurationEvent
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Status import Status
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Money import Money
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.PerCent import PerCent
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Meas.Measurement import Measurement
+from IEC61968.Assets.AcceptanceTest import AcceptanceTest
+from IEC61968.Assets.AssetContainer import AssetContainer
+from IEC61968.Assets.AssetDeployment import AssetDeployment
+from IEC61968.Assets.AssetInfo import AssetInfo
+from IEC61968.Assets.AssetKind import AssetKind
+from IEC61968.Assets.AssetLifecycleStateKind import AssetLifecycleStateKind
+from IEC61968.Assets.AssetOrganisationRole import AssetOrganisationRole
+from IEC61968.Assets.InUseDate import InUseDate
+from IEC61968.Assets.InUseStateKind import InUseStateKind
+from IEC61968.Assets.LifecycleDate import LifecycleDate
+from IEC61968.Assets.ProductAssetModel import ProductAssetModel
+from IEC61968.Assets.RetiredReasonKind import RetiredReasonKind
+from IEC61968.Common.ActivityRecord import ActivityRecord
+from IEC61968.Common.ConfigurationEvent import ConfigurationEvent
+from IEC61968.Common.Status import Status
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
+from IEC61970.Base.Domain.Money import Money
+from IEC61970.Base.Domain.PerCent import PerCent
+from IEC61970.Base.Meas.Measurement import Measurement
 
 
 class Asset(IdentifiedObject):

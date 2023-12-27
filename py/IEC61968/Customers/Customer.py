@@ -3,11 +3,11 @@
 #  Implementation of the Class Customer
 #  Created on:      19-Dec-2023 3:27:42 PM
 ###########################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.OrganisationRole import OrganisationRole
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Priority import Priority
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Status import Status
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Customers.CustomerKind import CustomerKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Operations.OutagePlan import OutagePlan
+from IEC61968.Common.OrganisationRole import OrganisationRole
+from IEC61968.Common.Priority import Priority
+from IEC61968.Common.Status import Status
+from IEC61968.Customers.CustomerKind import CustomerKind
+from IEC61968.Operations.OutagePlan import OutagePlan
 
 
 class Customer(OrganisationRole):

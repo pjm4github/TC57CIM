@@ -1,10 +1,10 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61968.AssetInfo.WirePosition import WirePosition
-from CIM_STD_PYTHON.TC57CIM.IEC61968.AssetInfo.WireUsageKind import WireUsageKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.DuctBank import DuctBank
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.Structure import Structure
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Length import Length
+from IEC61968.AssetInfo.WirePosition import WirePosition
+from IEC61968.AssetInfo.WireUsageKind import WireUsageKind
+from IEC61968.Assets.DuctBank import DuctBank
+from IEC61968.Assets.Structure import Structure
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Domain.Length import Length
 
 
 class WireSpacing(IdentifiedObject):

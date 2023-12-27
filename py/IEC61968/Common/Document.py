@@ -1,8 +1,8 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.ConfigurationEvent import ConfigurationEvent
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.ElectronicAddress import ElectronicAddress
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Status import Status
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.DateTime import DateTime
+from IEC61968.Common.ConfigurationEvent import ConfigurationEvent
+from IEC61968.Common.ElectronicAddress import ElectronicAddress
+from IEC61968.Common.Status import Status
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Domain.DateTime import DateTime
 
 
 class Document(IdentifiedObject):

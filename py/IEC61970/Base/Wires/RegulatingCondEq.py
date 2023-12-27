@@ -1,6 +1,6 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.EnergyConnection import EnergyConnection
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.RegulatingControl import RegulatingControl
+from IEC61970.Base.Wires.EnergyConnection import EnergyConnection
+from IEC61970.Base.Wires.RegulatingControl import RegulatingControl
 
 
 class RegulatingCondEq(EnergyConnection):

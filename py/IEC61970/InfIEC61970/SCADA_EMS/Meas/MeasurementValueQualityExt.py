@@ -7,11 +7,12 @@
 # Original author: SELAOST1
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.SCADA_EMS.Meas.MeasurementConfigurationStatus import \
+from IEC61970.InfIEC61970.SCADA_EMS.Meas.MeasurementConfigurationStatus import \
     MeasurementConfigurationStatus
 
 
 class MeasurementValueQualityExt:
 
     def __init__(self):
+        super().__init__()
         self.configuration_status = MeasurementConfigurationStatus.OK

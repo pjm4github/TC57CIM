@@ -1,9 +1,9 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfERPSupport.BillMediaKind import BillMediaKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfERPSupport.ErpDocument import ErpDocument
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfERPSupport.ErpInvoiceKind import ErpInvoiceKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.DateTime import DateTime
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Money import Money
+from IEC61968.InfIEC61968.InfERPSupport.BillMediaKind import BillMediaKind
+from IEC61968.InfIEC61968.InfERPSupport.ErpDocument import ErpDocument
+from IEC61968.InfIEC61968.InfERPSupport.ErpInvoiceKind import ErpInvoiceKind
+from IEC61970.Base.Domain.DateTime import DateTime
+from IEC61970.Base.Domain.Money import Money
 
 
 class ErpInvoice(ErpDocument):

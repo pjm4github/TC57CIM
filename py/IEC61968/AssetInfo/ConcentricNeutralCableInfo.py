@@ -1,6 +1,6 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Length import Length
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ResistancePerLength import ResistancePerLength
+from IEC61970.Base.Domain.Length import Length
+from IEC61970.Base.Domain.ResistancePerLength import ResistancePerLength
 
 class ConcentricNeutralCableInfo:
     

@@ -6,8 +6,8 @@
 # Created on:      17-Dec-2023 11:28:50 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Topology.TopologicalNode import TopologicalNode
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Topology.TopologicalNode import TopologicalNode
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
 
 class TopologicalIsland(IdentifiedObject):

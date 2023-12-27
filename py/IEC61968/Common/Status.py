@@ -6,8 +6,8 @@
 # Created on:      17-Dec-2023 7:28:20 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.DateTime import DateTime
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.String import String
+from IEC61970.Base.Domain.DateTime import DateTime
+# from IEC61970.Base.Domain.String import String
 
 class Status:
     """Current status information relevant to an entity.

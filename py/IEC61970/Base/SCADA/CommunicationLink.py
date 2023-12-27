@@ -6,9 +6,9 @@
 # Created on:      17-Dec-2023 7:17:52 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.SCADA.RemoteUnit import RemoteUnit
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.ICCPConfiguration.BilateralExchangeActor import BilateralExchangeActor
+from IEC61970.Base.SCADA.RemoteUnit import RemoteUnit
+from IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
+from IEC61970.Base.ICCPConfiguration.BilateralExchangeActor import BilateralExchangeActor
 
 class CommunicationLink(PowerSystemResource):
     """The connection to remote units is through one or more communication links.

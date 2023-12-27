@@ -1,11 +1,11 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.BreakerApplicationKind import BreakerApplicationKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.DeploymentDate import DeploymentDate
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.DeploymentStateKind import DeploymentStateKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.FacilityKind import FacilityKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.TransformerApplicationKind import TransformerApplicationKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.BaseVoltage import BaseVoltage
+from IEC61968.Assets.BreakerApplicationKind import BreakerApplicationKind
+from IEC61968.Assets.DeploymentDate import DeploymentDate
+from IEC61968.Assets.DeploymentStateKind import DeploymentStateKind
+from IEC61968.Assets.FacilityKind import FacilityKind
+from IEC61968.Assets.TransformerApplicationKind import TransformerApplicationKind
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Core.BaseVoltage import BaseVoltage
 
 
 class AssetDeployment(IdentifiedObject):

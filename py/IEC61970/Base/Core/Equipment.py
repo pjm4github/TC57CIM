@@ -6,9 +6,9 @@
 # Created on:      16-Dec-2023 5:41:16 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.InfOperationalLimits.WeatherStation import WeatherStation
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.InfOperationalLimits.LimitDependency import LimitDependency
+from IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
+from IEC61970.InfIEC61970.InfOperationalLimits.WeatherStation import WeatherStation
+from IEC61970.InfIEC61970.InfOperationalLimits.LimitDependency import LimitDependency
 
 
 

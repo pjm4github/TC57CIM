@@ -1,9 +1,9 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ConductancePerLength import ConductancePerLength
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ReactancePerLength import ReactancePerLength
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ResistancePerLength import ResistancePerLength
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.SusceptancePerLength import SusceptancePerLength
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.PerLengthImpedance import PerLengthImpedance
+from IEC61970.Base.Domain.ConductancePerLength import ConductancePerLength
+from IEC61970.Base.Domain.ReactancePerLength import ReactancePerLength
+from IEC61970.Base.Domain.ResistancePerLength import ResistancePerLength
+from IEC61970.Base.Domain.SusceptancePerLength import SusceptancePerLength
+from IEC61970.Base.Wires.PerLengthImpedance import PerLengthImpedance
 
 
 class PerLengthSequenceImpedance(PerLengthImpedance):

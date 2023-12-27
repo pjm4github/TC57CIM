@@ -1,5 +1,5 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Customers.TroubleTicket import TroubleTicket
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.DateTime import DateTime
+from IEC61968.Customers.TroubleTicket import TroubleTicket
+from IEC61970.Base.Domain.DateTime import DateTime
 
 
 ###########################################################

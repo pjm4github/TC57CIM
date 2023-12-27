@@ -6,9 +6,9 @@
 # Created on:      18-Dec-2023 12:51:12 AM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UnitSymbol import UnitSymbol
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Float import Float
+from IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
+from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
+# from IEC61970.Base.Domain.Float import Float
 
 class AngleRadians:
     """Phase angle in radians.

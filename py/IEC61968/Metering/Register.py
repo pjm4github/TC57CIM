@@ -1,7 +1,7 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.TimeInterval import TimeInterval
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.Channel import Channel
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.EndDeviceFunction import EndDeviceFunction
+from IEC61970.Base.Domain.TimeInterval import TimeInterval
+from IEC61970.Base.Core import IdentifiedObject
+from IEC61968.Metering.Channel import Channel
+from IEC61968.Metering.EndDeviceFunction import EndDeviceFunction
 
 
 class Register(IdentifiedObject):

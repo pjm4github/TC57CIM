@@ -1,6 +1,6 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Status import Status
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.StreetDetail import StreetDetail
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.TownDetail import TownDetail
+from IEC61968.Common.Status import Status
+from IEC61968.Common.StreetDetail import StreetDetail
+from IEC61968.Common.TownDetail import TownDetail
 
 
 class StreetAddress:

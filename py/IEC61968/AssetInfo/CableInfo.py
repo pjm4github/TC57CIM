@@ -6,12 +6,12 @@
 # Created on:      19-Dec-2023 11:00:09 AM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61968.AssetInfo.CableConstructionKind import CableConstructionKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Length import Length
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Temperature import Temperature
-from CIM_STD_PYTHON.TC57CIM.IEC61968.AssetInfo.CableOuterJacketKind import CableOuterJacketKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.AssetInfo.CableShieldMaterialKind import CableShieldMaterialKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.AssetInfo.WireInfo import WireInfo
+from IEC61968.AssetInfo.CableConstructionKind import CableConstructionKind
+from IEC61970.Base.Domain.Length import Length
+from IEC61970.Base.Domain.Temperature import Temperature
+from IEC61968.AssetInfo.CableOuterJacketKind import CableOuterJacketKind
+from IEC61968.AssetInfo.CableShieldMaterialKind import CableShieldMaterialKind
+from IEC61968.AssetInfo.WireInfo import WireInfo
 
 class CableInfo(WireInfo):
     """Cable data.

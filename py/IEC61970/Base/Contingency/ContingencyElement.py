@@ -6,7 +6,7 @@
 # Created on:      17-Dec-2023 7:36:35 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
 class ContingencyElement(IdentifiedObject):
     """An element of a system event to be studied by contingency analysis,

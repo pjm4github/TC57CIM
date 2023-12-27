@@ -1,13 +1,13 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 from typing import Optional
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ActivePower import ActivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.PerCent import PerCent
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ReactivePower import ReactivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.LoadModel.LoadResponseCharacteristic import LoadResponseCharacteristic
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.EnergyConnection import EnergyConnection
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.EnergyConsumerPhase import EnergyConsumerPhase
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.PhaseShuntConnectionKind import PhaseShuntConnectionKind
+from IEC61970.Base.Domain.ActivePower import ActivePower
+from IEC61970.Base.Domain.PerCent import PerCent
+from IEC61970.Base.Domain.ReactivePower import ReactivePower
+from IEC61970.Base.LoadModel.LoadResponseCharacteristic import LoadResponseCharacteristic
+from IEC61970.Base.Wires.EnergyConnection import EnergyConnection
+from IEC61970.Base.Wires.EnergyConsumerPhase import EnergyConsumerPhase
+from IEC61970.Base.Wires.PhaseShuntConnectionKind import PhaseShuntConnectionKind
 
 
 class EnergyConsumer(EnergyConnection):

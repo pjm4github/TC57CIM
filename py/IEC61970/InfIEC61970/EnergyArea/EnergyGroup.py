@@ -7,11 +7,11 @@
 # Original author: selaost1
 # 
 #######################################################
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Boolean import Boolean
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ActivePower import ActivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.EnergyArea.EnergyTypeReference import EnergyTypeReference
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.EnergyArea.EnergySchedulingArea import EnergySchedulingArea
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
+# from IEC61970.Base.Domain.Boolean import Boolean
+from IEC61970.Base.Domain.ActivePower import ActivePower
+from IEC61970.InfIEC61970.EnergyArea.EnergyTypeReference import EnergyTypeReference
+from IEC61970.InfIEC61970.EnergyArea.EnergySchedulingArea import EnergySchedulingArea
+from IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
 
 
 class EnergyGroup(PowerSystemResource):

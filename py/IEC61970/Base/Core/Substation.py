@@ -3,11 +3,11 @@
 # from bay import Bay
 # from dc_converter_unit import DCConverterUnit
 # from feeder import Feeder
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Bay import Bay
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.EquipmentContainer import EquipmentContainer
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Feeder import Feeder
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.VoltageLevel import VoltageLevel
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.DC.DCConverterUnit import DCConverterUnit
+from IEC61970.Base.Core.Bay import Bay
+from IEC61970.Base.Core.EquipmentContainer import EquipmentContainer
+from IEC61970.Base.Core.Feeder import Feeder
+from IEC61970.Base.Core.VoltageLevel import VoltageLevel
+from IEC61970.Base.DC.DCConverterUnit import DCConverterUnit
 
 
 class Substation(EquipmentContainer):

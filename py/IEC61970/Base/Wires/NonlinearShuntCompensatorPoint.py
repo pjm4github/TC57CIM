@@ -1,8 +1,8 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 from typing import Optional
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Conductance import Conductance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Susceptance import Susceptance
+from IEC61970.Base.Domain.Conductance import Conductance
+from IEC61970.Base.Domain.Susceptance import Susceptance
 
 
 class NonlinearShuntCompensatorPoint:

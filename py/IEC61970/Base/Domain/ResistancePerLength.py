@@ -2,8 +2,8 @@
 from decimal import Decimal
 from typing import Optional
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UnitSymbol import UnitSymbol
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
+from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
+from IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
 
 
 class ResistancePerLength:

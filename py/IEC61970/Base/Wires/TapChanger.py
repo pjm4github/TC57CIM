@@ -1,9 +1,9 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 from typing import Optional
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Seconds import Seconds
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Voltage import Voltage
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.TapChangerControl import TapChangerControl
+from IEC61970.Base.Domain.Seconds import Seconds
+from IEC61970.Base.Domain.Voltage import Voltage
+from IEC61970.Base.Wires.TapChangerControl import TapChangerControl
 
 
 class TapChanger:

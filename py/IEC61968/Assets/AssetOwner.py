@@ -1,4 +1,4 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.AssetOrganisationRole import AssetOrganisationRole
+from IEC61968.Assets.AssetOrganisationRole import AssetOrganisationRole
 
 
 class AssetOwner(AssetOrganisationRole):

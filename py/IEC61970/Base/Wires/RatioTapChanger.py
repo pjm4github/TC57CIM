@@ -1,10 +1,10 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 from typing import Any
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.PerCent import PerCent
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.RatioTapChangerTable import RatioTapChangerTable
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.TapChanger import TapChanger
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.TransformerControlMode import TransformerControlMode
+from IEC61970.Base.Domain.PerCent import PerCent
+from IEC61970.Base.Wires.RatioTapChangerTable import RatioTapChangerTable
+from IEC61970.Base.Wires.TapChanger import TapChanger
+from IEC61970.Base.Wires.TransformerControlMode import TransformerControlMode
 
 
 class RatioTapChanger(TapChanger):

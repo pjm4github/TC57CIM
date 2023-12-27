@@ -1,15 +1,15 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:22:57 2023
 from typing import Optional
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.ConductingEquipment import ConductingEquipment
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Terminal import Terminal
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ActivePower import ActivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ActivePowerPerCurrentFlow import ActivePowerPerCurrentFlow
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ApparentPower import ApparentPower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.CurrentFlow import CurrentFlow
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ReactivePower import ReactivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Resistance import Resistance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Voltage import Voltage
+from IEC61970.Base.Core.ConductingEquipment import ConductingEquipment
+from IEC61970.Base.Core.Terminal import Terminal
+from IEC61970.Base.Domain.ActivePower import ActivePower
+from IEC61970.Base.Domain.ActivePowerPerCurrentFlow import ActivePowerPerCurrentFlow
+from IEC61970.Base.Domain.ApparentPower import ApparentPower
+from IEC61970.Base.Domain.CurrentFlow import CurrentFlow
+from IEC61970.Base.Domain.ReactivePower import ReactivePower
+from IEC61970.Base.Domain.Resistance import Resistance
+from IEC61970.Base.Domain.Voltage import Voltage
 
 
 class ACDCConverter(ConductingEquipment):

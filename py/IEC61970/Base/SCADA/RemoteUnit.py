@@ -6,9 +6,9 @@
 # Created on:      17-Dec-2023 7:19:13 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.SCADA.RemoteUnitType import RemoteUnitType
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.SCADA.RemotePoint import RemotePoint
+from IEC61970.Base.SCADA.RemoteUnitType import RemoteUnitType
+from IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
+from IEC61970.Base.SCADA.RemotePoint import RemotePoint
 
 class RemoteUnit(PowerSystemResource):
     """A remote unit can be a RTU, IED, substation control system, control center etc.

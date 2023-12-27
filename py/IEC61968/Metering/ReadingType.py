@@ -1,19 +1,19 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.AccumulationKind import AccumulationKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.AggregateKind import AggregateKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.RationalNumber import RationalNumber
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.CommodityKind import CommodityKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.FlowDirectionKind import FlowDirectionKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.ReadingInterharmonic import ReadingInterharmonic
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.MacroPeriodKind import MacroPeriodKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.MeasurementKind import MeasurementKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.MeasuringPeriodKind import MeasuringPeriodKind
+from IEC61968.Metering.AccumulationKind import AccumulationKind
+from IEC61968.Metering.AggregateKind import AggregateKind
+from IEC61968.Metering.RationalNumber import RationalNumber
+from IEC61968.Metering.CommodityKind import CommodityKind
+from IEC61968.Metering.FlowDirectionKind import FlowDirectionKind
+from IEC61968.Metering.ReadingInterharmonic import ReadingInterharmonic
+from IEC61968.Metering.MacroPeriodKind import MacroPeriodKind
+from IEC61968.Metering.MeasurementKind import MeasurementKind
+from IEC61968.Metering.MeasuringPeriodKind import MeasuringPeriodKind
 
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.Channel import Channel
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.PhaseCode import PhaseCode
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Currency import Currency
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UnitSymbol import UnitSymbol
+from IEC61968.Metering.Channel import Channel
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Core.PhaseCode import PhaseCode
+from IEC61970.Base.Domain.Currency import Currency
+from IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
+from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 
 
 class ReadingType(IdentifiedObject):

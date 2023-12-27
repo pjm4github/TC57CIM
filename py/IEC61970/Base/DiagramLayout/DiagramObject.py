@@ -1,11 +1,11 @@
 
 from typing import Optional
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.DiagramLayout.Diagram import Diagram
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.DiagramLayout.DiagramObjectPoint import DiagramObjectPoint
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.DiagramLayout.DiagramObjectStyle import DiagramObjectStyle
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.DiagramLayout.VisibilityLayer import VisibilityLayer
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.AngleDegrees import AngleDegrees
+from IEC61970.Base.DiagramLayout.Diagram import Diagram
+from IEC61970.Base.DiagramLayout.DiagramObjectPoint import DiagramObjectPoint
+from IEC61970.Base.DiagramLayout.DiagramObjectStyle import DiagramObjectStyle
+from IEC61970.Base.DiagramLayout.VisibilityLayer import VisibilityLayer
+from IEC61970.Base.Domain.AngleDegrees import AngleDegrees
 
 
 class DiagramObject:

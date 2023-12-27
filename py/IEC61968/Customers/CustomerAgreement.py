@@ -1,8 +1,8 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Customers.PricingStructure import PricingStructure
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Customers.ServiceCategory import ServiceCategory
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Customers.ServiceLocation import ServiceLocation
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.UsagePoint import UsagePoint
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.DateTime import DateTime
+from IEC61968.Customers.PricingStructure import PricingStructure
+from IEC61968.Customers.ServiceCategory import ServiceCategory
+from IEC61968.Customers.ServiceLocation import ServiceLocation
+from IEC61968.Metering.UsagePoint import UsagePoint
+from IEC61970.Base.Domain.DateTime import DateTime
 
 
 ###########################################################

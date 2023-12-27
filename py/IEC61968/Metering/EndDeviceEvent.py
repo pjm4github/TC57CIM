@@ -1,8 +1,8 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.ActivityRecord import ActivityRecord
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.EndDeviceEventType import EndDeviceEventType
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.EndDeviceEventDetail import EndDeviceEventDetail
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.EndDevice import EndDevice
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.UsagePoint import UsagePoint
+from IEC61968.Common.ActivityRecord import ActivityRecord
+from IEC61968.Metering.EndDeviceEventType import EndDeviceEventType
+from IEC61968.Metering.EndDeviceEventDetail import EndDeviceEventDetail
+from IEC61968.Metering.EndDevice import EndDevice
+from IEC61968.Metering.UsagePoint import UsagePoint
 
 
 class EndDeviceEvent(ActivityRecord):

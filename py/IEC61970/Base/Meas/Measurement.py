@@ -6,15 +6,15 @@
 # Created on:      17-Dec-2023 6:59:21 PM
 # 
 #######################################################
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.String import String
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.PhaseCode import PhaseCode
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UncefactUnitCode import UncefactUnitCode
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.UnitSymbol import UnitSymbol
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.ACDCTerminal import ACDCTerminal
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.InfSIPS.ProtectiveActionAdjustment import ProtectiveActionAdjustment
-from CIM_STD_PYTHON.TC57CIM.IEC61968.AssetMeas.CalculationMethodHierarchy import CalculationMethodHierarchy
+# from IEC61970.Base.Domain.String import String
+from IEC61970.Base.Core.PhaseCode import PhaseCode
+from IEC61970.Base.Domain.UncefactUnitCode import UncefactUnitCode
+from IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
+from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Core.ACDCTerminal import ACDCTerminal
+from IEC61970.InfIEC61970.InfSIPS.ProtectiveActionAdjustment import ProtectiveActionAdjustment
+from IEC61968.AssetMeas.CalculationMethodHierarchy import CalculationMethodHierarchy
 
 class Measurement(IdentifiedObject):
     """A Measurement represents any measured, calculated or non-measured non-

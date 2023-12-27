@@ -6,8 +6,8 @@
 # Created on:      19-Dec-2023 8:38:06 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Common.Location import Location
-from CIM_STD_PYTHON.TC57CIM.IEC61968.InfIEC61968.InfWork.OneCallRequest import OneCallRequest
+from IEC61968.Common.Location import Location
+from IEC61968.InfIEC61968.InfWork.OneCallRequest import OneCallRequest
 
 
 class WorkLocation(Location):

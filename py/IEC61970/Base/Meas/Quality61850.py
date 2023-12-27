@@ -1,6 +1,6 @@
 # quality_61850.py
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Meas.Validity import Validity
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.SCADA.Source import Source
+from IEC61970.Base.Meas.Validity import Validity
+from IEC61970.Base.SCADA.Source import Source
 
 
 class Quality61850:

@@ -1,5 +1,5 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.BasicIntervalSchedule import BasicIntervalSchedule
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IrregularTimePoint import IrregularTimePoint
+from IEC61970.Base.Core.BasicIntervalSchedule import BasicIntervalSchedule
+from IEC61970.Base.Core.IrregularTimePoint import IrregularTimePoint
 
 
 class IrregularIntervalSchedule(BasicIntervalSchedule):

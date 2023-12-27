@@ -1,19 +1,19 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:41:01 2023
 from typing import Any
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Terminal import Terminal
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ActivePower import ActivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ReactivePower import ReactivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.StateVariables.StateVariable import StateVariable
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.StateVariables.SvVoltage import SinglePhaseKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.EnergyArea.EnergyGroup import EnergyGroup
+from IEC61970.Base.Core.Terminal import Terminal
+from IEC61970.Base.Domain.ActivePower import ActivePower
+from IEC61970.Base.Domain.ReactivePower import ReactivePower
+from IEC61970.Base.StateVariables.StateVariable import StateVariable
+from IEC61970.Base.StateVariables.SvVoltage import SinglePhaseKind
+from IEC61970.InfIEC61970.EnergyArea.EnergyGroup import EnergyGroup
 
 
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.StateVariables.state_variable import StateVariable
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Curve import ActivePower, ReactivePower
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Wires.PhaseCode import SinglePhaseKind
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Terminal import Terminal
-# from CIM_STD_PYTHON.TC57CIM.IEC61970.Meas.EnergyValues import EnergyGroup
+# from IEC61970.Base.StateVariables.state_variable import StateVariable
+# from IEC61970.Base.Core.Curve import ActivePower, ReactivePower
+# from IEC61970.Wires.PhaseCode import SinglePhaseKind
+# from IEC61970.Base.Core.Terminal import Terminal
+# from IEC61970.Meas.EnergyValues import EnergyGroup
 
 
 

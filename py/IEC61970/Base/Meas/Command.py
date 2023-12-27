@@ -1,6 +1,6 @@
 # Command.py
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Meas.Control import Control
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Meas.ValueAliasSet import ValueAliasSet
+from IEC61970.Base.Meas.Control import Control
+from IEC61970.Base.Meas.ValueAliasSet import ValueAliasSet
 
 
 class Command(Control):

@@ -7,9 +7,9 @@
 # Original author: sveinols
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.InfSIPS.PinEquipmentKind import PinEquipmentKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Equipment import Equipment
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.InfSIPS.GateInputPin import GateInputPin
+from IEC61970.InfIEC61970.InfSIPS.PinEquipmentKind import PinEquipmentKind
+from IEC61970.Base.Core.Equipment import Equipment
+from IEC61970.InfIEC61970.InfSIPS.GateInputPin import GateInputPin
 
 class PinEquipment(GateInputPin):
     """Value associated with Equipment is used as compare.

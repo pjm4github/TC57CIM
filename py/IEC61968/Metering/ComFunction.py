@@ -1,7 +1,7 @@
 
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.ComDirectionKind import ComDirectionKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.ComTechnologyKind import ComTechnologyKind
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.EndDeviceFunction import EndDeviceFunction
+from IEC61968.Metering.ComDirectionKind import ComDirectionKind
+from IEC61968.Metering.ComTechnologyKind import ComTechnologyKind
+from IEC61968.Metering.EndDeviceFunction import EndDeviceFunction
 
 
 class ComFunction(EndDeviceFunction):

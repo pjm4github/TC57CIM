@@ -1,8 +1,8 @@
 
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.AssetInfo import AssetInfo
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Metering.EndDeviceCapability import EndDeviceCapability
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.CurrentFlow import CurrentFlow
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Voltage import Voltage
+from IEC61968.Assets.AssetInfo import AssetInfo
+from IEC61968.Metering.EndDeviceCapability import EndDeviceCapability
+from IEC61970.Base.Domain.CurrentFlow import CurrentFlow
+from IEC61970.Base.Domain.Voltage import Voltage
 
 
 class EndDeviceInfo(AssetInfo):

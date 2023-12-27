@@ -1,10 +1,10 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61968.AssetInfo.BushingInsulationKind import BushingInsulationKind
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Capacitance import Capacitance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.PerCent import PerCent
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.CurrentFlow import CurrentFlow
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Voltage import Voltage
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.AssetInfo import AssetInfo
+from IEC61968.AssetInfo.BushingInsulationKind import BushingInsulationKind
+from IEC61970.Base.Domain.Capacitance import Capacitance
+from IEC61970.Base.Domain.PerCent import PerCent
+from IEC61970.Base.Domain.CurrentFlow import CurrentFlow
+from IEC61970.Base.Domain.Voltage import Voltage
+from IEC61968.Assets.AssetInfo import AssetInfo
 
 class BushingInfo(AssetInfo):
     

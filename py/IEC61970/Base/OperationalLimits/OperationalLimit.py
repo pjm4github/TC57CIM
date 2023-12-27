@@ -1,7 +1,7 @@
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.OperationalLimits.OperationalLimitType import OperationalLimitType
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
-from CIM_STD_PYTHON.TC57CIM.IEC61970.InfIEC61970.InfOperationalLimits.LimitDependency import LimitDependency
+from IEC61970.Base.OperationalLimits.OperationalLimitType import OperationalLimitType
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.InfIEC61970.InfOperationalLimits.LimitDependency import LimitDependency
 
 
 class OperationalLimit(IdentifiedObject):

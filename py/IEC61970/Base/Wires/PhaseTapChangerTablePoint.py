@@ -1,9 +1,9 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 from typing import Any
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.AngleDegrees import AngleDegrees
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.PhaseTapChangerTable import PhaseTapChangerTable
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.TapChangerTablePoint import TapChangerTablePoint
+from IEC61970.Base.Domain.AngleDegrees import AngleDegrees
+from IEC61970.Base.Wires.PhaseTapChangerTable import PhaseTapChangerTable
+from IEC61970.Base.Wires.TapChangerTablePoint import TapChangerTablePoint
 
 
 class PhaseTapChangerTablePoint(TapChangerTablePoint):

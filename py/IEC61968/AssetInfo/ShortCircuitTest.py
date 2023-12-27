@@ -1,11 +1,11 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61968.AssetInfo.TransformerEndInfo import TransformerEndInfo
-from CIM_STD_PYTHON.TC57CIM.IEC61968.AssetInfo.TransformerTest import TransformerTest
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.CurrentFlow import CurrentFlow
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Impedance import Impedance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.KiloActivePower import KiloActivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ApparentPower import ApparentPower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.PerCent import PerCent
+from IEC61968.AssetInfo.TransformerEndInfo import TransformerEndInfo
+from IEC61968.AssetInfo.TransformerTest import TransformerTest
+from IEC61970.Base.Domain.CurrentFlow import CurrentFlow
+from IEC61970.Base.Domain.Impedance import Impedance
+from IEC61970.Base.Domain.KiloActivePower import KiloActivePower
+from IEC61970.Base.Domain.ApparentPower import ApparentPower
+from IEC61970.Base.Domain.PerCent import PerCent
 
 
 class ShortCircuitTest(TransformerTest):

@@ -1,8 +1,8 @@
-from CIM_STD_PYTHON.TC57CIM.IEC61968.Assets.CatalogAssetType import CatalogAssetType
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ActivePower import ActivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Reactance import Reactance
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.ReactivePower import ReactivePower
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Resistance import Resistance
+from IEC61968.Assets.CatalogAssetType import CatalogAssetType
+from IEC61970.Base.Domain.ActivePower import ActivePower
+from IEC61970.Base.Domain.Reactance import Reactance
+from IEC61970.Base.Domain.ReactivePower import ReactivePower
+from IEC61970.Base.Domain.Resistance import Resistance
 
 
 class GeneratorTypeAsset(CatalogAssetType):

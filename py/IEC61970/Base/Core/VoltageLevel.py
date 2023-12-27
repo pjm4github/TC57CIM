@@ -6,10 +6,10 @@
 # Created on:      16-Dec-2023 6:34:02 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Domain.Voltage import Voltage
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.EquipmentContainer import EquipmentContainer
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.Bay import Bay
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.BaseVoltage import BaseVoltage
+from IEC61970.Base.Domain.Voltage import Voltage
+from IEC61970.Base.Core.EquipmentContainer import EquipmentContainer
+from IEC61970.Base.Core.Bay import Bay
+from IEC61970.Base.Core.BaseVoltage import BaseVoltage
 
 class VoltageLevel(EquipmentContainer):
     """A collection of equipment at one common system voltage forming a switchgear.

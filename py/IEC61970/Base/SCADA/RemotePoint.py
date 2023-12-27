@@ -6,7 +6,7 @@
 # Created on:      17-Dec-2023 7:18:36 PM
 # 
 #######################################################
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
 class RemotePoint(IdentifiedObject):
     """For a RTU remote points correspond to telemetered values or control outputs.

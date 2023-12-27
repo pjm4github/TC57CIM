@@ -1,6 +1,6 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.RegulatingControl import RegulatingControl
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Wires.VoltageControlZone import VoltageControlZone
+from IEC61970.Base.Wires.RegulatingControl import RegulatingControl
+from IEC61970.Base.Wires.VoltageControlZone import VoltageControlZone
 
 
 class RegulationSchedule:

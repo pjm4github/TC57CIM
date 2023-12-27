@@ -1,9 +1,9 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:41:01 2023
 from typing import Optional
 
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.Core.ConductingEquipment import ConductingEquipment
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.StateVariables.StateVariable import StateVariable
-from CIM_STD_PYTHON.TC57CIM.IEC61970.Base.StateVariables.SvVoltage import SinglePhaseKind
+from IEC61970.Base.Core.ConductingEquipment import ConductingEquipment
+from IEC61970.Base.StateVariables.StateVariable import StateVariable
+from IEC61970.Base.StateVariables.SvVoltage import SinglePhaseKind
 
 
 # from conducting_equipment import ConductingEquipment
