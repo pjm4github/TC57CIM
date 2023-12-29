@@ -9,12 +9,12 @@ from IEC61970.Base.Domain.Resistance import Resistance
 class DcShunt(DCConductingEquipment):
     """
     /**
-     * A shunt device within the DC system, typically used for filtering. Needed for
-     * transient and short circuit studies.
+     A shunt device within the DC system, typically used for filtering. Needed for
+     transient and short circuit studies.
      *
-     * @author selaost1
-     * @version 1.0
-     * @created 15-Dec-2023 4:38:27 PM
+     @author selaost1
+     @version 1.0
+     @created 15-Dec-2023 4:38:27 PM
      */
     """
     def __init__(self) -> None:

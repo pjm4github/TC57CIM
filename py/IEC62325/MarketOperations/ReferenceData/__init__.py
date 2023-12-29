@@ -1,0 +1,3 @@
+"""
+Market static reference data.
+"""

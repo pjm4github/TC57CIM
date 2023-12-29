@@ -5,10 +5,10 @@ from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 
 class MagneticField:
     """
-    * Magnetic field in nanotesla.
-    * @author ppbr003
-    * @version 1.0
-    * @created 25-Dec-2023 9:21:22 PM
+    Magnetic field in nanotesla.
+    @author ppbr003
+    @version 1.0
+    @created 25-Dec-2023 9:21:22 PM
     """
 
     def __init__(self):

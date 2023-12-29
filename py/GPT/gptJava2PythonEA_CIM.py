@@ -59,8 +59,9 @@ def convert_code(code_snippet):
             messages=[
                 {
                     "role": "system",
-                    "content": "Given the Java class, convert that code to python, using snake_case methods and local imports, include the original comments, and add python typing to the python class assuming that the Java class type "
-                               "is also availible as a Python library. Keep the class name CamelCase."
+                    "content": "Given this Java class, convert this code to python, using snake_case methods and "
+                               "attributes, include the original comments, and add python typing to the python class. "
+                               "Keep the class name CamelCase. Keep the imports in their original form."
                 },
                 {
                     "role": "user",
@@ -88,7 +89,7 @@ MAX_TOKENS = 10000  # Maximum number of tokens that can be used with the OPENAI 
 if __name__ == "__main__":
 
     # lots of hand-crafting here needed to work through each subdirectory under Base
-    directory_path = f"{os.path.expanduser('~')}/Documents/Git/GitHub/TC57CIM/py/IEC61970/Base/Topology/"
+    directory_path = f"{os.path.expanduser('~')}/Documents/Git/GitHub/TC57CIM/py/IEC62325/MarketOperations/ParticipantInterfaces/"
 
     output_path = f"{directory_path}/Converted/"
     try:
@@ -97,7 +98,7 @@ if __name__ == "__main__":
             if filename.endswith(".java"):
                 file_path = os.path.join(directory_path, filename)
                 if os.path.isfile(file_path):
-                    print(f"#################################################\nOpening {filename} for conversion")
+                    print(f"#######\nOpening {filename} for conversion")
                     file_size = os.path.getsize(file_path)
                     with open(directory_path + filename, 'r') as file:
                         code = file.readlines()

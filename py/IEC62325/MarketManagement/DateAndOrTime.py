@@ -8,10 +8,10 @@ from IEC62325.MarketManagement.MarketDocument import MarketDocument
 class DateAndOrTime:
 
     """
-    * The date and/or the time.
-    * @author mspivbe2
-    * @version 1.0
-    * @created 25-dec-2023 9:21:22 PM
+    The date and/or the time.
+    @author mspivbe2
+    @version 1.0
+    @created 25-dec-2023 9:21:22 PM
     """
 
     def __init__(self):

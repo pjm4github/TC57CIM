@@ -5,8 +5,8 @@ from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 class Minutes:
     """
     /**
-     * Time in minutes.
-     * @created 20-Dec-2023 6:20:37 PM
+     Time in minutes.
+     @created 20-Dec-2023 6:20:37 PM
      */
     """
     def __init__(self):

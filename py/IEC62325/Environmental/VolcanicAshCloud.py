@@ -12,7 +12,7 @@ from IEC62325.Environmental.EnvDomain.ParticulateDensity import ParticulateDensi
 class VolcanicAshCloud(AtmosphericPhenomenon):
 
     """
-    * Particulate density of the ash cloud during the time interval.
+    Particulate density of the ash cloud during the time interval.
     """
     def __init__(self):
         super().__init__()
@@ -20,7 +20,7 @@ class VolcanicAshCloud(AtmosphericPhenomenon):
         self.particle_size = Length()
 
     """
-    * The diameter of the particles during the time interval.
+    The diameter of the particles during the time interval.
     """
     def set_particle_size(self, particle_size):
         self.particle_size = Length(particle_size)

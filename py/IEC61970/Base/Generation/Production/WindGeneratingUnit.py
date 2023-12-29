@@ -14,7 +14,7 @@ from IEC61970.Base.Generation.Production.WindGenUnitKind import WindGenUnitKind
 
 class WindGeneratingUnit(GeneratingUnit):
     '''
-    * The kind of wind generating unit
+    The kind of wind generating unit
     '''
 
     def __init__(self):

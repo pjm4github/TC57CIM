@@ -6,7 +6,7 @@ import IEC61970.Base.Domain.Float;
  * Price of oil in monetary units.
  * @author USRAKHA
  * @version 1.0
- * @created 25-Dec-2023 8:48:37 PM
+ * @created 25-Dec-2023 9:21:23 PM
  */
 public class OilPrice {
 
