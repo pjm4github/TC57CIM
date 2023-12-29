@@ -8,18 +8,18 @@ class ProductAssetModel(IdentifiedObject):
     
     def __init__(self):
         super().__init__()
-        self.catalogue_number = str()
-        self.corporate_standard_kind = str()
-        self.drawing_number = str()
-        self.instruction_manual = str()
-        self.model_number = str()
-        self.model_version = str()
+        self.catalogue_number = ""
+        self.corporate_standard_kind = ""
+        self.drawing_number = ""
+        self.instruction_manual = ""
+        self.model_number = ""
+        self.model_version = ""
         self.overall_length = Length()
-        self.style_number = str()
-        self.usage_kind = str()
-        self.weight_total = str()
-        self.asset_info = str()
-        self.manufacturer = str()
+        self.style_number = ""
+        self.usage_kind = ""
+        self.weight_total = ""
+        self.asset_info = ""
+        self.manufacturer = ""
         self.asset_model_catalogue_items = AssetModelCatalogueItem()
-        self.catalog_asset_type = str()
+        self.catalog_asset_type = ""
 

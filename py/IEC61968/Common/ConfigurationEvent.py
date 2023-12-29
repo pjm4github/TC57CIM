@@ -19,7 +19,7 @@ class ConfigurationEvent(ActivityRecord):
 
     def __init__(self):
         super().__init__()
-        self.effective_datetime = DateTime()  # Date and time this event has or will become effective.
+        self.effective_DateTime = DateTime()  # Date and time this event has or will become effective.
         self.modified_by = ""  # Source/initiator of modification.
         self.remark = ""  # Free text remarks.
         self.fault_cause_type = FaultCauseType()

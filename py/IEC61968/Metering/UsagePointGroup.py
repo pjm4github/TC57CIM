@@ -7,5 +7,5 @@ class UsagePointGroup(IdentifiedObject):
 
     def __init__(self):
         super().__init__()
-        self.type = str()
+        self.type = ""
         self.usage_points = UsagePoint()

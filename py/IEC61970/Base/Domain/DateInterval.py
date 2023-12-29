@@ -13,5 +13,5 @@ class DateInterval:
     """
 
     def __init__(self) -> None:
-        self.start: Optional[DateTime] = None  #  Start date of this interval.
-        self.end: Optional[DateTime] = None  #  End date of this interval.
+        self.start: Optional[DateTime] = DateTime()   #  Start date of this interval.
+        self.end: Optional[DateTime] = DateTime()   #  End date of this interval.

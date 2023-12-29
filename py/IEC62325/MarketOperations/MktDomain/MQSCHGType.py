@@ -2,6 +2,6 @@
 from enum import Enum
 
 
-class MqsChgType(Enum):
+class MQSCHGType(Enum):
     ADD = 1  # * ADD - add
     CHG = 2  # * CHG - change

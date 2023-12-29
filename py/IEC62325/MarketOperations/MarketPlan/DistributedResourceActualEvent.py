@@ -1,17 +1,12 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-
-
+from IEC62325.MarketOperations.MarketPlan.MarketActualEvent import MarketActualEvent
 from IEC62325.MarketOperations.MarketSystem.MarketResults.InstructionClearing import InstructionClearing
-from IEC62325.MarketOperations.MarketSystem.MarketResults.InstructionClearingDOT import InstructionClearingDOT
 
 
 from IEC61970.Base.Domain.ActivePower import ActivePower
+from IEC62325.MarketOperations.MarketSystem.MarketResults.InstructionClearingDOT import InstructionClearingDOT
 from IEC62325.MarketOperations.MarketSystem.MarketResults.ResourcePerformanceEvaluation import \
     ResourcePerformanceEvaluation
-
-
-class MarketActualEvent:
-    pass
 
 
 class DistributedResourceActualEvent(MarketActualEvent):

@@ -16,8 +16,7 @@ class BranchEndFlow:
         """
         The Load Dump Rating for the branch
         """
-        self.load_dump_rating: float
-
+        self.load_dump_rating: float = 0.0
         """
         The Long Term Rating for the branch
         """

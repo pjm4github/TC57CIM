@@ -14,5 +14,5 @@ class SysLoadDistributionFactor:
         Used to calculate load "participation" of a connectivity node in an 
         host control area
         """
-        self.factor: float
+        self.factor: float = 0.0
         self.mkt_connectivity_node: MktConnectivityNode = MktConnectivityNode()

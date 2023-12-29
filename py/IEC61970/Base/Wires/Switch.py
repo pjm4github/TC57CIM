@@ -23,7 +23,7 @@ class Switch(ConductingEquipment):
         self.rated_current: Optional[CurrentFlow] = CurrentFlow()  # The maximum continuous current carrying capacity in amps governed by the device material and construction.
         self.retained: bool = False  # Branch is retained in a bus branch model...
         self.switch_on_count: int = 0  # The switch on count since the switch was last reset or initialized.
-        self.switch_on_date: Optional[datetime] = datetime.now()  # The date and time when the switch was last switched on.
+        self.switch_on_date: Optional[DateTime] = datetime.now()  # The date and time when the switch was last switched on.
         self.switch_phase: Optional[SwitchPhase] = SwitchPhase()  # The individual switch phases for the switch.
         self.switch_schedules: Optional[SwitchSchedule] = SwitchSchedule()  # A Switch can be associated with SwitchSchedules.
 
@@ -42,7 +42,7 @@ class Switch(ConductingEquipment):
     def get_switch_on_count(self) -> int:
         return self.switch_on_count
 
-    def get_switch_on_date(self) -> Optional[datetime]:
+    def get_switch_on_date(self) -> Optional[DateTime]:
         return self.switch_on_date
 
     def get_switch_phase(self) -> Optional[SwitchPhase]:

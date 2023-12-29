@@ -11,8 +11,7 @@ class EarthFaultCompensator:
     """
 
     def __init__(self) -> None:
-        self.r: Resistance
-
+        self.r: Resistance = Resistance()
     def get_r(self) -> Resistance:
         return self.r
 

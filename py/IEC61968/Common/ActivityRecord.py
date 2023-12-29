@@ -18,7 +18,7 @@ class ActivityRecord(IdentifiedObject):
     """
     def __init__(self):
         super().__init__()
-        self.created_datetime = DateTime()  # Date and time this activity record has been created (different from the
+        self.created_DateTime = DateTime()  # Date and time this activity record has been created (different from the
         # 'status.dateTime', which is the time of a status change of the associated object, if applicable).
         self.reason = ""  # Reason for event resulting in this activity record, typically supplied when user initiated.
         self.severity = ""  # Severity level of event resulting in this activity record.

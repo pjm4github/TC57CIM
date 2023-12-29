@@ -23,7 +23,7 @@ class VsConverter(ACDCConverter):
         self.p_pcc_control: VsPpccControlKind = VsPpccControlKind.PPCC_AND_UDC_DROOP
         self.q_pcc_control: VsQpccControlKind = VsQpccControlKind.VOLTAGE_PCC
         self.q_share: PerCent = PerCent()
-        self.target_q_pcc: ReactivePower
+        self.target_q_pcc: ReactivePower = ReactivePower()
         self.target_upcc: Voltage = Voltage()
         self.uv: Voltage = Voltage()
         self.capability_curve: VsCapabilityCurve = VsCapabilityCurve()

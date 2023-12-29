@@ -19,11 +19,11 @@ class CombinedCycleConfiguration(RegisteredGenerator):
         # Whether this CombinedCycleConfiguration is the primary configuration in the
         # associated Logical configuration?
         super().__init__()
-        self.primary_configuration: Optional[bool] = None
+        self.primary_configuration: Optional[bool] = False
         # Whether Combined Cycle Plant can be shut-down in this Configuration?
-        self.shutdown_flag: Optional[bool] = None
+        self.shutdown_flag: Optional[bool] = False
         # Whether Combined Cycle Plant can be started in this Logical Configuration?
-        self.startup_flag: Optional[bool] = None
+        self.startup_flag: Optional[bool] = False
         self.to_transition_state: Optional[CombinedCycleTransitionState] = CombinedCycleTransitionState()
         self.from_transition_state: Optional[CombinedCycleTransitionState] = CombinedCycleTransitionState()
         self.combined_cycle_configuration_member: Optional[CombinedCycleConfigurationMember] =\

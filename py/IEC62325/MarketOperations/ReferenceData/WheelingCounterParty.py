@@ -6,5 +6,4 @@ from IEC62325.MarketOperations.ReferenceData.RegisteredInterTie import Registere
 class WheelingCounterParty(IdentifiedObject):
     def __init__(self) -> None:
         super().__init__()
-        self.registered_inter_tie: RegisteredInterTie
-
+        self.registered_inter_tie: RegisteredInterTie = RegisteredInterTie()

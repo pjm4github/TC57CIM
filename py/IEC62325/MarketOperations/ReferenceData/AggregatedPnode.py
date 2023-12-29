@@ -22,7 +22,7 @@ class AggregatedPnode(Pnode):
         super().__init__()
 
         # * Aggregate Price Node Types
-        self.apnode_type: ApnodeType
+        self.apnode_type: ApnodeType = ApnodeType()
         # 	 * Designated Control Area participation in LMP price measurement
         # 	 *
         # 	 * 'Y' - Participates in both Local Market Power Mitigation (LMPM) and System

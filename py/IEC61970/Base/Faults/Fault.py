@@ -26,7 +26,7 @@ class Fault(IdentifiedObject):
         super().__init__()
         self.impedance: Optional[FaultImpedance] = FaultImpedance()  # Fault impedance. Its usage is described by 'kind'.
         self.kind: Optional[PhaseConnectedFaultKind] = PhaseConnectedFaultKind.LINE_TO_GROUND  # The kind of phase fault.
-        self.occurred_date_time: Optional[datetime] = datetime.now()  # The date and time at which the fault occurred.
+        self.occurred_date_time: Optional[DateTime] = datetime.now()  # The date and time at which the fault occurred.
         self.phases: Optional[PhaseCode] = PhaseCode.N  # The phases participating in the fault. The fault connections
                                            # into these phases are further specified by the type of fault.
         self.faulty_equipment: Optional[Equipment] = Equipment()  # Equipment carrying this fault.

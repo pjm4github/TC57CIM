@@ -17,7 +17,7 @@ class TroubleTicket(Document):
         Constructor for TroubleTicket.
         """
         super().__init__()
-        self.comment = str()
+        self.comment = ""
         """
         Free-form comment associated with the trouble call for example, "customer
         reported a large flash", etc.
@@ -28,7 +28,7 @@ class TroubleTicket(Document):
         Date and time the trouble has been reported.
         """
 
-        self.first_responder_status = str()
+        self.first_responder_status = ""
         """
         Indicates whether the first responder such as police, fire department etc.has
         been notified and whether they are on site or en route.

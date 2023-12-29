@@ -22,7 +22,7 @@ class MeasurementValue(IOPoint, MeasurementValueExt):
 
     def __init__(self):
         super().__init__()
-        self.sensor_accuracy: PerCent
+        self.sensor_accuracy: PerCent = PerCent()
         # The limit, expressed as a percentage of the sensor maximum, that errors will
         # not exceed when the sensor is used under  reference conditions.
         self.timestamp: DateTime = DateTime()

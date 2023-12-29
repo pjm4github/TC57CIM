@@ -23,7 +23,7 @@ class ContractRight:
         self.contract_mw = 0.0 # MW value of the contract
         self.contract_price = CostPerEnergyUnit()  # Financial value of the contract
         self.contract_priority = 0  # Priority for the contract. This should be unique among all contracts for a specific resource. This value is the directive for the SCUC algorithm on the order to satisfy/cut contracts.
-        self.contract_status = str()  # Contract status
+        self.contract_status = ""  # Contract status
         self.contract_type = ContractType.TE  # type of the contract. Possible values are but not limited by: ETC, TOR or RMR and RMT self schedules
         self.financial_location = YesNo.NO  # Indicator if the location associated with this contract is financial (e.g. pricing nodes) or physical (e.g. connectivity nodes).
         self.financial_rights_dam = YesNo.NO  # Flag to indicate this contract provides financial rights in the DA Market

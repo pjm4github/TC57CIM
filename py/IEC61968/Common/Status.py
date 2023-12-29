@@ -13,7 +13,7 @@ class Status:
     """Current status information relevant to an entity.
     """
     def __init__(self):
-        self.datetime = DateTime()  # Date and time for which status 'value' applies.
+        self.DateTime = DateTime()  # Date and time for which status 'value' applies.
         self.reason = ""  # Reason code or explanation for why an object went to the current status 'value'.
         self.remark = ""  # Pertinent information regarding the current 'value', as free form text.
         self.value = ""  # Status value at 'dateTime'; prior status changes may have been kept in instances of activity

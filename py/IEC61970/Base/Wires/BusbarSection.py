@@ -20,7 +20,7 @@ class BusbarSection(Connector):
     def __init__(self) -> None:
         super().__init__()
         self.ip_max: Optional[CurrentFlow] = CurrentFlow()
-        self.voltage_control_zone: Optional[VoltageControlZone] = None
+        self.voltage_control_zone: Optional[VoltageControlZone] = VoltageControlZone()
 
     def get_ip_max(self) -> CurrentFlow:
         return self.ip_max

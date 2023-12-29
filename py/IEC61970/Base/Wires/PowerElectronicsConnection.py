@@ -20,12 +20,12 @@ class PowerElectronicsConnection(RegulatingCondEq):
         super().__init__()
         self.max_q: Optional[ReactivePower] = ReactivePower()  # Maximum reactive power limit
         self.min_q: Optional[ReactivePower] = ReactivePower()  # Minimum reactive power limit
-        self.p: Optional[ActivePower] = None  # Active power injection
+        self.p: Optional[ActivePower] = ActivePower()  # Active power injection
         self.q: Optional[ReactivePower] = ReactivePower()  # Reactive power injection
         self.r: Optional[Resistance] = Resistance()  # Equivalent resistance of generator
         self.r0: Optional[Resistance] = Resistance()  # Zero sequence resistance of the synchronous machine
-        self.rated_s: Optional[ApparentPower] = None  # Nameplate apparent power rating for the unit
-        self.rated_u: Optional[Voltage] = None  # Rated voltage
+        self.rated_s: Optional[ApparentPower] = ApparentPower()  # Nameplate apparent power rating for the unit
+        self.rated_u: Optional[Voltage] = Voltage()  # Rated voltage
         self.rn: Optional[Resistance] = Resistance()  # Negative sequence Thevenin resistance
         self.x: Optional[Reactance] = Reactance()  # Positive sequence Thevenin reactance
         self.x0: Optional[Reactance] = Reactance()  # Zero sequence Thevenin reactance

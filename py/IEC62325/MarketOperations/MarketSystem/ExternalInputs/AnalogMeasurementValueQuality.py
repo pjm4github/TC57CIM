@@ -12,6 +12,7 @@ class AnalogMeasurementValueQuality(MeasurementValueQuality):
         Constructor for AnalogMeasurementValueQuality
         """
         super().__init__()
-        self.scada_quality_code: str
+        self.scada_quality_code: str = ""
+
 
 

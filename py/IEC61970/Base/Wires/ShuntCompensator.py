@@ -22,7 +22,7 @@ class ShuntCompensator:
         self.sections: Optional[float] = 0.0 # Shunt compensator sections in use
         self.shunt_compensator_phase: Optional[ShuntCompensatorPhase] = ShuntCompensatorPhase() # The individual phases models for the shunt compensator
         self.switch_on_count: int = 0 # The switch on count since the capacitor count was last reset or initialized
-        self.switch_on_date: Optional[datetime] = datetime.now() # The date and time when the capacitor bank was last switched on
+        self.switch_on_date: Optional[DateTime] = datetime.now() # The date and time when the capacitor bank was last switched on
         self.voltage_sensitivity: Optional[VoltagePerReactivePower] = VoltagePerReactivePower() # Voltage sensitivity required for the device to regulate the bus voltage
 
     def set_a_vr_delay(self, new_val: float):
@@ -85,7 +85,7 @@ class ShuntCompensator:
     def get_switch_on_count(self) -> int:
         return self.switch_on_count
 
-    def get_switch_on_date(self) -> Optional[datetime]:
+    def get_switch_on_date(self) -> Optional[DateTime]:
         return self.switch_on_date
 
     def get_voltage_sensitivity(self) -> float:
