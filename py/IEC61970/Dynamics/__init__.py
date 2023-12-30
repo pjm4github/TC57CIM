@@ -1,4 +1,4 @@
-"""
+__description__ = """
 The CIM dynamic model definitions reflect the most common IEEE or, in the case of wind models, IEC,
 representations of models as well as models included in some of the transient stability software widely
 used by utilities.
@@ -10,6 +10,4 @@ are within accepted engineering practice, caused by different internal represent
 
 Notes:
 1. Wind models package is defined in accordance with IEC 61400-27-1.
-
-
 """

@@ -5,5 +5,6 @@ from datetime import date
 # A local timezone relative UTC is specified as "yyyy-mm-dd(+/-)hh:mm".
 
 class Date(date):
-    def __init__(self, **kwargs):
-        self.value = "yyyy-mm-dd"
+    def __init__(self, value=None, **kwargs):
+        super().__init__(**kwargs)
+        self.value = value  # "yyyy-mm-dd"
