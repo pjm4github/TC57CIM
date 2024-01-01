@@ -16,7 +16,7 @@ class FlowgateValue:
     def __init__(self) -> None:
         self.economic_dispatch_limit: int = 0  # Limit for Economic Dispatch priority 6 energy flow on the specified flowgate
         self.effective_date: DateTime = DateTime()  # Date/Time when record becomes effective
-        self.firm_network_limit: int  # Limit for firm flow on the specified flowgate for the specified time period
+        self.firm_network_limit: int = 0  # Limit for firm flow on the specified flowgate for the specified time period
         self.flow_direction_flag: FlowDirectionType = FlowDirectionType.BI_DIRECTIONAL  # Specifies the direction of energy flow in the flowgate
         self.mkt_flow: int = 0  # The amount of energy flow over a specified flowgate due to generation in the market
         self.net_firm_network_limit: int = 0  # Net Energy flow in flowgate for the associated FlowgatePartner

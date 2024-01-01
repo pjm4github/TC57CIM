@@ -15,8 +15,8 @@ class IPAccessPoint(CommunicationLink):
 
     def __init__(self) -> None:
         super().__init__()
-        self.address: Optional[str] = ""
-        self.address_type: Optional[IPAddressKind] = IPAddressKind.IPv4
-        self.gateway: Optional[str] = ""
-        self.subnet: Optional[str] = ""
+        self.addressOptional[str] = ""
+        self.address_typeOptional[IPAddressKind] = IPAddressKind.IPv4
+        self.gatewayOptional[str] = ""
+        self.subnetOptional[str] = ""
 

@@ -14,19 +14,19 @@ class BidPriceCap:
     def __init__(self) -> None:
 
         # Bid Ceiling ($/MWH)
-        self.bid_ceiling: Optional[CostPerEnergyUnit] = CostPerEnergyUnit()
+        self.bid_ceilingOptional[CostPerEnergyUnit] = CostPerEnergyUnit()
 
         # Bid Ceiling ($/MWH) for generic AS versus a specific market product
-        self.bid_ceiling_as: Optional[CostPerEnergyUnit] = CostPerEnergyUnit()
+        self.bid_ceiling_asOptional[CostPerEnergyUnit] = CostPerEnergyUnit()
 
         # Bid Floor, ($/MWH)
-        self.bid_floor: Optional[CostPerEnergyUnit] = CostPerEnergyUnit()
+        self.bid_floorOptional[CostPerEnergyUnit] = CostPerEnergyUnit()
 
         # Bid Floor ($/MWH) for generic AS versus a specific market product
-        self.bid_floor_as: Optional[CostPerEnergyUnit] = CostPerEnergyUnit()
+        self.bid_floor_asOptional[CostPerEnergyUnit] = CostPerEnergyUnit()
 
         # Bid Default Price($/MWH)
-        self.default_price: Optional[CostPerEnergyUnit] = CostPerEnergyUnit()
+        self.default_priceOptional[CostPerEnergyUnit] = CostPerEnergyUnit()
 
         # Market Type of the cap (DAM or RTM)
-        self.market_type: Optional[MarketType] = MarketType.DAM
+        self.market_typeOptional[MarketType] = MarketType.DAM

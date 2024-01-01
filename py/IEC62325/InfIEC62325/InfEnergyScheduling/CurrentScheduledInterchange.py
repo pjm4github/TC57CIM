@@ -20,6 +20,6 @@ class CurrentScheduledInterchange:
         Attribute Usage: Emergency use indicator, false = Emergency Schedular OFF, true
         = Emergency Schedular ON.
         """
-        self.current_net_tie_mw: Optional[float] = 0.0
-        self.use_emergency_schedule: Optional[bool] = False
-        self.internal_control_area: Optional[InternalControlArea] = InternalControlArea()
+        self.current_net_tie_mwOptional[float] = 0.0
+        self.use_emergency_scheduleOptional[bool] = False
+        self.internal_control_areaOptional[InternalControlArea] = InternalControlArea()

@@ -14,4 +14,4 @@ class SubstitutionResourceList:
         An indicator of the order a resource should be substituted. The lower the
         number the higher the precedence.
         """
-        self.precedence: Optional[int] = 0
+        self.precedenceOptional[int] = 0

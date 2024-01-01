@@ -25,12 +25,12 @@ class StaticVarCompensator(RegulatingCondEq):
         """Constructor"""
 
         super().__init__()
-        self.capacitive_rating: Optional[Reactance] = Reactance()
-        self.inductive_rating: Optional[Reactance] = Reactance()
-        self.q: Optional[ReactivePower] = ReactivePower()
-        self.slope: Optional[VoltagePerReactivePower] = VoltagePerReactivePower()
-        self.svc_control_mode: Optional[SVCControlMode] = SVCControlMode.VOLTAGE
-        self.voltage_set_point: Optional[Voltage] = Voltage()
+        self.capacitive_ratingOptional[Reactance] = Reactance()
+        self.inductive_ratingOptional[Reactance] = Reactance()
+        self.qOptional[ReactivePower] = ReactivePower()
+        self.slopeOptional[VoltagePerReactivePower] = VoltagePerReactivePower()
+        self.svc_control_modeOptional[SVCControlMode] = SVCControlMode.VOLTAGE
+        self.voltage_set_pointOptional[Voltage] = Voltage()
 
     def get_capacitive_rating(self) -> Optional[Reactance]:
         return self.capacitive_rating

@@ -10,17 +10,17 @@ class TapChangerTablePoint:
     calculated magnetizing susceptance = b(nominal) * (1 + b(from this class)/100). The b(nominal) is defined as the static magnetizing susceptance on the associated power transformer end or ends.  This model assumes the star impedance (pi model) form.
     """
     def __init__(self) -> None:
-        self.b: Optional[PerCent] = PerCent()  # The magnetizing branch susceptance deviation in percent of nominal value
-        self.g: Optional[PerCent] = PerCent()  # The magnetizing branch conductance deviation in percent of nominal value
-        self.r: Optional[PerCent] = PerCent()  # The resistance deviation in percent of nominal value
-        self.ratio: Optional[float] = 1.0  # The voltage at the tap step divided by rated voltage of the transformer end
-        self.step: Optional[int] = 1  # The tap step
-        self.x: Optional[PerCent] = PerCent()  # The series reactance deviation in percent of nominal value
+        self.bOptional[PerCent] = PerCent()  # The magnetizing branch susceptance deviation in percent of nominal value
+        self.gOptional[PerCent] = PerCent()  # The magnetizing branch conductance deviation in percent of nominal value
+        self.rOptional[PerCent] = PerCent()  # The resistance deviation in percent of nominal value
+        self.ratioOptional[float] = 1.0  # The voltage at the tap step divided by rated voltage of the transformer end
+        self.stepOptional[int] = 1  # The tap step
+        self.xOptional[PerCent] = PerCent()  # The series reactance deviation in percent of nominal value
 
     def get_b(self) -> Optional[float]:  # public PerCent getb()
         return self.b
 
-    def set_b(self, new_val: Optional[float]) -> None:  # public void setb(PerCent newVal)
+    def set_b(self, new_valOptional[float]) -> None:  # public void setb(PerCent newVal)
         self.b = new_val
 
     """
@@ -30,7 +30,7 @@ class TapChangerTablePoint:
     def get_g(self) -> Optional[float]:  # public PerCent getg()
         return self.g
 
-    def set_g(self, new_val: Optional[float]) -> None:  # public void setg(PerCent newVal)
+    def set_g(self, new_valOptional[float]) -> None:  # public void setg(PerCent newVal)
         self.g = new_val
 
     """
@@ -40,7 +40,7 @@ class TapChangerTablePoint:
     def get_r(self) -> Optional[float]:  # public PerCent getr()
         return self.r
 
-    def set_r(self, new_val: Optional[float]) -> None:  # public void setr(PerCent newVal)
+    def set_r(self, new_valOptional[float]) -> None:  # public void setr(PerCent newVal)
         self.r = new_val
 
     """
@@ -50,7 +50,7 @@ class TapChangerTablePoint:
     def get_ratio(self) -> Optional[float]:  # public float getratio()
         return self.ratio
 
-    def set_ratio(self, new_val: Optional[float]) -> None:  # public void setratio(float newVal)
+    def set_ratio(self, new_valOptional[float]) -> None:  # public void setratio(float newVal)
         self.ratio = new_val
 
     """
@@ -59,7 +59,7 @@ class TapChangerTablePoint:
     def get_step(self) -> Optional[int]:  # public int getstep()
         return self.step
 
-    def set_step(self, new_val: Optional[int]) -> None:  # public void setstep(int newVal)
+    def set_step(self, new_valOptional[int]) -> None:  # public void setstep(int newVal)
         self.step = new_val
 
     """
@@ -69,5 +69,5 @@ class TapChangerTablePoint:
     def get_x(self) -> Optional[float]:  # public PerCent getx()
         return self.x
 
-    def set_x(self, new_val: Optional[float]) -> None:  # public void setx(PerCent newVal)
+    def set_x(self, new_valOptional[float]) -> None:  # public void setx(PerCent newVal)
         self.x = new_val

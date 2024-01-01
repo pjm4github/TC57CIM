@@ -8,11 +8,11 @@ from IEC61970.Base.Wires.SinglePhaseKind import SinglePhaseKind
 class ShuntCompensatorPhase:
 
     def __init__(self) -> None:
-        self.maximum_sections: Optional[
+        self.maximum_sectionsOptional[
             int] = 0  # The maximum number of sections that may be switched in for this phase
-        self.normal_sections: Optional[
+        self.normal_sectionsOptional[
             int] = 0  # For the capacitor phase, the normal number of sections switched in
-        self.phase: Optional[SinglePhaseKind] = SinglePhaseKind.A  # Phase of this shunt compensator component
+        self.phaseOptional[SinglePhaseKind] = SinglePhaseKind.A  # Phase of this shunt compensator component
 
     def get_maximum_sections(self) -> Optional[int]:
         return self.maximum_sections

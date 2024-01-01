@@ -8,5 +8,5 @@ class InterchangeETCData:
     """
 
     def __init__(self) -> None:
-        self.contract_number: Optional[str] = ""  # Existing transmission contract number
-        self.usage_mw: Optional[float] = ""  # Existing transmission contract usage MW value
+        self.contract_numberOptional[str] = ""  # Existing transmission contract number
+        self.usage_mwOptional[float] = ""  # Existing transmission contract usage MW value

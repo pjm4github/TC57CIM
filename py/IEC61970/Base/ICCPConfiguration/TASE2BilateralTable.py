@@ -16,7 +16,7 @@ class Tase2BilateralTable(BilateralExchangeAgreement):
 
     def __init__(self) -> None:
         super().__init__()
-        self.bilateral_table_id: Optional[str] = ""
-        self.bilateral_table_version: Optional[str] = ""
-        self.tase2_version: Optional[str] = ""
+        self.bilateral_table_idOptional[str] = ""
+        self.bilateral_table_versionOptional[str] = ""
+        self.tase2_versionOptional[str] = ""
 

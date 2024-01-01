@@ -15,12 +15,12 @@ class ChargeComponent(IdentifiedObject):
     """
     def __init__(self):
         super().__init__()
-        self.delete_status: Optional[str] = ""
-        self.effective_date: Optional[DateTime] = DateTime()
-        self.equation: Optional[str] = ""
-        self.message: Optional[str] = ""
-        self.round_off: Optional[str] = ""
-        self.sum_: Optional[str] = ""
-        self.termination_date: Optional[DateTime] = DateTime()
-        self.type_: Optional[str] = ""
-        self.bill_determinants: Optional[BillDeterminant] = BillDeterminant()
+        self.delete_statusOptional[str] = ""
+        self.effective_dateOptional[DateTime] = DateTime()
+        self.equationOptional[str] = ""
+        self.messageOptional[str] = ""
+        self.round_offOptional[str] = ""
+        self.sum_Optional[str] = ""
+        self.termination_dateOptional[DateTime] = DateTime()
+        self.type_Optional[str] = ""
+        self.bill_determinantsOptional[BillDeterminant] = BillDeterminant()

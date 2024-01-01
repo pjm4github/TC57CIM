@@ -15,9 +15,9 @@ class ChargeGroup:
 
     def __init__(self) -> None:
         self.effective_date:Optional[DateTime] = DateTime()
-        self.market_code: Optional[str] = ""
+        self.market_codeOptional[str] = ""
         self.termination_date:Optional[DateTime] = DateTime()
         # A ChargeGroup instance can have relationships with other ChargeGroup instances.
-        self.charge_group_parent: Optional[ChargeGroup] = ChargeGroup()
-        self.mkt_user_attribute: Optional[MktUserAttribute] = MktUserAttribute()
+        self.charge_group_parentOptional[ChargeGroup] = ChargeGroup()
+        self.mkt_user_attributeOptional[MktUserAttribute] = MktUserAttribute()
 

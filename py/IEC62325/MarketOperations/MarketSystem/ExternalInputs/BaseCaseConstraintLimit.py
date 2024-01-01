@@ -15,4 +15,4 @@ class BaseCaseConstraintLimit(Curve):
     """
     def __init__(self) -> None:
         super().__init__()
-        self.security_constraint_sum: Optional[SecurityConstraintSum] = SecurityConstraintSum()
+        self.security_constraint_sumOptional[SecurityConstraintSum] = SecurityConstraintSum()

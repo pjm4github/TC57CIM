@@ -20,12 +20,12 @@ class Switch(ConductingEquipment):
         super().__init__()
         self.normal_open: bool = False  # The attribute is used in cases when no Measurement for the status value is present...
         self.open: bool = False  # The attribute tells if the switch is considered open when used as input to topology processing.
-        self.rated_current: Optional[CurrentFlow] = CurrentFlow()  # The maximum continuous current carrying capacity in amps governed by the device material and construction.
+        self.rated_currentOptional[CurrentFlow] = CurrentFlow()  # The maximum continuous current carrying capacity in amps governed by the device material and construction.
         self.retained: bool = False  # Branch is retained in a bus branch model...
         self.switch_on_count: int = 0  # The switch on count since the switch was last reset or initialized.
-        self.switch_on_date: Optional[DateTime] = datetime.now()  # The date and time when the switch was last switched on.
-        self.switch_phase: Optional[SwitchPhase] = SwitchPhase()  # The individual switch phases for the switch.
-        self.switch_schedules: Optional[SwitchSchedule] = SwitchSchedule()  # A Switch can be associated with SwitchSchedules.
+        self.switch_on_dateOptional[DateTime] = datetime.now()  # The date and time when the switch was last switched on.
+        self.switch_phaseOptional[SwitchPhase] = SwitchPhase()  # The individual switch phases for the switch.
+        self.switch_schedulesOptional[SwitchSchedule] = SwitchSchedule()  # A Switch can be associated with SwitchSchedules.
 
     def get_normal_open(self) -> bool:
         return self.normal_open

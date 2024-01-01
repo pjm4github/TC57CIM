@@ -13,4 +13,4 @@ class ReactancePerLength:
 
     def __init__(self) -> None:
         self.multiplier: UnitMultiplier = UnitMultiplier.none
-        self.value: Optional[float] = 0.0
+        self.valueOptional[float] = 0.0

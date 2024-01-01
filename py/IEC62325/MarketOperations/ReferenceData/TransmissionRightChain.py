@@ -8,6 +8,6 @@ from IEC62325.MarketOperations.ReferenceData.ContractRight import ContractRight
 class TransmissionRightChain(IdentifiedObject):
     def __init__(self) -> None:
         super().__init__()
-        self.ind_contract_right: Optional[ContractRight] = ContractRight()
-        self.chain_contract_right: Optional[ContractRight] = ContractRight()
+        self.ind_contract_rightOptional[ContractRight] = ContractRight()
+        self.chain_contract_rightOptional[ContractRight] = ContractRight()
 

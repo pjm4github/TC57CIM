@@ -19,7 +19,7 @@ class BidPriceSchedule(RegularIntervalSchedule):
         # BID Type:
         # I - Initial Bid;
         # F - Final Bid
-        self.bid_type: Optional[BidMitigationType] = BidMitigationType.INITIAL
+        self.bid_typeOptional[BidMitigationType] = BidMitigationType.INITIAL
 
         # Mitigation Status:
         # 'S' - Mitigated by SMPM because of "misconduct"
@@ -29,5 +29,5 @@ class BidPriceSchedule(RegularIntervalSchedule):
         # 'B' - Mitigated because of "misconduct" both by SMPM and modified by LMLM
         #       because of RMR rules
         # 'O' - original
-        self.mitigation_status: Optional[BidMitigationStatus] = BidMitigationStatus.S
+        self.mitigation_statusOptional[BidMitigationStatus] = BidMitigationStatus.S
 

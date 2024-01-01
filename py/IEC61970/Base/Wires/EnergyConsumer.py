@@ -24,14 +24,14 @@ class EnergyConsumer(EnergyConnection):
         super().__init__()
         self.customer_count: int = 0
         self.grounded: bool = False
-        self.p: Optional[ActivePower] = ActivePower()
-        self.p_fixed: Optional[ActivePower] = ActivePower()
-        self.p_fixed_pct: Optional[PerCent] = PerCent()
-        self.phase_connection: Optional[PhaseShuntConnectionKind] = PhaseShuntConnectionKind.D
-        self.q: Optional[ReactivePower] = ReactivePower()
-        self.q_fixed: Optional[ReactivePower] = ReactivePower()
-        self.q_fixed_pct: Optional[PerCent] = PerCent()
-        self.energy_consumer_phase: Optional[EnergyConsumerPhase] = EnergyConsumerPhase()
+        self.pOptional[ActivePower] = ActivePower()
+        self.p_fixedOptional[ActivePower] = ActivePower()
+        self.p_fixed_pctOptional[PerCent] = PerCent()
+        self.phase_connectionOptional[PhaseShuntConnectionKind] = PhaseShuntConnectionKind.D
+        self.qOptional[ReactivePower] = ReactivePower()
+        self.q_fixedOptional[ReactivePower] = ReactivePower()
+        self.q_fixed_pctOptional[PerCent] = PerCent()
+        self.energy_consumer_phaseOptional[EnergyConsumerPhase] = EnergyConsumerPhase()
         self.load_response = LoadResponseCharacteristic()
 
     def get_customer_count(self) -> int:

@@ -16,6 +16,6 @@ class AngleDegrees:
 
     unit = UnitSymbol.deg
 
-    def __init__(self):
+    def __init__(self, v=None):
         self.multiplier = UnitMultiplier.none
-        self.value = 0.0
+        self.value = v

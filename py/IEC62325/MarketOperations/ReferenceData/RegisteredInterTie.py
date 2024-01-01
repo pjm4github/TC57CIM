@@ -15,18 +15,18 @@ class RegisteredInterTie(RegisteredResource):
 
     def __init__(self) -> None:
         super().__init__()
-        self.direction: Optional[InterTieDirection] = InterTieDirection.EXPORT
+        self.directionOptional[InterTieDirection] = InterTieDirection.EXPORT
 
         # Indicates the direction (export/import) of an InterTie resource.
-        self.energy_product_type: Optional[EnergyProductType] = EnergyProductType.DYN
+        self.energy_product_typeOptional[EnergyProductType] = EnergyProductType.DYN
 
         # Under each major product type, the commodity type can be applied to further specify the type.
-        self.is_dc_tie: Optional[YesNo] = YesNo.NO
+        self.is_dc_tieOptional[YesNo] = YesNo.NO
 
         # Flag to indicate whether this Inter-tie is a DC Tie.
-        self.is_dynamic_interchange: Optional[YesNo] = YesNo.NO
+        self.is_dynamic_interchangeOptional[YesNo] = YesNo.NO
 
         # Specifies whether the inter-tie resource is registered for the dynamic interchange.
-        self.min_hourly_block_limit: Optional[int] = 0
+        self.min_hourly_block_limitOptional[int] = 0
         # The registered upper bound of minimum hourly block for an Inter-Tie Resource.
-        self.inter_tie_dispatch_response: Optional[InterTieDispatchResponse] = InterTieDispatchResponse()
+        self.inter_tie_dispatch_responseOptional[InterTieDispatchResponse] = InterTieDispatchResponse()

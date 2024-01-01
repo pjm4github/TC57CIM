@@ -11,12 +11,12 @@ class TapChangerControl(RegulatingControl):
 
     def __init__(self):
         super().__init__()
-        self.limit_voltage: Optional[Voltage] = Voltage()  # Maximum allowed regulated voltage on the PT secondary, regardless of line drop compensation
+        self.limit_voltageOptional[Voltage] = Voltage()  # Maximum allowed regulated voltage on the PT secondary, regardless of line drop compensation
         self.line_drop_compensation: bool = False  # If true, the line drop compensation is to be applied
-        self.line_drop_r: Optional[Resistance] = Resistance()  # Line drop compensator resistance setting for normal (forward) power flow
-        self.line_drop_x: Optional[Reactance] = Reactance()  # Line drop compensator reactance setting for normal (forward) power flow
-        self.reverse_line_drop_r: Optional[Resistance] = Resistance()  # Line drop compensator resistance setting for reverse power flow
-        self.reverse_line_drop_x: Optional[Reactance] = Reactance()  # Line drop compensator reactance setting for reverse power flow
+        self.line_drop_rOptional[Resistance] = Resistance()  # Line drop compensator resistance setting for normal (forward) power flow
+        self.line_drop_xOptional[Reactance] = Reactance()  # Line drop compensator reactance setting for normal (forward) power flow
+        self.reverse_line_drop_rOptional[Resistance] = Resistance()  # Line drop compensator resistance setting for reverse power flow
+        self.reverse_line_drop_xOptional[Reactance] = Reactance()  # Line drop compensator reactance setting for reverse power flow
 
     def get_limit_voltage(self) -> Voltage:
         return self.limit_voltage

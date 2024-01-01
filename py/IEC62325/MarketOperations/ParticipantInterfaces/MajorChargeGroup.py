@@ -11,16 +11,16 @@ from IEC62325.MarketOperations.MarketSystem.MarketResults.Settlement import Sett
 class MajorChargeGroup(IdentifiedObject):
     def __init__(self) -> None:
         super().__init__()
-        self.effective_date: Optional[DateTime] = DateTime()
-        self.frequency_type: Optional[str] = ""
-        self.invoice_type: Optional[str] = ""
-        self.require_autorun: Optional[str] = ""
-        self.revision_number: Optional[str] = ""
-        self.run_type: Optional[str] = ""
-        self.run_version: Optional[str] = ""
-        self.termination_date: Optional[DateTime] = DateTime()
+        self.effective_dateOptional[DateTime] = DateTime()
+        self.frequency_typeOptional[str] = ""
+        self.invoice_typeOptional[str] = ""
+        self.require_autorunOptional[str] = ""
+        self.revision_numberOptional[str] = ""
+        self.run_typeOptional[str] = ""
+        self.run_versionOptional[str] = ""
+        self.termination_dateOptional[DateTime] = DateTime()
         # 	 * A MajorChargeGroup can have 0-n ChargeType. A ChargeType can associate to 0-n
         # 	 * MajorChargeGroup.
-        self.charge_type: Optional[ChargeType] = ChargeType()
-        self.mkt_scheduled_event: Optional[MarketScheduledEvent] = MarketScheduledEvent()
-        self.settlement: Optional[Settlement] = Settlement()
+        self.charge_typeOptional[ChargeType] = ChargeType()
+        self.mkt_scheduled_eventOptional[MarketScheduledEvent] = MarketScheduledEvent()
+        self.settlementOptional[Settlement] = Settlement()

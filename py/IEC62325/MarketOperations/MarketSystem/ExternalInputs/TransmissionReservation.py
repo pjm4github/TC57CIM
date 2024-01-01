@@ -13,5 +13,5 @@ class TransmissionReservation:
     @created 27-Dec-2023 3:33:59 PM
     """
     def __init__(self) -> None:
-        self.transaction_bid: Optional[TransactionBid] = TransactionBid()
-        self.energy_transaction: Optional[EnergyTransaction] = EnergyTransaction()
+        self.transaction_bidOptional[TransactionBid] = TransactionBid()
+        self.energy_transactionOptional[EnergyTransaction] = EnergyTransaction()

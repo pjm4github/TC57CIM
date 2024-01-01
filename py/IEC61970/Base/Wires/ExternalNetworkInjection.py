@@ -22,23 +22,23 @@ class ExternalNetworkInjection(RegulatingCondEq):
         super().__init__()
         # Power Frequency Bias. This is the change in power injection divided by the change in frequency and negated.
         # A positive value of the power frequency bias provides additional power injection upon a drop in frequency.
-        self.governor_scd: Optional[ActivePowerPerFrequency] = ActivePowerPerFrequency()
+        self.governor_scdOptional[ActivePowerPerFrequency] = ActivePowerPerFrequency()
         self.ik_second: bool = False  # Indicates whether initial symmetrical short-circuit current and power have been calculated according to IEC (Ik").
-        self.max_initial_sym_shc_current: Optional[CurrentFlow] = CurrentFlow()  # Maximum initial symmetrical short-circuit currents (Ik" max) in A (Ik" = Sk"/(SQRT(3) Un)).
-        self.max_p: Optional[ActivePower] = ActivePower()  # Maximum active power of the injection.
-        self.max_q: Optional[ReactivePower] = ReactivePower()  # Not for short circuit modelling; It is used for modelling of infeed for load flow exchange. If maxQ and minQ are not used ReactiveCapabilityCurve can be used
+        self.max_initial_sym_shc_currentOptional[CurrentFlow] = CurrentFlow()  # Maximum initial symmetrical short-circuit currents (Ik" max) in A (Ik" = Sk"/(SQRT(3) Un)).
+        self.max_pOptional[ActivePower] = ActivePower()  # Maximum active power of the injection.
+        self.max_qOptional[ReactivePower] = ReactivePower()  # Not for short circuit modelling; It is used for modelling of infeed for load flow exchange. If maxQ and minQ are not used ReactiveCapabilityCurve can be used
         self.max_r0_to_x0_ratio: float = 0.0  # Maximum ratio of zero sequence resistance of Network Feeder to its zero sequence reactance (R(0)/X(0) max). Used for short circuit data exchange
         self.max_r1_to_x1_ratio: float = 0.0  # Maximum ratio of positive sequence resistance of Network Feeder to its positive sequence reactance (R(1)/X(1) max). Used for short circuit data exchange
         self.max_z0_to_z1_ratio: float = 0.0  # Maximum ratio of zero sequence impedance to its positive sequence impedance (Z(0)/Z(1) max). Used for short circuit data exchange according to IEC 60909
-        self.min_initial_sym_shc_current: Optional[CurrentFlow] = CurrentFlow()  # Minimum initial symmetrical short-circuit currents (Ik" min) in A (Ik" = Sk"/(SQRT(3) Un)). Used for short circuit data exchange according to IEC 60909
-        self.min_p: Optional[ActivePower] = ActivePower()  # Minimum active power of the injection.
-        self.min_q: Optional[ReactivePower] = ReactivePower()  # Not for short circuit modelling; It is used for modelling of infeed for load flow exchange. If maxQ and minQ are not used ReactiveCapabilityCurve can be used
+        self.min_initial_sym_shc_currentOptional[CurrentFlow] = CurrentFlow()  # Minimum initial symmetrical short-circuit currents (Ik" min) in A (Ik" = Sk"/(SQRT(3) Un)). Used for short circuit data exchange according to IEC 60909
+        self.min_pOptional[ActivePower] = ActivePower()  # Minimum active power of the injection.
+        self.min_qOptional[ReactivePower] = ReactivePower()  # Not for short circuit modelling; It is used for modelling of infeed for load flow exchange. If maxQ and minQ are not used ReactiveCapabilityCurve can be used
         self.min_r0_to_x0_ratio: float = 0.0  # Minimum ratio of positive sequence resistance of Network Feeder to its positive sequence reactance (R(1)/X(1) min). Used for short circuit data exchange according to IEC 60909
         self.min_r1_to_x1_ratio: float = 0.0  # Minimum ratio of zero sequence impedance to its positive sequence impedance (Z(0)/Z(1) min). Used for short circuit data exchange
-        self.p: Optional[ActivePower] = ActivePower()  # Active power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions.
-        self.q: Optional[ReactivePower] = ReactivePower()  # Reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions.
+        self.pOptional[ActivePower] = ActivePower()  # Active power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions.
+        self.qOptional[ReactivePower] = ReactivePower()  # Reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions.
         self.reference_priority: int = 0  # Priority of unit for use as powerflow voltage phase angle reference bus selection. 0 = don't care (default) 1 = highest priority. 2 is less than 1 and so on.
-        self.voltage_factor: Optional[PU] = PU()  # Voltage factor in pu, which was used to calculate short-circuit current Ik" and power Sk".
+        self.voltage_factorOptional[PU] = PU()  # Voltage factor in pu, which was used to calculate short-circuit current Ik" and power Sk".
 
     def set_governor_scd(self, new_val: ActivePowerPerFrequency):
         self.governor_scd = new_val

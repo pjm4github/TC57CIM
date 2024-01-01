@@ -19,4 +19,4 @@ class LossProfile(Profile):
 
     def __init__(self) -> None:
         super().__init__()
-        self.has_loss: Optional[TransmissionProvider] = TransmissionProvider()
+        self.has_lossOptional[TransmissionProvider] = TransmissionProvider()

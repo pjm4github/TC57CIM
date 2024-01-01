@@ -17,6 +17,6 @@ class OrgResOwnership(IdentifiedObject):
         Constructor for OrgResOwnership
         """
         super().__init__()
-        self.assc_type: Optional[ResourceAssnType] = ResourceAssnType  # association type for the association between Organisation and Resource
-        self.master_scheduling_coordinator_flag: Optional[YesNo] = YesNo.NO  # Flag to indicate that the SC representing the Resource is the Master SC
-        self.ownership_percent: Optional[PerCent] = PerCent()  # ownership percentage for each resource
+        self.assc_typeOptional[ResourceAssnType] = ResourceAssnType  # association type for the association between Organisation and Resource
+        self.master_scheduling_coordinator_flagOptional[YesNo] = YesNo.NO  # Flag to indicate that the SC representing the Resource is the Master SC
+        self.ownership_percentOptional[PerCent] = PerCent()  # ownership percentage for each resource

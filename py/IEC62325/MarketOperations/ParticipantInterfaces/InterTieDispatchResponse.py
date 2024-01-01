@@ -16,8 +16,8 @@ class InterTieDispatchResponse:
         """
         Constructor for InterTieDispatchResponse
         """
-        self.accept_mw: Optional[float] = 0.0  # The accepted mw amount by the responder. aka response mw.
-        self.accept_status: Optional[DispatchResponseType] = DispatchResponseType()  # The accept status submitted by the responder.
-        self.cleared_mw: Optional[float] = 0.0  # MW amount associated with instruction.
-        self.pass_indicator: Optional[PassIndicatorType] = PassIndicatorType()
-        self.start_time: Optional[DateTime] = DateTime()   # Part of the Composite key that downstream app uses to match the instruction
+        self.accept_mwOptional[float] = 0.0  # The accepted mw amount by the responder. aka response mw.
+        self.accept_statusOptional[DispatchResponseType] = DispatchResponseType()  # The accept status submitted by the responder.
+        self.cleared_mwOptional[float] = 0.0  # MW amount associated with instruction.
+        self.pass_indicatorOptional[PassIndicatorType] = PassIndicatorType()
+        self.start_timeOptional[DateTime] = DateTime()   # Part of the Composite key that downstream app uses to match the instruction

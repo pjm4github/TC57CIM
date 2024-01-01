@@ -18,12 +18,12 @@ class TransmissionProduct(IdentifiedObject):
     """
     def __init__(self) -> None:
         super().__init__()
-        self.transmission_product_type: Optional[str] = ""
+        self.transmission_product_typeOptional[str] = ""
         """
         A TransmissionProvider offers a TransmissionProduct.
         """
-        self.transmission_provider: Optional[TransmissionProvider] = TransmissionProvider()
+        self.transmission_providerOptional[TransmissionProvider] = TransmissionProvider()
         """
         A transmission product is located on a transmission path.
         """
-        self.location_for: Optional[TransmissionPath] = TransmissionPath()
+        self.location_forOptional[TransmissionPath] = TransmissionPath()

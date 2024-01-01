@@ -31,13 +31,13 @@ class SwitchPhase:
         Phase of this SwitchPhase on the side with terminal sequence number equal 1.
         Should be a phase contained in that terminal's phases attribute.
         """
-        self.phase_side1: Optional[SinglePhaseKind] = SinglePhaseKind.A
+        self.phase_side1Optional[SinglePhaseKind] = SinglePhaseKind.A
 
         """
         Phase of this SwitchPhase on the side with terminal sequence number equal 2.
         Should be a phase contained in that terminal's Terminal.phases attribute.
         """
-        self.phase_side2: Optional[SinglePhaseKind] = SinglePhaseKind.B
+        self.phase_side2Optional[SinglePhaseKind] = SinglePhaseKind.B
 
     def get_closed(self) -> bool:
         return self.closed

@@ -9,7 +9,7 @@ from IEC62325.MarketOperations.MktDomain.YesNo import YesNo
 class MpmClearing(MarketFactors):
     def __init__(self) -> None:
         super().__init__()
-        self.lmpm_final_flag: Optional[YesNo] = YesNo.NO
-        self.mitigation_occurred_flag: Optional[YesNo] = YesNo.NO
-        self.smpm_final_flag: Optional[YesNo] = YesNo.NO
-        self.mpm_test_results: Optional[MPMTestResults] = MPMTestResults()
+        self.lmpm_final_flagOptional[YesNo] = YesNo.NO
+        self.mitigation_occurred_flagOptional[YesNo] = YesNo.NO
+        self.smpm_final_flagOptional[YesNo] = YesNo.NO
+        self.mpm_test_resultsOptional[MPMTestResults] = MPMTestResults()

@@ -8,5 +8,5 @@ class NameTypeAuthority:
     """
     
     def __init__(self) -> None:
-        self.description: Optional[str] = ""  # Description of the name type authority
-        self.name: Optional[str] = ""  # Name of the name type authority
+        self.descriptionOptional[str] = ""  # Description of the name type authority
+        self.nameOptional[str] = ""  # Name of the name type authority

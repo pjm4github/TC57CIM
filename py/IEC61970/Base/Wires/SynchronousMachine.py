@@ -22,36 +22,36 @@ class SynchronousMachine(RotatingMachine):
 
     def __init__(self):
         super().__init__()
-        self.a_vr_to_manual_lag: Optional[timedelta] = timedelta()
-        self.a_vr_to_manual_lead: Optional[timedelta] = timedelta()
-        self.base_q: Optional[ReactivePower] = ReactivePower()
-        self.condenser_p: Optional[ActivePower] = ActivePower()
-        self.coolant_condition: Optional[float] = 0.0
-        self.coolant_type: Optional[CoolantType] = CoolantType.WATER
-        self.earthing: Optional[bool] = True
-        self.earthing_star_point_r: Optional[Resistance] = Resistance()
-        self.earthing_star_point_x: Optional[Reactance] = Reactance()
-        self.ikk: Optional[CurrentFlow] = CurrentFlow()
-        self.manual_to_avr: Optional[timedelta] = timedelta()
-        self.max_q: Optional[ReactivePower] = ReactivePower()
-        self.max_u: Optional[Voltage] = Voltage()
-        self.min_q: Optional[ReactivePower] = ReactivePower()
-        self.min_u: Optional[Voltage] = Voltage()
-        self.mu: Optional[float] = 1.0
-        self.operating_mode: Optional[SynchronousMachineOperatingMode] = SynchronousMachineOperatingMode.motor
-        self.q_percent: Optional[PerCent] = PerCent()
-        self.r: Optional[Resistance] = Resistance()
-        self.r0: Optional[Resistance] = Resistance()
-        self.r2: Optional[Resistance] = Resistance()
-        self.reference_priority: Optional[int] = 0
-        self.sat_direct_subtrans_x: Optional[PU] = PU()
-        self.sat_direct_sync_x: Optional[PU] = PU()
-        self.sat_direct_trans_x: Optional[PU] = PU()
-        self.short_circuit_rotor_type: Optional[ShortCircuitRotorKind] = ShortCircuitRotorKind.SALIENT_POLE_1
-        self.type: Optional[SynchronousMachineKind] = SynchronousMachineKind.MOTOR
-        self.voltage_regulation_range: Optional[PerCent] = PerCent()
-        self.x0: Optional[Reactance] = Reactance()
-        self.x2: Optional[Reactance] = Reactance()
+        self.a_vr_to_manual_lagOptional[timedelta] = timedelta()
+        self.a_vr_to_manual_leadOptional[timedelta] = timedelta()
+        self.base_qOptional[ReactivePower] = ReactivePower()
+        self.condenser_pOptional[ActivePower] = ActivePower()
+        self.coolant_conditionOptional[float] = 0.0
+        self.coolant_typeOptional[CoolantType] = CoolantType.WATER
+        self.earthingOptional[bool] = True
+        self.earthing_star_point_rOptional[Resistance] = Resistance()
+        self.earthing_star_point_xOptional[Reactance] = Reactance()
+        self.ikkOptional[CurrentFlow] = CurrentFlow()
+        self.manual_to_avrOptional[timedelta] = timedelta()
+        self.max_qOptional[ReactivePower] = ReactivePower()
+        self.max_uOptional[Voltage] = Voltage()
+        self.min_qOptional[ReactivePower] = ReactivePower()
+        self.min_uOptional[Voltage] = Voltage()
+        self.muOptional[float] = 1.0
+        self.operating_modeOptional[SynchronousMachineOperatingMode] = SynchronousMachineOperatingMode.motor
+        self.q_percentOptional[PerCent] = PerCent()
+        self.rOptional[Resistance] = Resistance()
+        self.r0Optional[Resistance] = Resistance()
+        self.r2Optional[Resistance] = Resistance()
+        self.reference_priorityOptional[int] = 0
+        self.sat_direct_subtrans_xOptional[PU] = PU()
+        self.sat_direct_sync_xOptional[PU] = PU()
+        self.sat_direct_trans_xOptional[PU] = PU()
+        self.short_circuit_rotor_typeOptional[ShortCircuitRotorKind] = ShortCircuitRotorKind.SALIENT_POLE_1
+        self.typeOptional[SynchronousMachineKind] = SynchronousMachineKind.MOTOR
+        self.voltage_regulation_rangeOptional[PerCent] = PerCent()
+        self.x0Optional[Reactance] = Reactance()
+        self.x2Optional[Reactance] = Reactance()
 
     def get_a_vr_to_manual_lag(self) -> Optional[Seconds]:
         return self.a_vr_to_manual_lag

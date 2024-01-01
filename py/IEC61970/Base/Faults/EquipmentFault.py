@@ -16,4 +16,4 @@ class EquipmentFault(Fault):
 
     def __init__(self) -> None:
         super().__init__()
-        self.terminal: Optional[Terminal] = Terminal()
+        self.terminalOptional[Terminal] = Terminal()

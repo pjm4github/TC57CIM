@@ -20,5 +20,5 @@ class VisibilityLayer:
     """
 
     def __init__(self) -> None:
-        self.drawing_order: Optional[int] = 0
+        self.drawing_orderOptional[int] = 0
 

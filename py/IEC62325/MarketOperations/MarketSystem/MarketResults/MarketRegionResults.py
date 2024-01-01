@@ -56,14 +56,14 @@ class MarketRegionResults:
         Locational AS Flags indicating whether the Upper or Lower Bound limit of the AS
         regional procurment is binding
         """
-        self.limit_flag: Optional[ResourceLimitIndicator] = ResourceLimitIndicator.LOWER
+        self.limit_flagOptional[ResourceLimitIndicator] = ResourceLimitIndicator.LOWER
 
         """
         The "Lumpy Flag"(Y/N)  indicates whether the resource that sets the price is a
         lumpy generator by hour over the time horizon.
         Only applicable for the Day Ahead Market
         """
-        self.lumpy_indicator: Optional[YesNo] = YesNo.NO
+        self.lumpy_indicatorOptional[YesNo] = YesNo.NO
 
         """
         Region requirement maximum limit

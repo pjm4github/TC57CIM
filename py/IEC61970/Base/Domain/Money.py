@@ -14,8 +14,8 @@ from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 class Money:
     """Amount of money.
     """
-    unit = UnitSymbol.none
-    def __init__(self):
 
+    def __init__(self, v=None):
         self.multiplier = UnitMultiplier.none
-        self.value: Currency = Currency()
+        self.value: float = v
+        self.unit: Currency = Currency.USD

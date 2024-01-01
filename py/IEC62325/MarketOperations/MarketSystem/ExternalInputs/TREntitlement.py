@@ -23,8 +23,8 @@ class TrEntitlement:
         """
         The entitlement
         """
-        self.entitlement: Optional[float] = 0.0
+        self.entitlementOptional[float] = 0.0
         """
         Operating date and hour when the entitlement applies
         """
-        self.start_operating_date: Optional[DateTime] = DateTime()
+        self.start_operating_dateOptional[DateTime] = DateTime()

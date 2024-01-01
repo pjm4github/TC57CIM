@@ -16,6 +16,6 @@ class CombinedCycleConfigurationMember(IdentifiedObject):
         Construct CombinedCycleConfigurationMember
         """
         super().__init__()
-        self.primary: Optional[bool] = False  # primary configuration
-        self.steam: Optional[bool] = False  # Steam plant
-        self.mkt_thermal_generating_unit: Optional[MktThermalGeneratingUnit] = MktThermalGeneratingUnit()
+        self.primaryOptional[bool] = False  # primary configuration
+        self.steamOptional[bool] = False  # Steam plant
+        self.mkt_thermal_generating_unitOptional[MktThermalGeneratingUnit] = MktThermalGeneratingUnit()

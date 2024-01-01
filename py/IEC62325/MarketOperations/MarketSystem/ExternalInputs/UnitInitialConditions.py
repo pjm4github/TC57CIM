@@ -19,27 +19,27 @@ class UnitInitialConditions(IdentifiedObject):
         Cumulative energy production over trading period.
         """
         super().__init__()
-        self.cum_energy: Optional[RealEnergy] = RealEnergy()
+        self.cum_energyOptional[RealEnergy] = RealEnergy()
 
         """
         Cumulative number of status changes of the resource.
         """
-        self.cum_status_changes: Optional[int] = 0
+        self.cum_status_changesOptional[int] = 0
 
         """
         Number of start ups in the operating day until the end of the previous hour.
         """
-        self.number_of_startups: Optional[int] = 0
+        self.number_of_startupsOptional[int] = 0
 
         """
         'true' if the GeneratingUnit is currently On-Line
         """
-        self.online_status: Optional[bool] = False
+        self.online_statusOptional[bool] = False
 
         """
         Resource MW output at the end of previous clearing period.
         """
-        self.resource_mw: Optional[ActivePower] = ActivePower()
+        self.resource_mwOptional[ActivePower] = ActivePower()
 
         """
         Resource status at the end of previous clearing period:
@@ -48,22 +48,22 @@ class UnitInitialConditions(IdentifiedObject):
         2 - in shutdown process
         3 - in startup process
         """
-        self.resource_status: Optional[int] = 0
+        self.resource_statusOptional[int] = 0
 
         """
         Time and date for resourceStatus
         """
-        self.status_date: Optional[DateTime] = DateTime()
+        self.status_dateOptional[DateTime] = DateTime()
 
         """
         Time in market trading intervals the resource is in the state as of the end of
         the previous clearing period.
         """
-        self.time_in_status: Optional[float] = 0.0
+        self.time_in_statusOptional[float] = 0.0
 
         """
         Time interval
         """
-        self.time_interval: Optional[DateTime] = DateTime()
+        self.time_intervalOptional[DateTime] = DateTime()
 
-        self.generating_unit: Optional[RegisteredGenerator] = RegisteredGenerator()
+        self.generating_unitOptional[RegisteredGenerator] = RegisteredGenerator()

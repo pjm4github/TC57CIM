@@ -24,11 +24,11 @@ class Fault(IdentifiedObject):
 
     def __init__(self) -> None:
         super().__init__()
-        self.impedance: Optional[FaultImpedance] = FaultImpedance()  # Fault impedance. Its usage is described by 'kind'.
-        self.kind: Optional[PhaseConnectedFaultKind] = PhaseConnectedFaultKind.LINE_TO_GROUND  # The kind of phase fault.
-        self.occurred_date_time: Optional[DateTime] = datetime.now()  # The date and time at which the fault occurred.
-        self.phases: Optional[PhaseCode] = PhaseCode.N  # The phases participating in the fault. The fault connections
+        self.impedanceOptional[FaultImpedance] = FaultImpedance()  # Fault impedance. Its usage is described by 'kind'.
+        self.kindOptional[PhaseConnectedFaultKind] = PhaseConnectedFaultKind.LINE_TO_GROUND  # The kind of phase fault.
+        self.occurred_date_timeOptional[DateTime] = datetime.now()  # The date and time at which the fault occurred.
+        self.phasesOptional[PhaseCode] = PhaseCode.N  # The phases participating in the fault. The fault connections
                                            # into these phases are further specified by the type of fault.
-        self.faulty_equipment: Optional[Equipment] = Equipment()  # Equipment carrying this fault.
-        self.fault_cause_types: Optional[FaultCauseType] = FaultCauseType()  # All types of fault cause.
-        self.location: Optional[Location] = Location()
+        self.faulty_equipmentOptional[Equipment] = Equipment()  # Equipment carrying this fault.
+        self.fault_cause_typesOptional[FaultCauseType] = FaultCauseType()  # All types of fault cause.
+        self.locationOptional[Location] = Location()

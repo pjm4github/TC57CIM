@@ -9,6 +9,6 @@ class AdjacentCASet:
     Groups Adjacent Control Areas.
     """
     def __init__(self) -> None:
-        self.loss_percentage: Optional[float] = 0.0
-        self.sub_control_area: Optional[SubControlArea] = SubControlArea()
-        self.bid_self_sched: Optional[BidSelfSched] = BidSelfSched()
+        self.loss_percentageOptional[float] = 0.0
+        self.sub_control_areaOptional[SubControlArea] = SubControlArea()
+        self.bid_self_schedOptional[BidSelfSched] = BidSelfSched()

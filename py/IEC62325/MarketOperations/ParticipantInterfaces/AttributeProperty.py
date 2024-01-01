@@ -6,8 +6,8 @@ from IEC62325.MarketOperations.MarketOpCommon.MktUserAttribute import MktUserAtt
 
 class AttributeProperty:
     def __init__(self):
-        self.property_name: Optional[str] = ""
-        self.property_value: Optional[str] = ""
-        self.sequence: Optional[str] = ""
-        self.mkt_user_attribute: Optional[MktUserAttribute] = MktUserAttribute()
+        self.property_nameOptional[str] = ""
+        self.property_valueOptional[str] = ""
+        self.sequenceOptional[str] = ""
+        self.mkt_user_attributeOptional[MktUserAttribute] = MktUserAttribute()
 

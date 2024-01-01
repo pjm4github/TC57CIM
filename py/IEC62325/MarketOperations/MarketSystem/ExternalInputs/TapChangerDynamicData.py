@@ -17,13 +17,13 @@ class TapChangerDynamicData:
         Constructor for TapChangerDynamicData class
         """
 
-        self.angle_regulation_status: Optional[bool] = False  # True means the phase shifter is regulating
-        self.desired_mw: Optional[float] = 0.0  # Phase Shifter Desired MW. The active power regulation setpoint of the phase shifter
-        self.desired_voltage: Optional[float] = 0.0  # The desired voltage for the LTC
-        self.maximum_angle: Optional[float] = 0.0  # The maximum phase angle shift of the phase shifter
-        self.minimum_angle: Optional[float] = 0.0  # The minimum phase angle shift of the phase shifter
-        self.solved_angle: Optional[float] = 0.0  # Phase Shifter Angle. The solved phase angle shift of the phase shifter
-        self.tap_position: Optional[float] = 0.0  # Tap position of the phase shifter, high-side tap position of the transformer, or low-side tap position of the transformer
-        self.voltage_regulation_status: Optional[bool] = False  # Indicator if the LTC transformer is regulating True = Yes, False = No
-        self.mkt_tap_changer: Optional[MktTapChanger] = MktTapChanger()
+        self.angle_regulation_statusOptional[bool] = False  # True means the phase shifter is regulating
+        self.desired_mwOptional[float] = 0.0  # Phase Shifter Desired MW. The active power regulation setpoint of the phase shifter
+        self.desired_voltageOptional[float] = 0.0  # The desired voltage for the LTC
+        self.maximum_angleOptional[float] = 0.0  # The maximum phase angle shift of the phase shifter
+        self.minimum_angleOptional[float] = 0.0  # The minimum phase angle shift of the phase shifter
+        self.solved_angleOptional[float] = 0.0  # Phase Shifter Angle. The solved phase angle shift of the phase shifter
+        self.tap_positionOptional[float] = 0.0  # Tap position of the phase shifter, high-side tap position of the transformer, or low-side tap position of the transformer
+        self.voltage_regulation_statusOptional[bool] = False  # Indicator if the LTC transformer is regulating True = Yes, False = No
+        self.mkt_tap_changerOptional[MktTapChanger] = MktTapChanger()
 

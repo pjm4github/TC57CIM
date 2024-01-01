@@ -18,5 +18,5 @@ class RmrOperatorInput(MarketFactors):
         super().__init__()
         self.manually_sched_rmrmw: float = 0.0  # The lower of the original pre-dispatch or the AC run schedule (Also known as the RMR Reguirement) becomes the pre-dispatch value.
         self.update_time_stamp: DateTime = DateTime()
-        self.update_type: Optional[MQSCHGType] = MQSCHGType.ADD
+        self.update_typeOptional[MQSCHGType] = MQSCHGType.ADD
         self.update_user: str = ""

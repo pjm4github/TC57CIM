@@ -29,6 +29,6 @@ class Instructions:
         self.update_type: str = ""
         self.update_user: str = ""
         # Assuming the types InstructionClearing, AggregateNode, and RegisteredResource are classes
-        self.instruction_clearing: Optional[InstructionClearing] = InstructionClearing()
-        self.aggregate_node: Optional[AggregateNode] = AggregateNode()
-        self.registered_resource: Optional[RegisteredResource] = RegisteredResource()
+        self.instruction_clearingOptional[InstructionClearing] = InstructionClearing()
+        self.aggregate_nodeOptional[AggregateNode] = AggregateNode()
+        self.registered_resourceOptional[RegisteredResource] = RegisteredResource()

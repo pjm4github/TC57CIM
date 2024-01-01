@@ -17,7 +17,7 @@ class Commitments:
     """
 
     def __init__(self) -> None:
-        self.commitment_type: Optional[CommitmentType] = CommitmentType()
+        self.commitment_typeOptional[CommitmentType] = CommitmentType()
         """
         the type of UC status (self commitment, ISO commitment, or SCUC commitment)
         """
@@ -25,7 +25,7 @@ class Commitments:
         """
         Total cost associated with changing the status of the resource.
         """
-        self.instruction_type: Optional[AutomaticDispInstTypeCommitment] = AutomaticDispInstTypeCommitment.START_UP
+        self.instruction_typeOptional[AutomaticDispInstTypeCommitment] = AutomaticDispInstTypeCommitment.START_UP
         """
         Indicator of either a Start-Up or a Shut-Down.
         """
@@ -49,5 +49,5 @@ class Commitments:
         Unit no load cost in case of energy commodity
         """
         self.update_time_stamp: DateTime = DateTime()
-        self.update_type: Optional[MQSCHGType] = MQSCHGType.ADD
+        self.update_typeOptional[MQSCHGType] = MQSCHGType.ADD
         self.update_user: str = ""

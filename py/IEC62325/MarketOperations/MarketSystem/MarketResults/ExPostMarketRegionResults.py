@@ -8,5 +8,5 @@ from IEC62325.MarketOperations.ReferenceData.MarketRegion import MarketRegion
 class ExPostMarketRegionResults:
     def __init__(self) -> None:
         self.ex_post_cleared_price: float = 0.0
-        self.market_region: Optional[MarketRegion] = MarketRegion()
-        self.ex_post_market_region: Optional[ExPostMarketRegion] = ExPostMarketRegion()
+        self.market_regionOptional[MarketRegion] = MarketRegion()
+        self.ex_post_market_regionOptional[ExPostMarketRegion] = ExPostMarketRegion()

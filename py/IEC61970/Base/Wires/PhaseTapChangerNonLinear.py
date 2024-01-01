@@ -19,9 +19,9 @@ class PhaseTapChangerNonLinear(PhaseTapChanger):
 
     def __init__(self) -> None:
         super().__init__()
-        self.voltage_step_increment: Optional[PerCent] = PerCent()  # The voltage step increment on the out of phase winding specified in percent of neutral voltage of the tap changer.
-        self.x_max: Optional[Reactance] = Reactance()  # The reactance depend on the tap position according to a "u" shaped curve. The maximum reactance (xMax) appear at the low and high tap positions.
-        self.x_min: Optional[Reactance] = Reactance()  # The reactance depend on the tap position according to a "u" shaped curve. The minimum reactance (xMin) appear at the mid tap position.
+        self.voltage_step_incrementOptional[PerCent] = PerCent()  # The voltage step increment on the out of phase winding specified in percent of neutral voltage of the tap changer.
+        self.x_maxOptional[Reactance] = Reactance()  # The reactance depend on the tap position according to a "u" shaped curve. The maximum reactance (xMax) appear at the low and high tap positions.
+        self.x_minOptional[Reactance] = Reactance()  # The reactance depend on the tap position according to a "u" shaped curve. The minimum reactance (xMin) appear at the mid tap position.
 
     def get_voltage_step_increment(self) -> Optional[PerCent]:
         return self.voltage_step_increment

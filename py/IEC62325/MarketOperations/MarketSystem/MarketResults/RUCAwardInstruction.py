@@ -24,7 +24,7 @@ class RUCAwardInstruction:
         Constructor for RUCAwardInstruction.
         """
         self.cleared_price: float = 0.0  # Marginal Price ($/MW) for the commodity
-        self.market_product_type: Optional[MarketProductType] = MarketProductType.ENERGY # Major product type
+        self.market_product_typeOptional[MarketProductType] = MarketProductType.ENERGY # Major product type
         self.ruc_award: float = 0.0  # The RUC Award of a resource
         self.ruc_capacity: float = 0.0  # The RUC Capacity of a resource
         self.ruc_schedule: float = 0.0  # The RUC Schedule of a resource

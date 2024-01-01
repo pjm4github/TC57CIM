@@ -22,7 +22,7 @@ class SvVoltage(StateVariable):
     """
 
     def __init__(self) -> None:
-        self.angle: Optional[AngleDegrees] = AngleDegrees()  # The voltage angle of the topological node complex voltage with respect to system reference.
-        self.phase: Optional[SinglePhaseKind] = SinglePhaseKind.A  # If specified the voltage is the line to ground voltage of the individual phase. If unspecified, then the voltage is assumed balanced.
-        self.v: Optional[Voltage] = Voltage()  # The voltage magnitude at the topological node.
-        self.topological_node: Optional[TopologicalNode] = TopologicalNode()  # The topological node associated with the voltage state.
+        self.angleOptional[AngleDegrees] = AngleDegrees()  # The voltage angle of the topological node complex voltage with respect to system reference.
+        self.phaseOptional[SinglePhaseKind] = SinglePhaseKind.A  # If specified the voltage is the line to ground voltage of the individual phase. If unspecified, then the voltage is assumed balanced.
+        self.vOptional[Voltage] = Voltage()  # The voltage magnitude at the topological node.
+        self.topological_nodeOptional[TopologicalNode] = TopologicalNode()  # The topological node associated with the voltage state.

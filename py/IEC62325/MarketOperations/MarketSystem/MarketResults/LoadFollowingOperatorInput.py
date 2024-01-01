@@ -22,7 +22,7 @@ class LoadFollowingOperatorInput:
         self.temp_load_following_down_manual_cap: float = 0.0  # Temporarily manually entered LFD capacity
         self.temp_load_following_up_manual_cap: float = 0.0  # Temporarily manually entered LFU capacity
         self.update_time_stamp: DateTime = DateTime()
-        self.update_type: Optional[MQSCHGType] = MQSCHGType.ADD
+        self.update_typeOptional[MQSCHGType] = MQSCHGType.ADD
         self.update_user: str = ""
-        self.registered_resource: Optional[RegisteredResource] = RegisteredResource()
+        self.registered_resourceOptional[RegisteredResource] = RegisteredResource()
 

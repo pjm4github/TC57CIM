@@ -17,17 +17,17 @@ class TieFlow:
         """
         Constructor
         """
-        self.positive_flow_in: Optional[bool] = True
+        self.positive_flow_inOptional[bool] = True
         """True if the flow into the terminal (load convention) is also flow into the control area.
         For example, this attribute should be true if using the tie line terminal further away
         from the control area. For example to represent a tie to a shunt component (like a load
         or generator) in another area, this is the near end of a branch and this attribute would
         be specified as false."""
 
-        self.terminal: Optional[Terminal] = Terminal()
+        self.terminalOptional[Terminal] = Terminal()
         """The terminal to which this tie flow belongs."""
 
-        self.alt_tie_meas: Optional[AltTieMeas] = AltTieMeas()
+        self.alt_tie_measOptional[AltTieMeas] = AltTieMeas()
         """The primary and alternate tie flow measurements associated with the tie flow."""
 
 

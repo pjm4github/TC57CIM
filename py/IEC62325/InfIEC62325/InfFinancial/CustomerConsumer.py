@@ -16,4 +16,4 @@ class CustomerConsumer(Organisation):
         # 	 * metering, which can create a unique SubControlArea at the collection of
         # 	 * metering points, called a TieLine.
         super().__init__()
-        self.cust_child_of: Optional[TieLine] = TieLine()
+        self.cust_child_ofOptional[TieLine] = TieLine()

@@ -17,7 +17,7 @@ class InterTieBid(ResourceBid):
         Constructor for InterTieBid
         """
         super().__init__()
-        self.min_hourly_block: Optional[int] = 0
+        self.min_hourly_blockOptional[int] = 0
 
-        self.registered_inter_tie: Optional[RegisteredInterTie] = RegisteredInterTie()
-        self.ramp_rate_curve: Optional[RampRateCurve] = RampRateCurve()
+        self.registered_inter_tieOptional[RegisteredInterTie] = RegisteredInterTie()
+        self.ramp_rate_curveOptional[RampRateCurve] = RampRateCurve()

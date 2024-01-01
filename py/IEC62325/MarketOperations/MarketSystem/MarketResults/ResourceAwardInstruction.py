@@ -84,19 +84,19 @@ class ResourceAwardInstruction:
         Loss component of Location Marginal Price (LMP) in monetary units per MW.
         """
 
-        self.manually_blocked: Optional[YesNo] = YesNo.NO
+        self.manually_blockedOptional[YesNo] = YesNo.NO
         """
         Indicates if an award was manually blocked (Y/N). Valid for Spinning and
         Non-spinning.
         """
 
-        self.marginal_resource_indicator: Optional[YesNo] = YesNo.YES
+        self.marginal_resource_indicatorOptional[YesNo] = YesNo.YES
         """
         Indicator (Yes / No) that this resource set the price for this dispatch /
         schedule.
         """
 
-        self.must_run_ind: Optional[bool] = True
+        self.must_run_indOptional[bool] = True
         """
         Identifes if the unit was set to must run by the market participant responsible
         for bidding in the unit
@@ -159,8 +159,8 @@ class ResourceAwardInstruction:
         """
 
         self.update_time_stamp: DateTime = DateTime()
-        self.update_type: Optional[MQSCHGType] = MQSCHGType()
+        self.update_typeOptional[MQSCHGType] = MQSCHGType()
         self.update_user: str = ""
 
-        self.self_schedule_breakdown: Optional[SelfScheduleBreakdown] = SelfScheduleBreakdown()
-        self.registered_resource: Optional[RegisteredResource] = RegisteredResource()
+        self.self_schedule_breakdownOptional[SelfScheduleBreakdown] = SelfScheduleBreakdown()
+        self.registered_resourceOptional[RegisteredResource] = RegisteredResource()

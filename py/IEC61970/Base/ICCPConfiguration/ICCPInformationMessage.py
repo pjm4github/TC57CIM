@@ -15,7 +15,7 @@ class IccpInformationMessage(IdentifiedObject):
 
     def __init__(self) -> None:
         super().__init__()
-        self.local_reference: Optional[str] = ""
-        self.scope: Optional[IccpScope] = IccpScope.ICC
-        self.tase_2_bilateral_table: Optional[Tase2BilateralTable] = Tase2BilateralTable()
+        self.local_referenceOptional[str] = ""
+        self.scopeOptional[IccpScope] = IccpScope.ICC
+        self.tase_2_bilateral_tableOptional[Tase2BilateralTable] = Tase2BilateralTable()
 

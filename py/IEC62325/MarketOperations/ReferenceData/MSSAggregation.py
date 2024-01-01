@@ -10,17 +10,17 @@ from IEC62325.MarketOperations.ReferenceData.ResourceCertification import YesNo
 class MssAggregation(IdentifiedObject):
     def __init__(self) -> None:
         super().__init__()
-        self.cost_recovery: Optional[YesNo] = YesNo.NO  # Charge for Emission Costs, Start Up Costs, or Minimum Load Costs.
-        self.gross_settlement: Optional[YesNo] = YesNo.NO  # MSS Load Following may select Net vs. Gross settlement.
+        self.cost_recoveryOptional[YesNo] = YesNo.NO  # Charge for Emission Costs, Start Up Costs, or Minimum Load Costs.
+        self.gross_settlementOptional[YesNo] = YesNo.NO  # MSS Load Following may select Net vs. Gross settlement.
         # Net Settlement requires the net Demand settled at the MSS LAP and Net Supply needs to settle
         # at the equivalent to the weighted average price of the MSS generation.
         # Gross load will be settled at the System LAP and the Gross supply will be settled at the LMP.
         # MSS Aggregation that elects gross settlement shall have to identify if its resources are
         # Load Following or not.
-        self.ignore_losses: Optional[YesNo] = YesNo.NO # Provides an indication if losses are to be ignored for this zone.
+        self.ignore_lossesOptional[YesNo] = YesNo.NO # Provides an indication if losses are to be ignored for this zone.
         # Also referred to as Exclude Marginal Losses.
-        self.ignore_marginal_losses: Optional[YesNo] = YesNo.NO  # Provides an indication if marginal losses are to be ignored for this zone.
-        self.load_following: Optional[YesNo] = YesNo.NO  # Indication that this particular MSSA participates in the Load Following function.
-        self.ruc_procurement: Optional[YesNo] = YesNo.NO  # Indicates that RUC will be procured by the ISO or self provided.
-        self.metered_sub_system: Optional[MeteredSubSystem] = MeteredSubSystem()
-        self.rto: Optional[RTO] = RTO()
+        self.ignore_marginal_lossesOptional[YesNo] = YesNo.NO  # Provides an indication if marginal losses are to be ignored for this zone.
+        self.load_followingOptional[YesNo] = YesNo.NO  # Indication that this particular MSSA participates in the Load Following function.
+        self.ruc_procurementOptional[YesNo] = YesNo.NO  # Indicates that RUC will be procured by the ISO or self provided.
+        self.metered_sub_systemOptional[MeteredSubSystem] = MeteredSubSystem()
+        self.rtoOptional[RTO] = RTO()

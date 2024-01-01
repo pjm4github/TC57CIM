@@ -12,23 +12,23 @@ from IEC62325.MarketOperations.ParticipantInterfaces.ResourceBid import Resource
 class GeneratingBid(ResourceBid):
     def __init__(self) -> None:
         super().__init__()
-        self.combined_cycle_unit_offer: Optional[str] = ""
-        self.down_time_max: Optional[float] = 0.0
-        self.installed_capacity: Optional[float] = 0.0
-        self.lower_ramp_rate: Optional[ActivePowerChangeRate] = ActivePowerChangeRate()
-        self.max_emergency_mw: Optional[ActivePower] = ActivePower()
-        self.maximum_economic_mw: Optional[float] = 0.0
-        self.min_emergency_mw: Optional[ActivePower] = ActivePower()
-        self.minimum_economic_mw: Optional[float] = 0.0
-        self.no_load_cost: Optional[float] = 0.0
-        self.notification_time: Optional[float] = 0.0
-        self.operating_mode: Optional[str] = ""
-        self.raise_ramp_rate: Optional[ActivePowerChangeRate] = ActivePowerChangeRate()
-        self.ramp_curve_type: Optional[int] = 0
-        self.startup_cost: Optional[float] = 0.0
-        self.start_up_ramp_rate: Optional[ActivePowerChangeRate] = ActivePowerChangeRate()
-        self.start_up_type: Optional[int] = 0
-        self.up_time_max: Optional[float] = 0.0
-        self.notification_time_curve: Optional[NotificationTimeCurve] = NotificationTimeCurve()
-        self.ramp_rate_curve: Optional[RampRateCurve] = RampRateCurve()
-        self.security_constraints: Optional[SecurityConstraints] = SecurityConstraints()
+        self.combined_cycle_unit_offerOptional[str] = ""
+        self.down_time_maxOptional[float] = 0.0
+        self.installed_capacityOptional[float] = 0.0
+        self.lower_ramp_rateOptional[ActivePowerChangeRate] = ActivePowerChangeRate()
+        self.max_emergency_mwOptional[ActivePower] = ActivePower()
+        self.maximum_economic_mwOptional[float] = 0.0
+        self.min_emergency_mwOptional[ActivePower] = ActivePower()
+        self.minimum_economic_mwOptional[float] = 0.0
+        self.no_load_costOptional[float] = 0.0
+        self.notification_timeOptional[float] = 0.0
+        self.operating_modeOptional[str] = ""
+        self.raise_ramp_rateOptional[ActivePowerChangeRate] = ActivePowerChangeRate()
+        self.ramp_curve_typeOptional[int] = 0
+        self.startup_costOptional[float] = 0.0
+        self.start_up_ramp_rateOptional[ActivePowerChangeRate] = ActivePowerChangeRate()
+        self.start_up_typeOptional[int] = 0
+        self.up_time_maxOptional[float] = 0.0
+        self.notification_time_curveOptional[NotificationTimeCurve] = NotificationTimeCurve()
+        self.ramp_rate_curveOptional[RampRateCurve] = RampRateCurve()
+        self.security_constraintsOptional[SecurityConstraints] = SecurityConstraints()

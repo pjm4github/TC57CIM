@@ -13,17 +13,17 @@ class ShuntCompensator:
 
     def __init__(self):
         super().__init__()
-        self.a_vr_delay: Optional[Seconds] = Seconds() # Time delay required for the device to be connected or disconnected by AVR
+        self.a_vr_delayOptional[Seconds] = Seconds() # Time delay required for the device to be connected or disconnected by AVR
         self.grounded: bool = False # Used for Yn and Zn connections. True if the neutral is solidly grounded.
-        self.maximum_sections: Optional[int] = 0 # The maximum number of sections that may be switched in
-        self.nom_u: Optional[Voltage] = Voltage() # The voltage at which the nominal reactive power may be calculated
-        self.normal_sections: Optional[int] = 0 # The normal number of sections switched in
-        self.phase_connection: Optional[PhaseShuntConnectionKind] = PhaseShuntConnectionKind.D # The type of phase connection, such as wye or delta
-        self.sections: Optional[float] = 0.0 # Shunt compensator sections in use
-        self.shunt_compensator_phase: Optional[ShuntCompensatorPhase] = ShuntCompensatorPhase() # The individual phases models for the shunt compensator
+        self.maximum_sectionsOptional[int] = 0 # The maximum number of sections that may be switched in
+        self.nom_uOptional[Voltage] = Voltage() # The voltage at which the nominal reactive power may be calculated
+        self.normal_sectionsOptional[int] = 0 # The normal number of sections switched in
+        self.phase_connectionOptional[PhaseShuntConnectionKind] = PhaseShuntConnectionKind.D # The type of phase connection, such as wye or delta
+        self.sectionsOptional[float] = 0.0 # Shunt compensator sections in use
+        self.shunt_compensator_phaseOptional[ShuntCompensatorPhase] = ShuntCompensatorPhase() # The individual phases models for the shunt compensator
         self.switch_on_count: int = 0 # The switch on count since the capacitor count was last reset or initialized
-        self.switch_on_date: Optional[DateTime] = datetime.now() # The date and time when the capacitor bank was last switched on
-        self.voltage_sensitivity: Optional[VoltagePerReactivePower] = VoltagePerReactivePower() # Voltage sensitivity required for the device to regulate the bus voltage
+        self.switch_on_dateOptional[DateTime] = datetime.now() # The date and time when the capacitor bank was last switched on
+        self.voltage_sensitivityOptional[VoltagePerReactivePower] = VoltagePerReactivePower() # Voltage sensitivity required for the device to regulate the bus voltage
 
     def set_a_vr_delay(self, new_val: float):
         self.a_vr_delay = new_val

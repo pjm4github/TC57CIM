@@ -15,5 +15,5 @@ class ExPostLossResults:
     def __init__(self) -> None:
         self.ehv_loss_mw: float = 0.0  # EHV MW losses in the company
         self.total_loss_mw: float = 0.0  # Total MW losses in the company
-        self.sub_control_area: Optional[SubControlArea] = SubControlArea()
-        self.ex_post_loss: Optional[ExPostLoss] = ExPostLoss()
+        self.sub_control_areaOptional[SubControlArea] = SubControlArea()
+        self.ex_post_lossOptional[ExPostLoss] = ExPostLoss()

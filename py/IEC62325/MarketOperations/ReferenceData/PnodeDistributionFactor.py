@@ -12,7 +12,7 @@ class PnodeDistributionFactor:
         """
         Constructor for PnodeDistributionFactor
         """
-        self.factor: Optional[float] = 0.0  # Used to calculate "participation" of Pnode in an AggregatePnode.
-        self.off_peak: Optional[str] = ''  # Indication that this distribution factor is to apply during off-peak.
-        self.on_peak: Optional[str] = ''  # Indication that this factor is to apply during Peak periods.
-        self.pod_loss_factor: Optional[float] = 0.0  # Point of delivery loss factor
+        self.factorOptional[float] = 0.0  # Used to calculate "participation" of Pnode in an AggregatePnode.
+        self.off_peakOptional[str] = ''  # Indication that this distribution factor is to apply during off-peak.
+        self.on_peakOptional[str] = ''  # Indication that this factor is to apply during Peak periods.
+        self.pod_loss_factorOptional[float] = 0.0  # Point of delivery loss factor

@@ -89,7 +89,7 @@ MAX_TOKENS = 10000  # Maximum number of tokens that can be used with the OPENAI 
 if __name__ == "__main__":
 
     # lots of hand-crafting here needed to work through each subdirectory under Base
-    directory_path = f"{os.path.expanduser('~')}/Documents/Git/GitHub/TC57CIM/py/IEC62325/MarketOperations/MarketSystem/MarketResults/"
+    directory_path = f"{os.path.expanduser('~')}/Documents/Git/GitHub/TC57CIM/py/IEC61970/Dynamics/StandardModels/WindDynamics/"
 
     output_path = f"{directory_path}/Converted/"
     try:

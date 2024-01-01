@@ -16,7 +16,7 @@ class SecurityConstraints(IdentifiedObject):
 
     def __init__(self) -> None:
         super().__init__()
-        self.actual_mw: Optional[ActivePower] = ActivePower()  # Actual branch or group of branches MW flow (only for transmission constraints)
-        self.max_mw: Optional[ActivePower] = ActivePower()  # Maximum MW limit
-        self.min_mw: Optional[ActivePower] = ActivePower()  # Minimum MW limit (only for transmission constraints)
-        self.rto: Optional[RTO] = RTO()
+        self.actual_mwOptional[ActivePower] = ActivePower()  # Actual branch or group of branches MW flow (only for transmission constraints)
+        self.max_mwOptional[ActivePower] = ActivePower()  # Maximum MW limit
+        self.min_mwOptional[ActivePower] = ActivePower()  # Minimum MW limit (only for transmission constraints)
+        self.rtoOptional[RTO] = RTO()

@@ -11,5 +11,5 @@ class AnalogControl(Control):
     """
 
     def __init__(self) -> None:
-        self.max_value: Optional[float] = 0.0  # Normal value range maximum for any of the Control.value. Used for scaling, e.g. in bar graphs.
-        self.min_value: Optional[float] = 0.0  # Normal value range minimum for any of the Control.value. Used for scaling, e.g. in bar graphs.
+        self.max_valueOptional[float] = 0.0  # Normal value range maximum for any of the Control.value. Used for scaling, e.g. in bar graphs.
+        self.min_valueOptional[float] = 0.0  # Normal value range minimum for any of the Control.value. Used for scaling, e.g. in bar graphs.

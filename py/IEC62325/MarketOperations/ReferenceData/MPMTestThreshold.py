@@ -17,8 +17,8 @@ class MpmTestThreshold:
     """
 
     def __init__(self) -> None:
-        self.market_type: Optional[MarketType] = MarketType.DAM  # Market Type (DAM, RTM)
-        self.percent: Optional[PerCent] = PerCent() # Price Threshold in %
-        self.price: Optional[CostPerEnergyUnit] = CostPerEnergyUnit()  # Price Threshold in $/MW
-        self.aggregated_pnode: Optional[AggregatedPnode] = AggregatedPnode()
-        self.registered_resource: Optional[RegisteredResource] = RegisteredResource()
+        self.market_typeOptional[MarketType] = MarketType.DAM  # Market Type (DAM, RTM)
+        self.percentOptional[PerCent] = PerCent() # Price Threshold in %
+        self.priceOptional[CostPerEnergyUnit] = CostPerEnergyUnit()  # Price Threshold in $/MW
+        self.aggregated_pnodeOptional[AggregatedPnode] = AggregatedPnode()
+        self.registered_resourceOptional[RegisteredResource] = RegisteredResource()

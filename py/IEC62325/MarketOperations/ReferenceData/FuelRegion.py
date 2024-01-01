@@ -14,6 +14,6 @@ class FuelRegion(IdentifiedObject):
 
     def __init__(self) -> None:
         super().__init__()
-        self.fuel_region_type: Optional[str] = ""
-        self.last_modified: Optional[DateTime] = DateTime()
-        self.registered_generator: Optional[RegisteredGenerator] = RegisteredGenerator()
+        self.fuel_region_typeOptional[str] = ""
+        self.last_modifiedOptional[DateTime] = DateTime()
+        self.registered_generatorOptional[RegisteredGenerator] = RegisteredGenerator()

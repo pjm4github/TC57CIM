@@ -14,5 +14,5 @@ class ActionRequest:
 
     def __init__(self) -> None:
         self.action_name: ActionType = ActionType.CANCEL
-        self.bid: Optional[Bid] = Bid()
-        self.trade: Optional[Trade] = Trade()
+        self.bidOptional[Bid] = Bid()
+        self.tradeOptional[Trade] = Trade()

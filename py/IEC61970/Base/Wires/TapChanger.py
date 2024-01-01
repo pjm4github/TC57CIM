@@ -18,15 +18,15 @@ class TapChanger:
         """
         self.control_enabled: bool = False
         self.high_step: int = 0
-        self.initial_delay: Optional[Seconds] = Seconds()
+        self.initial_delayOptional[Seconds] = Seconds()
         self.low_step: int = 1
         self.ltc_flag: bool = True
         self.neutral_step: int = 0
-        self.neutral_u: Optional[Voltage] = Voltage()
+        self.neutral_uOptional[Voltage] = Voltage()
         self.normal_step: int = 1
         self.step: float = 1.0
-        self.subsequent_delay: Optional[Seconds] = Seconds()
-        self.tap_changer_control: Optional[TapChangerControl] = TapChangerControl()
+        self.subsequent_delayOptional[Seconds] = Seconds()
+        self.tap_changer_controlOptional[TapChangerControl] = TapChangerControl()
 
     def get_control_enabled(self) -> bool:
         return self.control_enabled

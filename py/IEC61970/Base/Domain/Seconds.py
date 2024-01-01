@@ -14,6 +14,6 @@ class Seconds:
     """
     unit = UnitSymbol.s
 
-    def __init__(self):
-        self.value = 0.0
+    def __init__(self, v = None):
+        self.value = v
         self.multiplier = UnitMultiplier.none

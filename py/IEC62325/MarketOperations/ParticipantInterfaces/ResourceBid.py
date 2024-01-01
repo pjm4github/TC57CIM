@@ -8,28 +8,28 @@ from IEC62325.MarketOperations.ParticipantInterfaces.BidError import BidError
 class ResourceBid(Bid):
     def __init__(self) -> None:
         super().__init__()
-        self.aggregation_flag: Optional[int] = 0
+        self.aggregation_flagOptional[int] = 0
 
-        self.bid_status: Optional[str] = ""
-        self.commodity_type: Optional[str] = ""
-        self.contingency_avail_flag: Optional[str] = ""
-        self.created_iso: Optional[str] = ""
-        self.energy_max_day: Optional[float] = 0.0
+        self.bid_statusOptional[str] = ""
+        self.commodity_typeOptional[str] = ""
+        self.contingency_avail_flagOptional[str] = ""
+        self.created_isoOptional[str] = ""
+        self.energy_max_dayOptional[float] = 0.0
 
-        self.energy_min_day: Optional[float] = 0.0
+        self.energy_min_dayOptional[float] = 0.0
 
-        self.market_sep_flag: Optional[str] = ""
-        self.min_dispatch_time: Optional[int] = 0
+        self.market_sep_flagOptional[str] = ""
+        self.min_dispatch_timeOptional[int] = 0
 
-        self.resource_loading_type: Optional[int] = 0
+        self.resource_loading_typeOptional[int] = 0
 
-        self.shutdowns_max_day: Optional[int] = 0
+        self.shutdowns_max_dayOptional[int] = 0
 
-        self.shutdowns_max_week: Optional[int] = 0
+        self.shutdowns_max_weekOptional[int] = 0
 
-        self.startups_max_day: Optional[int] = 0
+        self.startups_max_dayOptional[int] = 0
 
-        self.startups_max_week: Optional[int] = 0
+        self.startups_max_weekOptional[int] = 0
 
-        self.virtual: Optional[bool] = False
-        self.bid_error: Optional[BidError] = BidError()
+        self.virtualOptional[bool] = False
+        self.bid_errorOptional[BidError] = BidError()

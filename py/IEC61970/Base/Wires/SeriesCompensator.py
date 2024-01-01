@@ -19,15 +19,15 @@ class SeriesCompensator:
         """
         Constructor
         """
-        self.r: Optional[Resistance] = Resistance()  # Positive sequence resistance.
-        self.r0: Optional[Resistance] = Resistance()  # Zero sequence resistance.
+        self.rOptional[Resistance] = Resistance()  # Positive sequence resistance.
+        self.r0Optional[Resistance] = Resistance()  # Zero sequence resistance.
         self.varistor_present: bool = False  # Describe if a metal oxide varistor (mov) for overvoltage protection is
         # configured at the series compensator.
-        self.varistor_rated_current: Optional[CurrentFlow] = CurrentFlow()  # The maximum current the varistor is designed to handle
+        self.varistor_rated_currentOptional[CurrentFlow] = CurrentFlow()  # The maximum current the varistor is designed to handle
         # at specified duration.
-        self.varistor_voltage_threshold: Optional[Voltage] = Voltage()  # The dc voltage at which the varistor start conducting.
-        self.x: Optional[Reactance] = Reactance()  # Positive sequence reactance.
-        self.x0: Optional[Reactance] = Reactance()  # Zero sequence reactance.
+        self.varistor_voltage_thresholdOptional[Voltage] = Voltage()  # The dc voltage at which the varistor start conducting.
+        self.xOptional[Reactance] = Reactance()  # Positive sequence reactance.
+        self.x0Optional[Reactance] = Reactance()  # Zero sequence reactance.
 
     def get_r(self) -> Resistance:
         return self.r

@@ -12,5 +12,5 @@ class LossClearingResults:
 
     def __init__(self) -> None:
         self.loss_mw: float = 0.0
-        self.sub_control_area: Optional[SubControlArea] = SubControlArea()
+        self.sub_control_areaOptional[SubControlArea] = SubControlArea()
 
