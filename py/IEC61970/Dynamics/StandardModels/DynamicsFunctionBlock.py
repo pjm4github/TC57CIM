@@ -14,4 +14,4 @@ class DynamicsFunctionBlock:
         """
         Constructor for DynamicsFunctionBlock
         """
-        self.enabled: Optional[bool] = False
+        self.enabled: bool = False

@@ -16,6 +16,6 @@ class CapacitancePerLength:
     unit: UnitSymbol = UnitSymbol.FPerm
 
     def __init__(self) -> None:
-        self.valueOptional[float] = 0.0
+        self.valuefloat = 0.0
 
         self.multiplier: UnitMultiplier = UnitMultiplier.none

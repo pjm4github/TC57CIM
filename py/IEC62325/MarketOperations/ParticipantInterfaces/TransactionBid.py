@@ -14,9 +14,9 @@ class TransactionBid(Bid):
         """
         Constructor for TransactionBid class.
         """
-        self.demand_transactionOptional[bool] = False  # Set true if this is a demand transaction.
-        self.dispatchableOptional[bool] = False  # Set true if this is a dispatchable transaction.
-        self.pay_congestionOptional[bool] = False  # Set true if this is a willing to pay transaction. This flag is used to 
+        self.demand_transactionbool = False  # Set true if this is a demand transaction.
+        self.dispatchablebool = False  # Set true if this is a dispatchable transaction.
+        self.pay_congestionbool = False  # Set true if this is a willing to pay transaction. This flag is used to 
                                                     # determine whether a schedule is willing-to-pay-congestion or not. 
         self.energy_profilesOptional[EnergyProfile] = EnergyProfile()
 

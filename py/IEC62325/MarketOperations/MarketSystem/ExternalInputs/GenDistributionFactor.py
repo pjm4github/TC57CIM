@@ -14,4 +14,4 @@ class GenDistributionFactor:
         Used to calculate generation "participation" of an individual pnode in an
         AggregatePnode.
         """
-        self.factorOptional[float] = 0.0
+        self.factorfloat = 0.0

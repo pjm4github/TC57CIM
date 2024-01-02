@@ -1,6 +1,9 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 21:57:45 2023
 from dataclasses import dataclass
 
+from IEC61970.Dynamics.StandardModels.AsynchronousMachineDynamics.AsynchronousMachineDynamics import \
+    AsynchronousMachineDynamics
+
 
 class AsynchronousMachineEquivalentCircuit(AsynchronousMachineDynamics):
     """
@@ -28,6 +31,7 @@ class AsynchronousMachineEquivalentCircuit(AsynchronousMachineDynamics):
     """
 
     def __init__(self):
+        super().__init__()
         self.rr1: float = 0.0  # Damper 1 winding resistance
         self.rr2: float = 0.0  # Damper 2 winding resistance
         self.xlr1: float = 0.0  # Damper 1 winding leakage reactance

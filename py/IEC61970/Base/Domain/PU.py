@@ -14,8 +14,8 @@ class PU:
     """Per Unit - a positive or negative value
     referred to a defined base. Values typically range from -10 to +10.
     """
-    unit = UnitSymbol.none
     def __init__(self, v=None):
         self.multiplier = UnitMultiplier.none
         self.value = v
+        self.unit = UnitSymbol.none
 

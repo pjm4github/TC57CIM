@@ -38,7 +38,7 @@ class ExternalNetworkInjection(RegulatingCondEq):
         self.pOptional[ActivePower] = ActivePower()  # Active power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions.
         self.qOptional[ReactivePower] = ReactivePower()  # Reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node. Starting value for steady state solutions.
         self.reference_priority: int = 0  # Priority of unit for use as powerflow voltage phase angle reference bus selection. 0 = don't care (default) 1 = highest priority. 2 is less than 1 and so on.
-        self.voltage_factorOptional[PU] = PU()  # Voltage factor in pu, which was used to calculate short-circuit current Ik" and power Sk".
+        self.voltage_factorPU = PU()  # Voltage factor in pu, which was used to calculate short-circuit current Ik" and power Sk".
 
     def set_governor_scd(self, new_val: ActivePowerPerFrequency):
         self.governor_scd = new_val
@@ -145,5 +145,5 @@ class ExternalNetworkInjection(RegulatingCondEq):
     def get_reference_priority(self) -> int:
         return self.reference_priority
 
-    def get_voltage_factor(self) -> Optional[PU]:
+    def get_voltage_factor(self) -> PU:
         return self.voltage_factor

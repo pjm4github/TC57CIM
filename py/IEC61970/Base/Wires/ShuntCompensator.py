@@ -13,13 +13,13 @@ class ShuntCompensator:
 
     def __init__(self):
         super().__init__()
-        self.a_vr_delayOptional[Seconds] = Seconds() # Time delay required for the device to be connected or disconnected by AVR
+        self.a_vr_delaySeconds = Seconds() # Time delay required for the device to be connected or disconnected by AVR
         self.grounded: bool = False # Used for Yn and Zn connections. True if the neutral is solidly grounded.
         self.maximum_sectionsOptional[int] = 0 # The maximum number of sections that may be switched in
         self.nom_uOptional[Voltage] = Voltage() # The voltage at which the nominal reactive power may be calculated
         self.normal_sectionsOptional[int] = 0 # The normal number of sections switched in
         self.phase_connectionOptional[PhaseShuntConnectionKind] = PhaseShuntConnectionKind.D # The type of phase connection, such as wye or delta
-        self.sectionsOptional[float] = 0.0 # Shunt compensator sections in use
+        self.sectionsfloat = 0.0 # Shunt compensator sections in use
         self.shunt_compensator_phaseOptional[ShuntCompensatorPhase] = ShuntCompensatorPhase() # The individual phases models for the shunt compensator
         self.switch_on_count: int = 0 # The switch on count since the capacitor count was last reset or initialized
         self.switch_on_dateOptional[DateTime] = datetime.now() # The date and time when the capacitor bank was last switched on
@@ -58,7 +58,7 @@ class ShuntCompensator:
     def set_voltage_sensitivity(self, new_val: float):
         self.voltage_sensitivity = new_val
 
-    def get_a_vr_delay(self) -> Optional[float]:
+    def get_a_vr_delay(self) -> float:
         return self.a_vr_delay
 
     def get_grounded(self) -> bool:
@@ -67,7 +67,7 @@ class ShuntCompensator:
     def get_maximum_sections(self) -> int:
         return self.maximum_sections
 
-    def get_nom_u(self) -> Optional[float]:
+    def get_nom_u(self) -> float:
         return self.nom_u
 
     def get_normal_sections(self) -> int:

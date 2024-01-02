@@ -18,35 +18,35 @@ class LoadComposite(LoadDynamics):
     def __init__(self) -> None:
         # Active load-frequency dependence index (dynamic) (Epfd).  Typical Value = 1.5.
         super().__init__()
-        self.epfd: Optional[float] = 1.5
+        self.epfd: float = 1.5
 
         # Active load-frequency dependence index (static) (Epfs).  Typical Value = 1.5.
-        self.epfs: Optional[float] = 1.5
+        self.epfs: float = 1.5
 
         # Active load-voltage dependence index (dynamic) (Epvd).  Typical Value = 0.7.
-        self.epvd: Optional[float] = 0.7
+        self.epvd: float = 0.7
 
         # Active load-voltage dependence index (static) (Epvs).  Typical Value = 0.7.
-        self.epvs: Optional[float] = 0.7
+        self.epvs: float = 0.7
 
         # Reactive load-frequency dependence index (dynamic) (Eqfd).  Typical Value = 0.
-        self.eqfd: Optional[float] = 0.0
+        self.eqfd: float = 0.0
 
         # Reactive load-frequency dependence index (static) (Eqfs).  Typical Value = 0.
-        self.eqfs: Optional[float] = 0.0
+        self.eqfs: float = 0.0
 
         # Reactive load-voltage dependence index (dynamic) (Eqvd).  Typical Value = 2.
-        self.eqvd: Optional[float] = 2.0
+        self.eqvd: float = 2.0
 
         # Reactive load-voltage dependence index (static) (Eqvs).  Typical Value = 2.
-        self.eqvs: Optional[float] = 2.0
+        self.eqvs: float = 2.0
 
         # Inertia constant (H).  Typical Value = 2.5.
-        self.h: Optional[float] = 2.5
+        self.h: float = 2.5
 
         # Loading factor - ratio of initial P to motor MVA base (Lfrac).  Typical Value = 0.8.
-        self.l_frac: Optional[float] = 0.8
+        self.l_frac: float = 0.8
 
         # Fraction of constant-power load to be represented by this motor model (Pfrac)
         # (>=0.0 and <=1.0).  Typical Value = 0.5.
-        self.p_frac: Optional[float] = 0.5
+        self.p_frac: float = 0.5

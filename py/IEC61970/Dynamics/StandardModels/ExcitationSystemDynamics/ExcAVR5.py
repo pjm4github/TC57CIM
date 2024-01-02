@@ -2,6 +2,7 @@
 from datetime import timedelta
 
 from IEC61970.Base.Domain.PU import PU
+from IEC61970.Base.Domain.Seconds import Seconds
 from IEC61970.Dynamics.StandardModels.ExcitationSystemDynamics.ExcitationSystemDynamics import ExcitationSystemDynamics
 
 
@@ -23,5 +24,5 @@ class ExcAvr5(ExcitationSystemDynamics):
         """Effective Output Resistance (Rex). Rex represents the effective output
         resistance seen by the excitation system."""
         
-        self.ta: timedelta
+        self.ta: Seconds = Seconds()
         """Time constant (Ta)"""

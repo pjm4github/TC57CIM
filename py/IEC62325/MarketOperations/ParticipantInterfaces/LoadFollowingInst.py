@@ -14,6 +14,6 @@ class LoadFollowingInst:
 
     def __init__(self) -> None:
         self.end_timeOptional[DateTime] = DateTime()   # Instruction End Time
-        self.load_following_mwOptional[float] = 0.0  # Load Following MW Positive for follow-up and negative for follow-down
+        self.load_following_mwfloat = 0.0  # Load Following MW Positive for follow-up and negative for follow-down
         self.mss_instruction_idOptional[str] = ""  # Unique instruction id per instruction, assigned by the SC and provided to ADS. ADS passes through.
         self.start_timeOptional[DateTime] = DateTime()   # Instruction Start Time

@@ -14,7 +14,7 @@ class MechLoad1(MechanicalLoadDynamics):
 
     def __init__(self) -> None:
         super().__init__()
-        self.a: Optional[float] = 1.0  # Speed squared coefficient (a)
-        self.b: Optional[float] = 1.0  # Speed coefficient (b)
-        self.d: Optional[float] = 1.0  # Speed to the exponent coefficient (d)
-        self.e: Optional[float] = 1.0  # Exponent (e)
+        self.a: float = 1.0  # Speed squared coefficient (a)
+        self.b: float = 1.0  # Speed coefficient (b)
+        self.d: float = 1.0  # Speed to the exponent coefficient (d)
+        self.e: float = 1.0  # Exponent (e)

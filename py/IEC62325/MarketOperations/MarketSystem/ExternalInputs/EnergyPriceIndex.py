@@ -19,7 +19,7 @@ class EnergyPriceIndex(IdentifiedObject):
 
     def __init__(self) -> None:
         super().__init__()
-        self.energy_price_indexOptional[float] = 0.0  # Energy price index
+        self.energy_price_indexfloat = 0.0  # Energy price index
         self.energy_price_index_typeOptional[EnergyPriceIndexType] = EnergyPriceIndexType()  # EPI type such as wholesale or retail
         self.last_modifiedOptional[DateTime] = DateTime()  # Time updated
         self.valid_periodOptional[DateTimeInterval] = DateTimeInterval()  # Valid period for which the energy price index is valid.

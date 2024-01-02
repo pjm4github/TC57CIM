@@ -11,7 +11,7 @@ class DiagramObjectPoint:
     """
     def __init__(self) -> None:
         self.sequence_numberOptional[int] = 0  # The sequence position of the point
-        self.x_positionOptional[float] = 0.0  # The X coordinate of this point
-        self.y_positionOptional[float] = 0.0  # The Y coordinate of this point
-        self.z_positionOptional[float] = 0.0  # The Z coordinate of this point
+        self.x_positionfloat = 0.0  # The X coordinate of this point
+        self.y_positionfloat = 0.0  # The Y coordinate of this point
+        self.z_positionfloat = 0.0  # The Z coordinate of this point
         self.diagram_object_glue_pointOptional[DiagramObjectGluePoint] = DiagramObjectGluePoint()  # The 'glue' point to which this point is associated

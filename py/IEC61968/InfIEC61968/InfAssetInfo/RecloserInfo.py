@@ -13,12 +13,12 @@ class RecloserInfo(OldSwitchInfo):
 
     def __init__(self) -> None:
         super().__init__()
-        self.ground_trip_capableOptional[bool] = True
+        self.ground_trip_capablebool = True
         """
         True if device has ground trip capability.
         """
 
-        self.ground_trip_normal_enabledOptional[bool] = True
+        self.ground_trip_normal_enabledbool = True
         """
         True if normal status of ground trip is enabled.
         """

@@ -19,7 +19,7 @@ class PfVarType2Common1(PFVArControllerType2Dynamics):
 
     def __init__(self) -> None:
         super().__init__()
-        self.j: Optional[bool] = True  # Selector (J). True = control mode for reactive power, False = control mode for power factor.
+        self.j: bool = True  # Selector (J). True = control mode for reactive power, False = control mode for power factor.
         self.ki: PU = PU()  # Reset gain (Ki).
         self.kp: PU = PU()  # Proportional gain (Kp).
         self.max: PU = PU()  # Output limit (max).

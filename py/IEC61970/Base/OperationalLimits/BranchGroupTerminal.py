@@ -19,7 +19,7 @@ class BranchGroupTerminal:
 
         # The flow into the terminal is summed if set true.
         # The flow out of the terminal is summed if set false.
-        self.positive_flow_inOptional[bool] = False
+        self.positive_flow_inbool = False
 
         # The terminal to be summed.
         self.terminalOptional[Any] = Terminal()

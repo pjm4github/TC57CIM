@@ -34,7 +34,7 @@ class UnitInitialConditions(IdentifiedObject):
         """
         'true' if the GeneratingUnit is currently On-Line
         """
-        self.online_statusOptional[bool] = False
+        self.online_statusbool = False
 
         """
         Resource MW output at the end of previous clearing period.
@@ -59,7 +59,7 @@ class UnitInitialConditions(IdentifiedObject):
         Time in market trading intervals the resource is in the state as of the end of
         the previous clearing period.
         """
-        self.time_in_statusOptional[float] = 0.0
+        self.time_in_statusfloat = 0.0
 
         """
         Time interval

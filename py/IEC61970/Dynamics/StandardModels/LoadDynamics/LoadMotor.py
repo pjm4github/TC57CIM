@@ -1,6 +1,7 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sun Dec 31 16:32:51 2023
 from typing import Optional
 
+from IEC61970.Base.Domain.Seconds import Seconds
 from IEC61970.Dynamics.StandardModels.LoadDynamics.LoadAggregate import LoadAggregate
 
 
@@ -24,17 +25,17 @@ class LoadMotor:
     """
 
     def __init__(self) -> None:
-        self.d: Optional[float] = 2.0  # Damping factor (D). Unit = delta P/delta speed. Typical Value = 2.
-        self.h: Optional[float] = 0.4  # Inertia constant (H) (not=0). Typical Value = 0.4.
-        self.lfac: Optional[float] = 0.8  # Loading factor - ratio of initial P to motor MVA base (Lfac). Typical Value = 0.8.
-        self.lp: Optional[float] = 0.15  # Transient reactance (Lp). Typical Value = 0.15.
-        self.lpp: Optional[float] = 0.15  # Subtransient reactance (Lpp). Typical Value = 0.15.
-        self.ls: Optional[float] = 3.2  # Synchronous reactance (Ls). Typical Value = 3.2.
-        self.pfrac: Optional[float] = 0.3  # Fraction of constant-power load to be represented by this motor model (Pfrac) (>=0.0 and <=1.0). Typical Value = 0.3.
-        self.ra: Optional[float] = 0.0  # Stator resistance (Ra). Typical Value = 0.
-        self.tbkr: Optional[float] = 0.08  # Circuit breaker operating time (Tbkr). Typical Value = 0.08.
-        self.tpo: Optional[float] = 1.0  # Transient rotor time constant (Tpo) (not=0). Typical Value = 1.
-        self.tppo: Optional[float] = 0.02  # Subtransient rotor time constant (Tppo). Typical Value = 0.02.
-        self.tv: Optional[float] = 0.1  # Voltage trip pickup time (Tv). Typical Value = 0.1.
-        self.vt: Optional[float] = 0.7  # Voltage threshold for tripping (Vt). Typical Value = 0.7.
+        self.d: float = 2.0  # Damping factor (D). Unit = delta P/delta speed. Typical Value = 2.
+        self.h: float = 0.4  # Inertia constant (H) (not=0). Typical Value = 0.4.
+        self.lfac: float = 0.8  # Loading factor - ratio of initial P to motor MVA base (Lfac). Typical Value = 0.8.
+        self.lp: float = 0.15  # Transient reactance (Lp). Typical Value = 0.15.
+        self.lpp: float = 0.15  # Subtransient reactance (Lpp). Typical Value = 0.15.
+        self.ls: float = 3.2  # Synchronous reactance (Ls). Typical Value = 3.2.
+        self.pfrac: float = 0.3  # Fraction of constant-power load to be represented by this motor model (Pfrac) (>=0.0 and <=1.0). Typical Value = 0.3.
+        self.ra: float = 0.0  # Stator resistance (Ra). Typical Value = 0.
+        self.tbkr: Seconds = Seconds(0.08) # Circuit breaker operating time (Tbkr). Typical Value = 0.08.
+        self.tpo: Seconds = Seconds() # Transient rotor time constant (Tpo) (not=0). Typical Value = 1.
+        self.tppo: Seconds = Seconds(0.02) # Subtransient rotor time constant (Tppo). Typical Value = 0.02.
+        self.tv: Seconds = Seconds(0.1) # Voltage trip pickup time (Tv). Typical Value = 0.1.
+        self.vt: float = 0.7  # Voltage threshold for tripping (Vt). Typical Value = 0.7.
         self.load_aggregate: Optional[LoadAggregate] = LoadAggregate()  # Aggregate load to which this aggregate motor (dynamic) load belongs.

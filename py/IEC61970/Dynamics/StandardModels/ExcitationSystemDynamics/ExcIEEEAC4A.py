@@ -1,4 +1,5 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 22:01:48 2023
+from IEC61970.Base.Domain.Seconds import Seconds
 from IEC61970.Dynamics.StandardModels.ExcitationSystemDynamics.ExcitationSystemDynamics import ExcitationSystemDynamics
 
 
@@ -24,9 +25,9 @@ class ExcIeeeAc4a(ExcitationSystemDynamics):
         super().__init__()
         self.ka: float = 0.0  # Voltage regulator gain (K_A). Typical Value = 200.
         self.kc: float = 0.0  # Rectifier loading factor proportional to commutating reactance (K_C). Typical Value = 0.
-        self.ta: float = 0.0  # Voltage regulator time constant (T_A). Typical Value = 0.015.
-        self.tb: float = 0.0  # Voltage regulator time constant (T_B). Typical Value = 10.
-        self.tc: float = 0.0  # Voltage regulator time constant (T_C). Typical Value = 1.
+        self.ta: Seconds = Seconds() # Voltage regulator time constant (T_A). Typical Value = 0.015.
+        self.tb: Seconds = Seconds() # Voltage regulator time constant (T_B). Typical Value = 10.
+        self.tc: Seconds = Seconds() # Voltage regulator time constant (T_C). Typical Value = 1.
         self.vimax: float = 0.0  # Maximum voltage regulator input limit (V_IMAX). Typical Value = 10.
         self.vimin: float = 0.0  # Minimum voltage regulator input limit (V_IMIN). Typical Value = -10.
         self.vrmax: float = 0.0  # Maximum voltage regulator output (V_RMAX). Typical Value = 5.64.

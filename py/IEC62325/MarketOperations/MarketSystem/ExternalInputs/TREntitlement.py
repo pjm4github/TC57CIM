@@ -23,7 +23,7 @@ class TrEntitlement:
         """
         The entitlement
         """
-        self.entitlementOptional[float] = 0.0
+        self.entitlementfloat = 0.0
         """
         Operating date and hour when the entitlement applies
         """

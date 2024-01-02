@@ -27,99 +27,99 @@ class ExcIeeeAc3A(ExcitationSystemDynamics):
         Value = 2.36.
         """
         super().__init__()
-        self.efdn: Optional[PU] = PU()
+        self.efdn: PU = PU()
         """
         Voltage regulator gain (K_A). Typical Value = 45.62.
         """
-        self.ka: Optional[PU] = PU()
+        self.ka: PU = PU()
         """
         Rectifier loading factor proportional to commutating reactance (K_C).
         Typical Value = 0.104.
         """
-        self.kc: Optional[PU] = PU()
+        self.kc: PU = PU()
         """
         Demagnetizing factor, a function of exciter alternator reactances
         (K_D). Typical Value = 0.499.
         """
-        self.kd: Optional[PU] = PU()
+        self.kd: PU = PU()
         """
         Exciter constant related to self-excited field (K_E). Typical Value
         = 1.
         """
-        self.ke: Optional[PU] = PU()
+        self.ke: PU = PU()
         """
         Excitation control system stabilizer gains (K_F). Typical Value
         = 0.143.
         """
-        self.kf: Optional[PU] = PU()
+        self.kf: PU = PU()
         """
         Excitation control system stabilizer gain (K_N). Typical Value
         = 0.05.
         """
-        self.kn: Optional[PU] = PU()
+        self.kn: PU = PU()
         """
         Constant associated with regulator and alternator field power supply
         (K_R). Typical Value = 3.77.
         """
-        self.kr: Optional[PU] = PU()
+        self.kr: PU = PU()
         """
         Exciter saturation function value at the corresponding exciter
         voltage, V_E1, back of commutating reactance (S_E[V_E1]). Typical
         Value = 1.143.
         """
-        self.seve1: Optional[float] = 1.0
+        self.seve1: float = 1.0
         """
         Exciter saturation function value at the corresponding exciter
         voltage, V_E2, back of commutating reactance (S_E[V_E2]). Typical
         Value = 0.1.
         """
-        self.seve2: Optional[float] = 1.0
+        self.seve2: float = 1.0
         """
         Voltage regulator time constant (T_A). Typical Value = 0.013.
         """
-        self.ta: Optional[Seconds] = Seconds()
+        self.ta: Seconds = Seconds()
         """
         Voltage regulator time constant (T_B). Typical Value = 0.
         """
-        self.tb: Optional[Seconds] = Seconds()
+        self.tb: Seconds = Seconds()
         """
         Voltage regulator time constant (T_C). Typical Value = 0.
         """
-        self.tc: Optional[Seconds] = Seconds()
+        self.tc: Seconds = Seconds()
         """
         Exciter time constant, integration rate associated with exciter control
         (T_E). Typical Value = 1.17.
         """
-        self.te: Optional[Seconds] = Seconds()
+        self.te: Seconds = Seconds()
         """
         Excitation control system stabilizer time constant (T_F). Typical
         Value = 1.
         """
-        self.tf: Optional[Seconds] = Seconds()
+        self.tf: Seconds = Seconds()
         """
         Maximum voltage regulator output (V_AMAX). Typical Value = 1.
         """
-        self.vamax: Optional[PU] = PU()
+        self.vamax: PU = PU()
         """
         Minimum voltage regulator output (V_AMIN). Typical Value = -0.95.
         """
-        self.vamin: Optional[PU] = PU()
+        self.vamin: PU = PU()
         """
         Exciter alternator output voltages back of commutating reactance at which
         saturation is defined (V_E1) equals V_EMAX (V_E1). Typical Value
         = 6.24.
         """
-        self.ve1: Optional[PU] = PU()
+        self.ve1: PU = PU()
         """
         Exciter alternator output voltages back of commutating reactance at which
         saturation is defined (V_E2). Typical Value = 4.68.
         """
-        self.ve2: Optional[PU] = PU()
+        self.ve2: PU = PU()
         """
         Minimum exciter voltage output (V_EMIN). Typical Value = 0.1.
         """
-        self.vemin: Optional[PU] = PU()
+        self.vemin: PU = PU()
         """
         Exciter field current limit reference (V_FEMAX). Typical Value = 16.
         """
-        self.vfemax: Optional[PU] = PU()
+        self.vfemax: PU = PU()

@@ -37,7 +37,7 @@ class OverexcLimX2:
 
         # 	 * true = IFD limiting
         # 	 * false = EFD limiting.
-        self.m: Optional[bool] = False  # m: true = IFD limiting, false = EFD limiting.
+        self.m: bool = False  # m: true = IFD limiting, false = EFD limiting.
         # 	public Boolean m;
         # 	 * Time to trip the exciter at the low voltage or current point on the inverse
         # 	 * time characteristic (TIME<sub>1</sub>).  Typical Value = 120.

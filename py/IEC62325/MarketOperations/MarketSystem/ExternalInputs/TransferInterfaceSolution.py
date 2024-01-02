@@ -12,9 +12,9 @@ class TransferInterfaceSolution:
     """
 
     def __init__(self) -> None:
-        self.interface_marginOptional[float] = 0.0  # The margin for the interface
-        self.post_transfer_mwOptional[float] = 0.0  # Post Transfer MW for step
-        self.transfer_limitOptional[float] = 0.0  # Transfer Interface + Limit
+        self.interface_marginfloat = 0.0  # The margin for the interface
+        self.post_transfer_mwfloat = 0.0  # Post Transfer MW for step
+        self.transfer_limitfloat = 0.0  # Transfer Interface + Limit
 
         self.mkt_contingency_aOptional[MktContingency] = MktContingency()
         self.mkt_contingency_bOptional[MktContingency] = MktContingency()

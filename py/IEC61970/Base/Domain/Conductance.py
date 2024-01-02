@@ -12,4 +12,4 @@ class Conductance:
     unit = UnitSymbol.S  # ureg('S')
     def __init__(self) -> None:
         self.multiplier: UnitMultiplier = UnitMultiplier.none
-        self.valueOptional[float] = 0.0
+        self.valuefloat = 0.0

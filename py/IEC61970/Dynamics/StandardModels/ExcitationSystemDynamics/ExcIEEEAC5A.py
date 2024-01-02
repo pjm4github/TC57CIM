@@ -1,6 +1,7 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 22:01:48 2023
 from typing import Optional
 
+from IEC61970.Base.Domain.Seconds import Seconds
 from IEC61970.Dynamics.StandardModels.ExcitationSystemDynamics.ExcitationSystemDynamics import ExcitationSystemDynamics
 
 
@@ -20,17 +21,17 @@ class ExcIeeeAc5A(ExcitationSystemDynamics):
 
     def __init__(self) -> None:
         super().__init__()
-        self.efd1: Optional[float] = 1.0
-        self.efd2: Optional[float] = 1.0
-        self.ka: Optional[float] = 1.0
-        self.ke: Optional[float] = 1.0
-        self.kf: Optional[float] = 1.0
-        self.seefd1: Optional[float] = 1.0
-        self.seefd2: Optional[float] = 1.0
-        self.ta: Optional[float] = 1.0
-        self.te: Optional[float] = 1.0
-        self.tf1: Optional[float] = 1.0
-        self.tf2: Optional[float] = 1.0
-        self.tf3: Optional[float] = 1.0
-        self.vrmax: Optional[float] = 1.0
-        self.vrmin: Optional[float] = 1.0
+        self.efd1: float = 1.0
+        self.efd2: float = 1.0
+        self.ka: float = 1.0
+        self.ke: float = 1.0
+        self.kf: float = 1.0
+        self.seefd1: float = 1.0
+        self.seefd2: float = 1.0
+        self.ta: Seconds = Seconds(1.0)
+        self.te: Seconds = Seconds(1.0)
+        self.tf1: Seconds = Seconds(1.0)
+        self.tf2: Seconds = Seconds(1.0)
+        self.tf3: Seconds = Seconds(1.0)
+        self.vrmax: float = 1.0
+        self.vrmin: float = 1.0

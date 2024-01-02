@@ -26,14 +26,14 @@ class ExcIeeeDc3A(ExcitationSystemDynamics):
     
     def __init__(self) -> None:
         super().__init__()
-        self.efd1: Optional[PU] = PU()
-        self.efd2: Optional[PU] = PU()
-        self.exclim: Optional[bool] = False
-        self.ke: Optional[PU] = PU()
-        self.kv: Optional[PU] = PU()
-        self.seefd1: Optional[float] = 1.0
-        self.seefd2: Optional[float] = 1.0
-        self.te: Optional[Seconds] = Seconds()
-        self.trh: Optional[Seconds] = Seconds()
-        self.vrmax: Optional[PU] = PU()
-        self.vrmin: Optional[PU] = PU()
+        self.efd1: PU = PU()
+        self.efd2: PU = PU()
+        self.exclim: bool = False
+        self.ke: PU = PU()
+        self.kv: PU = PU()
+        self.seefd1: float = 1.0
+        self.seefd2: float = 1.0
+        self.te: Seconds = Seconds()
+        self.trh: Seconds = Seconds()
+        self.vrmax: PU = PU()
+        self.vrmin: PU = PU()

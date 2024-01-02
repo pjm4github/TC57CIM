@@ -23,6 +23,6 @@ class BranchGroup(IdentifiedObject):
         self.maximum_reactive_powerOptional[ReactivePower] = ReactivePower()  # The maximum reactive power flow.
         self.minimum_active_powerOptional[ActivePower] = ActivePower()  # The minimum active power flow.
         self.minimum_reactive_powerOptional[ReactivePower] = ReactivePower()  # The minimum reactive power flow.
-        self.monitor_active_powerOptional[bool] = False  # Monitor the active power flow.
-        self.monitor_reactive_powerOptional[bool] = False  # Monitor the reactive power flow.
+        self.monitor_active_powerbool = False  # Monitor the active power flow.
+        self.monitor_reactive_powerbool = False  # Monitor the reactive power flow.
         self.branch_group_terminalOptional[BranchGroupTerminal] = BranchGroupTerminal()  # The directed branch group terminals to be summed.

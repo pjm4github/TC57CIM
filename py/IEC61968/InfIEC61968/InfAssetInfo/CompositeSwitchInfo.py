@@ -16,7 +16,7 @@ class CompositeSwitchInfo(AssetInfo):
 
     def __init__(self) -> None:
         super().__init__()
-        self.gangedOptional[bool] = False
+        self.gangedbool = False
         """
         True if multi-phase switch controls all phases concurrently.
         """
@@ -52,7 +52,7 @@ class CompositeSwitchInfo(AssetInfo):
         Rated voltage.
         """
 
-        self.remoteOptional[bool] = True
+        self.remotebool = True
         """
         True if device is capable of being operated by remote control.
         """

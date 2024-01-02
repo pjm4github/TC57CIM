@@ -18,12 +18,12 @@ class EnergyTransaction:
     necessary to satisfy the associated interchange transaction.
     """
     def __init__(self) -> None:
-        self.capacity_backedOptional[bool] = False  # Interchange capacity flag
+        self.capacity_backedbool = False  # Interchange capacity flag
         self.congest_charge_maxOptional[Money] = Money()  # Maximum congestion charges in monetary units
         self.delivery_point_pOptional[ActivePower] = ActivePower()  # Delivery point active power
         self.energy_minOptional[ActivePower] = ActivePower()  # Transaction minimum active power if dispatchable
-        self.firm_interchange_flagOptional[bool] = False  # Firm interchange flag indicates whether or not this energy transaction can be changed without potential financial consequences
-        self.pay_congestionOptional[bool] = False  # Willing to Pay congestion flag
+        self.firm_interchange_flagbool = False  # Firm interchange flag indicates whether or not this energy transaction can be changed without potential financial consequences
+        self.pay_congestionbool = False  # Willing to Pay congestion flag
         self.reasonOptional[str] = ""  # Reason for energy transaction
         self.receipt_point_pOptional[ActivePower] = ActivePower()  # Receipt point active power
         self.stateOptional[EnergyTransactionType] = EnergyTransactionType()  # { Approve | Deny | Study }

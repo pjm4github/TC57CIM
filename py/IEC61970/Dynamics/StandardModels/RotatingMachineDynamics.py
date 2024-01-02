@@ -14,7 +14,7 @@ class RotatingMachineDynamics:
         """
         Constructor for the RotatingMachineDynamics class.
         """
-        self.damping: Optional[float] = 0.0  # Damping torque coefficient
+        self.damping: float = 0.0  # Damping torque coefficient
         """
         Damping torque coefficient (D). A proportionality constant that, when
         multiplied by the angular velocity of the rotor poles with respect to the
@@ -23,7 +23,7 @@ class RotatingMachineDynamics:
         load damping effects, etc.) are modelled in detail. Typical Value = 0.
         """
 
-        self.inertia: Optional[float] = 3.0  # Inertia constant
+        self.inertia: float = 3.0  # Inertia constant
         """
         Inertia constant of generator or motor and mechanical load (H) (>0). This is
         the specification for the stored energy in the rotating mass when operating
@@ -35,26 +35,26 @@ class RotatingMachineDynamics:
         operator training simulator solutions. Typical Value = 3.
         """
 
-        self.saturation_factor: Optional[float] = 0.02  # Saturation factor at rated terminal voltage (S_1) (>=0)
+        self.saturation_factor: float = 0.02  # Saturation factor at rated terminal voltage (S_1) (>=0)
         """
         Saturation factor at rated terminal voltage (S1) (> or = 0). Not used by
         simplified model. Defined by defined by S(E1) in the
         SynchronousMachineSaturationParameters diagram. Typical Value = 0.02.
         """
 
-        self.saturation_factor120: Optional[float] = 0.12  # Saturation factor at 120% of rated terminal voltage (S12) (> or = S1)
+        self.saturation_factor120: float = 0.12  # Saturation factor at 120% of rated terminal voltage (S12) (> or = S1)
         """
         Saturation factor at 120% of rated terminal voltage (S12) (> or = S1). Not used
         by the simplified model, defined by S(E2) in the
         SynchronousMachineSaturationParameters diagram. Typical Value = 0.12.
         """
 
-        self.stator_leakage_reactance: Optional[float] = 0.15  # Stator leakage reactance (Xl) (> or = 0)
+        self.stator_leakage_reactance: float = 0.15  # Stator leakage reactance (Xl) (> or = 0)
         """
         Stator leakage reactance (Xl) (> or = 0). Typical Value = 0.15.
         """
 
-        self.stator_resistance: Optional[float] = 0.005  # Stator (armature) resistance (Rs) (> or = 0)
+        self.stator_resistance: float = 0.005  # Stator (armature) resistance (Rs) (> or = 0)
         """
         Stator (armature) resistance (Rs) (> or = 0). Typical Value = 0.005.
         """  

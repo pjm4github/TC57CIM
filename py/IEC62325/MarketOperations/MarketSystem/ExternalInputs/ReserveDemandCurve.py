@@ -19,7 +19,7 @@ class ReserveDemandCurve(Curve):
         Constructor
         """
         super().__init__()
-        self.req_max_mwOptional[float] = 0.0
+        self.req_max_mwfloat = 0.0
 
         """
         Region requirement maximum limit

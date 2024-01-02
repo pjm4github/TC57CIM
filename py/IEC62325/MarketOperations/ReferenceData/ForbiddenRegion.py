@@ -16,14 +16,14 @@ class ForbiddenRegion(IdentifiedObject):
 
     def __init__(self) -> None:
         super().__init__()
-        self.crossing_costOptional[float] = 0.0
+        self.crossing_costfloat = 0.0
         """Cost associated with crossing the forbidden region"""
 
         self.cross_timeOptional[int] = 0
         """Time to cross the forbidden region in minutes."""
 
-        self.high_mwOptional[float] = 0.0
+        self.high_mwfloat = 0.0
         """High end of the region definition"""
 
-        self.low_mwOptional[float] = 0.0
+        self.low_mwfloat = 0.0
         """Low end of the region definition."""

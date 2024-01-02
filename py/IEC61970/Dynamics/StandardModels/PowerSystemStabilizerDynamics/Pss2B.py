@@ -18,7 +18,7 @@ class Pss2B(PowerSystemStabilizerDynamics):
         """
         Constructor
         """
-        self.a: Optional[float] = 1.0  # Numerator constant (a).  Typical Value = 1.
+        self.a: float = 1.0  # Numerator constant (a).  Typical Value = 1.
         self.input_signal_1_type: Optional[InputSignalKind] = InputSignalKind.ROTOR_SPEED  # Type of input signal #1.  Typical Value = rotorSpeed.
         self.input_signal_2_type: Optional[InputSignalKind] = InputSignalKind.GENERATOR_ELECTRICAL_POWER  # Type of input signal #2.  Typical Value = generatorElectricalPower.
         self.ks1: PU = PU(12)  # Stabilizer gain (Ks1).  Typical Value = 12.

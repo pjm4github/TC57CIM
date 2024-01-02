@@ -5,10 +5,8 @@ from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 
 
 class Area:
-    unit: UnitSymbol = UnitSymbol.m2
-
-    def __init__(self) -> None:
+    def __init__(self, v=0.0) -> None:
         self.multiplier: UnitMultiplier = UnitMultiplier.none
-        self.value: float = 0.0
-        pass
+        self.value: float = v
+        self.unit: UnitSymbol = UnitSymbol.m2
 

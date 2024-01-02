@@ -25,8 +25,8 @@ class EquivalentInjection(IdentifiedObject):
         self.rOptional[Resistance] = Resistance()  # Positive sequence resistance. Used to represent Extended-Ward (IEC 60909).
         self.r0Optional[Resistance] = Resistance()  # Zero sequence resistance. Used to represent Extended-Ward (IEC 60909).
         self.r2Optional[Resistance] = Resistance()  # Negative sequence resistance. Used to represent Extended-Ward (IEC 60909).
-        self.regulation_capabilityOptional[bool] = False  # Specifies whether or not the EquivalentInjection has the capability to regulate the local voltage.
-        self.regulation_statusOptional[bool] = False  # Specifies the default regulation status of the EquivalentInjection.  True is regulating.  False is not regulating.
+        self.regulation_capabilitybool = False  # Specifies whether or not the EquivalentInjection has the capability to regulate the local voltage.
+        self.regulation_statusbool = False  # Specifies the default regulation status of the EquivalentInjection.  True is regulating.  False is not regulating.
         self.regulation_targetOptional[Voltage] = Voltage()  # The target voltage for voltage regulation.
         self.xOptional[Reactance] = Reactance()  # Positive sequence reactance. Used to represent Extended-Ward (IEC 60909).
         self.x0Optional[Reactance] = Reactance()  # Zero sequence reactance. Used to represent Extended-Ward (IEC 60909).

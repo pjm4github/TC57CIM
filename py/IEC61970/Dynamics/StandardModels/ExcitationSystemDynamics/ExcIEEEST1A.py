@@ -27,24 +27,24 @@ class ExcIeeeSt1A(ExcitationSystemDynamics):
         Constructor for ExcIEEESt1A
         """
         super().__init__()
-        self.ilr: Optional[PU] = PU()  # Exciter output current limit reference (I_LR). Typical Value = 0
-        self.ka: Optional[PU] = PU()  # Voltage regulator gain (K_A). Typical Value = 190
-        self.kc: Optional[PU] = PU()  # Rectifier loading factor proportional to commutating reactance (K_C). Typical Value = 0.08
-        self.kf: Optional[PU] = PU()  # Excitation control system stabilizer gains (K_F). Typical Value = 0
-        self.klr: Optional[PU] = PU()  # Exciter output current limiter gain (K_LR). Typical Value = 0
-        self.pssin: Optional[bool] = False  # Selector of the Power System Stabilizer (PSS) input (PSSin).
+        self.ilr: PU = PU()  # Exciter output current limit reference (I_LR). Typical Value = 0
+        self.ka: PU = PU()  # Voltage regulator gain (K_A). Typical Value = 190
+        self.kc: PU = PU()  # Rectifier loading factor proportional to commutating reactance (K_C). Typical Value = 0.08
+        self.kf: PU = PU()  # Excitation control system stabilizer gains (K_F). Typical Value = 0
+        self.klr: PU = PU()  # Exciter output current limiter gain (K_LR). Typical Value = 0
+        self.pssin: bool = False  # Selector of the Power System Stabilizer (PSS) input (PSSin).
         # True = PSS input (Vs) added to error signal
         # False = PSS input (Vs) added to voltage regulator output. Typical Value = True
-        self.ta: Optional[Seconds] = Seconds()  # Voltage regulator time constant (T_A). Typical Value = 0
-        self.tb: Optional[Seconds] = Seconds()  # Voltage regulator time constant (T_B). Typical Value = 10
-        self.tb1: Optional[Seconds] = Seconds()  # Voltage regulator time constant (T_B1). Typical Value = 0
-        self.tc: Optional[Seconds] = Seconds()  # Voltage regulator time constant (T_C). Typical Value = 1
-        self.tc1: Optional[Seconds] = Seconds()  # Voltage regulator time constant (T_C1). Typical Value = 0
-        self.tf: Optional[Seconds] = Seconds()  # Excitation control system stabilizer time constant (T_F). Typical Value = 1
-        self.uelin: Optional[ExcIEEEST1AUELselectorKind] = ExcIEEEST1AUELselectorKind()  # Selector of the connection of the UEL input (UEL_in). Typical Value = ignoreUELsignal.
-        self.vamax: Optional[PU] = PU()  # Maximum voltage regulator output (V_AMAX). Typical Value = 14.5
-        self.vamin: Optional[PU] = PU()  # Minimum voltage regulator output (V_AMIN). Typical Value = -14.5
-        self.vimax: Optional[PU] = PU()  # Maximum voltage regulator input limit (V_IMAX). Typical Value = 999
-        self.vimin: Optional[PU] = PU()  # Minimum voltage regulator input limit (V_IMIN). Typical Value = -999
-        self.vrmax: Optional[PU] = PU()  # Maximum voltage regulator outputs (V_RMAX). Typical Value = 7.8
-        self.vrmin: Optional[PU] = PU()  # Minimum voltage regulator outputs (V_RMIN). Typical Value = -6.7
+        self.ta: Seconds = Seconds()  # Voltage regulator time constant (T_A). Typical Value = 0
+        self.tb: Seconds = Seconds()  # Voltage regulator time constant (T_B). Typical Value = 10
+        self.tb1: Seconds = Seconds()  # Voltage regulator time constant (T_B1). Typical Value = 0
+        self.tc: Seconds = Seconds()  # Voltage regulator time constant (T_C). Typical Value = 1
+        self.tc1: Seconds = Seconds()  # Voltage regulator time constant (T_C1). Typical Value = 0
+        self.tf: Seconds = Seconds()  # Excitation control system stabilizer time constant (T_F). Typical Value = 1
+        self.uelin: Optional[ExcIEEEST1AUELselectorKind] = ExcIEEEST1AUELselectorKind.IGNORE_UEL_SIGNAL  # Selector of the connection of the UEL input (UEL_in). Typical Value = ignoreUELsignal.
+        self.vamax: PU = PU()  # Maximum voltage regulator output (V_AMAX). Typical Value = 14.5
+        self.vamin: PU = PU()  # Minimum voltage regulator output (V_AMIN). Typical Value = -14.5
+        self.vimax: PU = PU()  # Maximum voltage regulator input limit (V_IMAX). Typical Value = 999
+        self.vimin: PU = PU()  # Minimum voltage regulator input limit (V_IMIN). Typical Value = -999
+        self.vrmax: PU = PU()  # Maximum voltage regulator outputs (V_RMAX). Typical Value = 7.8
+        self.vrmin: PU = PU()  # Minimum voltage regulator outputs (V_RMIN). Typical Value = -6.7

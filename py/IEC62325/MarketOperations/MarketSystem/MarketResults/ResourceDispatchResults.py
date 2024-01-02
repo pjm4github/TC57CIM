@@ -30,7 +30,7 @@ class ResourceDispatchResults:
         self.regulating_limit_high: float = 0.0  # The upper regulating limit incorporating any derate used by the RTD for the Binding Interval
         self.regulating_limit_low: float = 0.0  # The lower regulating limit incorporating any derate used by the RTD for the Binding Interval
         self.resource_status: str = ""  # Unit Commitment Status (On/Off/Starting)
-        self.total_schedule: float = 0.0  # Resource total upward schedule. total schedule = En + all AS per resource per interval
+        self.total_schedule: Seconds = Seconds(0.0) # Resource total upward schedule. total schedule = En + all AS per resource per interval
         self.update_timestamp: DateTime = DateTime()
         self.update_type: str = ""
         self.update_user: str = ""

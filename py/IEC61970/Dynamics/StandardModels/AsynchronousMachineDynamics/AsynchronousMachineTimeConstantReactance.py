@@ -33,8 +33,8 @@ class AsynchronousMachineTimeConstantReactance(AsynchronousMachineDynamics):
     def __init__(self) -> None:
         super().__init__()
 
-        self.tpo: Optional[Seconds] = Seconds(5)  # Transient rotor time constant (T'o) (> T''o). Typical Value = 5.
-        self.tppo: Optional[Seconds] = Seconds(0.03)  # Subtransient rotor time constant (T''o) (> 0). Typical Value = 0.03.
-        self.xp: Optional[PU] = PU(0.5)  # Transient reactance (unsaturated) (X') (>=X''). Typical Value = 0.5.
-        self.xpp: Optional[PU] = PU(0.2)  # Subtransient reactance (unsaturated) (X'') (> Xl). Typical Value = 0.2.
-        self.xs: Optional[PU] = PU(1.8)  # Synchronous reactance (Xs) (>= X'). Typical Value = 1.8.
+        self.tpo: Seconds = Seconds(5)  # Transient rotor time constant (T'o) (> T''o). Typical Value = 5.
+        self.tppo: Seconds = Seconds(0.03)  # Subtransient rotor time constant (T''o) (> 0). Typical Value = 0.03.
+        self.xp: PU = PU(0.5)  # Transient reactance (unsaturated) (X') (>=X''). Typical Value = 0.5.
+        self.xpp: PU = PU(0.2)  # Subtransient reactance (unsaturated) (X'') (> Xl). Typical Value = 0.2.
+        self.xs: PU = PU(1.8)  # Synchronous reactance (Xs) (>= X'). Typical Value = 1.8.

@@ -21,10 +21,10 @@ class PfVarType2IeeePfController(PFVArControllerType2Dynamics):
 
     def __init__(self) -> None:
         super().__init__()
-        self.exlon: Optional[bool] = True  # Overexcitation or under excitation flag (EXLON)
-        self.ki: Optional[PU] = PU()  # Integral gain of the pf controller (K<I>I)
-        self.kp: Optional[PU] = PU()  # Proportional gain of the pf controller (K<P>p)
-        self.pfref: Optional[PU] = PU()  # Power factor reference (P<F>REF)
-        self.vclmt: Optional[PU] = PU()  # Maximum output of the pf controller (V<CLMT>)
-        self.vref: Optional[PU] = PU()  # Voltage regulator reference (V<REF>)
-        self.vs: Optional[float] = 0.0  # Generator sensing voltage (V<S>)
+        self.exlon: bool = True  # Overexcitation or under excitation flag (EXLON)
+        self.ki: PU = PU()  # Integral gain of the pf controller (K<I>I)
+        self.kp: PU = PU()  # Proportional gain of the pf controller (K<P>p)
+        self.pfref: PU = PU()  # Power factor reference (P<F>REF)
+        self.vclmt: PU = PU()  # Maximum output of the pf controller (V<CLMT>)
+        self.vref: PU = PU()  # Voltage regulator reference (V<REF>)
+        self.vs: float = 0.0  # Generator sensing voltage (V<S>)

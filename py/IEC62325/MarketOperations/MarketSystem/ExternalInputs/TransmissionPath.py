@@ -20,7 +20,7 @@ class TransmissionPath(IdentifiedObject):
     def __init__(self) -> None:
         super().__init__()
         self.avail_transfer_capabilityOptional[ActivePower] = ActivePower()  # The available transmission capability of a transmission path for the reference direction
-        self.parallel_path_flagOptional[bool] = False  # Flag which indicates if the transmission path is also a designated interconnection "parallel path"
+        self.parallel_path_flagbool = False  # Flag which indicates if the transmission path is also a designated interconnection "parallel path"
         self.total_transfer_capabilityOptional[ActivePower] = ActivePower()  # The total transmission capability of a transmission path in the reference direction
         self.for_Optional[TransmissionCorridor] = TransmissionCorridor()  # A TransmissionPath is contained in a TransmissionCorridor
         self.transmission_reservationOptional[TransmissionReservation] = TransmissionReservation()

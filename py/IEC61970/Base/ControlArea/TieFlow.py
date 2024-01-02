@@ -17,7 +17,7 @@ class TieFlow:
         """
         Constructor
         """
-        self.positive_flow_inOptional[bool] = True
+        self.positive_flow_inbool = True
         """True if the flow into the terminal (load convention) is also flow into the control area.
         For example, this attribute should be true if using the tie line terminal further away
         from the control area. For example to represent a tie to a shunt component (like a load

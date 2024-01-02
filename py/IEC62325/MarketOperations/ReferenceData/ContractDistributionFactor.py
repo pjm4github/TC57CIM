@@ -13,7 +13,7 @@ class ContractDistributionFactor:
     def __init__(self) -> None:
 
         # MW value that this resource provides to the overall contract.
-        self.factorOptional[float] = 0.0
+        self.factorfloat = 0.0
 
         # This value will be set to YES if the referenced Cnode is defined as the sink point in the contract.
         self.sink_flag = YesNo.NO

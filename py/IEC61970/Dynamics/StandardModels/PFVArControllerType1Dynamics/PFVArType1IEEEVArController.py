@@ -24,32 +24,32 @@ class PfVarType1IeeeVarController(PFVarControllerType1Dynamics):
         Var controller time delay (<i>T</i><i><sub>VARC</sub></i>).  Type: Seconds = Seconds()
         Typical Value = 5.
         """
-        self.tvarc: Optional[Seconds] = Seconds(5.0)
+        self.tvarc: Seconds = Seconds(5.0)
         
         """
         Synchronous machine power factor (<i>V</i><i><sub>VAR</sub></i>).  Type: PU = PU()
         """
-        self.vvar: Optional[PU] = PU()
+        self.vvar: PU = PU()
         
         """
         Var controller dead band (<i>V</i><i><sub>VARC_BW</sub></i>).  Type: Float
         Typical Value = 0.02.
         """
-        self.vvarcbw: Optional[float] = 0.2
+        self.vvarcbw: float = 0.2
         
         """
         Var controller reference (<i>V</i><i><sub>VARREF</sub></i>).  Type: PU = PU()
         """
-        self.vvarref: Optional[PU] = PU()
+        self.vvarref: PU = PU()
         
         """
         Maximum machine terminal voltage needed for pf/var controller to be enabled
         (<i>V</i><i><sub>VTMAX</sub></i>).  Type: PU = PU()
         """
-        self.vvtmax: Optional[PU] = PU()
+        self.vvtmax: PU = PU()
         
         """
         Minimum machine terminal voltage needed to enable pf/var controller
         (<i>V</i><i><sub>VTMIN</sub></i>).  Type: PU = PU()
         """
-        self.vvtmin: Optional[PU] = PU()
+        self.vvtmin: PU = PU()

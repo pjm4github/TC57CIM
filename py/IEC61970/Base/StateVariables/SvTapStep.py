@@ -16,7 +16,7 @@ class SvTapStep(StateVariable):
         The floating point tap position. This is not the tap ratio, but rather the tap step position as defined by the related tap changer model and normally is constrained to be within the range of minimum and maximum tap positions.
         """
         super().__init__()
-        self.positionOptional[float] = 1.0
+        self.positionfloat = 1.0
 
         """
         The tap changer associated with the tap step state.

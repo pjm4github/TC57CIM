@@ -1,16 +1,8 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 22:01:48 2023
 from typing import Union
-from enum import Enum
-
-from IEC61970.Dynamics.StandardModels.ExcitationSystemDynamics.ExcST6BOELselectorKind import ExcST7BOELselectorKind
+from IEC61970.Base.Domain.Seconds import Seconds
 from IEC61970.Dynamics.StandardModels.ExcitationSystemDynamics.ExcST7BUELselectorKind import ExcST7BUELselectorKind
 
-
-# class ExcST7BOELselectorKind(Enum):
-#     no_oel_input = 'no_oel_input'
-#
-# class ExcST7BUELselectorKind(Enum):
-#     no_uel_input = 'no_uel_input'
 
 class ExcIEEEST7B:
     """
@@ -60,28 +52,28 @@ class ExcIEEEST7B:
         """
         Regulator lag time constant (T_B). Typical Value 1.
         """
-        self.tb: int = 1
+        self.tb: Seconds = Seconds(1)
 
         """
         Regulator lead time constant (T_C). Typical Value 1.
         """
-        self.tc: int = 1
+        self.tc: Seconds = Seconds(1)
 
         """
         Excitation control system stabilizer time constant (T_F). Typical Value 1.
         """
-        self.tf: int = 1
+        self.tf: Seconds = Seconds(1)
 
         """
         Feedback time constant of inner loop field voltage regulator (T_G).
         Typical Value 1.
         """
-        self.tg: int = 1
+        self.tg: Seconds = Seconds(1)
 
         """
         Feedback time constant (T_IA). Typical Value = 3.
         """
-        self.tia: int = 3
+        self.tia: Seconds = Seconds(3)
 
         """
         UEL input selector (UELin). Typical Value = noUELinput.

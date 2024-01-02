@@ -11,10 +11,11 @@ from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 
 
 class Temperature:
-    """Value of temperature in degrees Celsius.
     """
-    unit = UnitSymbol.degC
+    Value of temperature in degrees Celsius.
+    """
 
-    def __init__(self):
+    def __init__(self, v=0.0):
         self.multiplier = UnitMultiplier.none
-        self.value = 0.0
+        self.value = v
+        self.unit = UnitSymbol.degC

@@ -14,16 +14,10 @@ class PowerSystemStabilizerDynamics(DynamicsFunctionBlock):
     """
 
     def __init__(self) -> None:
-        """
-        Excitation system model with which this power system stabilizer model is associated.
-        """
         super().__init__()
+        # Excitation system model with which this power system stabilizer model is associated.
         self.excitation_system_dynamics: ExcitationSystemDynamics = ExcitationSystemDynamics()
-
-
-        """
-        Remote input signal used by this power system stabilizer model.
-        """
+        # Remote input signal used by this power system stabilizer model.
         self.remote_input_signal: RemoteInputSignal = RemoteInputSignal()
 
 

@@ -14,9 +14,9 @@ class ResourceBid(Bid):
         self.commodity_typeOptional[str] = ""
         self.contingency_avail_flagOptional[str] = ""
         self.created_isoOptional[str] = ""
-        self.energy_max_dayOptional[float] = 0.0
+        self.energy_max_dayfloat = 0.0
 
-        self.energy_min_dayOptional[float] = 0.0
+        self.energy_min_dayfloat = 0.0
 
         self.market_sep_flagOptional[str] = ""
         self.min_dispatch_timeOptional[int] = 0
@@ -31,5 +31,5 @@ class ResourceBid(Bid):
 
         self.startups_max_weekOptional[int] = 0
 
-        self.virtualOptional[bool] = False
+        self.virtualbool = False
         self.bid_errorOptional[BidError] = BidError()

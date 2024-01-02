@@ -18,5 +18,5 @@ class DiscExcContIeeeDec3A(DiscontinuousExcitationControlDynamics):
 
     def __init__(self) -> None:
         super().__init__()
-        self.tdrOptional[Seconds] = Seconds()  # Reset time delay (T_DR).
-        self.vtminOptional[PU] = PU()  # Terminal undervoltage comparison level (V_TMIN).
+        self.tdrSeconds = Seconds()  # Reset time delay (T_DR).
+        self.vtminPU = PU()  # Terminal undervoltage comparison level (V_TMIN).

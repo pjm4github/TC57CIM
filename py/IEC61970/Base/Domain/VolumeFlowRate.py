@@ -7,8 +7,8 @@ from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 
 
 class VolumeFlowRate:
-    unit: UnitSymbol = UnitSymbol.m3Pers
 
-    def __init__(self) -> None:
+    def __init__(self, v=0.0) -> None:
         self.multiplier: UnitMultiplier = UnitMultiplier.none
-        self.valueOptional[float] = 0.0
+        self.value: float = v
+        self.unit: UnitSymbol = UnitSymbol.m3Pers

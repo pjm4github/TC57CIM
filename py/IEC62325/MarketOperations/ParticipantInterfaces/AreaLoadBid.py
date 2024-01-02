@@ -16,5 +16,5 @@ class AreaLoadBid(Bid):
 
     def __init__(self) -> None:
         super().__init__()
-        self.demand_bid_mwOptional[float] = 0.0  # The Demand Bid Megawatt for the area case. Attribute Usage: This is Scheduled demand MW in Day Ahead
+        self.demand_bid_mwfloat = 0.0  # The Demand Bid Megawatt for the area case. Attribute Usage: This is Scheduled demand MW in Day Ahead
         self.load_bidOptional[LoadBid] = LoadBid()

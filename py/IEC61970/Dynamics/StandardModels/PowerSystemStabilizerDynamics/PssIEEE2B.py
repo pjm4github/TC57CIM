@@ -24,28 +24,28 @@ class PssIeee2b(PowerSystemStabilizerDynamics):
         super().__init__()
         self.input_signal1_type: Optional[InputSignalKind] = InputSignalKind.ROTOR_SPEED  # Type of input signal #1.  Typical Value = rotorSpeed.
         self.input_signal2_type: Optional[InputSignalKind] = InputSignalKind.GENERATOR_ELECTRICAL_POWER  # Type of input signal #2.  Typical Value = generatorElectricalPower.
-        self.ks1: Optional[PU] = PU(12)  # Stabilizer gain (Ks1).  Typical Value = 12.
-        self.ks2: Optional[PU] = PU(.2)  # Gain on signal #2 (Ks2).  Typical Value = 0.2.
-        self.ks3: Optional[PU] = PU(1)  # Gain on signal #2 input before ramp-tracking filter (Ks3).  Typical Value = 1.
+        self.ks1: PU = PU(12)  # Stabilizer gain (Ks1).  Typical Value = 12.
+        self.ks2: PU = PU(.2)  # Gain on signal #2 (Ks2).  Typical Value = 0.2.
+        self.ks3: PU = PU(1)  # Gain on signal #2 input before ramp-tracking filter (Ks3).  Typical Value = 1.
         self.m: Optional[int] = 5 # Denominator order of ramp tracking filter (M).  Typical Value = 5.
         self.n: Optional[int] = 1 # Order of ramp tracking filter (N).  Typical Value = 1.
-        self.t1: Optional[Seconds] = Seconds(.12)  # Lead/lag time constant (T1).  Typical Value = 0.12.
-        self.t10: Optional[Seconds] = Seconds(0)  # Lead/lag time constant (T10).  Typical Value = 0.
-        self.t11: Optional[Seconds] = Seconds(0)  # Lead/lag time constant (T11).  Typical Value = 0.
-        self.t2: Optional[Seconds] = Seconds(.02)  # Lead/lag time constant (T2).  Typical Value = 0.02.
-        self.t3: Optional[Seconds] = Seconds(.3)  # Lead/lag time constant (T3).  Typical Value = 0.3.
-        self.t4: Optional[Seconds] = Seconds(.02)  # Lead/lag time constant (T4).  Typical Value = 0.02.
-        self.t6: Optional[Seconds] = Seconds(0)  # Time constant on signal #1 (T6).  Typical Value = 0.
-        self.t7: Optional[Seconds] = Seconds(2)  # Time constant on signal #2 (T7).  Typical Value = 2.
-        self.t8: Optional[Seconds] = Seconds(.2)  # Lead of ramp tracking filter (T8).  Typical Value = 0.2.
-        self.t9: Optional[Seconds] = Seconds(.1)  # Lag of ramp tracking filter (T9).  Typical Value = 0.1.
-        self.tw1: Optional[Seconds] = Seconds(2)  # First washout on signal #1 (Tw1).  Typical Value = 2.
-        self.tw2: Optional[Seconds] = Seconds(2)  # Second washout on signal #1 (Tw2).  Typical Value = 2.
-        self.tw3: Optional[Seconds] = Seconds(2)  # First washout on signal #2 (Tw3).  Typical Value = 2.
-        self.tw4: Optional[Seconds] = Seconds(0)  # Second washout on signal #2 (Tw4).  Typical Value = 0.
-        self.vsi1max: Optional[PU] = PU(2)  # Input signal #1 max limit (Vsi1max).  Typical Value = 2.
-        self.vsi1min: Optional[PU] = PU(-2)  # Input signal #1 min limit (Vsi1min).  Typical Value = -2.
-        self.vsi2max: Optional[PU] = PU(2)  # Input signal #2 max limit (Vsi2max).  Typical Value = 2.
-        self.vsi2min: Optional[PU] = PU(-2)  # Input signal #2 min limit (Vsi2min).  Typical Value = -2.
-        self.vstmax: Optional[PU] = PU(.1)  # Stabilizer output max limit (Vstmax).  Typical Value = 0.1.
-        self.vstmin: Optional[PU] = PU(-.1)  # Stabilizer output min limit (Vstmin).  Typical Value = -0.1.
+        self.t1: Seconds = Seconds(.12)  # Lead/lag time constant (T1).  Typical Value = 0.12.
+        self.t10: Seconds = Seconds(0)  # Lead/lag time constant (T10).  Typical Value = 0.
+        self.t11: Seconds = Seconds(0)  # Lead/lag time constant (T11).  Typical Value = 0.
+        self.t2: Seconds = Seconds(.02)  # Lead/lag time constant (T2).  Typical Value = 0.02.
+        self.t3: Seconds = Seconds(.3)  # Lead/lag time constant (T3).  Typical Value = 0.3.
+        self.t4: Seconds = Seconds(.02)  # Lead/lag time constant (T4).  Typical Value = 0.02.
+        self.t6: Seconds = Seconds(0)  # Time constant on signal #1 (T6).  Typical Value = 0.
+        self.t7: Seconds = Seconds(2)  # Time constant on signal #2 (T7).  Typical Value = 2.
+        self.t8: Seconds = Seconds(.2)  # Lead of ramp tracking filter (T8).  Typical Value = 0.2.
+        self.t9: Seconds = Seconds(.1)  # Lag of ramp tracking filter (T9).  Typical Value = 0.1.
+        self.tw1: Seconds = Seconds(2)  # First washout on signal #1 (Tw1).  Typical Value = 2.
+        self.tw2: Seconds = Seconds(2)  # Second washout on signal #1 (Tw2).  Typical Value = 2.
+        self.tw3: Seconds = Seconds(2)  # First washout on signal #2 (Tw3).  Typical Value = 2.
+        self.tw4: Seconds = Seconds(0)  # Second washout on signal #2 (Tw4).  Typical Value = 0.
+        self.vsi1max: PU = PU(2)  # Input signal #1 max limit (Vsi1max).  Typical Value = 2.
+        self.vsi1min: PU = PU(-2)  # Input signal #1 min limit (Vsi1min).  Typical Value = -2.
+        self.vsi2max: PU = PU(2)  # Input signal #2 max limit (Vsi2max).  Typical Value = 2.
+        self.vsi2min: PU = PU(-2)  # Input signal #2 min limit (Vsi2min).  Typical Value = -2.
+        self.vstmax: PU = PU(.1)  # Stabilizer output max limit (Vstmax).  Typical Value = 0.1.
+        self.vstmin: PU = PU(-.1)  # Stabilizer output min limit (Vstmin).  Typical Value = -0.1.

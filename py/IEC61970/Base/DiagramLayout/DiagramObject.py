@@ -17,9 +17,9 @@ class DiagramObject:
 
     def __init__(self) -> None:
         self.drawing_orderOptional[int] = 0  # The drawing order of this element
-        self.is_polygonOptional[bool] = True    # Defines whether or not the diagram objects points define the boundaries of a polygon
-        self.offset_xOptional[float] = 1.0      # The offset in the X direction
-        self.offset_yOptional[float] = 1.0      # The offset in the Y direction
+        self.is_polygonbool = True    # Defines whether or not the diagram objects points define the boundaries of a polygon
+        self.offset_xfloat = 1.0      # The offset in the X direction
+        self.offset_yfloat = 1.0      # The offset in the Y direction
         self.rotationOptional[AngleDegrees] = AngleDegrees()   # Sets the angle of rotation of the diagram object
         self.diagramOptional[Diagram] = Diagram()      # A diagram object is part of a diagram
         self.visibility_layersOptional[VisibilityLayer] = VisibilityLayer()   # A diagram object can be part of multiple visibility layers

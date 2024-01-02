@@ -96,7 +96,7 @@ class ResourceAwardInstruction:
         schedule.
         """
 
-        self.must_run_indOptional[bool] = True
+        self.must_run_indbool = True
         """
         Identifes if the unit was set to must run by the market participant responsible
         for bidding in the unit

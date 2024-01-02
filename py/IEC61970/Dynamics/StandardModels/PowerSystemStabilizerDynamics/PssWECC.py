@@ -23,8 +23,8 @@ class PssWecc(PowerSystemStabilizerDynamics):
         self.k1: PU = PU()  # Input signal 1 gain  (K<sub>1</sub>).
         self.k2: PU = PU()  # Input signal 2 gain (K<sub>2</sub>).
         self.t1: Seconds = Seconds()  # Input signal 1 transducer time constant (T<sub>1</sub>).
-        self.t10:  Seconds = Seconds()  # Lag time constant (T<sub>10</sub>).
-        self.t2:  Seconds = Seconds()  # Input signal 2 transducer time constant (T<sub>2</sub>).
+        self.t10: Seconds = Seconds()  # Lag time constant (T<sub>10</sub>).
+        self.t2: Seconds = Seconds()  # Input signal 2 transducer time constant (T<sub>2</sub>).
         self.t3: Seconds = Seconds()  # Stabilizer washout time constant (T<sub>3</sub>).
         self.t4: Seconds = Seconds()  # Stabilizer washout time lag constant (T<sub>4</sub>) (>0).
         self.t5: Seconds = Seconds()  # Lead time constant (T<sub>5</sub>).

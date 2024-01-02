@@ -2,6 +2,8 @@
 from typing import Any, Union
 from datetime import datetime
 
+from IEC61970.Base.Domain.Seconds import Seconds
+from IEC61970.Dynamics.StandardModels.ExcitationSystemDynamics.ExcST6BOELselectorKind import ExcST6BOELselectorKind
 from IEC61970.Dynamics.StandardModels.ExcitationSystemDynamics.ExcitationSystemDynamics import ExcitationSystemDynamics
 
 
@@ -54,11 +56,11 @@ class ExcIeeeSt6B(ExcitationSystemDynamics):
         """
         OEL input selector (OELin). Typical Value = noOELinput
         """
-        self.oelin: ExcSt6BOELselectorKind
+        self.oelin: ExcST6BOELselectorKind = ExcST6BOELselectorKind.NO_OEL_INPUT
         """
         Feedback time constant of inner loop field voltage regulator (T_G). Typical Value = 0.02.
         """
-        self.tg: datetime
+        self.tg: Seconds = Seconds()
         """
         Maximum voltage regulator output (V_AMAX).  Typical Value = 4.81.
         """

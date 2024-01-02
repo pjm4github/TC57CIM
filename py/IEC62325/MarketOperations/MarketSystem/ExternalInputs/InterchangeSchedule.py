@@ -24,7 +24,7 @@ class InterchangeSchedule(Curve):
         self.interval_lengthOptional[int] = 0  # Interval length
         self.market_typeOptional[MarketType] = MarketType  # Market type
         self.operating_dateOptional[DateTime] = DateTime()  # Operating date, hour
-        self.out_of_market_typeOptional[bool] = False  # To indicate an out-of-market (OOM) schedule
+        self.out_of_market_typebool = False  # To indicate an out-of-market (OOM) schedule
         self.schedule_typeOptional[EnergyProductType] = EnergyProductType  # Schedule type
         self.wcr_idOptional[str] = ""  # Wheeling Counter-Resource ID (required when Schedule Type=Wheel)
         self.intertieOptional[SchedulingPoint] = SchedulingPoint()

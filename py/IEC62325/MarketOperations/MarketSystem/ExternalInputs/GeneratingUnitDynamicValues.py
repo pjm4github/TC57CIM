@@ -14,11 +14,11 @@ class GeneratingUnitDynamicValues:
         """
         Constructor for GeneratingUnitDynamicValues
         """
-        self.loss_factorOptional[float] = 0.0  # Loss Factor
-        self.maximum_mwOptional[float] = 0.0  # The maximum active power generation of the unit in MW
-        self.minimum_mwOptional[float] = 0.0  # The minimum active power generation of the unit in MW
-        self.mvarOptional[float] = 0.0  # Unit reactive power generation in MVAR
-        self.mwOptional[float] = 0.0  # Unit active power generation in MW
-        self.sensitivityOptional[float] = 0.0  # Unit sensitivity factor. The distribution factors (DFAX) for the unit
+        self.loss_factorfloat = 0.0  # Loss Factor
+        self.maximum_mwfloat = 0.0  # The maximum active power generation of the unit in MW
+        self.minimum_mwfloat = 0.0  # The minimum active power generation of the unit in MW
+        self.mvarfloat = 0.0  # Unit reactive power generation in MVAR
+        self.mwfloat = 0.0  # Unit active power generation in MW
+        self.sensitivityfloat = 0.0  # Unit sensitivity factor. The distribution factors (DFAX) for the unit
         self.flowgateOptional[Flowgate] = Flowgate()
         self.mkt_generating_unitOptional[MktGeneratingUnit] = MktGeneratingUnit()

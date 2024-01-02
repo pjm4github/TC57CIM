@@ -7,8 +7,7 @@ from IEC61970.Dynamics.StandardModels.ExcitationSystemDynamics.ExcitationSystemD
 class DiscontinuousExcitationControlDynamics(DynamicsFunctionBlock):
     """
     Discontinuous excitation control function block whose behaviour is described by
-    reference to a standard model <font color="#0f0f0f">or by definition of a user-
-    defined model</font>.
+    reference to a standard model <font color="#0f0f0f">or by definition of a user-defined model</font>.
     @author ppbr003
     @version 1.0
     @created 29-Dec-2023 11:24:17 PM

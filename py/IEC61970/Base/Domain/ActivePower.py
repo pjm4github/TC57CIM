@@ -12,13 +12,12 @@ from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 
 
 class ActivePower:
-    """Product of RMS value of the voltage and the RMS value of the in-phase component
+    """
+    Product of RMS value of the voltage and the RMS value of the in-phase component
     of the current.
     """
-
-    unit = UnitSymbol().W  # Static constant unit symbol for active power
-
-    def __init__(self):
+    def __init__(self, v=0.0):
         self.multiplier = UnitMultiplier()  # The unit multiplier for the active power value
         self.uncefact_unit_code = UncefactUnitCode()  # The UN/CEFACT unit code for the active power value
-        self.value: float = 0.0  # The numerical value of the active power
+        self.value: float = v  # The numerical value of the active power
+        self.unit = UnitSymbol().W  # Static constant unit symbol for active power

@@ -24,11 +24,11 @@ class ExcElin1:
         self.ks1: Union[float, int]  = 0  # Stabilizer Gain 1 (Ks1).  Typical Value = 0.
         self.ks2: Union[float, int]  = 0  # Stabilizer Gain 2 (Ks2).  Typical Value = 0.
         self.smax: Union[float, int]  = 0  # Stabilizer Limit Output (smax).  Typical Value = 0.1.
-        self.tfi: int = 0  # Current transducer time constant (Tfi).  Typical Value = 0.
-        self.tnu: int = 0  # Controller reset time constant (Tnu).  Typical Value = 2.
-        self.ts1: int = 0  # Stabilizer Phase Lag Time Constant (Ts1).  Typical Value = 1.
-        self.ts2: int = 0  # Stabilizer Filter Time Constant (Ts2).  Typical Value = 1.
-        self.tsw: int = 0  # Stabilizer parameters (Tsw).  Typical Value = 3.
+        self.tfi: Seconds = Seconds(0)  # Current transducer time constant (Tfi).  Typical Value = 0.
+        self.tnu: Seconds = Seconds(0)  # Controller reset time constant (Tnu).  Typical Value = 2.
+        self.ts1: Seconds = Seconds(0)  # Stabilizer Phase Lag Time Constant (Ts1).  Typical Value = 1.
+        self.ts2: Seconds = Seconds(0)  # Stabilizer Filter Time Constant (Ts2).  Typical Value = 1.
+        self.tsw: Seconds = Seconds(0)  # Stabilizer parameters (Tsw).  Typical Value = 3.
         self.vpi: Union[float, int]  = 0  # Current controller gain (Vpi).  Typical Value = 12.45.
         self.vpnf: Union[float, int]  = 0  # Controller follow up gain (Vpnf).  Typical Value = 2.
         self.vpu: Union[float, int]  = 0  # Voltage controller proportional gain (Vpu).  Typical Value = 34.5.

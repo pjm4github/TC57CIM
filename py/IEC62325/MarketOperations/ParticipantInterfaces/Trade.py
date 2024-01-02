@@ -13,11 +13,11 @@ class Trade:
     settlement.
     """
     def __init__(self) -> None:
-        self.adjusted_trade_quantityOptional[float] = 0.0
+        self.adjusted_trade_quantityfloat = 0.0
 
         # The validated and current market accepted trade amount of a physical energy
         # trade.
-        self.counter_trade_quantityOptional[float] = 0.0
+        self.counter_trade_quantityfloat = 0.0
 
         # MW quantity submitted by counter SC for the same trade.
         self.depend_on_trade_nameOptional[str] = ""
@@ -48,7 +48,7 @@ class Trade:
         self.submit_to_userOptional[str] = ""
 
         # Userid of the submit To Scheduling Coordinator trade
-        self.trade_quantityOptional[float] = 0.0
+        self.trade_quantityfloat = 0.0
 
         # tradeQuantity:
         # If tradeType = IST, The amount of an Energy Trade.

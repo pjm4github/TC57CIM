@@ -20,7 +20,7 @@ class OldSwitchInfo(SwitchInfo):
         breaking down the dielectric properties of the switch in the open position.
         """
 
-        self.load_breakOptional[bool] = False
+        self.load_breakbool = False
         """
         True if switch has load breaking capability. Unless specified false, this is
         always assumed to be true for breakers and reclosers.
@@ -45,7 +45,7 @@ class OldSwitchInfo(SwitchInfo):
         Number of poles (i.e. of current carrying conductors that are switched).
         """
 
-        self.remoteOptional[bool] = False
+        self.remotebool = False
         """
         True if device is capable of being operated by remote control.
         """

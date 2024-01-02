@@ -1,6 +1,7 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 22:01:48 2023
 from typing import Optional
 
+from IEC61970.Base.Domain.Seconds import Seconds
 from IEC61970.Dynamics.StandardModels.ExcitationSystemDynamics.ExcitationSystemDynamics import ExcitationSystemDynamics
 
 
@@ -25,22 +26,22 @@ class ExcIeeeAc8B(ExcitationSystemDynamics):
 
     def __init__(self) -> None:
         super().__init__()
-        self.ka: Optional[float] = 0.0  # Voltage regulator gain (K_A). Typical Value = 1.
-        self.kc: Optional[float] = 0.0  # Rectifier loading factor proportional to commutating reactance (K_C). Typical Value = 0.55.
-        self.kd: Optional[float] = 0.0  # Demagnetizing factor, a function of exciter alternator reactances (K_D). Typical Value = 1.1.
-        self.kdr: Optional[float] = 0.0  # Voltage regulator derivative gain (K_DR). Typical Value = 10.
-        self.ke: Optional[float] = 0.0  # Exciter constant related to self-excited field (K_E). Typical Value = 1.
-        self.kir: Optional[float] = 0.0  # Voltage regulator integral gain (K_IR). Typical Value = 5.
-        self.kpr: Optional[float] = 0.0  # Voltage regulator proportional gain (K_PR). Typical Value = 80.
-        self.seve1: Optional[float] = 0.0  # Exciter saturation function value at the corresponding exciter voltage, V_E1, back of commutating reactance (S_E[V_E1]). Typical Value = 0.3.
-        self.seve2: Optional[float] = 0.0  # Exciter saturation function value at the corresponding exciter voltage, V_E2, back of commutating reactance (S_E[V_E2]). Typical Value = 3.
-        self.ta: Optional[float] = 0.0  # Voltage regulator time constant (T_A). Typical Value = 0.
-        self.tdr: Optional[float] = 0.0  # Lag time constant (T_DR). Typical Value = 0.1.
-        self.te: Optional[float] = 0.0  # Exciter time constant, integration rate associated with exciter control (T_E). Typical Value = 1.2.
-        self.ve1: Optional[float] = 0.0  # Exciter alternator output voltages back of commutating reactance at which saturation is defined (V_E1) equals V_EMAX (V_E1). Typical Value = 6.5.
-        self.ve2: Optional[float] = 0.0  # Exciter alternator output voltages back of commutating reactance at which saturation is defined (V_E2). Typical Value = 9.
-        self.vemin: Optional[float] = 0.0  # Minimum exciter voltage output (V_EMIN). Typical Value = 0.
-        self.vfemax: Optional[float] = 0.0  # Exciter field current limit reference (V_FEMAX). Typical Value = 6.
-        self.vrmax: Optional[float] = 0.0  # Maximum voltage regulator output (V_RMAX). Typical Value = 35.
-        self.vrmin: Optional[float] = 0.0  # Minimum voltage regulator output (V_RMIN). Typical Value = 0.
+        self.ka: float = 0.0  # Voltage regulator gain (K_A). Typical Value = 1.
+        self.kc: float = 0.0  # Rectifier loading factor proportional to commutating reactance (K_C). Typical Value = 0.55.
+        self.kd: float = 0.0  # Demagnetizing factor, a function of exciter alternator reactances (K_D). Typical Value = 1.1.
+        self.kdr: float = 0.0  # Voltage regulator derivative gain (K_DR). Typical Value = 10.
+        self.ke: float = 0.0  # Exciter constant related to self-excited field (K_E). Typical Value = 1.
+        self.kir: float = 0.0  # Voltage regulator integral gain (K_IR). Typical Value = 5.
+        self.kpr: float = 0.0  # Voltage regulator proportional gain (K_PR). Typical Value = 80.
+        self.seve1: float = 0.0  # Exciter saturation function value at the corresponding exciter voltage, V_E1, back of commutating reactance (S_E[V_E1]). Typical Value = 0.3.
+        self.seve2: float = 0.0  # Exciter saturation function value at the corresponding exciter voltage, V_E2, back of commutating reactance (S_E[V_E2]). Typical Value = 3.
+        self.ta: Seconds = Seconds() # Voltage regulator time constant (T_A). Typical Value = 0.
+        self.tdr: Seconds = Seconds() # Lag time constant (T_DR). Typical Value = 0.1.
+        self.te: Seconds = Seconds() # Exciter time constant, integration rate associated with exciter control (T_E). Typical Value = 1.2.
+        self.ve1: float = 0.0  # Exciter alternator output voltages back of commutating reactance at which saturation is defined (V_E1) equals V_EMAX (V_E1). Typical Value = 6.5.
+        self.ve2: float = 0.0  # Exciter alternator output voltages back of commutating reactance at which saturation is defined (V_E2). Typical Value = 9.
+        self.vemin: float = 0.0  # Minimum exciter voltage output (V_EMIN). Typical Value = 0.
+        self.vfemax: float = 0.0  # Exciter field current limit reference (V_FEMAX). Typical Value = 6.
+        self.vrmax: float = 0.0  # Maximum voltage regulator output (V_RMAX). Typical Value = 35.
+        self.vrmin: float = 0.0  # Minimum voltage regulator output (V_RMIN). Typical Value = 0.
 

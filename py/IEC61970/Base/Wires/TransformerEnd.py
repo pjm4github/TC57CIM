@@ -25,9 +25,9 @@ class TransformerEnd:
         self.end_numberOptional[int] = 0  # Number for this transformer end, corresponding to the end's order in the power transformer vector group or phase angle clock number.
         # Highest voltage winding should be 1. Each end within a power transformer should have a unique subsequent end number.
         # Note the transformer end number need not match the terminal sequence number.
-        self.groundedOptional[bool] = False  # (for Yn and Zn connections) True if the neutral is solidly grounded
-        self.mag_base_uOptional[float] = 0.0  # The reference voltage at which the magnetizing saturation measurements were made
-        self.mag_sat_fluxOptional[float] = 0.0  # Core magnetizing saturation curve knee flux level
+        self.groundedbool = False  # (for Yn and Zn connections) True if the neutral is solidly grounded
+        self.mag_base_ufloat = 0.0  # The reference voltage at which the magnetizing saturation measurements were made
+        self.mag_sat_fluxfloat = 0.0  # Core magnetizing saturation curve knee flux level
         self.r_groundOptional[Resistance] = Resistance() # (for Yn and Zn connections) Resistance part of neutral impedance where 'grounded' is true
         self.x_groundOptional[Reactance] = Reactance()  # (for Yn and Zn connections) Reactive part of neutral impedance where 'grounded' is true
         self.phase_tap_changerOptional[PhaseTapChanger] = PhaseTapChanger()  # Phase tap changer associated with this transformer end
@@ -39,19 +39,19 @@ class TransformerEnd:
     def get_base_voltage(self) -> Optional[BaseVoltage]:
         return self.bmag_sat
 
-    def get_bmag_sat(self) -> Optional[float]:
+    def get_bmag_sat(self) -> float:
         return self.bmag_sat
 
     def get_end_number(self) -> Optional[int]:
         return self.end_number
 
-    def get_grounded(self) -> Optional[bool]:
+    def get_grounded(self) -> bool:
         return self.grounded
 
-    def get_mag_base_u(self) -> Optional[float]:
+    def get_mag_base_u(self) -> float:
         return self.mag_base_u
 
-    def get_mag_sat_flux(self) -> Optional[float]:
+    def get_mag_sat_flux(self) -> float:
         return self.mag_sat_flux
 
     def get_phase_tap_changer(self) -> Optional[PhaseTapChanger]:
@@ -60,7 +60,7 @@ class TransformerEnd:
     def get_ratio_tap_changer(self) -> Optional[RatioTapChanger]:
         return self.ratio_tap_changer
 
-    def get_r_ground(self) -> Optional[float]:
+    def get_r_ground(self) -> float:
         return self.r_ground
 
     def get_star_impedance(self) -> Optional[object]:
@@ -69,7 +69,7 @@ class TransformerEnd:
     def get_terminal(self) -> Optional[object]:
         return self.terminal
 
-    def get_x_ground(self) -> Optional[float]:
+    def get_x_ground(self) -> float:
         return self.x_ground
 
     def set_base_voltage(self, new_val: BaseVoltage) -> None:

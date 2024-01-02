@@ -14,8 +14,8 @@ class Frequency:
     """
     Cycles per second.
     """
-    unit = UnitSymbol.Hz
 
-    def __init__(self):
+    def __init__(self, v=0.0):
         self.multiplier = UnitMultiplier.none
-        self.value = 0.0
+        self.value = v
+        self.unit = UnitSymbol.Hz
