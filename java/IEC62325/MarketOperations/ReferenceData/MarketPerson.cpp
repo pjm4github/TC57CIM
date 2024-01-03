@@ -1,0 +1,12 @@
+///////////////////////////////////////////////////////////
+//  MarketPerson.cpp
+//  Implementation of the Class MarketPerson
+//  Created on:      03-Jan-2024 2:15:34 PM
+///////////////////////////////////////////////////////////
+
+#include "MarketPerson.h"
+
+
+MarketPerson::MarketPerson(){
+
+}

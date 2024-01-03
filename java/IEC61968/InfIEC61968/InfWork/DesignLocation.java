@@ -7,7 +7,7 @@ import IEC61968.Work.WorkLocation;
 /**
  * A logical part of the design (e.g., pole and all equipment on a pole). This
  * includes points and spans.
- * @created 02-Jan-2024 9:56:08 PM
+ * @updated 03-Jan-2024 12:55:02 PM
  */
 public class DesignLocation extends WorkIdentifiedObject {
 
