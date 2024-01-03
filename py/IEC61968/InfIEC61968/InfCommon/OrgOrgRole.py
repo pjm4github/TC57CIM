@@ -17,5 +17,4 @@ class OrgOrgRole(OrganisationRole):
     def __init__(self) -> None:
         super().__init__()
 
-        self.client_idOptional[str] = ""
-
+        self.client_id = ""

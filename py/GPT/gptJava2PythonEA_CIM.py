@@ -88,8 +88,9 @@ MAX_TOKENS = 10000  # Maximum number of tokens that can be used with the OPENAI 
 
 if __name__ == "__main__":
 
+# C:\Users\pmora\Documents\Git\GitHub\TC57CIM\py\IEC61968\InfIEC61968\InfAssets
     # lots of hand-crafting here needed to work through each subdirectory under Base
-    directory_path = f"{os.path.expanduser('~')}/Documents/Git/GitHub/TC57CIM/py/IEC61970/Dynamics/StandardModels/WindDynamics/"
+    directory_path = f"{os.path.expanduser('~')}/Documents/Git/GitHub/TC57CIM/py/IEC61968/InfIEC61968/InfAssets/"
 
     output_path = f"{directory_path}/Converted/"
     try:

@@ -14,8 +14,5 @@ class Role(IdentifiedObject):
 
     def __init__(self) -> None:
         super().__init__()
-        self.statusOptional[Status] = Status()
-        """
-        Type of role.
-        """
-        self.type: str = ""
+        self.status = Status()
+        self.type: str = ""  # Type of role.

@@ -4,11 +4,11 @@ from IEC61968.Common.Document import Document
 
 class BusinessPlan(Document):
     """
-    * A BusinessPlan is an organized sequence of predetermined actions required to
-    * complete a future organizational objective. It is a type of document that
-    * typically references a schedule, physical and/or logical resources (assets
-    * and/or PowerSystemResources), locations, etc.
-    * @created 29-Dec-2023 6:00:40 PM
+    A BusinessPlan is an organized sequence of predetermined actions required to
+    complete a future organizational objective. It is a type of document that
+    typically references a schedule, physical and/or logical resources (assets
+    and/or PowerSystemResources), locations, etc.
+    @created 29-Dec-2023 6:00:40 PM
     """
     def __init__(self) -> None:
         super().__init__()

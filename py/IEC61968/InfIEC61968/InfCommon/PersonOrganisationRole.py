@@ -14,5 +14,4 @@ class PersonOrganisationRole(OrganisationRole):
         such as a government agency (federal, state, province, city, county), financial institutions, etc.
         """
         super().__init__()
-        self.client_id: str
-
+        self.client_id = ""
