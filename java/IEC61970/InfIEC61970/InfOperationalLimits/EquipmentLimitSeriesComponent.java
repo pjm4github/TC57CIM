@@ -8,7 +8,7 @@ import IEC61970.Base.Core.IdentifiedObject;
  * calculation of an operational limit.
  * @author akamath
  * @version 1.0
- * @created 25-Dec-2023 8:31:56 PM
+ * @updated 02-Jan-2024 11:40:20 PM
  */
 public class EquipmentLimitSeriesComponent extends IdentifiedObject {
 

@@ -1,4 +1,4 @@
-package TC57CIM.IEC61970.Base.ICCPConfiguration;
+package IEC61970.Base.ICCPConfiguration;
 
 import TC57CIM.IEC61970.Base.Meas.IOPoint;
 import TC57CIM.IEC61970.Base.Meas.MeasurementValueSource;

@@ -9,7 +9,7 @@ import IEC61970.Base.Domain.String;
  * identification 'mRID'.
  * @author T. Kostic
  * @version 1.0
- * @created 25-Dec-2023 8:32:00 PM
+ * @updated 02-Jan-2024 10:35:43 PM
  */
 public class Name {
 
