@@ -4,7 +4,7 @@ from IEC61970.Dynamics.StandardModels.DynamicsFunctionBlock import DynamicsFunct
 from IEC61970.Dynamics.StandardModels.ExcitationSystemDynamics.ExcitationSystemDynamics import ExcitationSystemDynamics
 
 
-class PFVarControllerType1Dynamics(DynamicsFunctionBlock):
+class PFVArControllerType1Dynamics(DynamicsFunctionBlock):
     """
     Power Factor or VAr controller Type I function block whose behaviour is
     described by reference to a standard model or by definition of a user-defined model.
