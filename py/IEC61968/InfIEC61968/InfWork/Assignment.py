@@ -1,6 +1,7 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 21:42:16 2023
-from datetime import datetime
-from work_document import WorkDocument
+from IEC61968.InfIEC61968.InfWork.WorkDocument import WorkDocument
+from IEC61970.Base.Domain.DateTimeInterval import DateTimeInterval
+
 
 class Assignment(WorkDocument):
     """
@@ -17,4 +18,4 @@ class Assignment(WorkDocument):
         """
         Period between the assignment becoming effective and its expiration.
         """
-        self.effective_period: DateTimeInterval
+        self.effective_period: DateTimeInterval = DateTimeInterval()
