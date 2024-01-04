@@ -16,8 +16,8 @@ From the copyright notice:
 
 _The entire work provided in the UML project file is dedicated to the public domain.  As such, it is not, has not, and will not be copyrighted by any individual, entity or organization._
 
-_The IEC 61968 subpackages of the CIM are developed, standardized and maintained by IEC TC57 Working Group 14: interfaces for distribution management (WG14).
-Currently, normative parts of the model support the needs of information exchange defined in IEC 61968-3, IEC 61968-4, IEC 61968-9 and in IEC 61968-13._
+_The IEC 61968 subpackages of the CIM are developed, standardized and maintained by IEC TC57 Working Group 14: interfaces for distribution management (WG14). Currently, normative parts of the model support the needs of information exchange defined in IEC 61968-3, IEC 61968-4, IEC 61968-9 and in IEC 61968-13._
+
 ----
 
 This is based on the July 4th, 2022 Version of the model. 
