@@ -27,18 +27,12 @@ class MarketProduct(IdentifiedObject):
     # RC (RUC)
     #
     def __init__(self):
-        super().__init__()
-        # Market product type examples: EN (Energy), RU (Regulation Up), RD (Regulation Dn), SR (Spinning Reserve),
-        # NR (Non-Spinning Reserve), RC (RUC)
-
-        self.market_product_type = MarketProductType()
-        # Ramping time interval for the specific market product type specified by marketProductType attribute.
-        # For example, if marketProductType = EN (from enumeration MarketProductType),
-        # then the rampInterval is the ramping time interval for Energy.
-        self.ramp_interval = 0.0
-        self.product_bids = [ProductBid()]
-        self.resource_award_instruction = ResourceAwardInstruction()
-        self.bid_error = BidError()
-        self.bid_price_cap = BidPriceCap()
-        self.market_region_results = MarketRegionResults()
-        self.market = Market()
+        super().__init__()  # Call to the superclass's constructor
+        self.market_product_type = MarketProductType.LFD  # Market product type examples: EN, RU, RD, SR, NR, RC.
+        self.ramp_interval = 0.0  # Ramping time interval for the specific market product type.
+        self.product_bids = [ProductBid()]  # Associated ProductBids
+        self.resource_award_instruction = ResourceAwardInstruction()  # Associated ResourceAwardInstruction
+        self.bid_error = BidError()  # Associated BidError
+        self.bid_price_cap = BidPriceCap()  # Associated BidPriceCap
+        self.market_region_results = MarketRegionResults()  # Associated MarketRegionResults
+        self.market = Market()  # Associated Market

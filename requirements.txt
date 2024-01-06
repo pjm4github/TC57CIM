@@ -13,3 +13,5 @@ psutil
 mqueue
 PyJWT
 psycopg
+pillow
+opencv-python

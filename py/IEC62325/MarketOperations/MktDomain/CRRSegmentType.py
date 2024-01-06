@@ -2,7 +2,7 @@
 from enum import Enum
 
 
-class CrrSegmentType(Enum):
+class CRRSegmentType(Enum):
     """
     Type of the CRR, from the possible type definitions in the CRR System (e.g.
     'LSE', 'ETC').

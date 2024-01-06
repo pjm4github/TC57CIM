@@ -1,5 +1,5 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 29 11:15:55 2023
-from IEC62325.MarketOperations.MktDomain.SelfScpyeduleBreakdownType import SelfScheduleBreakdownType
+from IEC62325.MarketOperations.MktDomain.SelfScheduleBreakdownType import SelfScheduleBreakdownType
 
 
 class SelfScheduleBreakdown:

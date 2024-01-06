@@ -13,5 +13,9 @@ class DynamicsFunctionBlock:
     def __init__(self) -> None:
         """
         Constructor for DynamicsFunctionBlock
+        Function block used indicator.
+        true = use of function block is enabled
+        false = use of function block is disabled.
+
         """
         self.enabled: bool = False

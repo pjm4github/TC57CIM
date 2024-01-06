@@ -23,7 +23,9 @@ _The IEC 61968 subpackages of the CIM are developed, standardized and maintained
 This is based on the July 4th, 2022 Version of the model. 
 
 ## See also:
-This link is confusing but seems to have all the components. 
+This link is confusing but seems to have all the components. The best way to navigate this site is to look through 
+the Java or Python model then find the relative definition path within the document web site 
+to find the generic definitions. 
 
 https://zepben.github.io/evolve/docs/cim/cim100/
 

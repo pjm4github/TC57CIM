@@ -3,6 +3,10 @@ from IEC62325.MarketOperations.MarketPlan.MarketFactors import MarketFactors
 
 
 class MarketCaseClearing(MarketFactors):
+    """
+    Market case clearing results are posted for a given settlement period.
+    @created 28-Dec-2023 8:01:56 PM
+    """
     def __init__(self):
         # Settlement period:
         # 'DA - Bid-in'

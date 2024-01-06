@@ -20,19 +20,19 @@ class WireInfo(AssetInfo):
     """
     def __init__(self):
         super().__init__()
-        self.core_radius = Length()
-        self.core_strand_count = 0
-        self.gmr = Length()
-        self.insulated = True
-        self.insulation_material = WireInsulationKind.OTHER
-        self.insulation_thickness = Length()
-        self.material = WireMaterialKind.STEEL
-        self.rAC25 = ResistancePerLength()
-        self.rAC50 = ResistancePerLength()
-        self.rAC75 = ResistancePerLength()
-        self.radius = Length()
-        self.rated_current = CurrentFlow()
-        self.rDC20 = ResistancePerLength()
-        self.size_description = ""
-        self.strand_count = 0
+        self.core_radius = Length()  # (if there is a different core material) Radius of the central core.
+        self.core_strand_count = 0  # (if used) Number of strands in the steel core.
+        self.gmr = Length()  # Geometric mean radius.
+        self.insulated = True  # True if conductor is insulated.
+        self.insulation_material = WireInsulationKind.RUBBER  # (if insulated conductor) Material used for insulation.
+        self.insulation_thickness = Length()  # (if insulated conductor) Thickness of the insulation.
+        self.material = WireMaterialKind.COPPER  # Conductor material.
+        self.rAC25 = ResistancePerLength()  # AC resistance per unit length of the conductor at 25 °C.
+        self.rAC50 = ResistancePerLength()  # AC resistance per unit length of the conductor at 50 °C.
+        self.rAC75 = ResistancePerLength()  # AC resistance per unit length of the conductor at 75 °C.
+        self.radius = Length()  # Outside radius of the wire.
+        self.rated_current = CurrentFlow()  # Current carrying capacity of the wire under stated thermal conditions.
+        self.rDC20 = ResistancePerLength()  # DC resistance per unit length of the conductor at 20 °C.
+        self.size_description = ""  # Describes the wire gauge or cross section.
+        self.strand_count = 1  # Number of strands in the conductor.
         self.wire_phase_info = WirePhaseInfo()
