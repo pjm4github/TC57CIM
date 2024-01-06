@@ -59,9 +59,18 @@ def convert_code(code_snippet):
             messages=[
                 {
                     "role": "system",
-                    "content": "Given this Java class, convert this code to python, using snake_case methods and "
-                               "attributes, include the original comments, and add python typing to the python class. "
-                               "Keep the class name CamelCase. Keep the imports in their original form."
+                    "content": """In this session you will be converting Java classes to python. 
+                                Use snake_case attributes including the comments and, instead of the initial value of None, use the java type as a class method call. 
+                                Use the Typical values as an argument to the Java class method call. 
+                                assume the attributes are initialized to the class type as a method call.
+                                include the comments as inline comments for the code when you convert it.
+                                add the super().__init__() call right after the __init__ method definition.
+                                add the comments.
+                                add them as single line comments to the end of the assignment.
+                                add the class comments"""
+                    # "content": "Given this Java class, convert this code to python, using snake_case methods and "
+                    #            "attributes, include the original comments, and add python typing to the python class. "
+                    #            "Keep the class name CamelCase. Keep the imports in their original form."
                 },
                 {
                     "role": "user",
@@ -87,8 +96,7 @@ MAX_TOKENS = 10000  # Maximum number of tokens that can be used with the OPENAI 
 
 
 if __name__ == "__main__":
-
-    directory_path = f"{os.path.expanduser('~')}/Documents/Git/GitHub/TC57CIM/py/IEC61970/InfIEC61970/InfOperationalLimits/"
+    directory_path = f"{os.path.expanduser('~')}/Documents/Git/GitHub/TC57CIM/py/IEC61970/InfIEC61970/InfPart303/NetworkModelProjects/"
 
     output_path = f"{directory_path}/Converted/"
     try:
