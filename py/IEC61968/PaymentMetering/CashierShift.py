@@ -14,7 +14,8 @@ class CashierShift(Shift):
 
     def __init__(self):
         super().__init__()
-        self.cash_float = Money()  # The amount of cash that the cashier brings to start the shift and that will be taken away at the end of the shift; i.e. the cash float does not get banked.
+        self.cash_float = Money()  # The amount of cash that the cashier brings to start the shift and that will be
+        # taken away at the end of the shift; i.e. the cash float does not get banked.
         self.receipts = Receipt()  # All Receipts recorded for this Shift.
         self.point_of_sale = PointOfSale()  # Point of sale that is in operation during this shift.
         self.transactions = Transaction()  # All transactions recorded during this cashier shift.

@@ -4,7 +4,6 @@ from IEC62325.MarketOperations.MarketPlan.PlannedMarketEvent import PlannedMarke
 from IEC62325.MarketOperations.MktDomain.MarketType import MarketType
 
 
-
 class PlannedMarket:
     def __init__(self):
         # Market end time.

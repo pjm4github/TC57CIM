@@ -1,6 +1,6 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 21:37:42 2023
 from enum import Enum
-from typing import List
+
 
 class LandPropertyKind(Enum):
     """

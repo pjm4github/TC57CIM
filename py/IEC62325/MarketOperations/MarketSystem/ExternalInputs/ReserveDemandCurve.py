@@ -19,13 +19,13 @@ class ReserveDemandCurve(Curve):
         Constructor
         """
         super().__init__()
-        self.req_max_mwfloat = 0.0
+        self.req_max_mw: float = 0.0
 
         """
         Region requirement maximum limit
         """
 
-        self.reserve_requirement_typeOptional[ReserveRequirementType] = ReserveRequirementType()
+        self.reserve_requirement_type: Optional[ReserveRequirementType] = ReserveRequirementType.REG
         """
         Reserve requirement type that the max and curve apply to. 
         For example, operating reserve, regulation and contingency.

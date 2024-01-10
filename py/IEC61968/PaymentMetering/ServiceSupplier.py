@@ -11,7 +11,7 @@ class ServiceSupplier(OrganisationRole):
     def __init__(self):
         super().__init__()
         self.issuer_identification_number = ""
-        self.kind = SupplierKind()
+        self.kind = SupplierKind.RETAILER
         self.bank_accounts = BankAccount()
         self.usage_points = UsagePoint()
         self.customer_agreements = CustomerAgreement()

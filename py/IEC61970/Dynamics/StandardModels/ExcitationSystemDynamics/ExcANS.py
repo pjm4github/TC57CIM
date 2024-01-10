@@ -1,8 +1,8 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 22:01:48 2023
-from datetime import datetime
 from typing import Optional
 
 from IEC61970.Base.Domain.Seconds import Seconds
+from IEC61970.Dynamics.StandardModels.ExcitationSystemDynamics.ExcitationSystemDynamics import ExcitationSystemDynamics
 
 
 class ExcAns(ExcitationSystemDynamics):
@@ -18,7 +18,8 @@ class ExcAns(ExcitationSystemDynamics):
         """
         Constructor for ExcANS
         """
-        self.blintOptional[int] = 0 # Governor Control Flag (BLINT).
+        super().__init__()
+        self.blint: Optional[int] = 0  # Governor Control Flag (BLINT).
         # 0 = lead-lag regulator
         # 1 = proportional integral regulator.
         # Typical Value = 0.
@@ -33,23 +34,23 @@ class ExcAns(ExcitationSystemDynamics):
 
         self.kce: float = 1.0  # Ceiling factor (KCE).  Typical Value = 1.
 
-        self.krvecc: Optional[int] = 0 # Feedback enabling (KRVECC).
+        self.krvecc: Optional[int] = 0  # Feedback enabling (KRVECC).
         # 0 = Open loop control
         # 1 = Closed loop control.
         # Typical Value = 1.
 
-        self.kvfif: Optional[int] = 0 # Rate feedback signal flag (KVFIF).
+        self.kvfif: Optional[int] = 0  # Rate feedback signal flag (KVFIF).
         # 0 = output voltage of the exciter
         # 1 = exciter field current.
         # Typical Value = 0.
 
-        self.t1: Seconds = Seconds(20) # Time constant (T1).  Typical Value = 20.
+        self.t1: Seconds = Seconds(20)  # Time constant (T1).  Typical Value = 20.
 
-        self.t2: Seconds = Seconds(0.05) # Time constant (T2).  Typical Value = 0.05.
+        self.t2: Seconds = Seconds(0.05)  # Time constant (T2).  Typical Value = 0.05.
 
-        self.t3: Seconds = Seconds(1.6) # Time constant (T3).  Typical Value = 1.6.
+        self.t3: Seconds = Seconds(1.6)  # Time constant (T3).  Typical Value = 1.6.
 
-        self.tb: Seconds = Seconds(.04) # Exciter time constant (TB).  Typical Value = 0.04.
+        self.tb: Seconds = Seconds(.04)  # Exciter time constant (TB).  Typical Value = 0.04.
 
         self.vrmn: float = 1.0  # Minimum AVR output (VRMN).  Typical Value = -5.2.
 

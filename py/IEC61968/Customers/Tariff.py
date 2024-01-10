@@ -1,5 +1,6 @@
 # Tariff.py
 from IEC61968.Common.Document import Document
+from IEC61968.PaymentMetering.TariffProfile import TariffProfile
 from IEC61970.Base.Domain.Date import Date
 
 

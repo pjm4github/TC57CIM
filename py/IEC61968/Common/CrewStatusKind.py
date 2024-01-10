@@ -1,8 +1,6 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 from enum import Enum
 
-from IEC61970.Base.Domain.String import String
-
 
 class CrewStatusKind(Enum):
     ARRIVED = 1  # STRING("ARRIVED")

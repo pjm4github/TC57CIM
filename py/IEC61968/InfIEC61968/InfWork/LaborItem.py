@@ -17,7 +17,7 @@ class LaborItem(WorkIdentifiedObject):
 
     def __init__(self) -> None:
         super().__init__()
-        self.activity_code: Optional[str] = str()  # Activity code identifies a specific and distinguishable unit of work.
+        self.activity_code: Optional[str] = str()  # Activity code1 identifies a specific and distinguishable unit of work.
         self.cost: Optional[Money] = Money()  # Total cost for labor. Note that this may not be able to be derived from labor rate and time charged.
         self.labor_duration: Optional[Hours] = Hours()  # Time required to perform work.
         self.labor_rate: Optional[CostRate] = CostRate()  # The labor rate applied for work.

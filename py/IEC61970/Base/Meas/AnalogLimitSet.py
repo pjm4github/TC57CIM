@@ -6,10 +6,14 @@
 # Created on:      20-Dec-2023 11:07:17 AM
 # 
 #######################################################
+from IEC61970.Base.Meas.AnalogLimit import AnalogLimit
+from IEC61970.Base.Meas.LimitSet import LimitSet
+
 
 class AnalogLimitSet(LimitSet):
     """An AnalogLimitSet specifies a set of Limits that are associated with an Analog
     measurement.
     """
     def __init__(self):
+        super().__init__()
         self.limits = AnalogLimit()    # The limit values used for supervision of Measurements.

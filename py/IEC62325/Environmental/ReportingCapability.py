@@ -19,7 +19,6 @@ class ReportingCapability:
     @created 25-Dec-2023 9:21:23 PM
     """
 
-
     def __init__(self):
         super().__init__()
         pass

@@ -9,10 +9,12 @@ from IEC61970.Base.Domain.DateTimeInterval import DateTimeInterval
 class Capability(WorkIdentifiedObject):
 
     def __init__(self) -> None:
+        super().__init__()
         self.performance_factor = ''  # Capability performance factor
-        self.statusO= Status()
+        self.statusO = Status()
         self.type = ''  # Classification by utility's work management standards and practices
-        self.validity_interval = DateTimeInterval()  # Date and time interval for which this capability is valid (when it became effective and when it expires)
+        self.validity_interval = DateTimeInterval()  # Date and time interval for which this capability is valid
+        # (when it became effective and when it expires)
         self.work_tasks = [OldWorkTask()]
         self.crew = OldCrew()
         self.crafts = Craft()

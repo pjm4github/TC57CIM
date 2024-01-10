@@ -8,12 +8,16 @@
 #######################################################
 from IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
 from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
+
+
 # from IEC61970.Base.Domain.Float import Float
 
 class AngleRadians:
-    """Phase angle in radians.
     """
-    unit = UnitSymbol.rad
+    Phase angle in radians.
+    """
+
     def __init__(self):
         self.multiplier = UnitMultiplier.none
         self.value = 0.0
+        self.unit = UnitSymbol.rad

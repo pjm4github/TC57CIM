@@ -10,16 +10,5 @@ class WireMaterialKind(Enum):
     ACSR = 5  # Aluminum conductor steel reinforced.
     ALUMINUM_ALLOY = 6  # Aluminum-alloy wire.
     ALUMINUM_ALLOY_STEEL = 7  # Aluminum-alloy-steel wire.
-    AAAC = 8 # Aluminum-alloy conductor steel reinforced.
+    AAAC = 8  # Aluminum-alloy conductor steel reinforced.
     OTHER = 9  # Other wire material.
-
-
-
-
-
-
-
-
-
-
-

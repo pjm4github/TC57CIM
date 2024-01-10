@@ -7,6 +7,8 @@
 
 from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 from IEC61970.Base.Domain.DateTime import DateTime
+from IEC62325.MarketOperations.MarketPlan.MarketRun import MarketRun
+from IEC62325.MarketOperations.MarketPlan.PlannedMarketEvent import PlannedMarketEvent
 from IEC62325.MarketOperations.MktDomain.MarketEventStatusKind import MarketEventStatusKind
 
 

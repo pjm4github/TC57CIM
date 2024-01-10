@@ -16,9 +16,12 @@ class LoadMotor:
     characteristics of individual motors. This model treats a fraction of the constant power part of a load as a motor.
     During initialisation, the initial power drawn by the motor is set equal to Pfrac times the constant P part of the
     static load. The remainder of the load is left as static load. The reactive power demand of the motor is calculated
-    during initialisation as a function of voltage at the load bus. This reactive power demand may be less than or greater
-    than the constant Q component of the load. If the motor's reactive demand is greater than the constant Q component of
-    the load, the model inserts a shunt capacitor at the terminal of the motor to bring its reactive demand down to equal
+    during initialisation as a function of voltage at the load bus. This reactive power demand may be less than or
+    greater
+    than the constant Q component of the load. If the motor's reactive demand is greater than the constant Q
+    component of
+    the load, the model inserts a shunt capacitor at the terminal of the motor to bring its reactive demand down to
+    equal
     the constant Q reactive load. If a motor model and a static load model are both present for a load, the Pfrac is
     assumed to be subtracted from the power flow constant P load before the static load model is applied.
     The remainder of the load, if any, is then represented by the static load model.
@@ -31,11 +34,13 @@ class LoadMotor:
         self.lp: float = 0.15  # Transient reactance (Lp). Typical Value = 0.15.
         self.lpp: float = 0.15  # Subtransient reactance (Lpp). Typical Value = 0.15.
         self.ls: float = 3.2  # Synchronous reactance (Ls). Typical Value = 3.2.
-        self.pfrac: float = 0.3  # Fraction of constant-power load to be represented by this motor model (Pfrac) (>=0.0 and <=1.0). Typical Value = 0.3.
+        self.pfrac: float = 0.3  # Fraction of constant-power load to be represented by this motor model (Pfrac) (
+        # >=0.0 and <=1.0). Typical Value = 0.3.
         self.ra: float = 0.0  # Stator resistance (Ra). Typical Value = 0.
-        self.tbkr: Seconds = Seconds(0.08) # Circuit breaker operating time (Tbkr). Typical Value = 0.08.
-        self.tpo: Seconds = Seconds() # Transient rotor time constant (Tpo) (not=0). Typical Value = 1.
-        self.tppo: Seconds = Seconds(0.02) # Subtransient rotor time constant (Tppo). Typical Value = 0.02.
-        self.tv: Seconds = Seconds(0.1) # Voltage trip pickup time (Tv). Typical Value = 0.1.
+        self.tbkr: Seconds = Seconds(0.08)  # Circuit breaker operating time (Tbkr). Typical Value = 0.08.
+        self.tpo: Seconds = Seconds()  # Transient rotor time constant (Tpo) (not=0). Typical Value = 1.
+        self.tppo: Seconds = Seconds(0.02)  # Subtransient rotor time constant (Tppo). Typical Value = 0.02.
+        self.tv: Seconds = Seconds(0.1)  # Voltage trip pickup time (Tv). Typical Value = 0.1.
         self.vt: float = 0.7  # Voltage threshold for tripping (Vt). Typical Value = 0.7.
-        self.load_aggregate: Optional[LoadAggregate] = LoadAggregate()  # Aggregate load to which this aggregate motor (dynamic) load belongs.
+        self.load_aggregate: Optional[
+            LoadAggregate] = LoadAggregate()  # Aggregate load to which this aggregate motor (dynamic) load belongs.

@@ -11,6 +11,6 @@ class InstructionClearingDOT(MarketFactors):
     
     def __init__(self) -> None:
         super().__init__()
-        self.contingency_activeOptional[YesNo] = YesNo.NO
-        self.dispatch_modeOptional[AutomaticDispatchMode] = AutomaticDispatchMode.MANUAL
-        self.dot_instructionOptional[DotInstruction] = DotInstruction()
+        self.contingency_active: Optional[YesNo] = YesNo.NO
+        self.dispatch_mode: Optional[AutomaticDispatchMode] = AutomaticDispatchMode.MANUAL
+        self.dot_instruction: Optional[DotInstruction] = DotInstruction()

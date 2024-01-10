@@ -1,7 +1,10 @@
+from IEC61968.Common.Agreement import Agreement
 from IEC61968.Customers.PricingStructure import PricingStructure
 from IEC61968.Customers.ServiceCategory import ServiceCategory
 from IEC61968.Customers.ServiceLocation import ServiceLocation
+from IEC61968.InfIEC61968.InfCustomers.StandardIndustryCode import StandardIndustryCode
 from IEC61968.Metering.UsagePoint import UsagePoint
+from IEC61968.PaymentMetering.AuxiliaryAgreement import AuxiliaryAgreement
 from IEC61970.Base.Domain.DateTime import DateTime
 
 
@@ -18,6 +21,7 @@ class CustomerAgreement(Agreement):
         """
         Constructor for CustomerAgreement class.
         """
+        super().__init__()
         self.is_pre_pay = False
         self.load_mgmt = ""
         self.shut_off_date_time = DateTime()

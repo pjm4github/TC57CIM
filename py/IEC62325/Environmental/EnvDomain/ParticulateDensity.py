@@ -4,7 +4,6 @@ from IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
 from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 
 
-
 class ParticulateDensity:
 
     # Particulate density as kg/m^3.

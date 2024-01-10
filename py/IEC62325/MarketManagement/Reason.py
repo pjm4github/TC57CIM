@@ -16,7 +16,7 @@ class Reason:
         # The motivation of an act in coded form.
         self.code = ""
 
-        # The textual explanation corresponding to the reason code.
+        # The textual explanation corresponding to the reason code1.
         self.text = ""
 
         self.market_document = MarketDocument()

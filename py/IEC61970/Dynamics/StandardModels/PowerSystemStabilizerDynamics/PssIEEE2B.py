@@ -17,18 +17,22 @@ class PssIeee2b(PowerSystemStabilizerDynamics):
     
     Reference: IEEE 2B 421.5-2005 Section 8.2.
     """
+
     def __init__(self) -> None:
         """
         Initializes a new instance of PssIEEE2B
         """
         super().__init__()
-        self.input_signal1_type: Optional[InputSignalKind] = InputSignalKind.ROTOR_SPEED  # Type of input signal #1.  Typical Value = rotorSpeed.
-        self.input_signal2_type: Optional[InputSignalKind] = InputSignalKind.GENERATOR_ELECTRICAL_POWER  # Type of input signal #2.  Typical Value = generatorElectricalPower.
+        self.input_signal1_type: Optional[
+            InputSignalKind] = InputSignalKind.ROTOR_SPEED  # Type of input signal #1.  Typical Value = rotorSpeed.
+        self.input_signal2_type: Optional[
+            InputSignalKind] = InputSignalKind.GENERATOR_ELECTRICAL_POWER  # Type of input signal #2.  Typical Value
+        # = generatorElectricalPower.
         self.ks1: PU = PU(12)  # Stabilizer gain (Ks1).  Typical Value = 12.
         self.ks2: PU = PU(.2)  # Gain on signal #2 (Ks2).  Typical Value = 0.2.
         self.ks3: PU = PU(1)  # Gain on signal #2 input before ramp-tracking filter (Ks3).  Typical Value = 1.
-        self.m: Optional[int] = 5 # Denominator order of ramp tracking filter (M).  Typical Value = 5.
-        self.n: Optional[int] = 1 # Order of ramp tracking filter (N).  Typical Value = 1.
+        self.m: Optional[int] = 5  # Denominator order of ramp tracking filter (M).  Typical Value = 5.
+        self.n: Optional[int] = 1  # Order of ramp tracking filter (N).  Typical Value = 1.
         self.t1: Seconds = Seconds(.12)  # Lead/lag time constant (T1).  Typical Value = 0.12.
         self.t10: Seconds = Seconds(0)  # Lead/lag time constant (T10).  Typical Value = 0.
         self.t11: Seconds = Seconds(0)  # Lead/lag time constant (T11).  Typical Value = 0.

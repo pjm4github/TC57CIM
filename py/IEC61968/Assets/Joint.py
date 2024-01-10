@@ -5,9 +5,9 @@ from IEC61968.InfIEC61968.InfAssets.JointFillKind import JointFillKind
 
 class Joint(Asset):
     """
-    #  * Joint connects two or more cables. It includes the portion of cable under wipes,
-    #  * welds, or other seals.
-    #  * @created 29-Dec-2023 5:27:44 PM
+    Joint connects two or more cables. It includes the portion of cable under wipes,
+    welds, or other seals.
+    @created 29-Dec-2023 5:27:44 PM
     """
     def __init__(self):
         super().__init__()

@@ -1,5 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:39:55 2023
-from datetime import datetime
 from typing import Optional
 from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 from IEC61970.Base.Domain.ActivePower import ActivePower
@@ -19,10 +18,10 @@ class BranchGroup(IdentifiedObject):
         """Default constructor
         """
         super().__init__()
-        self.maximum_active_powerOptional[ActivePower] = ActivePower()  # The maximum active power flow.
-        self.maximum_reactive_powerOptional[ReactivePower] = ReactivePower()  # The maximum reactive power flow.
-        self.minimum_active_powerOptional[ActivePower] = ActivePower()  # The minimum active power flow.
-        self.minimum_reactive_powerOptional[ReactivePower] = ReactivePower()  # The minimum reactive power flow.
-        self.monitor_active_powerbool = False  # Monitor the active power flow.
-        self.monitor_reactive_powerbool = False  # Monitor the reactive power flow.
-        self.branch_group_terminalOptional[BranchGroupTerminal] = BranchGroupTerminal()  # The directed branch group terminals to be summed.
+        self.maximum_active_power: Optional[ActivePower] = ActivePower()  # The maximum active power flow.
+        self.maximum_reactive_power: Optional[ReactivePower] = ReactivePower()  # The maximum reactive power flow.
+        self.minimum_active_power: Optional[ActivePower] = ActivePower()  # The minimum active power flow.
+        self.minimum_reactive_power: Optional[ReactivePower] = ReactivePower()  # The minimum reactive power flow.
+        self.monitor_active_power: bool = False  # Monitor the active power flow.
+        self.monitor_reactive_power: bool = False  # Monitor the reactive power flow.
+        self.branch_group_terminal: Optional[BranchGroupTerminal] = BranchGroupTerminal()  # The directed branch group terminals to be summed.

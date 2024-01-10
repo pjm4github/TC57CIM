@@ -26,27 +26,28 @@ class ExcRexs:
         self.kh: float = 0.0  # Field voltage controller feedback gain (Kh). Typical Value = 0.
         self.kii: float = 0.0  # Field Current Regulator Integral Gain (Kii). Typical Value = 0.
         self.kip: float = 1.0  # Field Current Regulator Proportional Gain (Kip). Typical Value = 1.
-        self.ks: float = 0.0  # Coefficient to allow different usage of the model-speed coefficient (Ks). Typical Value = 0.
-        self.kvi: float = 0.0 # Voltage Regulator Integral Gain (Kvi). Typical Value = 0.
+        self.ks: float = 0.0  # Coefficient to allow different usage of the model-speed coefficient (Ks). Typical
+        # Value = 0.
+        self.kvi: float = 0.0  # Voltage Regulator Integral Gain (Kvi). Typical Value = 0.
         self.kvp: float = 2800.0  # Voltage Regulator Proportional Gain (Kvp). Typical Value = 2800.
         self.kvphz: float = 0.0  # V/Hz limiter gain (Kvphz). Typical Value = 0.
         self.nvphz: float = 0.0  # Pickup speed of V/Hz limiter (Nvphz). Typical Value = 0.
         self.se1: float = 0.0001  # Saturation factor at E1 (Se1). Typical Value = 0.0001.
         self.se2: float = 0.001  # Saturation factor at E2 (Se2). Typical Value = 0.001.
-        self.ta: Seconds = Seconds(0.01) # Voltage Regulator time constant (Ta). Typical Value = 0.01.
-        self.tb1: Seconds = Seconds(0) # Lag time constant (Tb1). Typical Value = 0.
-        self.tb2: Seconds = Seconds(0) # Lag time constant (Tb2). Typical Value = 0.
-        self.tc1: Seconds = Seconds(0) # Lead time constant (Tc1). Typical Value = 0.
-        self.tc2: Seconds = Seconds(0) # Lead time constant (Tc2). Typical Value = 0.
-        self.te: Seconds = Seconds(1.2) # Exciter field time constant (Te). Typical Value = 1.2.
-        self.tf: Seconds = Seconds(1) # Rate feedback time constant (Tf). Typical Value = 1.
-        self.tf1: Seconds = Seconds(0) # Feedback lead time constant (Tf1). Typical Value = 0.
-        self.tf2: Seconds = Seconds(0) # Feedback lag time constant (Tf2). Typical Value = 0.
-        self.tp: Seconds = Seconds(0) # Field current Bridge time constant (Tp). Typical Value = 0.
+        self.ta: Seconds = Seconds(0.01)  # Voltage Regulator time constant (Ta). Typical Value = 0.01.
+        self.tb1: Seconds = Seconds(0)  # Lag time constant (Tb1). Typical Value = 0.
+        self.tb2: Seconds = Seconds(0)  # Lag time constant (Tb2). Typical Value = 0.
+        self.tc1: Seconds = Seconds(0)  # Lead time constant (Tc1). Typical Value = 0.
+        self.tc2: Seconds = Seconds(0)  # Lead time constant (Tc2). Typical Value = 0.
+        self.te: Seconds = Seconds(1.2)  # Exciter field time constant (Te). Typical Value = 1.2.
+        self.tf: Seconds = Seconds(1)  # Rate feedback time constant (Tf). Typical Value = 1.
+        self.tf1: Seconds = Seconds(0)  # Feedback lead time constant (Tf1). Typical Value = 0.
+        self.tf2: Seconds = Seconds(0)  # Feedback lag time constant (Tf2). Typical Value = 0.
+        self.tp: Seconds = Seconds(0)  # Field current Bridge time constant (Tp). Typical Value = 0.
         self.vcmax: float = 0.0  # Maximum compounding voltage (Vcmax). Typical Value = 0.
         self.vfmax: float = 47.0  # Maximum Exciter Field Current (Vfmax). Typical Value = 47.
         self.vfmin: float = -20.0  # Minimum Exciter Field Current (Vfmin). Typical Value = -20.
         self.vimax: float = 0.1  # Voltage Regulator Input Limit (Vimax). Typical Value = 0.1.
         self.vrmax: float = 47.0  # Maximum controller output (Vrmax). Typical Value = 47.
         self.vrmin: float = -20.0  # Minimum controller output (Vrmin). Typical Value = -20.
-        self.xc: float = 0.0 # Exciter compounding reactance (Xc). Typical Value = 0.
+        self.xc: float = 0.0  # Exciter compounding reactance (Xc). Typical Value = 0.

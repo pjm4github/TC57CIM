@@ -6,8 +6,13 @@
 from IEC61968.Common.OrganisationRole import OrganisationRole
 from IEC61968.Common.Priority import Priority
 from IEC61968.Common.Status import Status
+from IEC61968.Customers.CustomerAccount import CustomerAccount
+from IEC61968.Customers.CustomerAgreement import CustomerAgreement
 from IEC61968.Customers.CustomerKind import CustomerKind
+from IEC61968.InfIEC61968.InfCommon.OldPerson import OldPerson
+from IEC61968.Metering.EndDevice import EndDevice
 from IEC61968.Operations.OutagePlan import OutagePlan
+from IEC61968.Work.Work import Work
 
 
 class Customer(OrganisationRole):

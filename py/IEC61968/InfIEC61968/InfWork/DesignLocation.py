@@ -6,10 +6,6 @@
 # Created on:      19-Dec-2023 6:19:21 PM
 # 
 #######################################################
-
-
-from IEC61970.Base.Domain.Length import Length
-from IEC61968.Common.Status import Status
 from IEC61968.InfIEC61968.InfWork.MiscCostItem import MiscCostItem
 from IEC61968.InfIEC61968.InfWork.DesignLocationCU import DesignLocationCU
 from IEC61968.InfIEC61968.InfWork.Design import Design
@@ -23,6 +19,7 @@ class DesignLocation(WorkIdentifiedObject):
     """
 
     def __init__(self):
+        super().__init__()
         self.misc_cost_items = MiscCostItem()
         self.design_location_cus = DesignLocationCU()
         self.designs = Design()

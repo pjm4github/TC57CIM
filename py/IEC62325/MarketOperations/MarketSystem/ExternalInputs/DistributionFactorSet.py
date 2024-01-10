@@ -21,7 +21,7 @@ class DistributionFactorSet:
         # * The start of the time interval for which requirement is defined.
         self.interval_start_time: DateTime = DateTime()
         #  * Market type.
-        self.market_type: MarketType = MarketType()
+        self.market_type: MarketType = MarketType.RTM
         self.gen_distribution_factor: GenDistributionFactor = GenDistributionFactor()
         self.sys_load_distribu_factor: SysLoadDistributionFactor = SysLoadDistributionFactor()
         self.load_distribution_factor: LoadDistributionFactor = LoadDistributionFactor()

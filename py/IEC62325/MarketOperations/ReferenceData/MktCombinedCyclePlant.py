@@ -1,6 +1,8 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 # Local import
+# from IEC61970.Base.Generation.Production.CombinedCyclePlant import CombinedCyclePlant
 from IEC61970.Base.Generation.Production.CombinedCyclePlant import CombinedCyclePlant
+
 
 # Subclass of Production: CombinedCyclePlant from IEC61970 package.
 # A set of combustion turbines and steam turbines where the exhaust heat from the

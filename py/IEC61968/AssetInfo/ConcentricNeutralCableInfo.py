@@ -2,8 +2,9 @@
 from IEC61970.Base.Domain.Length import Length
 from IEC61970.Base.Domain.ResistancePerLength import ResistancePerLength
 
+
 class ConcentricNeutralCableInfo:
-    
+
     def __init__(self):
         self.diameter_over_neutral = Length()
         self.neutral_strand_count = 0

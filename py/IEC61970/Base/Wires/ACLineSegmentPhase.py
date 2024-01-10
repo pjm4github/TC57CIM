@@ -4,7 +4,7 @@ from IEC61970.Base.Wires.ACLineSegment import ACLineSegment
 
 class ACLineSegmentPhase:
     def __init__(self):
-        self.phase: SinglePhaseKind = SinglePhaseKind.A # The phase connection of the wire at both ends
+        self.phase: SinglePhaseKind = SinglePhaseKind.A  # The phase connection of the wire at both ends
         self.sequence_number = 0  # Number designation for this line segment phase
         self.ac_line_segment = ACLineSegment()  # The line segment to which the phase belongs
 

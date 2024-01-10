@@ -6,5 +6,5 @@ class SwitchStatusType(Enum):
     """
     Circuit Breaker Status (closed or open) of the circuit breaker.
     """
-    Closed = 1
-    Open = 2
+    CLOSED = 1
+    OPEN = 2

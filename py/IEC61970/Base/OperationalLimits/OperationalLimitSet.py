@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:39:55 2023
-from typing import Any
-
 from IEC61970.Base.Core.ACDCTerminal import ACDCTerminal
 from IEC61970.Base.Core.Equipment import Equipment
 from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject

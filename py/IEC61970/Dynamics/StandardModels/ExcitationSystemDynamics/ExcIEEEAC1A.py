@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 22:01:48 2023
-from typing import Optional
-
 from IEC61970.Base.Domain.PU import PU
 from IEC61970.Base.Domain.Seconds import Seconds
 from IEC61970.Dynamics.StandardModels.ExcitationSystemDynamics.ExcitationSystemDynamics import ExcitationSystemDynamics
@@ -10,8 +8,7 @@ class ExcIeeeAc1A(ExcitationSystemDynamics):
     """
     The class represents IEEE Std 421.5-2005 type AC1A model. The model represents
     the field-controlled alternator-rectifier excitation systems designated Type
-    AC1A. These excitation systems consist of an alternator main exciter with non-
-    controlled rectifiers.
+    AC1A. These excitation systems consist of an alternator main exciter with non-controlled rectifiers.
     Reference: IEEE Standard 421.5-2005 Section 6.1.
     @author tsaxton
     @version 1.0

@@ -10,7 +10,7 @@ class LabTestDataSet(ProcedureDataSet):
         super().__init__()
         self.conclusion = ""
         self.conclusion_confidence = ""
-        self.reason_for_test = TestReason()
+        self.reason_for_test = TestReason.ROUTINE
         self.test_equipment_id = ""
         self.specimen = Specimen()
         self.asset_test_lab = AssetTestLab()

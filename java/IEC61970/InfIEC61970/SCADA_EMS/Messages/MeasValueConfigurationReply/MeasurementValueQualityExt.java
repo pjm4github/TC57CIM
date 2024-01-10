@@ -8,7 +8,7 @@ package IEC61970.InfIEC61970.SCADA_EMS.Messages.MeasValueConfigurationReply;
  */
 public class MeasurementValueQualityExt {
 
-	public MeasurmentConfigurationStatus configurationStatus;
+	public MeasurementConfigurationStatus configurationStatus;
 
 	public MeasurementValueQualityExt(){
 

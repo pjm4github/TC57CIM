@@ -1,7 +1,7 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 # local import
-from IEC61968.Assets import IEEEStandardEditionKind, IEEEStandardKind
-
+from IEC61968.Assets.IEEEStandardEditionKind import IEEEStandardEditionKind
+from IEC61968.Assets.IEEEStandardKind import IEEEStandardKind
 class IEEEStandard:
     """
     Standard published by IEEE (Institute of Electrical and Electronics Engineers)
@@ -15,5 +15,5 @@ class IEEEStandard:
         """
         Constructor for IEEEStandard
         """
-        self.standard_edition = IEEEStandardEditionKind()
-        self.standard_number = IEEEStandardKind()
+        self.standard_edition = IEEEStandardEditionKind.m_1995
+        self.standard_number = IEEEStandardKind.IEEE_GUIDE_FOR_DIAGNOSTIC_FIELD_TESTING

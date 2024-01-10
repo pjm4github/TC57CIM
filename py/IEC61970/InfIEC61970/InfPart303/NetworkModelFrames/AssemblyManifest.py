@@ -15,4 +15,5 @@ class AssemblyManifest(IdentifiedObject):
     def __init__(self):
         super().__init__()
         self.m_model_part_version = ModelPartVersion()  # Assume ModelPartVersion is a class method
-        self.m_complete_model_to_be_deleted = CompleteModel_TO_BE_DELETED  # Assume CompleteModel.TO_BE_DELETED is a typical value and a class name
+        self.m_complete_model_to_be_deleted = CompleteModel_TO_BE_DELETED  # Assume CompleteModel.TO_BE_DELETED is a
+        # typical value and a class name

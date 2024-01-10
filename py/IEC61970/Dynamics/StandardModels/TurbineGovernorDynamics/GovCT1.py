@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sun Dec 31 17:08:39 2023
-from typing import Optional, Union
-
 from IEC61970.Base.Domain.ActivePower import ActivePower
 from IEC61970.Base.Domain.PU import PU
 from IEC61970.Base.Domain.Seconds import Seconds
@@ -42,8 +40,8 @@ class GovCt1(TurbineGovernorDynamics):
         self.dm: PU = PU(0.0)  # Speed sensitivity coefficient (Dm).  Dm can represent either the variation of the
         # engine power with the shaft speed or the variation of maximum power capability with shaft speed.
         # If it is positive it describes the falling slope of the engine speed verses power characteristic as
-        # speed increases. A slightly falling characteristic is typical for reciprocating engines and some aero-
-        # derivative turbines.  If it is negative the engine power is assumed to be unaffected by the shaft speed,
+        # speed increases. A slightly falling characteristic is typical for reciprocating engines and some aero-derivative
+        # turbines.  If it is negative the engine power is assumed to be unaffected by the shaft speed,
         # but the maximum permissible fuel flow is taken to fall with falling shaft speed. This is characteristic of
         # single-shaft industrial turbines due to exhaust temperature limits.  Typical Value = 0.
         self.ka: PU = PU(10.0)  # Acceleration limiter gain (Ka).  Typical Value = 10.
@@ -89,40 +87,3 @@ class GovCt1(TurbineGovernorDynamics):
         # fuel injectors)
         # False = fuel control system keeps fuel flow independent of engine speed.
         # Typical Value = True.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

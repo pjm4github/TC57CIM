@@ -10,8 +10,6 @@ from IEC61970.Base.Domain.Voltage import Voltage
 from IEC61970.Base.Wires.EnergyConnection import EnergyConnection
 
 
-
-
 class EnergySource(EnergyConnection):
     """
     A generic equivalent for an energy supplier on a transmission or distribution
@@ -19,6 +17,7 @@ class EnergySource(EnergyConnection):
     @author pmora
     @updated 15-Dec-2023 1:39:41 PM
     """
+
     def __init__(self):
         """
         Constructor for EnergySource class

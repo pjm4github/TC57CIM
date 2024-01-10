@@ -4,7 +4,7 @@ from typing import Optional
 from IEC61970.Base.Domain.DateTime import DateTime
 
 
-class TrEntitlement:
+class TREntitlement:
     """
     A Transmission Right(TR) can be a chain of TR's or an individual.
     
@@ -23,8 +23,8 @@ class TrEntitlement:
         """
         The entitlement
         """
-        self.entitlementfloat = 0.0
+        self.entitlement: float = 0.0
         """
         Operating date and hour when the entitlement applies
         """
-        self.start_operating_dateOptional[DateTime] = DateTime()
+        self.start_operating_date: Optional[DateTime] = DateTime()

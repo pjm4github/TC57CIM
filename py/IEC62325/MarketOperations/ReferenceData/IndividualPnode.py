@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Thu Dec 28 12:28:33 2023
-from typing import Any
-
 from IEC62325.MarketOperations.MarketOpCommon.MktConnectivityNode import MktConnectivityNode
 from IEC62325.MarketOperations.MarketSystem.ExternalInputs.GenDistributionFactor import GenDistributionFactor
 from IEC62325.MarketOperations.MarketSystem.ExternalInputs.LoadDistributionFactor import LoadDistributionFactor

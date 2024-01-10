@@ -6,7 +6,6 @@ from IEC62325.Environmental.EnvDomain.Bearing import Bearing
 from IEC62325.Environmental.GeosphericPhenomenon import GeosphericPhenomenon
 
 
-
 class LightningStrike(GeosphericPhenomenon):
     """
     A cloud-to-ground lightning strike at a particular location.

@@ -3,6 +3,7 @@ from typing import Optional
 
 from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 from IEC61970.Base.Domain.PerCent import PerCent
+from IEC62325.MarketOperations.MktDomain.ResourceAssnType import ResourceAssnType
 from IEC62325.MarketOperations.ReferenceData.ResourceCertification import YesNo
 
 
@@ -17,6 +18,6 @@ class OrgResOwnership(IdentifiedObject):
         Constructor for OrgResOwnership
         """
         super().__init__()
-        self.assc_typeOptional[ResourceAssnType] = ResourceAssnType  # association type for the association between Organisation and Resource
-        self.master_scheduling_coordinator_flagOptional[YesNo] = YesNo.NO  # Flag to indicate that the SC representing the Resource is the Master SC
-        self.ownership_percentOptional[PerCent] = PerCent()  # ownership percentage for each resource
+        self.assc_type = ResourceAssnType.RMR  # association type for the association between Organisation and Resource
+        self.master_scheduling_coordinator_flag = YesNo.NO  # Flag to indicate that the SC representing the Resource is the Master SC
+        self.ownership_percent: Optional[PerCent] = PerCent()  # ownership percentage for each resource

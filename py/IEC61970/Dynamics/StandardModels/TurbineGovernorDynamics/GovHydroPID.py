@@ -13,6 +13,7 @@ class GovHydroPid(TurbineGovernorDynamics):
     @version 1.0
     @created 29-Dec-2023 11:24:19 PM
     """
+
     def __init__(self) -> None:
         super().__init__()
         self.aturb = PU(-1)  # Turbine numerator multiplier (Aturb) (note 3).  Typical Value -1.
@@ -47,4 +48,4 @@ class GovHydroPid(TurbineGovernorDynamics):
         self.tt = Seconds(0.02)  # Power feedback time constant (Tt).  Typical Value = 0.02.
         self.tturb = Seconds(0.8)  # Turbine time constant (Tturb) (note 3).  Typical Value = 0.8.
         self.velcl: float = -.14  # Maximum gate closing velocity (Velcl).  Unit = PU/sec.  Typical Value = -0.14.
-        self.velop: float = 0.09  #Maximum gate opening velocity (Velop).  Unit = PU/sec.  Typical Value = 0.09.
+        self.velop: float = 0.09  # Maximum gate opening velocity (Velop).  Unit = PU/sec.  Typical Value = 0.09.

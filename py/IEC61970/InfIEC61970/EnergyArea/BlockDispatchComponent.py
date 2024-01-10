@@ -9,7 +9,7 @@
 #######################################################
 from IEC61970.InfIEC61970.EnergyArea.EnergyComponent import EnergyComponent
 
+
 class BlockDispatchComponent(EnergyComponent):
     def __init__(self):
         super().__init__()
-

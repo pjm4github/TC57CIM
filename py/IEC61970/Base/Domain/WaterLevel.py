@@ -11,10 +11,10 @@ from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 
 
 class WaterLevel:
-    """Reservoir water level referred to a given datum such as mean sea level.
     """
-    unit = UnitSymbol.m
-
+    Reservoir water level referred to a given datum such as mean sea level.
+    """
     def __init__(self):
         self.multiplier = UnitMultiplier.none
         self.value = 0.0
+        self.unit = UnitSymbol.m

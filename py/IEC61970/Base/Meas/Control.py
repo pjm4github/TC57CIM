@@ -22,6 +22,6 @@ class Control(IOPoint):
         super().__init__()
         self.control_type = ""
         self.operation_in_progress = False
-        self.timestamp = DateTime ()
+        self.timestamp = DateTime()
         self.unit_multiplier = UnitMultiplier.none
         self.unit_symbol = UnitSymbol.count

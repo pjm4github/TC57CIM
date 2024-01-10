@@ -17,10 +17,10 @@ class DefaultBid(Bid):
     consisting at maximum 10 economic bid segments, or 10 ($/MW, MW) pairs. There
     are three methods for determining the Default Energy Bid:
     <ul>
-    	<li>Cost Based: derived from the Heat Rate or Average Cost multiplied by the
+        <li>Cost Based: derived from the Heat Rate or Average Cost multiplied by the
     Gas Price Index plus 10%.</li>
-    	<li>LMP Based: a weighted average of LMPs in the preceding 90 days.</li>
-    	<li>Negotiated: an amount negotiated with the designated Independent Entity.
+        <li>LMP Based: a weighted average of LMPs in the preceding 90 days.</li>
+        <li>Negotiated: an amount negotiated with the designated Independent Entity.
     </li>
     </ul>
     
@@ -33,14 +33,15 @@ class DefaultBid(Bid):
     on the Minimum Load Cost stored in the Master File and the applicable GPI.
     @created 27-Dec-2023 3:26:47 PM
     """
+
     def __init__(self) -> None:
-        pass
+        super().__init__()
         # 	 * Default bid type such as Default Energy Bid, Default Minimum Load Bid, and
         # 	 * Default Startup Bid
-        self.bid_type: BidType = BidType()
+        self.bid_type: BidType = BidType.DEFAULT_STARTUP_BID
         #  * Minimum load cost in $/hr
         self.min_load_cost: CostRate = CostRate()
         #  * on-peak, off-peak, or all
-        self.peak_flag: OnOff = OnOff()
+        self.peak_flag: OnOff = OnOff.ON
         self.default_bid_curve: DefaultBidCurve = DefaultBidCurve()
         self.registered_resource: RegisteredResource = RegisteredResource()

@@ -16,8 +16,8 @@ class PropertyUnit(WorkIdentifiedObject):
 
     def __init__(self) -> None:
         super().__init__()
-        self.accounting_usage: Optional[str] = str()  # A code that identifies appropriate type of property accounts such as distribution, streetlgihts, communications.
-        self.activity_code: Optional[WorkActionKind] = WorkActionKind()  # Activity code identifies a specific and distinguishable work action.
+        self.accounting_usage: Optional[str] = str()  # A code1 that identifies appropriate type of property accounts such as distribution, streetlgihts, communications.
+        self.activity_code: Optional[WorkActionKind] = WorkActionKind.REMOVE  # Activity code1 identifies a specific and distinguishable work action.
         self.property_account: Optional[str] = str()  # Used for property record accounting. For example, in the USA, this would be a FERC account.
         self.status: Optional[Status] = Status()
         self.cum_material_items: Optional[CUMaterialItem] = CUMaterialItem()

@@ -1,7 +1,7 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:37:34 2023
 from enum import Enum
 
-class IEC62351_6ApplicationSecurityKind(Enum):
+class Iec623516applicationsecuritykind(Enum):
     """
     Specifies the expected security mechanism, per IEC 62351-6, to be utilized.
     @author herb

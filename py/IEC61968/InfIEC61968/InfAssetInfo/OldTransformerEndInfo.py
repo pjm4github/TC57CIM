@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 15:58:51 2023
-from typing import Any
-
 from IEC61968.AssetInfo.TransformerEndInfo import TransformerEndInfo
 from IEC61968.InfIEC61968.InfAssetInfo.WindingInsulationKind import WindingInsulationKind
 from IEC61970.Base.Domain.ApparentPower import ApparentPower
@@ -29,4 +27,4 @@ class OldTransformerEndInfo(TransformerEndInfo):
         """
         Type of insulation used for transformer windings.
         """
-        self.winding_insulation_kind: WindingInsulationKind = WindingInsulationKind.nomex
+        self.winding_insulation_kind: WindingInsulationKind = WindingInsulationKind.NOMEX

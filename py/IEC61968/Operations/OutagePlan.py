@@ -7,12 +7,12 @@ from IEC61970.Base.Domain.DateTimeInterval import DateTimeInterval
 
 
 class OutagePlan(Document):
-    
+
     def __init__(self):
         super().__init__()
         self.approved_date_time = DateTime()
         self.cancelled_date_time = DateTime()
         self.planned_period = DateTimeInterval()
-        self.purpose =""
+        self.purpose = ""
         self.outage_order = OutageOrder()
         self.planned_outage = PlannedOutage()

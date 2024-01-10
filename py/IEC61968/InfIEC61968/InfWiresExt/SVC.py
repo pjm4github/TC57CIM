@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 21:41:50 2023
-from typing import Optional
-
 from IEC61970.Base.Domain.Reactance import Reactance
 from IEC61970.Base.Wires.ShuntCompensator import ShuntCompensator
 

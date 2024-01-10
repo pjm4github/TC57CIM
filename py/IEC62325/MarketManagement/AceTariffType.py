@@ -10,7 +10,7 @@ from IEC62325.MarketManagement.Unit import Unit
 # @created 25-Dec-2023 9:21:21 PM
 class AceTariffType:
     
-    # The coded type of an ACE tariff.
+    # The coded type of ACE tariff.
     def __init__(self):
         self.type = ""
         self.unit = Unit()

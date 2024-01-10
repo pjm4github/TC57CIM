@@ -1,4 +1,3 @@
-
 """
 Dynamic flows and ratings associated with a branch end.
 """
@@ -8,7 +7,6 @@ from IEC62325.MarketOperations.MarketSystem.ExternalInputs.MktSeriesCompensator 
 
 
 class BranchEndFlow:
-
 
     def __init__(self) -> None:
         pass

@@ -3,6 +3,7 @@
 
 from enum import Enum
 
+
 class AssetFailureClassification(Enum):
     MAJOR = 1
     MINOR = 2

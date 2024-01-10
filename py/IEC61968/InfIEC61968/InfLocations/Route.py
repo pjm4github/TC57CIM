@@ -7,6 +7,6 @@ from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 class Route(IdentifiedObject):
     def __init__(self) -> None:
         super().__init__()
-        self.status= Status()  # Classification by utility's work management standards and practices
+        self.status = Status()  # Classification by utility's work management standards and practices
         self.type: str = ""  # Classification by utility's work management standards and practices
         self.locations = [Location()]

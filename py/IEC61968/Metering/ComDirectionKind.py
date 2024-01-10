@@ -3,6 +3,7 @@
 
 from enum import Enum
 
+
 class ComDirectionKind(Enum):
     FROM_DEVICE = 1
     TO_DEVICE = 2

@@ -8,6 +8,7 @@
 #######################################################
 from IEC61968.InfIEC61968.InfERPSupport.ErpBOM import ErpBOM
 from IEC61968.InfIEC61968.InfERPSupport.ErpIdentifiedObject import ErpIdentifiedObject
+from IEC61968.InfIEC61968.InfWork.DesignLocation import DesignLocation
 
 
 class ErpBomItemData(ErpIdentifiedObject):

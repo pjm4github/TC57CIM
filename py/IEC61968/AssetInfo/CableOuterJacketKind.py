@@ -3,6 +3,7 @@
 
 from enum import Enum
 
+
 class CableOuterJacketKind(Enum):
     NONE = 0
     LINEAR_LOW_DENSITY_POLYETHYLENE = 1

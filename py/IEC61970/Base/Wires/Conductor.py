@@ -12,7 +12,7 @@ class Conductor:
     """
 
     def __init__(self) -> None:
-        self.length: Length = Length() # Segment length for calculating line section capabilities
+        self.length: Length = Length()  # Segment length for calculating line section capabilities
 
     def get_length(self) -> Length:
         return self.length

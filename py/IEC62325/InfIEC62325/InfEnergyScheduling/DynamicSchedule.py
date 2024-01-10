@@ -11,8 +11,8 @@ class DynamicSchedule(BasicIntervalSchedule):
 
     def __init__(self) -> None:
         super().__init__()
-        self.dyn_sched_sign_revbool = False  # Dynamic schedule sign reversal required (true/false)
-        self.dyn_sched_statusOptional[str] = ""  # The "active" or "inactive" status of the dynamic schedule
-        self.send_sub_control_areaOptional[SubControlArea] = SubControlArea()  # A control area can send dynamic schedules to other control areas
-        self.receive_sub_control_areaOptional[SubControlArea] = SubControlArea()  # A control area can receive dynamic schedules from other control areas
-        self.mkt_measurementOptional[MktMeasurement] = MktMeasurement()
+        self.dyn_sched_sign_rev: bool = False  # Dynamic schedule sign reversal required (true/false)
+        self.dyn_sched_status: Optional[str] = ""  # The "active" or "inactive" status of the dynamic schedule
+        self.send_sub_control_area: Optional[SubControlArea] = SubControlArea()  # A control area can send dynamic schedules to other control areas
+        self.receive_sub_control_area: Optional[SubControlArea] = SubControlArea()  # A control area can receive dynamic schedules from other control areas
+        self.mkt_measurement: Optional[MktMeasurement] = MktMeasurement()

@@ -1,6 +1,7 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 22:01:48 2023
 from typing import Union
 from IEC61970.Base.Domain.Seconds import Seconds
+from IEC61970.Dynamics.StandardModels.ExcitationSystemDynamics.ExcST7BOELselectorKind import ExcST7BOELselectorKind
 from IEC61970.Dynamics.StandardModels.ExcitationSystemDynamics.ExcST7BUELselectorKind import ExcST7BUELselectorKind
 
 
@@ -24,44 +25,28 @@ class ExcIEEEST7B:
     """
 
     def __init__(self) -> None:
-        """
-        High-value gate feedback gain (K_H). Typical Value 1.
-        """
+        # High-value gate feedback gain (K_H). Typical Value 1.
         self.kh: Union[float, int] = 1
 
-        """
-        Voltage regulator integral gain (K_IA). Typical Value = 1.
-        """
+        # Voltage regulator integral gain (K_IA). Typical Value = 1.
         self.kia: Union[float, int] = 1
 
-        """
-        Low-value gate feedback gain (K_L). Typical Value 1.
-        """
+        # Low-value gate feedback gain (K_L). Typical Value 1.
         self.kl: Union[float, int] = 1
 
-        """
-        Voltage regulator proportional gain (K_PA). Typical Value = 40.
-        """
+        # Voltage regulator proportional gain (K_PA). Typical Value = 40.
         self.kpa: Union[float, int] = 40
 
-        """
-        OEL input selector (OELin). Typical Value = noOELinput.
-        """
+        # OEL input selector (OELin). Typical Value = noOELinput.
         self.oelin: ExcST7BOELselectorKind = ExcST7BOELselectorKind.NO_OEL_INPUT
 
-        """
-        Regulator lag time constant (T_B). Typical Value 1.
-        """
+        # Regulator lag time constant (T_B). Typical Value 1.
         self.tb: Seconds = Seconds(1)
 
-        """
-        Regulator lead time constant (T_C). Typical Value 1.
-        """
+        # Regulator lead time constant (T_C). Typical Value 1.
         self.tc: Seconds = Seconds(1)
 
-        """
-        Excitation control system stabilizer time constant (T_F). Typical Value 1.
-        """
+        # Excitation control system stabilizer time constant (T_F). Typical Value 1.
         self.tf: Seconds = Seconds(1)
 
         """
@@ -70,33 +55,21 @@ class ExcIEEEST7B:
         """
         self.tg: Seconds = Seconds(1)
 
-        """
-        Feedback time constant (T_IA). Typical Value = 3.
-        """
+        # Feedback time constant (T_IA). Typical Value = 3.
         self.tia: Seconds = Seconds(3)
 
-        """
-        UEL input selector (UELin). Typical Value = noUELinput.
-        """
+        # UEL input selector (UELin). Typical Value = noUELinput.
         self.uelin: ExcST7BUELselectorKind = ExcST7BUELselectorKind.NO_UEL_INPUT
 
-        """
-        Maximum voltage reference signal (V_MAX). Typical Value = 1.1.
-        """
+        # Maximum voltage reference signal (V_MAX). Typical Value = 1.1.
         self.vmax: Union[float, int] = 1.1
 
-        """
-        Minimum voltage reference signal (V_MIN). Typical Value = 0.9.
-        """
+        # Minimum voltage reference signal (V_MIN). Typical Value = 0.9.
         self.vmin: Union[float, int] = 0.9
 
-        """
-        Maximum voltage regulator output (V_RMAX). Typical Value = 5.
-        """
+        # Maximum voltage regulator output (V_RMAX). Typical Value = 5.
         self.vrmax: Union[float, int] = 5
 
-        """
-        Minimum voltage regulator output (V_RMIN). Typical Value = -4.5.
-        """
+        # Minimum voltage regulator output (V_RMIN). Typical Value = -4.5.
         self.vrmin: Union[float, int] = -4.5
 

@@ -11,5 +11,5 @@ class Tender(IdentifiedObject):
         super().__init__()
         self.amount = Money()
         self.change = Money()
-        self.kind = TenderKind()
+        self.kind = TenderKind.CASH
         self.receipt = Receipt()

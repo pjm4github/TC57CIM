@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from enum import Enum
-
 from IEC61968.Assets.TAPPIStandardEditionKind import TAPPIStandardEditionKind
 from IEC61968.Assets.TAPPIStandardKind import TAPPIStandardKind
 

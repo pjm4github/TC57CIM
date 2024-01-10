@@ -10,37 +10,37 @@ class TapChangerTablePoint:
     calculated magnetizing susceptance = b(nominal) * (1 + b(from this class)/100). The b(nominal) is defined as the static magnetizing susceptance on the associated power transformer end or ends.  This model assumes the star impedance (pi model) form.
     """
     def __init__(self) -> None:
-        self.bOptional[PerCent] = PerCent()  # The magnetizing branch susceptance deviation in percent of nominal value
-        self.gOptional[PerCent] = PerCent()  # The magnetizing branch conductance deviation in percent of nominal value
-        self.rOptional[PerCent] = PerCent()  # The resistance deviation in percent of nominal value
-        self.ratiofloat = 1.0  # The voltage at the tap step divided by rated voltage of the transformer end
-        self.stepOptional[int] = 1  # The tap step
-        self.xOptional[PerCent] = PerCent()  # The series reactance deviation in percent of nominal value
+        self.b: Optional[PerCent] = PerCent()  # The magnetizing branch susceptance deviation in percent of nominal value
+        self.g: Optional[PerCent] = PerCent()  # The magnetizing branch conductance deviation in percent of nominal value
+        self.r: Optional[PerCent] = PerCent()  # The resistance deviation in percent of nominal value
+        self.ratio: float = 1.0  # The voltage at the tap step divided by rated voltage of the transformer end
+        self.step: Optional[int] = 1  # The tap step
+        self.x: Optional[PerCent] = PerCent()  # The series reactance deviation in percent of nominal value
 
-    def get_b(self) -> float:  # public PerCent getb()
+    def get_b(self) -> PerCent:  # public PerCent getb()
         return self.b
 
-    def set_b(self, new_valfloat) -> None:  # public void setb(PerCent newVal)
+    def set_b(self, new_val: float) -> None:  # public void setb(PerCent newVal)
         self.b = new_val
 
     """
     The magnetizing branch conductance deviation in percent of nominal value. The actual conductance is calculated as follows:
     calculated magnetizing conductance = g(nominal) * (1 + g(from this class)/100). The g(nominal) is defined as the static magnetizing conductance on the associated power transformer end or ends.  This model assumes the star impedance (pi model) form.
     """
-    def get_g(self) -> float:  # public PerCent getg()
+    def get_g(self) -> PerCent:  # public PerCent getg()
         return self.g
 
-    def set_g(self, new_valfloat) -> None:  # public void setg(PerCent newVal)
+    def set_g(self, new_val: float) -> None:  # public void setg(PerCent newVal)
         self.g = new_val
 
     """
     The resistance deviation in percent of nominal value. The actual reactance is calculated as follows:
     calculated resistance = r(nominal) * (1 + r(from this class)/100).  The r(nominal) is defined as the static resistance on the associated power transformer end or ends.  This model assumes the star impedance (pi model) form.
     """
-    def get_r(self) -> float:  # public PerCent getr()
+    def get_r(self) -> PerCent:  # public PerCent getr()
         return self.r
 
-    def set_r(self, new_valfloat) -> None:  # public void setr(PerCent newVal)
+    def set_r(self, new_val: float) -> None:  # public void setr(PerCent newVal)
         self.r = new_val
 
     """
@@ -50,7 +50,7 @@ class TapChangerTablePoint:
     def get_ratio(self) -> float:  # public float getratio()
         return self.ratio
 
-    def set_ratio(self, new_valfloat) -> None:  # public void setratio(float newVal)
+    def set_ratio(self, new_val: float) -> None:  # public void setratio(float newVal)
         self.ratio = new_val
 
     """
@@ -59,15 +59,15 @@ class TapChangerTablePoint:
     def get_step(self) -> Optional[int]:  # public int getstep()
         return self.step
 
-    def set_step(self, new_valOptional[int]) -> None:  # public void setstep(int newVal)
+    def set_step(self, new_val: Optional[int]) -> None:  # public void setstep(int newVal)
         self.step = new_val
 
     """
     The series reactance deviation in percent of nominal value. The actual reactance is calculated as follows:
     calculated reactance = x(nominal) * (1 + x(from this class)/100).  The x(nominal) is defined as the static series reactance on the associated power transformer end or ends.  This model assumes the star impedance (pi model) form.
     """
-    def get_x(self) -> float:  # public PerCent getx()
+    def get_x(self) -> PerCent:  # public PerCent getx()
         return self.x
 
-    def set_x(self, new_valfloat) -> None:  # public void setx(PerCent newVal)
+    def set_x(self, new_val: float) -> None:  # public void setx(PerCent newVal)
         self.x = new_val

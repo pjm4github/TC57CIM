@@ -13,7 +13,8 @@ from IEC61970.Base.Wires.TransformerStarImpedance import TransformerStarImpedanc
 class TransformerEnd:
     """
     A conducting connection point of a power transformer. It corresponds to a physical transformer winding terminal.
-    In earlier CIM versions, the TransformerWinding class served a similar purpose, but this class is more flexible because
+    In earlier CIM versions, the TransformerWinding class served a similar purpose, but this class is more flexible
+    because
     it associates to terminal but is not a specialization of ConductingEquipment.
     @author pmora
     @version 1.0
@@ -21,25 +22,38 @@ class TransformerEnd:
     """
 
     def __init__(self) -> None:
-        self.bmag_satOptional[BaseVoltage] = BaseVoltage()  # Core shunt magnetizing susceptance in the saturation region
-        self.end_numberOptional[int] = 0  # Number for this transformer end, corresponding to the end's order in the power transformer vector group or phase angle clock number.
-        # Highest voltage winding should be 1. Each end within a power transformer should have a unique subsequent end number.
+        self.bmag_sat: Optional[
+            BaseVoltage] = BaseVoltage()  # Core shunt magnetizing susceptance in the saturation region
+        self.end_number: Optional[
+            int] = 0  # Number for this transformer end, corresponding to the end's order in the power transformer
+        # vector group or phase angle clock number.
+        # Highest voltage winding should be 1. Each end within a power transformer should have a unique subsequent
+        # end number.
         # Note the transformer end number need not match the terminal sequence number.
-        self.groundedbool = False  # (for Yn and Zn connections) True if the neutral is solidly grounded
-        self.mag_base_ufloat = 0.0  # The reference voltage at which the magnetizing saturation measurements were made
-        self.mag_sat_fluxfloat = 0.0  # Core magnetizing saturation curve knee flux level
-        self.r_groundOptional[Resistance] = Resistance() # (for Yn and Zn connections) Resistance part of neutral impedance where 'grounded' is true
-        self.x_groundOptional[Reactance] = Reactance()  # (for Yn and Zn connections) Reactive part of neutral impedance where 'grounded' is true
-        self.phase_tap_changerOptional[PhaseTapChanger] = PhaseTapChanger()  # Phase tap changer associated with this transformer end
-        self.ratio_tap_changerOptional[RatioTapChanger] = RatioTapChanger()  # Ratio tap changer associated with this transformer end
-        self.star_impedanceOptional[TransformerStarImpedance] = TransformerStarImpedance()  # (accurate for 2- or 3-winding transformers only) Pi-model impedances of this transformer end.
-        # By convention, for a two winding transformer, the full values of the transformer should be entered on the high voltage end (endNumber=1).
-        self.terminalOptional[Terminal] = Terminal()  # The terminal associated with the transformer end
+        self.grounded: bool = False  # (for Yn and Zn connections) True if the neutral is solidly grounded
+        self.mag_base_u: float = 0.0  # The reference voltage at which the magnetizing saturation measurements were made
+        self.mag_sat_flux: float = 0.0  # Core magnetizing saturation curve knee flux level
+        self.r_ground: Optional[
+            Resistance] = Resistance()  # (for Yn and Zn connections) Resistance part of neutral impedance where
+        # 'grounded' is true
+        self.x_ground: Optional[
+            Reactance] = Reactance()  # (for Yn and Zn connections) Reactive part of neutral impedance where
+        # 'grounded' is true
+        self.phase_tap_changer: Optional[
+            PhaseTapChanger] = PhaseTapChanger()  # Phase tap changer associated with this transformer end
+        self.ratio_tap_changer: Optional[
+            RatioTapChanger] = RatioTapChanger()  # Ratio tap changer associated with this transformer end
+        self.star_impedance: Optional[
+            TransformerStarImpedance] = TransformerStarImpedance()  # (accurate for 2- or 3-winding transformers
+        # only) Pi-model impedances of this transformer end.
+        # By convention, for a two winding transformer, the full values of the transformer should be entered on the
+        # high voltage end (endNumber=1).
+        self.terminal: Optional[Terminal] = Terminal()  # The terminal associated with the transformer end
 
     def get_base_voltage(self) -> Optional[BaseVoltage]:
         return self.bmag_sat
 
-    def get_bmag_sat(self) -> float:
+    def get_bmag_sat(self) -> BaseVoltage:
         return self.bmag_sat
 
     def get_end_number(self) -> Optional[int]:
@@ -60,7 +74,7 @@ class TransformerEnd:
     def get_ratio_tap_changer(self) -> Optional[RatioTapChanger]:
         return self.ratio_tap_changer
 
-    def get_r_ground(self) -> float:
+    def get_r_ground(self) -> Resistance:
         return self.r_ground
 
     def get_star_impedance(self) -> Optional[object]:
@@ -69,8 +83,8 @@ class TransformerEnd:
     def get_terminal(self) -> Optional[object]:
         return self.terminal
 
-    def get_x_ground(self) -> float:
-        return self.x_ground
+    def get_x_ground(self):
+        return self.x_ground.value
 
     def set_base_voltage(self, new_val: BaseVoltage) -> None:
         self.bmag_sat = new_val

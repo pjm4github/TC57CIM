@@ -1,4 +1,5 @@
 from IEC61968.Assets.AssetInfo import AssetInfo
+from IEC61968.InfIEC61968.InfWiresExt.ShuntCompensatorControl import ShuntCompensatorControl
 from IEC61970.Base.Domain.ApparentPower import ApparentPower
 from IEC61970.Base.Domain.CurrentFlow import CurrentFlow
 from IEC61970.Base.Domain.ReactivePower import ReactivePower

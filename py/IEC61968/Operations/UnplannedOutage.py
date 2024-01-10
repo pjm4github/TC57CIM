@@ -10,6 +10,6 @@ class UnplannedOutage(Outage):
     def __init__(self):
         super().__init__()
         self.cause = ""
-        self.cause_kind = OutageCauseKind()
+        self.cause_kind = OutageCauseKind.LIGHTING_STRIKE
         self.reported_start_time = DateTime()
         self.trouble_ticket = TroubleTicket()

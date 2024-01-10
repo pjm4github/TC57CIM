@@ -15,19 +15,19 @@ class CurrentTransformerInfo(AssetInfo):
 
     def __init__(self) -> None:
         super().__init__()
-        self.accuracy_classOptional[str] = ""  # CT accuracy classification
-        self.accuracy_limitOptional[CurrentFlow] = CurrentFlow()  # Accuracy limit
-        self.core_countOptional[int] = 0  # Number of cores
-        self.ct_classOptional[str] = ""
-        self.knee_point_currentOptional[CurrentFlow] = CurrentFlow()  # Maximum primary current where the CT still displays linear characteristics
-        self.knee_point_voltageOptional[Voltage] = Voltage()  # Maximum voltage across the secondary terminals where the CT still displays linear characteristics
-        self.max_ratioOptional[Ratio] = Ratio()  # Maximum ratio between the primary and secondary current
-        self.nominal_ratioOptional[Ratio] = Ratio()  # Nominal ratio between the primary and secondary current; i.e. 100:5
-        self.primary_fls_ratingOptional[CurrentFlow] =  CurrentFlow()  # Full load secondary (FLS) rating for primary winding
-        self.primary_ratioOptional[Ratio] = Ratio()  # Ratio for the primary winding tap changer
-        self.rated_currentOptional[CurrentFlow] = CurrentFlow()  # Rated current on the primary side
-        self.secondary_fls_ratingOptional[CurrentFlow] = CurrentFlow()  # Full load secondary (FLS) rating for secondary winding
-        self.secondary_ratioOptional[Ratio] = Ratio()  # Ratio for the secondary winding tap changer
-        self.tertiary_fls_ratingOptional[CurrentFlow] =  CurrentFlow()  # Full load secondary (FLS) rating for tertiary winding
-        self.tertiary_ratioOptional[Ratio] = Ratio()  # Ratio for the tertiary winding tap changer
-        self.usageOptional[str] = ""  # Usage: e.g. metering, protection, etc.
+        self.accuracy_class: Optional[str] = ""  # CT accuracy classification
+        self.accuracy_limit: Optional[CurrentFlow] = CurrentFlow()  # Accuracy limit
+        self.core_count: Optional[int] = 0  # Number of cores
+        self.ct_class: Optional[str] = ""
+        self.knee_point_current: Optional[CurrentFlow] = CurrentFlow()  # Maximum primary current where the CT still displays linear characteristics
+        self.knee_point_voltage: Optional[Voltage] = Voltage()  # Maximum voltage across the secondary terminals where the CT still displays linear characteristics
+        self.max_ratio: Optional[Ratio] = Ratio()  # Maximum ratio between the primary and secondary current
+        self.nominal_ratio: Optional[Ratio] = Ratio()  # Nominal ratio between the primary and secondary current; i.e. 100:5
+        self.primary_fls_rating: Optional[CurrentFlow] = CurrentFlow()  # Full load secondary (FLS) rating for primary winding
+        self.primary_ratio: Optional[Ratio] = Ratio()  # Ratio for the primary winding tap changer
+        self.rated_current: Optional[CurrentFlow] = CurrentFlow()  # Rated current on the primary side
+        self.secondary_fls_rating: Optional[CurrentFlow] = CurrentFlow()  # Full load secondary (FLS) rating for secondary winding
+        self.secondary_ratio: Optional[Ratio] = Ratio()  # Ratio for the secondary winding tap changer
+        self.tertiary_fls_rating: Optional[CurrentFlow] = CurrentFlow()  # Full load secondary (FLS) rating for tertiary winding
+        self.tertiary_ratio: Optional[Ratio] = Ratio()  # Ratio for the tertiary winding tap changer
+        self.usage: Optional[str] = ""  # Usage: e.g. metering, protection, etc.

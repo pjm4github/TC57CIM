@@ -17,11 +17,12 @@ class PowerQualityPricing(Document):
         self.emergency_low_volt_limit = Voltage()  # Emergency low voltage limit.
         self.normal_high_volt_limit = Voltage()  # Normal high voltage limit.
         self.normal_low_volt_limit = Voltage()  # Normal low voltage limit.
-        self.power_factor_minfloat = 1.0   # Threshold minimum power factor for this PricingStructure.
-                                                        # specified in instances where a special charge is levied
-                                                        # if the actual power factor for a Service falls below
-                                                        # the value specified here.
-        self.value_uninterrupted_service_energy = CostPerEnergyUnit()  # Value of uninterrupted service (Cost per energy).
+        self.power_factor_min: float = 1.0  # Threshold minimum power factor for this PricingStructure.
+        # specified in instances where a special charge is levied
+        # if the actual power factor for a Service falls below
+        # the value specified here.
+        self.value_uninterrupted_service_energy = CostPerEnergyUnit()  # Value of uninterrupted service (Cost per
+        # energy).
         self.value_uninterrupted_service_p = 1.0  # Value of uninterrupted service (Cost per active power).
         self.volt_imbalance_viol_cost = 1.0  # Voltage imbalance violation cost (Cost per unit Voltage).
         self.volt_limit_viol_cost = 1.0  # Voltage limit violation cost (Cost per unit Voltage).

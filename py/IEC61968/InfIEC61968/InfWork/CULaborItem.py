@@ -18,7 +18,7 @@ class CULaborItem(WorkIdentifiedObject):
 
     def __init__(self) -> None:
         super().__init__()
-        self.activity_code: Optional[str] = str()  # Activity code identifies a specific and distinguishable unit of work.
+        self.activity_code: Optional[str] = str()  # Activity code1 identifies a specific and distinguishable unit of work.
         self.labor_duration: Optional[Hours] = Hours()  # Estimated time to perform work.
         self.labor_rate: Optional[CostRate] = CostRate()  # The labor rate applied for work.
         self.status: Optional[Status] = Status()

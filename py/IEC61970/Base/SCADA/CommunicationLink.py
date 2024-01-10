@@ -10,6 +10,7 @@ from IEC61970.Base.SCADA.RemoteUnit import RemoteUnit
 from IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
 from IEC61970.Base.ICCPConfiguration.BilateralExchangeActor import BilateralExchangeActor
 
+
 class CommunicationLink(PowerSystemResource):
     """The connection to remote units is through one or more communication links.
     Reduntant links may exist. The CommunicationLink class inherit
@@ -20,7 +21,6 @@ class CommunicationLink(PowerSystemResource):
 
     def __init__(self):
         super().__init__()
-        self.remote_units = [RemoteUnit()]    # RTUs may be attached to communication links.
+        self.remote_units = [RemoteUnit()]  # RTUs may be attached to communication links.
 
         self.bilateral_exchange_actor = BilateralExchangeActor()
-

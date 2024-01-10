@@ -23,7 +23,7 @@ class NameType:
     """
 
     def __init__(self) -> None:
-        self.descriptionOptional[str] = ""  # Description of the name type
-        self.nameOptional[str] = ""  # Name of the name type
-        self.name_type_authorityOptional[NameTypeAuthority] = NameTypeAuthority()  # Authority responsible for managing names of this type
+        self.description: Optional[str] = ""  # Description of the name type
+        self.name: Optional[str] = ""  # Name of the name type
+        self.name_type_authority: Optional[NameTypeAuthority] = NameTypeAuthority()  # Authority responsible for managing names of this type
 

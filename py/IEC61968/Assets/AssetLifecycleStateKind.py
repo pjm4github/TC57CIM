@@ -3,6 +3,7 @@
 
 from enum import Enum
 
+
 class AssetLifecycleStateKind(Enum):
     MANUFACTURED = 1
     PURCHASED = 2

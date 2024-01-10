@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Wed Dec 27 12:50:20 2023
-from typing import List, Dict, Any, Union
-
 class InadvertentAccount:
     """
     An account for tracking inadvertent interchange versus time for each control area. 

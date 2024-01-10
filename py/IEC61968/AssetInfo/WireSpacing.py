@@ -24,7 +24,7 @@ class WireSpacing(IdentifiedObject):
         self.is_cable = True
         self.phase_wire_count = 0
         self.phase_wire_spacing = Length()
-        self.usage = WireUsageKind()
+        self.usage = WireUsageKind.TRANSMISSION
         self.wire_positions = WirePosition()
         self.structures = Structure()
         self.duct_bank = DuctBank()

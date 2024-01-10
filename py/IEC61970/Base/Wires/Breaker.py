@@ -16,11 +16,10 @@ class Breaker(ProtectedSwitch):
 
     def __init__(self) -> None:
         super().__init__()
-        self.in_transit_time:timedelta = timedelta(0)
+        self.in_transit_time: timedelta = timedelta(0)
 
     def get_in_transit_time(self) -> timedelta:
         return self.in_transit_time
 
     def set_in_transit_time(self, new_val: timedelta) -> None:
         self.in_transit_time = new_val
-

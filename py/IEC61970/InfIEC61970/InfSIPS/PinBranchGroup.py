@@ -7,7 +7,6 @@
 # Original author: sveinols
 # 
 #######################################################
-from IEC61970.InfIEC61970.InfSIPS.PinBranchGroupKind import PinBranchGroupKind
 from IEC61970.Base.OperationalLimits.BranchGroup import BranchGroup
 from IEC61970.InfIEC61970.InfSIPS.GateInputPin import GateInputPin
 

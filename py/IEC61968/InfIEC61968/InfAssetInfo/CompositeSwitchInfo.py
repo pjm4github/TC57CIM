@@ -16,48 +16,48 @@ class CompositeSwitchInfo(AssetInfo):
 
     def __init__(self) -> None:
         super().__init__()
-        self.gangedbool = False
+        self.ganged: bool = False
         """
         True if multi-phase switch controls all phases concurrently.
         """
 
-        self.init_op_modeOptional[str] = ""
+        self.init_op_mode: Optional[str] = ""
         """
         Initial operating mode, with the following values: Automatic, Manual.
         """
 
-        self.interrupting_ratingOptional[CurrentFlow] = CurrentFlow()
+        self.interrupting_rating: Optional[CurrentFlow] = CurrentFlow()
         """
         Breaking capacity, or short circuit rating, is the maximum rated current
         which the device can safely interrupt at the rated voltage.
         """
 
-        self.kindOptional[CompositeSwitchKind] = CompositeSwitchKind.UG_MULTI_SWITCH
+        self.kind: Optional[CompositeSwitchKind] = CompositeSwitchKind.UG_MULTI_SWITCH
         """
         Kind of composite switch.
         """
 
-        self.phase_codeOptional[PhaseCode] = PhaseCode.A
+        self.phase_code: Optional[PhaseCode] = PhaseCode.A
         """
         Phases carried, if applicable.
         """
 
-        self.phase_countOptional[int] = 0
+        self.phase_count: Optional[int] = 0
         """
         Supported number of phases, typically 0, 1 or 3.
         """
 
-        self.rated_voltageOptional[Voltage] = Voltage()
+        self.rated_voltage: Optional[Voltage] = Voltage()
         """
         Rated voltage.
         """
 
-        self.remotebool = True
+        self.remote: bool = True
         """
         True if device is capable of being operated by remote control.
         """
 
-        self.switch_state_countOptional[int] = 0
+        self.switch_state_count: Optional[int] = 0
         """
         Number of switch states represented by the composite switch.
         """

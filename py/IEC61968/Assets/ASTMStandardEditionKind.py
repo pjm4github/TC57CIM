@@ -2,6 +2,7 @@
 # Local import
 from enum import Enum
 
+
 class ASTMStandardEditionKind(Enum):
     _00_2005 = 1
     _00_2005E1 = 2

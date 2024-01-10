@@ -9,4 +9,4 @@ class UKMinistryOfDefenceStandard:
     
     def __init__(self):
         self.standard_edition = UKMinistryOfDefenceStandardEditionKind.NONE
-        self.standard_number = UKMinistryOfDefenceStandardKind._05_50_part_65
+        self.standard_number = UKMinistryOfDefenceStandardKind.m_05_50_part_65

@@ -16,19 +16,19 @@ class ExcIeeeAc4a(ExcitationSystemDynamics):
     
     Reference: IEEE Standard 421.5-2005 Section 6.4.
     
-    @param author: pcha006
-    @param version: 1.0
-    @param created: 29-Dec-2023 11:24:18 PM
+    author: pcha006
+    version: 1.0
+    created: 29-Dec-2023 11:24:18 PM
     """
 
     def __init__(self) -> None:
         super().__init__()
-        self.ka: float = 0.0  # Voltage regulator gain (K_A). Typical Value = 200.
+        self.ka: float = 200.  # Voltage regulator gain (K_A). Typical Value = 200.
         self.kc: float = 0.0  # Rectifier loading factor proportional to commutating reactance (K_C). Typical Value = 0.
-        self.ta: Seconds = Seconds() # Voltage regulator time constant (T_A). Typical Value = 0.015.
-        self.tb: Seconds = Seconds() # Voltage regulator time constant (T_B). Typical Value = 10.
-        self.tc: Seconds = Seconds() # Voltage regulator time constant (T_C). Typical Value = 1.
-        self.vimax: float = 0.0  # Maximum voltage regulator input limit (V_IMAX). Typical Value = 10.
-        self.vimin: float = 0.0  # Minimum voltage regulator input limit (V_IMIN). Typical Value = -10.
-        self.vrmax: float = 0.0  # Maximum voltage regulator output (V_RMAX). Typical Value = 5.64.
-        self.vrmin: float = 0.0  # Minimum voltage regulator output (V_RMIN). Typical Value = -4.53.
+        self.ta: Seconds = Seconds(0.015)  # Voltage regulator time constant (T_A). Typical Value = 0.015.
+        self.tb: Seconds = Seconds(10)  # Voltage regulator time constant (T_B). Typical Value = 10.
+        self.tc: Seconds = Seconds(1)  # Voltage regulator time constant (T_C). Typical Value = 1.
+        self.vimax: float = 10.0  # Maximum voltage regulator input limit (V_IMAX). Typical Value = 10.
+        self.vimin: float = -10.0  # Minimum voltage regulator input limit (V_IMIN). Typical Value = -10.
+        self.vrmax: float = 5.64  # Maximum voltage regulator output (V_RMAX). Typical Value = 5.64.
+        self.vrmin: float = -4.53  # Minimum voltage regulator output (V_RMIN). Typical Value = -4.53.

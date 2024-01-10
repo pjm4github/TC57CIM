@@ -4,6 +4,7 @@ from typing import Optional
 
 from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 from IEC62325.InfIEC62325.InfFinancial.TransmissionProvider import TransmissionProvider
+from IEC62325.MarketOperations.MarketSystem.ExternalInputs.TransmissionPath import TransmissionPath
 
 
 class TransmissionProduct(IdentifiedObject):
@@ -18,12 +19,12 @@ class TransmissionProduct(IdentifiedObject):
     """
     def __init__(self) -> None:
         super().__init__()
-        self.transmission_product_typeOptional[str] = ""
+        self.transmission_product_type: Optional[str] = ""
         """
         A TransmissionProvider offers a TransmissionProduct.
         """
-        self.transmission_providerOptional[TransmissionProvider] = TransmissionProvider()
+        self.transmission_provider: Optional[TransmissionProvider] = TransmissionProvider()
         """
         A transmission product is located on a transmission path.
         """
-        self.location_forOptional[TransmissionPath] = TransmissionPath()
+        self.location_for: Optional[TransmissionPath] = TransmissionPath()

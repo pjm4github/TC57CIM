@@ -3,6 +3,7 @@ from IEC62325.MarketOperations.MarketSystem.ExternalInputs.EnergyProfile import 
 from IEC62325.MarketOperations.ParticipantInterfaces import Bid
 from typing import Optional
 
+
 class TransactionBid(Bid):
     """
     Bilateral or scheduled transactions for energy and ancillary services 
@@ -14,9 +15,8 @@ class TransactionBid(Bid):
         """
         Constructor for TransactionBid class.
         """
-        self.demand_transactionbool = False  # Set true if this is a demand transaction.
-        self.dispatchablebool = False  # Set true if this is a dispatchable transaction.
-        self.pay_congestionbool = False  # Set true if this is a willing to pay transaction. This flag is used to 
-                                                    # determine whether a schedule is willing-to-pay-congestion or not. 
-        self.energy_profilesOptional[EnergyProfile] = EnergyProfile()
-
+        self.demand_transaction: bool = False  # Set true if this is a demand transaction.
+        self.dispatchable: bool = False  # Set true if this is a dispatchable transaction.
+        self.pay_congestion: bool = False  # Set true if this is a willing to pay transaction. This flag is used to
+        # determine whether a schedule is willing-to-pay-congestion or not.
+        self.energy_profiles: Optional[EnergyProfile] = EnergyProfile()

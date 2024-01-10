@@ -3,6 +3,7 @@ from IEC61968.Common.Status import Status
 from IEC61968.InfIEC61968.InfERPSupport.ErpInvoiceLineItem import ErpInvoiceLineItem
 from IEC61968.InfIEC61968.InfERPSupport.ErpQuote import ErpQuote
 from IEC61968.InfIEC61968.InfERPSupport.ErpReqLineItem import ErpReqLineItem
+from IEC61968.InfIEC61968.InfWork.Design import Design
 
 
 class ErpQuoteLineItem:

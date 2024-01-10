@@ -8,6 +8,7 @@ class PerLengthPhaseImpedance(PerLengthImpedance):
     def __init__(self) -> None:
         super().__init__()
         self._phase_impedance_data = PhaseImpedanceData()
+        self._conductor_count = 0
 
     def get_conductor_count(self) -> int:
         return self._conductor_count

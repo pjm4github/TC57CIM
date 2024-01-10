@@ -1,4 +1,5 @@
 from IEC61970.InfIEC61970.InfPart303.ModelOperations.ModelOperationArg import ModelOperationArg
+from IEC61970.Part303.GenericDataset.InstanceSet import InstanceSet
 
 
 class DatasetArg(ModelOperationArg):

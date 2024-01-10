@@ -3,6 +3,7 @@ from IEC61968.Common.Status import Status
 from IEC61968.InfIEC61968.InfERPSupport.ErpIdentifiedObject import ErpIdentifiedObject
 from IEC61968.InfIEC61968.InfERPSupport.ErpPOLineItem import ErpPOLineItem
 from IEC61968.InfIEC61968.InfERPSupport.ErpRequisition import ErpRequisition
+from IEC61970.Base.Domain.Date import Date
 from IEC61970.Base.Domain.Money import Money
 
 

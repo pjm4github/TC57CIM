@@ -9,6 +9,6 @@ class AnnotatedProjectDependency(IdentifiedObject):
     # constructor
     def __init__(self):
         super().__init__()
-        self.dependency_type = DependencyType()  # Typical value for dependency type
+        self.dependency_type = DependencyType.REQUIRED  # Typical value for dependency type
         self.dependent_on_stage = NetworkModelProjectStage()  # Typical value for dependent on stage
         self.depending_stage = NetworkModelProjectStage()  # Typical value for depending stage

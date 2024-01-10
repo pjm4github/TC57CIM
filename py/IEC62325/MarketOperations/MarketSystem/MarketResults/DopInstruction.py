@@ -1,21 +1,18 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 29 11:15:55 2023
-from datetime import datetime
-from typing import Optional
-
 from IEC61970.Base.Domain.DateTime import DateTime
 
 
 class DopInstruction:
-    '''
+    """
     Provides the necessary information (on a resource basis) to capture the
     Dispatch Operating Point (DOP) results on a Dispatch interval. This
     information is only relevant to the RT interval market.
-    '''
+    """
 
     def __init__(self) -> None:
-        '''
+        """
         Dispatched Operating Point (MW)
-        '''
+        """
         self.mw_dop: float = 0.0
         
         '''

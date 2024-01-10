@@ -1,7 +1,7 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:38:50 2023
-from datetime import datetime
-from IEC61970.Base.Meas.Control import  Control
+from IEC61970.Base.Meas.Control import Control
 from IEC61970.Base.Meas.AccumulatorValue import AccumulatorValue
+
 
 class AccumulatorReset(Control):
 

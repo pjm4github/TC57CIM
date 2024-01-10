@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 21:42:16 2023
-from typing import Optional
-
 from IEC61968.Common.Status import Status
 from IEC61968.InfIEC61968.InfERPSupport.ErpPayable import ErpPayable
 from IEC61968.InfIEC61968.InfWork.WorkIdentifiedObject import WorkIdentifiedObject
@@ -17,7 +15,7 @@ class ContractorItem(WorkIdentifiedObject):
         super().__init__()
         self.activity_code: str = ""
         """
-        Activity code identifies a specific and distinguishable unit of work.
+        Activity code1 identifies a specific and distinguishable unit of work.
         """
 
         self.bid_amount: Money = Money()

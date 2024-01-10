@@ -6,7 +6,8 @@
 # Created on:      19-Dec-2023 4:08:33 PM
 # 
 #######################################################
-from TC57CIM.IEC61968.InfIEC61968.InfERPSupport.ErpDocument import ErpDocument
+from IEC61968.InfIEC61968.InfERPSupport.ErpDocument import ErpDocument
+
 
 class ErpChartOfAccounts(ErpDocument):
     """Accounting structure of a business. Each account represents a financial aspect

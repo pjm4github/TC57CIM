@@ -1,5 +1,5 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from typing import Any
+
 
 from IEC61970.Base.Domain.Length import Length
 from IEC61970.Base.Domain.Reactance import Reactance

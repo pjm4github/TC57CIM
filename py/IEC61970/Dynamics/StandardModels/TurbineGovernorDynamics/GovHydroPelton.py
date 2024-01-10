@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sun Dec 31 17:08:39 2023
-from typing import Optional
-
 from IEC61970.Base.Domain.Area import Area
 from IEC61970.Base.Domain.Frequency import Frequency
 from IEC61970.Base.Domain.Length import Length
@@ -64,13 +62,13 @@ class GovHydroPelton(TurbineGovernorDynamics):
         # true = enable of simplified Pelton model simulation
         # false = enable of complete Pelton model simulation (non linear gain).
         # Typical Value = false.
-        self.simplified_pelton: bool  = False
+        self.simplified_pelton: bool = False
 
         # Static compensating characteristic (Cflag).
         # true = enable of static compensating characteristic
         # false = inhibit of static compensating characteristic.
         # Typical Value = false.
-        self.static_compensating: bool  = False
+        self.static_compensating: bool = False
 
         # Derivative gain (accelerometer time constant) (Ta).  Typical Value = 3.
         self.ta: Seconds = Seconds(1.0)
@@ -112,7 +110,7 @@ class GovHydroPelton(TurbineGovernorDynamics):
         # true = enable of water tunnel and surge chamber simulation
         # false = inhibit of water tunnel and surge chamber simulation.
         # Typical Value = false.
-        self.water_tunnel_surge_chamber_simulation: bool  = False
+        self.water_tunnel_surge_chamber_simulation: bool = False
 
         # Head of upper water level with respect to the level of penstock (Zsfc).  Unit = m. Typical Value = 25.
 

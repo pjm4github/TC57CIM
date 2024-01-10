@@ -52,7 +52,7 @@ class TroubleTicket(Document):
 
         self.trouble_code = ""
         """
-        Trouble code (e.g., power down, flickering lights, partial power, etc).
+        Trouble code1 (e.g., power down, flickering lights, partial power, etc).
         """
 
         self.incident_hazard = IncidentHazard()

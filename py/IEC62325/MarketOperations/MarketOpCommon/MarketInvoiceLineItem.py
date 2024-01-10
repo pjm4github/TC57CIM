@@ -12,9 +12,9 @@ class MarketInvoiceLineItem:
     """
     def __init__(self):
         self.bill_period = DateTimeInterval()  # Bill period for the line item.
-        self.gl_account = ""  # General Ledger account code, shall be a valid combination.
+        self.gl_account = ""  # General Ledger account code1, shall be a valid combination.
         self.gl_date_time = DateTime()  # Date and time line item will be posted to the General Ledger.
-        self.kind = MktInvoiceLineItemKind()  # Kind of line item.
+        self.kind = MktInvoiceLineItemKind.RECALCULATION  # Kind of line item.
         self.line_amount = 0.0  # Amount due for this line item.
         self.line_number = ""  # Line item number on invoice statement.
         self.line_version = ""  # Version number of the bill run.

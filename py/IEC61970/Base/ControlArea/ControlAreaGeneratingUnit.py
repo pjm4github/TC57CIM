@@ -17,7 +17,7 @@ class ControlAreaGeneratingUnit(IdentifiedObject):
     """
     def __init__(self) -> None:
         super().__init__()
-        self.generating_unitOptional[GeneratingUnit] = GeneratingUnit()  # The generating unit specified for this control area. Note that a control area should include a GeneratingUnit only once.
-        self.alt_generating_unit_measOptional[AltGeneratingUnitMeas] = AltGeneratingUnitMeas()  # The link to prioritized measurements for this GeneratingUnit.
+        self.generating_unit: Optional[GeneratingUnit] = GeneratingUnit()  # The generating unit specified for this control area. Note that a control area should include a GeneratingUnit only once.
+        self.alt_generating_unit_meas: Optional[AltGeneratingUnitMeas] = AltGeneratingUnitMeas()  # The link to prioritized measurements for this GeneratingUnit.
 
 

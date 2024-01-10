@@ -10,8 +10,8 @@ class DiagramObjectPoint:
     have to be in the corner of a diagram.
     """
     def __init__(self) -> None:
-        self.sequence_numberOptional[int] = 0  # The sequence position of the point
-        self.x_positionfloat = 0.0  # The X coordinate of this point
-        self.y_positionfloat = 0.0  # The Y coordinate of this point
-        self.z_positionfloat = 0.0  # The Z coordinate of this point
-        self.diagram_object_glue_pointOptional[DiagramObjectGluePoint] = DiagramObjectGluePoint()  # The 'glue' point to which this point is associated
+        self.sequence_number: Optional[int] = 0  # The sequence position of the point
+        self.x_position: float = 0.0  # The X coordinate of this point
+        self.y_position: float = 0.0  # The Y coordinate of this point
+        self.z_position: float = 0.0  # The Z coordinate of this point
+        self.diagram_object_glue_point: Optional[DiagramObjectGluePoint] = DiagramObjectGluePoint()  # The 'glue' point to which this point is associated

@@ -8,5 +8,5 @@ class TCPAccessPoint(IPAccessPoint):
 
     def __init__(self) -> None:
         super().__init__()
-        self.keep_alive_timeOptional[int] = 0
-        self.portOptional[int] = 0
+        self.keep_alive_time: Optional[int] = 0
+        self.port: Optional[int] = 0

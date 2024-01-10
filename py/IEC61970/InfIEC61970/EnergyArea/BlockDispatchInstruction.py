@@ -11,6 +11,7 @@ from IEC61970.InfIEC61970.EnergyArea.EnergyGroup import EnergyGroup
 from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 from IEC61970.InfIEC61970.EnergyArea.BlockDispatchOrder import BlockDispatchOrder
 
+
 class BlockDispatchInstruction(IdentifiedObject):
 
     def __init__(self):

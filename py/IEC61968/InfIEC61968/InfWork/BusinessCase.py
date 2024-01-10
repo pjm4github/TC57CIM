@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 21:42:16 2023
-from typing import Optional
-
 from IEC61968.InfIEC61968.InfWork.Project import Project
 from IEC61968.InfIEC61968.InfWork.WorkDocument import WorkDocument
 from IEC61968.Work.Work import Work

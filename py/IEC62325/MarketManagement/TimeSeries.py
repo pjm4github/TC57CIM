@@ -61,6 +61,7 @@
 # #endif // !defined(EA_4589CED0_A0EA_45ac_B312_13137BD0AD35__INCLUDED_)
 #
 from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+from IEC62325.MarketManagement.MarketEvaluationPoint import MarketEvaluationPoint
 from IEC62325.MarketManagement.Reason import Reason
 from IEC62325.MarketManagement.MarketDocument import MarketDocument
 
@@ -72,15 +73,17 @@ from IEC62325.MarketCommon.EnvironmentalMonitoringStation import EnvironmentalMo
 from IEC62325.MarketCommon.MarketParticipant import MarketParticipant
 
 
-
 class TimeSeries(IdentifiedObject):
     def __init__(self):
         super().__init__()
         self.business_type = ""  # The identification of the nature of the time series.
-        self.cancelled_ts = ""  # An indicator stating that the TimeSeries, identified by the mRID, is cancelled as well as all the values sent in a previous version of the TimeSeries in a previous document.
+        self.cancelled_ts = ""  # An indicator stating that the TimeSeries, identified by the mRID, is cancelled as
+        # well as all the values sent in a previous version of the TimeSeries in a previous document.
         self.curve_type = ""  # The coded representation of the type of curve being described.
-        self.object_aggregation = ""  # Identification of the object that is the common denominator used to aggregate a time series.
-        self.product = ""  # The type of the product such as Power, energy, reactive power, transport capacity that is the subject of the time series.
+        self.object_aggregation = ""  # Identification of the object that is the common denominator used to aggregate
+        # a time series.
+        self.product = ""  # The type of the product such as Power, energy, reactive power, transport capacity that
+        # is the subject of the time series.
         self.version = ""  # Version of the time series.
         self.reason = Reason()  # Reason
         self.market_evaluation_point = MarketEvaluationPoint()  # MarketEvaluationPoint

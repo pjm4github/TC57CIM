@@ -13,14 +13,7 @@ class SynchronousMachineModelKind(Enum):
     SUBTRANSIENT_TYPE_J = 3  # WECC Type J variant of subtransient synchronous machine model.
 
     SUBTRANSIENT_SIMPLIFIED = 4  # Simplified version of subtransient synchronous machine model where magnetic
-                                 # coupling between the direct and quadrature axes is ignored.
+    # coupling between the direct and quadrature axes is ignored.
 
     SUBTRANSIENT_SIMPLIFIED_DIRECT_AXIS = 5  # Simplified version of a subtransient synchronous machine model
-                                             # with no damper circuit on d-axis.
-
-
-
-
-
-
-
+    # with no damper circuit on d-axis.

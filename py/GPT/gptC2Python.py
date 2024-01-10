@@ -1,11 +1,8 @@
-import re
-import codecs
 import os
 import time
 from openai import OpenAI
 
 # Replace 'YOUR_API_KEY' (as an ENV variable) with your actual GPT-3 API key
-
 
 import urllib.parse
 import re
@@ -13,37 +10,35 @@ import re
 
 def remove_multiline_comments(code):
     """
-    Removes all multiline comments from the given code.
+    Removes all multiline comments from the given code1.
     all block comments (enclosed by /* and */) from a C++ file are removed
     """
     cleaned_code = re.sub(r'/\*.*?\*/', '', code, flags=re.DOTALL)
 
-    # Remove all multiline comments from the code.
+    # Remove all multiline comments from the code1.
     return cleaned_code
 
 
 def remove_single_line_comments(input_code):
     """
-    Removes all block comments from Java code.
+    Removes all block comments from Java code1.
     block comments are start with //
-    Args:
-      code: The Java code to remove comments from.
+    @arg: input_code: The Java code1 to remove comments from.
 
     Returns:
-      The Java code with all comments removed.
+      The java code1 with all comments removed.
     """
 
     # Use regular expression to remove // comments
     cleaned_code = re.sub(r'//.*', '', input_code)
 
-    # Remove all block comments from the code.
+    # Remove all block comments from the code1.
     return cleaned_code
 
 
-class GptCodeConverter():
-
+class GptCodeConverter:
     MODEL_CHOICE_1 = "gpt-3.5-turbo-1106"
-    MODEL_CHOICE_2 = "code-davinci-002",
+    MODEL_CHOICE_2 = "code1-davinci-002",
     MODEL_CHOICE_3 = "gpt-3.5-turbo",
     # max_tokens=500,  # Adjust as needed
     # temperature=0.7  # Adjust the temperature for creativity
@@ -52,20 +47,23 @@ class GptCodeConverter():
 
     def __init__(self, language="Java", model=MODEL_CHOICE_1):
         self.client = OpenAI(
-                                # defaults to os.environ.get("OPENAI_API_KEY")
-                                # api_key=api_key,
-                            )
+            # defaults to os.environ.get("OPENAI_API_KEY")
+            # api_key=api_key,
+        )
         self.model_name = model
         self.language = language
-        self.setup_instructions = f"Given this {language} code class convert it to python using snake_case methods names. Keep the class names in CamelCase."
-        self.add_function_instructions = f"Given this {language} function function convert it to python using snake_case function names."
-        self.add_class_instructions = f"Given this class convert that code to python using snake_case method names."
+        self.setup_instructions = (f"Given this {language} code1 class convert it to python using snake_case methods "
+                                   f"names. Keep the class names in CamelCase.")
+        self.add_function_instructions = (f"Given this {language} function function convert it to python using "
+                                          f"snake_case function names.")
+        self.add_class_instructions = f"Given this class convert that code1 to python using snake_case method names."
+        self.converted_code = ""
 
     def convert_code(self, code_snippet, instructions):
         """
-        Convert the given code snippet using GPT-3.
+        Convert the given code1 snippet using GPT-3.
         """
-        # Call the GPT-3 API to generate the converted code
+        # Call the GPT-3 API to generate the converted code1
         try:
             chat_completion = self.client.chat.completions.create(
                 messages=[
@@ -82,7 +80,7 @@ class GptCodeConverter():
 
             )
 
-            # Extract and return the generated code from the response
+            # Extract and return the generated code1 from the response
 
             converted_code = chat_completion.choices[0].message.content
         except Exception as e:
@@ -120,7 +118,7 @@ class CCodeParser:
             return_type = c["Return"] + " " if c["Return"] else ""
             s = f'{return_type}{c["Class"]}::{c["Method"]}'
             if full:
-                s +=f'({c["Arguments"]})\n{{{c["Body"]}}}\n'
+                s += f'({c["Arguments"]})\n{{{c["Body"]}}}\n'
             print(s)
 
     def dump_functions(self, full=False):
@@ -133,15 +131,15 @@ class CCodeParser:
 
     def snarf_classes(self):
         print("SCANNING for CLASSES...")
-        test = self.c_code
 
         pattern = r"""((?P<return_type>\w+)\s+)*(?P<class_name>\w+)::(?P<method_name>\w+)\((?P<arguments>[^)]*)\)\s*{"""
         max_len = len(self.c_code)
-        # Find all matches of the pattern in the source code
+        # Find all matches of the pattern in the source code1
         matches = re.finditer(pattern, self.c_code)
         for m in matches:
             span = m.span()
-            # Now walk forward in the code and match the braces until the braces are balanced to find the end of the method body
+            # Now walk forward in the code1 and match the braces until the braces are balanced to find the end of the
+            # method body
             # test_code = self.c_code[span[2]:]
             brace_count = 1  # We start with 1 since that's already included in the span
             method_end = span[1]
@@ -149,7 +147,9 @@ class CCodeParser:
             # CLASS SCANNER
             while brace_count:
                 if method_end >= max_len:
-                    print(f"something went wrong with the class scanner, skipping {m.group('class_name')}::{m.group('method_name')},")
+                    print(
+                        f"something went wrong with the class scanner, skipping {m.group('class_name')}::"
+                        f"{m.group('method_name')},")
                     break
                 test_char = self.c_code[method_end]
                 # need to qualify the characters to make sure that they are not escaped
@@ -161,20 +161,22 @@ class CCodeParser:
             if method_end >= max_len:
                 continue
 
-            method_body = self.c_code[span[1]: method_end-1]  # does not include the opening and closing braces
+            method_body = self.c_code[span[1]: method_end - 1]  # does not include the opening and closing braces
 
             class_dict = {"Return": m.group('return_type'),
-                                 "Class": m.group('class_name'),
-                                 "Method": m.group('method_name'),
-                                 "Arguments": m.group('arguments'),
-                                 "Body": method_body,
-                                 "BodySpan": (span[1], method_end-1)}
+                          "Class": m.group('class_name'),
+                          "Method": m.group('method_name'),
+                          "Arguments": m.group('arguments'),
+                          "Body": method_body,
+                          "BodySpan": (span[1], method_end - 1)}
             self.classes.append(class_dict)
 
-
-        # # pattern = r"""((?P<return_type>\w+)\s+)*(?P<class_name>\w+)::(?P<method_name>\w+)\((?P<arguments>[^)]*)\)\s*{(?P<method_body>(?:[^{}]*\{[^{}]*\})*[^{}]*)}"""
-        # # pattern = r"""\s*(?P<return_type>\w+)\s+(?P<class_name>\w+)::(?P<method_name>\w+)\((?P<arguments>[^)]*)\)\s*{(?P<method_body>(?:[^{}]*|{(?:[^{}]*|{(?:[^{}]*|{[^{}]*})*})*})*})"""
-        # pattern = r"""((?P<return_type>\w+)\s+)*(?P<class_name>\w+)::(?P<method_name>\w+)\((?P<arguments>[^)]*)\)\s*{(?P<method_body>(?:[^{}]*|{(?:[^{}]*|{(?:[^{}]*|{[^{}]*})*})*})*)}"""
+        # # pattern = r"""((?P<return_type>\w+)\s+)*(?P<class_name>\w+)::(?P<method_name>\w+)\((?P<arguments>[
+        # ^)]*)\)\s*{(?P<method_body>(?:[^{}]*\{[^{}]*\})*[^{}]*)}"""
+        # # pattern = r"""\s*(?P<return_type>\w+)\s+(?P<class_name>\w+)::(?P<method_name>\w+)\((?P<arguments>[
+        # ^)]*)\)\s*{(?P<method_body>(?:[^{}]*|{(?:[^{}]*|{(?:[^{}]*|{[^{}]*})*})*})*})"""
+        # pattern = r"""((?P<return_type>\w+)\s+)*(?P<class_name>\w+)::(?P<method_name>\w+)\((?P<arguments>[
+        # ^)]*)\)\s*{(?P<method_body>(?:[^{}]*|{(?:[^{}]*|{(?:[^{}]*|{[^{}]*})*})*})*)}"""
         # p_compile = re.compile(pattern, re.MULTILINE)
         # matches = p_compile.finditer(self.c_code)
         # # matches = re.finditer(pattern, self.c_code, re.MULTILINE)
@@ -182,10 +184,11 @@ class CCodeParser:
         # for match in matches:
         #     # For each of the matches, capture_span holds the span of the body match for that class.
         #     # This is used to postprocess the file and remove the class body to produce only a skeleton version
-        #     # of the code that will be sent to Open.AI for conversion into python.
+        #     # of the code1 that will be sent to Open.AI for conversion into python.
         #     # The trick is to find the body closest to the point after the class declaration because some class bodies
         #     # will match everything (e.g. and empty class body)
-        #     print(f"len={len(self.c_code)}, {match.span()}, CLASS: {match.group('class_name')}::{match.group('method_name')}")
+        #     print(f"len={len(self.c_code)}, {match.span()}, CLASS: {match.group('class_name')}::{match.group(
+        #     'method_name')}")
         #     capture_span = None
         #
         #     sb = re.finditer(re.escape(match.group('method_body').strip()), self.c_code, re.MULTILINE)
@@ -214,7 +217,7 @@ class CCodeParser:
         #                          "Body": match.group('method_body'),
         #                          "BodySpan": capture_span}
         #     self.classes.append(class_dict)
-        # this is how to replace the code with spaces
+        # this is how to replace the code1 with spaces
         print("... DONE SCANNING for CLASSES")
 
         for c in self.classes:
@@ -224,16 +227,18 @@ class CCodeParser:
                 end_pos = span[1]
                 self.blanked_code = self.blanked_code[:start_pos] + ' ' * (end_pos - start_pos) + self.blanked_code[
 
-                                                                                              end_pos:]
+                                                                                                  end_pos:]
+
     def snarf_function(self):
         print("SCANNING for FUNCTIONS ... ")
 
         test = self.c_code
-        pattern = r"""(?P<return_type>\w+)\s+(?P<function_name>[A-Za-z0-9_*]*)\((?P<arguments>[^)]*)\)\s*{(?P<function_body>(?:[^{}]*\{[^{}]*\})*[^{}]*)}"""
+        pattern = r"""(?P<return_type>\w+)\s+(?P<function_name>[A-Za-z0-9_*]*)\((?P<arguments>[^)]*)\)\s*{(
+        ?P<function_body>(?:[^{}]*\{[^{}]*\})*[^{}]*)}"""
         matches = re.finditer(pattern, test)
         for match in matches:
             if match.group('function_name') and match.group('function_name') in ['if', 'for', 'while']:  # hack
-                break # skip over the if, for and while statemenst that are captured by the regexp pattern above
+                break  # skip over the if, for and while statemenst that are captured by the regexp pattern above
             print(f"len={len(self.c_code)}, {match.span()}, FUNCTION: {match.group('function_name')}")
             capture_span = None
             sb = re.finditer(re.escape(match.group('function_body').strip()), self.c_code, re.MULTILINE)
@@ -262,13 +267,14 @@ class CCodeParser:
                                    "BodySpan": capture_span})
 
         print("... DONE SCANNING for FUNCTIONS")
-        # this is how to replace the code with spaces
+        # this is how to replace the code1 with spaces
         for f in self.functions:
             span = f.get("BodySpan", None)
             if span:
                 start_pos = span[0]
                 end_pos = span[1]
-                self.blanked_code = self.blanked_code[:start_pos] + ' ' * (end_pos - start_pos) + self.blanked_code[end_pos:]
+                self.blanked_code = self.blanked_code[:start_pos] + ' ' * (end_pos - start_pos) + self.blanked_code[
+                                                                                                  end_pos:]
 
     def parse(self):
         print("Snarfing classes")
@@ -277,7 +283,7 @@ class CCodeParser:
         self.snarf_function()
 
 
-def parse_and_convert(parser, directory_path, filename, current_time):
+def parse_and_convert(parser, d_path, filename, current_time):
     converter = GptCodeConverter("CPP")
 
     s = parser.blanked_code
@@ -291,7 +297,8 @@ def parse_and_convert(parser, directory_path, filename, current_time):
     python_snip = converter.converted_code
     if python_snip:
         # get rid of the leading and trailing python quoting
-        converted_code = python_snip.replace("```python", f"# Converted by an OPENAI API call using model: {converter.model_name}")
+        converted_code = python_snip.replace("```python",
+                                             f"# Converted by an OPENAI API call using model: {converter.model_name}")
         converted_code = converted_code[:-3] if converted_code[-3:] == "```" else converted_code
         python_code += "\n\n" + converted_code
         # print(converted_code)
@@ -299,7 +306,7 @@ def parse_and_convert(parser, directory_path, filename, current_time):
         print(f"{filename} blank conversion failed")
 
     for g in parser.functions:
-        if g["Function"] is None :
+        if g["Function"] is None:
             continue
         if isinstance(g["Function"], str):
             if g["Function"].strip() == "":
@@ -315,13 +322,13 @@ def parse_and_convert(parser, directory_path, filename, current_time):
             s = remove_single_line_comments(s)
             s = remove_multiline_comments(s)
 
-        encoded_text = urllib.parse.quote(s)
         converter.convert_code(s, converter.add_function_instructions)
         python_snip = converter.converted_code
         if python_snip:
             # get rid of the leading and trailing python quoting
             converted_code = python_snip.replace("```python",
-                                                    f"# Converted by an OPENAI API call using model: {converter.model_name}")
+                                                 f"# Converted by an OPENAI API call using model: "
+                                                 f"{converter.model_name}")
             converted_code = converted_code[:-3] if converted_code[-3:] == "```" else converted_code
             python_code += "\n\n" + converted_code
             # print(converted_code)
@@ -340,18 +347,18 @@ def parse_and_convert(parser, directory_path, filename, current_time):
         if python_snip:
             # get rid of the leading and trailing python quoting
             converted_code = python_snip.replace("```",
-                                                    f"# Converted by an OPENAI API call using model: {converter.model_name} ")
+                                                 f"# Converted by an OPENAI API call using model: "
+                                                 f"{converter.model_name} ")
             converted_code = converted_code[:-3] if converted_code[-3:] == "```" else converted_code
             python_code += "\n\n" + converted_code
             # print(converted_code)
         else:
             print(f"{filename} {c['Class']}::{c['Method']} conversion failed")
 
-
     file_extension = '.py'
     base_filename = filename.split(".")[0]
     # Create a unique filename by appending the timestamp to a base filename and file extension
-    output_filename = f"{directory_path}{base_filename}{current_time}{file_extension}"
+    output_filename = f"{d_path}{base_filename}{current_time}{file_extension}"
 
     with open(output_filename, 'w') as f:
         f.write(python_code)
@@ -359,7 +366,7 @@ def parse_and_convert(parser, directory_path, filename, current_time):
 
 
 def main(path, filename=None):
-    # directory_path = f"{os.path.expanduser('~')}/Documents/Git/GitHub/GOSS-GridAPPS-D-PYTHON/gov_pnnl_goss/gridlab/climate/"
+    # path = f"{os.path.expanduser('~')}/Documents/Git/GitHub/GOSS-GridAPPS-D-PYTHON/gov_pnnl_goss/gridlab/climate/"
     #
     # Get the current timestamp (seconds since the epoch)
     current_time = int(time.time())
@@ -376,7 +383,7 @@ def main(path, filename=None):
         print(f"converted {len(parser.classes)}: classes and {len(parser.functions)}: functions")
         print("Done")
 
-        # filename = "network.cpp"  # Replace with your C code file
+        # filename = "network.cpp"  # Replace with your C code1 file
     else:
         parser = CCodeParser()
         for filename in os.listdir(path):
@@ -387,15 +394,15 @@ def main(path, filename=None):
                     file_size = os.path.getsize(file_path)
                     parser.load_file(path + filename)
                     # remove all imports here
-                    REMOVE_IMPORTS = True
-                    if REMOVE_IMPORTS:
+                    remove_imports = True
+                    if remove_imports:
                         clean_code = []
                         for line in parser.c_code.split('\n'):
                             if not line.find('#include') == 0:
                                 clean_code.append(line)
                     else:
                         clean_code = parser.c_code.split('\n')
-                    # create a blob of code
+                    # create a blob of code1
                     code_string = '\n'.join(clean_code)
                     # remove comments
                     if file_size > GptCodeConverter.MAX_TOKENS:
@@ -406,7 +413,7 @@ def main(path, filename=None):
                     # try:
                     #     code_string.encode('ascii')
                     # except UnicodeDecodeError:
-                    #     raise ValueError('code is not ASCII')
+                    #     raise ValueError('code1 is not ASCII')
                     parser.c_code = code_string
                     parser.blanked_code = code_string
                     parser.parse()
@@ -420,6 +427,7 @@ def main(path, filename=None):
                     print(f"converted {len(parser.classes)}: classes and {len(parser.functions)}: functions")
                     parser.un_load_file()
         print("Done")
+
 
 if __name__ == "__main__":
     directory_path = f"{os.path.expanduser('~')}/Documents/Git/GitHub/TC57CIM/py/"

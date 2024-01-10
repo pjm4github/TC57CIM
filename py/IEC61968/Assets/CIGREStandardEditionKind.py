@@ -5,5 +5,5 @@ from enum import Enum
 
 class CIGREStandardEditionKind(Enum):
     _2000 = 2000
-    NONE = 0   # "none"
-    UNKNOWN = 1  #"unknown"
+    NONE = 0  # "none"
+    UNKNOWN = 1  # "unknown"

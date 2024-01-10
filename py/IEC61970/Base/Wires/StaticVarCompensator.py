@@ -1,5 +1,5 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from typing import Any, Optional
+from typing import Optional
 
 from IEC61970.Base.Domain.Reactance import Reactance
 from IEC61970.Base.Domain.ReactivePower import ReactivePower
@@ -25,12 +25,12 @@ class StaticVarCompensator(RegulatingCondEq):
         """Constructor"""
 
         super().__init__()
-        self.capacitive_ratingOptional[Reactance] = Reactance()
-        self.inductive_ratingOptional[Reactance] = Reactance()
-        self.qOptional[ReactivePower] = ReactivePower()
-        self.slopeOptional[VoltagePerReactivePower] = VoltagePerReactivePower()
-        self.svc_control_modeOptional[SVCControlMode] = SVCControlMode.VOLTAGE
-        self.voltage_set_pointOptional[Voltage] = Voltage()
+        self.capacitive_rating: Optional[Reactance] = Reactance()
+        self.inductive_rating: Optional[Reactance] = Reactance()
+        self.q: Optional[ReactivePower] = ReactivePower()
+        self.slope: Optional[VoltagePerReactivePower] = VoltagePerReactivePower()
+        self.svc_control_mode: Optional[SVCControlMode] = SVCControlMode.VOLTAGE
+        self.voltage_set_point: Optional[Voltage] = Voltage()
 
     def get_capacitive_rating(self) -> Optional[Reactance]:
         return self.capacitive_rating
@@ -44,7 +44,7 @@ class StaticVarCompensator(RegulatingCondEq):
     def get_slope(self) -> Optional[VoltagePerReactivePower]:
         return self.slope
 
-    def get_sVC_control_mode(self) -> Optional[SVCControlMode]:
+    def get_s_vc_control_mode(self) -> Optional[SVCControlMode]:
         return self.svc_control_mode
 
     def get_voltage_set_point(self) -> Optional[Voltage]:
@@ -62,7 +62,7 @@ class StaticVarCompensator(RegulatingCondEq):
     def set_slope(self, new_val: VoltagePerReactivePower) -> None:
         self.slope = new_val
 
-    def set_sVC_control_mode(self, new_val: SVCControlMode) -> None:
+    def set_s_vc_control_mode(self, new_val: SVCControlMode) -> None:
         self.svc_control_mode = new_val
 
     def set_voltage_set_point(self, new_val: Voltage) -> None:

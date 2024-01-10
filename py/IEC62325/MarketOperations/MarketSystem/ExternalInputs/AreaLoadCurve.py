@@ -1,9 +1,8 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Wed Dec 27 15:35:30 2023
-from datetime import datetime
-from typing import Any
-from IEC61970.Base.Core.RegularIntervalSchedule import  RegularIntervalSchedule
+from IEC61970.Base.Core.RegularIntervalSchedule import RegularIntervalSchedule
 from IEC62325.MarketOperations.MktDomain.LoadForecastType import LoadForecastType
 from IEC62325.MarketOperations.ReferenceData.AggregateNode import AggregateNode
+
 
 class AreaLoadCurve(RegularIntervalSchedule):
     """
@@ -16,5 +15,5 @@ class AreaLoadCurve(RegularIntervalSchedule):
         Constructor
         """
         super().__init__()
-        self.forecast_type: LoadForecastType = LoadForecastType()
+        self.forecast_type: LoadForecastType = LoadForecastType.LFZ
         self.aggregate_node: AggregateNode = AggregateNode()

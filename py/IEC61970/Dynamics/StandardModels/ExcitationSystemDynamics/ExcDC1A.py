@@ -1,10 +1,10 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 22:01:48 2023
-from typing import Optional, TypedDict
+from typing import Optional
 
 from IEC61970.Base.Domain.Seconds import Seconds
 
 
-class ExcDC1A(TypedDict):
+class ExcDC1A:
     """Modified IEEE DC1A direct current commutator exciter with speed input and
     without underexcitation limiters (UEL) inputs.
     """
@@ -24,10 +24,10 @@ class ExcDC1A(TypedDict):
             float] = 0.0  # Exciter saturation function value at the corresponding exciter voltage, Efd1 (Se[Efd1]).
         self.seefd2: Optional[
             float] = 0.0  # Exciter saturation function value at the corresponding exciter voltage, Efd1 (Se[Efd2]).
-        self.ta: Seconds = Seconds() # Voltage regulator time constant (Ta).
-        self.tb: Seconds = Seconds() # Voltage regulator time constant (Tb).
-        self.tc: Seconds = Seconds() # Voltage regulator time constant (Tc).
-        self.te: Seconds = Seconds() # Exciter time constant, integration rate associated with exciter control (Te).
-        self.tf: Seconds = Seconds() # Excitation control system stabilizer time constant (Tf).
+        self.ta: Seconds = Seconds()  # Voltage regulator time constant (Ta).
+        self.tb: Seconds = Seconds()  # Voltage regulator time constant (Tb).
+        self.tc: Seconds = Seconds()  # Voltage regulator time constant (Tc).
+        self.te: Seconds = Seconds()  # Exciter time constant, integration rate associated with exciter control (Te).
+        self.tf: Seconds = Seconds()  # Excitation control system stabilizer time constant (Tf).
         self.vrmax: float = 1.0  # Maximum voltage regulator output (Vrmax).
         self.vrmin: float = 1.0  # Minimum voltage regulator output (Vrmin).

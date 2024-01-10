@@ -1,5 +1,5 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sun Dec 31 17:08:39 2023
-from typing import Optional, Any
+from typing import Optional
 
 from IEC61970.Base.Domain.PU import PU
 from IEC61970.Base.Domain.Seconds import Seconds

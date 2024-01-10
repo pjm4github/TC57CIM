@@ -6,7 +6,7 @@
 # Created on:      19-Dec-2023 4:08:56 PM
 # 
 #######################################################
-from TC57CIM.IEC61968.InfIEC61968.InfERPSupport.ErpIdentifiedObject import ErpIdentifiedObject
+from IEC61968.InfIEC61968.InfERPSupport.ErpIdentifiedObject import ErpIdentifiedObject
 
 class ErpCompetency(ErpIdentifiedObject):
     """Information that describes aptitudes of a utility employee. Unlike Skills that
@@ -14,4 +14,6 @@ class ErpCompetency(ErpIdentifiedObject):
     assignments (to be able to perfrom a Craft), ErpCompetency has more to do with
     typical Human Resource (HR) matters such as schooling, training, etc.
     """
-    pass
+    def __init__(self):
+        super().__init__()
+

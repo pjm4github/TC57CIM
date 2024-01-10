@@ -12,7 +12,8 @@ from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 class Impedance:
     """Ratio of voltage to current.
     """
-    unit = UnitSymbol.ohm
+
     def __init__(self):
         self.value = 0.0
         self.multipler = UnitMultiplier.none
+        self.unit = UnitSymbol.ohm

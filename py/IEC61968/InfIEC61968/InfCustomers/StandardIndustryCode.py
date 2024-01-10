@@ -17,7 +17,7 @@ class StandardIndustryCode(Document):
     def __init__(self) -> None:
         super().__init__()
         """
-        Standard alphanumeric code assigned to a particular product/service within
+        Standard alphanumeric code1 assigned to a particular product/service within
         an industry.
         """
         self.code = ""

@@ -1,7 +1,6 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:33:10 2023
 
 
-
 class Time:
     """
     Time as "hh:mm:ss.sss", which conforms with ISO 8601. UTC time zone is
@@ -17,4 +16,3 @@ class Time:
     def __init__(self) -> None:
         # Constructor
         self.value = 0.0
-

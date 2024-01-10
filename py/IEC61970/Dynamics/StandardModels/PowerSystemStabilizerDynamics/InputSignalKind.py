@@ -1,6 +1,5 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sun Dec 31 17:03:17 2023
 from enum import Enum
-from typing import Any
 
 class InputSignalKind(Enum):
     """

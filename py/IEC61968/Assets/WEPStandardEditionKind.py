@@ -3,6 +3,6 @@
 
 from enum import Enum
 
-class WepStandardEditionKind(Enum):
+class WEPStandardEditionKind(Enum):
     NONE = 0
     UNKNOWN = 1

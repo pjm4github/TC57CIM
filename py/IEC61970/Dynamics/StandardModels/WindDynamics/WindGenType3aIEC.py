@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sun Dec 31 17:35:41 2023
-from pydantic import BaseModel
-from datetime import datetime
 
 from IEC61970.Base.Domain.Seconds import Seconds
 from IEC61970.Dynamics.StandardModels.WindDynamics.WindGenType3IEC import WindGenType3IEC

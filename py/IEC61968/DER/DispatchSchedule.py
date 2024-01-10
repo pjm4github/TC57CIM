@@ -1,9 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-import IEC61970.Base.Domain.per_cent
-import IEC61970.Base.Core.curve_style
-import IEC61970.Base.Domain.integer
-import IEC61970.Base.Domain.date_time
-
 from IEC61968.DER.DERMonitorableParameter import DERMonitorableParameter
 from IEC61968.DER.TimeIntervalKind import TimeIntervalKind
 from IEC61970.Base.Core.CurveStyle import CurveStyle

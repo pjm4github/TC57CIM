@@ -14,8 +14,8 @@ class ControlAreaSolutionData:
         """
         # 	 * Pool MW Interchange
         # 	 * Attribute Usage: The active power interchange of the pool
-        self.solved_interchangefloat = 0.0
+        self.solved_interchange: float = 0.0
         # 	 * Pool Losses MW
         # 	 * Attribute Usage: The active power losses of the pool in MW
-        self.solved_lossesfloat = 0.0
-        self.mkt_control_areaOptional[MktControlArea] = MktControlArea()
+        self.solved_losses: float = 0.0
+        self.mkt_control_area: Optional[MktControlArea] = MktControlArea()

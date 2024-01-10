@@ -1,5 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from enum import Enum
 from typing import Optional
 
 from IEC61970.Base.Wires.SinglePhaseKind import SinglePhaseKind
@@ -8,11 +7,11 @@ from IEC61970.Base.Wires.SinglePhaseKind import SinglePhaseKind
 class ShuntCompensatorPhase:
 
     def __init__(self) -> None:
-        self.maximum_sectionsOptional[
+        self.maximum_sections: Optional[
             int] = 0  # The maximum number of sections that may be switched in for this phase
-        self.normal_sectionsOptional[
+        self.normal_sections: Optional[
             int] = 0  # For the capacitor phase, the normal number of sections switched in
-        self.phaseOptional[SinglePhaseKind] = SinglePhaseKind.A  # Phase of this shunt compensator component
+        self.phase = SinglePhaseKind.A  # Phase of this shunt compensator component
 
     def get_maximum_sections(self) -> Optional[int]:
         return self.maximum_sections

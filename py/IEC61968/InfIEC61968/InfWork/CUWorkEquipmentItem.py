@@ -16,7 +16,7 @@ class CUWorkEquipmentItem(WorkIdentifiedObject):
 
     def __init__(self) -> None:
         super().__init__()
-        self.equip_code: Optional[str] = str()  # The equipment type code.
+        self.equip_code: Optional[str] = str()  # The equipment type code1.
         self.rate: Optional[CostRate] = CostRate()  # Standard usage rate for the type of vehicle.
         self.status: Optional[Status] = Status()
         self.compatible_units: Optional[CompatibleUnit] = CompatibleUnit()

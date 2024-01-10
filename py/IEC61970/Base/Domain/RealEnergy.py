@@ -14,9 +14,9 @@ from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 class RealEnergy:
     """Real electrical energy.
     """
-    unit = UnitSymbol.Wh
 
     def __init__(self):
         self.value = 0.0
         self.multiplier = UnitMultiplier.none
         self.uncefact_unit_code = UncefactUnitCode()
+        self.unit = UnitSymbol.Wh

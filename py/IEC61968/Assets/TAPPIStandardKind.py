@@ -3,5 +3,6 @@
 
 from enum import Enum
 
+
 class TAPPIStandardKind(Enum):
-    T494 = 1  #  "Tensile properties of paper and paperboard (using constant rate of elongation apparatus), Test Method TAPPI/ANSI T 494 om-13"
+    T494 = 1  # "Tensile properties of paper and paperboard (using constant rate of elongation apparatus), Test Method TAPPI/ANSI T 494 om-13"

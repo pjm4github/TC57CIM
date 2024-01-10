@@ -19,16 +19,16 @@ class NonlinearShuntCompensatorPoint:
         """
 
         # Positive sequence shunt (charging) susceptance per section
-        self.bOptional[Susceptance] = Susceptance()
+        self.b: Optional[Susceptance] = Susceptance()
 
         # Zero sequence shunt (charging) susceptance per section
-        self.b0Optional[Susceptance] = Susceptance()
+        self.b0: Optional[Susceptance] = Susceptance()
 
         # Positive sequence shunt (charging) conductance per section
-        self.gOptional[Conductance] = Conductance()
+        self.g: Optional[Conductance] = Conductance()
 
         # Zero sequence shunt (charging) conductance per section
-        self.g0Optional[Conductance] = Conductance()
+        self.g0: Optional[Conductance] = Conductance()
 
         # The number of the section
         self.section_number: int = 0

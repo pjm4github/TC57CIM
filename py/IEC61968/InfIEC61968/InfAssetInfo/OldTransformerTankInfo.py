@@ -15,7 +15,7 @@ class OldTransformerTankInfo(TransformerTankInfo):
         Kind of construction for this transformer.
         """
         super().__init__()
-        self.construction_kind: TransformerConstructionKind = TransformerConstructionKind()
+        self.construction_kind: TransformerConstructionKind = TransformerConstructionKind.VAULT
 
         """
         Weight of core and coils in transformer.
@@ -25,12 +25,12 @@ class OldTransformerTankInfo(TransformerTankInfo):
         """
         Core kind of this transformer product.
         """
-        self.core_kind: TransformerCoreKind = TransformerCoreKind.core
+        self.core_kind: TransformerCoreKind = TransformerCoreKind.CORE
 
         """
         Function of this transformer.
         """
-        self.function: TransformerFunctionKind = TransformerFunctionKind.power_transformer
+        self.function: TransformerFunctionKind = TransformerFunctionKind.POWER_TRANSFORMER
 
         """
         Basic insulation level of neutral.

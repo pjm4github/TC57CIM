@@ -24,10 +24,10 @@ class ControlArea(PowerSystemResource):
     
     def __init__(self) -> None:
         super().__init__()
-        self.net_interchangeOptional[ActivePower] = ActivePower()  # The specified positive net interchange into the control area, i.e. positive sign means flow in to the area
-        self.p_toleranceOptional[ActivePower] = ActivePower()  # Active power net interchange tolerance
-        self.typeOptional[ControlAreaTypeKind] = ControlAreaTypeKind.AGC  # The primary type of control area definition used to determine if this is used for automatic generation control, for planning interchange control, or other purposes.  A control area specified with primary type of automatic generation control could still be forecast and used as an interchange area in power flow analysis.
-        self.energy_areaOptional[EnergyArea] = EnergyArea()  # The energy area that is forecast from this control area specification
-        self.control_area_generating_unitOptional[ControlAreaGeneratingUnit] = ControlAreaGeneratingUnit()  # The generating unit specificaitons for the control area.
-        self.tie_flowOptional[TieFlow] = TieFlow()  # The tie flows associated with the control area.
+        self.net_interchange: Optional[ActivePower] = ActivePower()  # The specified positive net interchange into the control area, i.e. positive sign means flow in to the area
+        self.p_tolerance: Optional[ActivePower] = ActivePower()  # Active power net interchange tolerance
+        self.type: Optional[ControlAreaTypeKind] = ControlAreaTypeKind.AGC  # The primary type of control area definition used to determine if this is used for automatic generation control, for planning interchange control, or other purposes.  A control area specified with primary type of automatic generation control could still be forecast and used as an interchange area in power flow analysis.
+        self.energy_area: Optional[EnergyArea] = EnergyArea()  # The energy area that is forecast from this control area specification
+        self.control_area_generating_unit: Optional[ControlAreaGeneratingUnit] = ControlAreaGeneratingUnit()  # The generating unit specificaitons for the control area.
+        self.tie_flow: Optional[TieFlow] = TieFlow()  # The tie flows associated with the control area.
 

@@ -11,7 +11,7 @@ class MarketLedgerEntry:
     #  * @created 27-Dec-2023 5:15:25 PM
     def __init__(self):
         self.account_id = ""  # Account identifier for this entry.
-        self.account_kind = MktAccountKind()  # Kind of account for this entry.
+        self.account_kind = MktAccountKind.NORMAL  # Kind of account for this entry.
         self.amount = Money()  # The amount of the debit or credit for this account.
         self.posted_date_time = DateTime()  # Date and time this entry was posted to the ledger.
         self.status = Status()  # Status of ledger entry.

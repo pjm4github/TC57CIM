@@ -18,7 +18,7 @@ class CUMaterialItem(WorkIdentifiedObject):
     def __init__(self) -> None:
         super().__init__()
         self.corporate_code: Optional[str] = str()  # Code for material.
-        self.quantity: Optional[IntegerQuantity] = IntegerQuantity()  # Quantity of the TypeMaterial for this CU, used to determine estimated costs based on a per unit cost or a cost per unit length specified in the TypeMaterial.
+        self.quantity: Optional[IntegerQuantity] = IntegerQuantity()  # Quantity of the TypeMaterial for this CU, used to determine estimated costs based on a per-unit cost or a cost per unit length specified in the TypeMaterial.
         self.status: Optional[Status] = Status()
         self.type_material: Optional[TypeMaterial] = TypeMaterial()
         self.compatible_units: Optional[CompatibleUnit] = CompatibleUnit()

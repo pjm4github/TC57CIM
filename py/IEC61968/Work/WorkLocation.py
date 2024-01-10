@@ -13,6 +13,7 @@ from IEC61968.InfIEC61968.InfWork.OneCallRequest import OneCallRequest
 class WorkLocation(Location):
     """Information about a particular location for various forms of work.
     """
+
     def __init__(self):
         super().__init__()
-        self.one_call_request= OneCallRequest()
+        self.one_call_request = OneCallRequest()

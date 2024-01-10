@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sun Dec 31 17:07:00 2023
-from typing import Optional
-
 from IEC61970.Base.Domain.PU import PU
 from IEC61970.Dynamics.StandardModels.SynchronousMachineDynamics.SynchronousMachineDetailed import \
     SynchronousMachineDetailed
@@ -51,6 +49,7 @@ class SynchronousMachineEquivalentCircuit(SynchronousMachineDetailed):
     @version 1.0
     @created 29-Dec-2023 11:24:20 PM
     """
+
     def __init__(self) -> None:
         super().__init__()
         self.r1d: PU = PU()  # D-axis damper 1 winding resistance
@@ -63,4 +62,4 @@ class SynchronousMachineEquivalentCircuit(SynchronousMachineDetailed):
         self.xad: PU = PU()  # D-axis mutual reactance
         self.xaq: PU = PU()  # Q-axis mutual reactance
         self.xf1d: PU = PU()  # Differential mutual ("Canay") reactance
-        self.xfd: PU = PU()  #  Field winding leakage reactance
+        self.xfd: PU = PU()  # Field winding leakage reactance

@@ -13,14 +13,17 @@ class ChargeComponent(IdentifiedObject):
     
     @created 28-Dec-2023 5:20:12 PM
     """
+
     def __init__(self):
         super().__init__()
-        self.delete_statusOptional[str] = ""
-        self.effective_dateOptional[DateTime] = DateTime()
-        self.equationOptional[str] = ""
-        self.messageOptional[str] = ""
-        self.round_offOptional[str] = ""
-        self.sum_Optional[str] = ""
-        self.termination_dateOptional[DateTime] = DateTime()
-        self.type_Optional[str] = ""
-        self.bill_determinantsOptional[BillDeterminant] = BillDeterminant()
+        self.type = ""
+        self.delete_status: Optional[str] = ""
+        self.effective_date: Optional[DateTime] = DateTime()
+        self.equation: Optional[str] = ""
+        self.message: Optional[str] = ""
+        self.round_off: Optional[str] = ""
+        self.sum = ""
+        self.termination_date: Optional[DateTime] = DateTime()
+        # A BillDeterminant can have 0-n ChargeComponent and a ChargeComponent can
+        # associate to 0-n BillDeterminant.
+        self.bill_determinants: Optional[BillDeterminant] = BillDeterminant()

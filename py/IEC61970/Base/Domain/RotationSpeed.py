@@ -13,8 +13,8 @@ from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 class RotationSpeed:
     """Number of revolutions per second.
     """
-    unit = UnitSymbol.Hz
 
     def __init__(self):
         self.multiplier = UnitMultiplier.none
         self.value = 0.0
+        self.unit = UnitSymbol.Hz

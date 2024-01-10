@@ -1,9 +1,6 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 22:01:48 2023
 from IEC61970.Base.Domain.PU import PU
-
 from IEC61970.Base.Domain.Seconds import Seconds
-from typing import Optional
-
 from IEC61970.Dynamics.StandardModels.ExcitationSystemDynamics.ExcitationSystemDynamics import ExcitationSystemDynamics
 
 
@@ -15,7 +12,6 @@ class ExcAc4A(ExcitationSystemDynamics):
     @version 1.0
     @created 29-Dec-2023 11:24:17 PM
     """
-
 
     def __init__(self) -> None:
         super().__init__()

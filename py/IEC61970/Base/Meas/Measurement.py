@@ -6,15 +6,11 @@
 # Created on:      17-Dec-2023 6:59:21 PM
 # 
 #######################################################
-# from IEC61970.Base.Domain.String import String
-from IEC61970.Base.Core.PhaseCode import PhaseCode
-from IEC61970.Base.Domain.UncefactUnitCode import UncefactUnitCode
-from IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
-from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 from IEC61970.Base.Core.ACDCTerminal import ACDCTerminal
 from IEC61970.InfIEC61970.InfSIPS.ProtectiveActionAdjustment import ProtectiveActionAdjustment
 from IEC61968.AssetMeas.CalculationMethodHierarchy import CalculationMethodHierarchy
+
 
 class Measurement(IdentifiedObject):
     """A Measurement represents any measured, calculated or non-measured non-
@@ -41,9 +37,9 @@ class Measurement(IdentifiedObject):
     Terminal are used. The Measurement-Terminal association is never used alone.
     """
     # One or more measurements may be associated with a terminal in the network.
-    Terminal= ACDCTerminal()
+    Terminal = ACDCTerminal()
 
-    ProtectiveActionAdjustment= ProtectiveActionAdjustment()
+    ProtectiveActionAdjustment = ProtectiveActionAdjustment()
 
     # Calculation method hierarchy which applies to this analog.
-    CalculationMethodHierarchy= CalculationMethodHierarchy()
+    CalculationMethodHierarchy = CalculationMethodHierarchy()

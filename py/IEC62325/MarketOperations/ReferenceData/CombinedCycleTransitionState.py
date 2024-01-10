@@ -12,8 +12,8 @@ class CombinedCycleTransitionState:
 
     def __init__(self):
         """
-        Flag indicating whether this is an UP transition.
-        If not, it is a DOWN transition.
+        Flag indicating whether this is an 'UP' transition.
+        If not, it is a 'DOWN' transition.
         """
         self.up_transition = False
 

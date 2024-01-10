@@ -57,7 +57,7 @@ class DERUnitSymbol(Enum):
     WPers = 81
     # Time, hour = 60 min = 3600 s.
     h = 84
-    # Time, minute  = 60 s.
+    # Time, minute = 60 s.
     min = 85
     # Quantity power, Q.
     Q = 100

@@ -3,5 +3,6 @@
 
 from enum import Enum
 
-class WepStandardKind(Enum):
-    WEP_12_1254E = 1 #  '12, 1254E'
+
+class WEPStandardKind(Enum):
+    WEP_12_1254E = 1  # '12, 1254E'

@@ -1,5 +1,9 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Wed Jan  3 14:41:22 2024
-from typing import Any, Optional
+from typing import Optional
+
+from IEC61968.InfIEC61968.InfAssets.CoolingKind import CoolingKind
+from IEC61968.InfIEC61968.InfAssets.Reconditioning import Reconditioning
+from IEC61970.Base.Domain.ApparentPower import ApparentPower
 
 
 class CoolingPowerRating:
@@ -30,7 +34,7 @@ class CoolingPowerRating:
         """
         Kind of cooling system.
         """
-        self.cooling_kind = CoolingKind()
+        self.cooling_kind = CoolingKind.SELF_COOLING
 
         """
         The power rating associated with type of cooling specified for this stage.

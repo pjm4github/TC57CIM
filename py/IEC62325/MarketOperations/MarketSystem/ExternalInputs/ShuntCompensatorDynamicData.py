@@ -15,9 +15,9 @@ class ShuntCompensatorDynamicData:
         """
         Constructor for ShuntCompensatorDynamicData.
         """
-        self.connection_statusOptional[int] = 0  # The current status for the Voltage Control Capacitor 1= Connected 0 = Disconnected
-        self.desired_voltagefloat = 0.0  # The desired voltage for the Voltage Control Capacitor
-        self.mVar_injectionfloat = 0.0  # The injection of reactive power of the filter bank in the NA solution or VCS reactive power production
-        self.step_positionOptional[int] = 0  # Voltage control capacitor step position
-        self.voltage_regulation_statusbool = False  # Indicator if the voltage control this is regulating True = Yes, False = No
-        self.mkt_shunt_compensatorOptional[MktShuntCompensator] = MktShuntCompensator()
+        self.connection_status: Optional[int] = 0  # The current status for the Voltage Control Capacitor 1= Connected 0 = Disconnected
+        self.desired_voltage: float = 0.0  # The desired voltage for the Voltage Control Capacitor
+        self.mVar_injection: float = 0.0  # The injection of reactive power of the filter bank in the NA solution or VCS reactive power production
+        self.step_position: Optional[int] = 0  # Voltage control capacitor step position
+        self.voltage_regulation_status: bool = False  # Indicator if the voltage control this is regulating True = Yes, False = No
+        self.mkt_shunt_compensator: Optional[MktShuntCompensator] = MktShuntCompensator()

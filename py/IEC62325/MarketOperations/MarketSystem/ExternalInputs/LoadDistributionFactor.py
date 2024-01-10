@@ -17,5 +17,5 @@ class LoadDistributionFactor:
 
     def __init__(self) -> None:
         pass
-        self.p_dist_factor: float = 0.0 # Real power (MW) load distribution factor
-        self.q_dist_factor: float = 0.0 # Reactive power (MVAr) load distribution factor
+        self.p_dist_factor: float = 0.0  # Real power (MW) load distribution factor
+        self.q_dist_factor: float = 0.0  # Reactive power (MVAr) load distribution factor

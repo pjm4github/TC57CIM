@@ -1,5 +1,7 @@
 from IEC61968.Assets.Asset import Asset
 from IEC61968.Common.Document import Document
+from IEC61968.InfIEC61968.InfAssets.TransformerObservation import TransformerObservation
+from IEC61968.Work.WorkTask import WorkTask
 from IEC61970.Base.Domain.DateTime import DateTime
 from IEC61970.Base.Meas.MeasurementValue import MeasurementValue
 

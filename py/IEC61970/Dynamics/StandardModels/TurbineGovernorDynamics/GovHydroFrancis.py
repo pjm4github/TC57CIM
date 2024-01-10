@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sun Dec 31 17:08:39 2023
-from typing import Optional
-
 from IEC61970.Base.Domain.Area import Area
 from IEC61970.Base.Domain.Frequency import Frequency
 from IEC61970.Base.Domain.Length import Length
@@ -40,5 +38,5 @@ class GovHydroFrancis(TurbineGovernorDynamics):
         self.valvmax = PU(1)  # Maximum gate opening (ValvMax).  Typical Value = 1.
         self.valvmin = PU(0)  # Minimum gate opening (ValvMin).  Typical Value = 0.
         self.vc: float = -0.011  # Maximum gate closing velocity (Vc). Unit = PU/sec. Typical Value = -0.011.
-        self.water_tunnel_surge_chamber_simulation: bool  = False  # Water tunnel and surge chamber simulation (Tflag). True = enable of water tunnel and surge chamber simulation, False = inhibit of water tunnel and surge chamber simulation. Typical Value = False.
+        self.water_tunnel_surge_chamber_simulation: bool = False  # Water tunnel and surge chamber simulation (Tflag). True = enable of water tunnel and surge chamber simulation, False = inhibit of water tunnel and surge chamber simulation. Typical Value = False.
         self.zsfc = Length(25)  # Head of upper water level with respect to the level of penstock (Zsfc).  Unit = m.  Typical Value = 25.

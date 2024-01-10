@@ -19,8 +19,6 @@ class BusNameMarker(IdentifiedObject):
     @created 15-Dec-2023 4:38:26 PM
     """
 
-
-
     def __init__(self):
         super().__init__()
         self.priority: int = 0

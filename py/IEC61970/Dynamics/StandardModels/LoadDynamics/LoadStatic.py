@@ -1,10 +1,7 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sun Dec 31 16:32:51 2023
-from enum import Enum
-
 from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 from IEC61970.Dynamics.StandardModels.LoadDynamics.LoadAggregate import LoadAggregate
 from IEC61970.Dynamics.StandardModels.LoadDynamics.StaticLoadModelKind import StaticLoadModelKind
-
 
 
 class LoadStatic(IdentifiedObject):

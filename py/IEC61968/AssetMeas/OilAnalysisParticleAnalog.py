@@ -8,4 +8,4 @@ class OilAnalysisParticleAnalog(AssetAnalog):
     def __init__(self):
         super().__init__()
         # Kind of analog representing oil particulate analysis result.
-        self.kind = OilAnalysisParticleAnalogKind()
+        self.kind = OilAnalysisParticleAnalogKind.COUNT_2_PLUS

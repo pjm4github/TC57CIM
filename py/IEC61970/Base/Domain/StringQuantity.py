@@ -15,6 +15,7 @@ class StringQuantity:
     or a floating point number) and associated unit information.
     """
     unit_symbol = UnitSymbol.none
+
     def __init__(self):
         self.unit_mulitplier = UnitMultiplier.none
         self.value = ""

@@ -1,5 +1,5 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sun Dec 31 17:08:39 2023
-from typing import Optional, Any, Union
+from typing import Optional
 
 from IEC61970.Base.Domain.ActivePower import ActivePower
 from IEC61970.Base.Domain.PU import PU
@@ -16,7 +16,7 @@ class GovHydroPid2(TurbineGovernorDynamics):
         # Feedback signal type flag (Flag).
         # True = use gate position feedback signal
         # False = use Pe.
-        self.feedback_signal: bool  = False
+        self.feedback_signal: bool = False
         self.g0: PU = PU(0)  # Gate opening at speed no load (G0).  Typical Value = 0.
         self.g1: PU = PU(0)  # Intermediate gate opening (G1).  Typical Value = 0.
         self.g2: PU = PU(0)   # Intermediate gate opening (G2).  Typical Value = 0.

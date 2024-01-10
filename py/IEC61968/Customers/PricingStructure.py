@@ -2,6 +2,7 @@ from IEC61968.Common.Document import Document
 from IEC61968.Customers.RevenueKind import RevenueKind
 from IEC61968.Customers.Tariff import Tariff
 from IEC61968.Metering.UsagePoint import UsagePoint
+from IEC61968.PaymentMetering.Transaction import Transaction
 
 
 ###########################################################
@@ -13,12 +14,12 @@ from IEC61968.Metering.UsagePoint import UsagePoint
 
 class PricingStructure(Document):
     """
-	Grouping of pricing components and prices used in the creation of customer
-	charges and the eligibility criteria under which these terms may be offered to
-	a customer. The reasons for grouping include state, customer classification,
-	site characteristics, classification (i.e. fee price structure, deposit price
-	structure, electric service price structure, etc.) and accounting requirements.
-	"""
+    Grouping of pricing components and prices used in the creation of customer
+    charges and the eligibility criteria under which these terms may be offered to
+    a customer. The reasons for grouping include state, customer classification,
+    site characteristics, classification (i.e. fee price structure, deposit price
+    structure, electric service price structure, etc.) and accounting requirements.
+    """
 
     def __init__(self):
         """

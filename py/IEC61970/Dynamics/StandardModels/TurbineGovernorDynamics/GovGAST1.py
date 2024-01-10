@@ -6,7 +6,6 @@ from IEC61970.Base.Domain.Seconds import Seconds
 from IEC61970.Dynamics.StandardModels.TurbineGovernorDynamics.TurbineGovernorDynamics import TurbineGovernorDynamics
 
 
-
 class GovGast1(TurbineGovernorDynamics):
     """
     Modified single shaft gas turbine.
@@ -43,11 +42,11 @@ class GovGast1(TurbineGovernorDynamics):
         self.pgv6: PU = PU(.0)  # Nonlinear gain point 6, PU power (Pgv6) Typical Value = 0
         self.r: PU = PU(.04)  # Permanent droop (R) Typical Value = 0.04
         self.rmax: float = 1.0  # Maximum fuel valve opening rate (Rmax) Unit = PU/sec.  Typical Value = 1
-        self.t1: Seconds = Seconds(.5) # Governor mechanism time constant (T1) Typical Value = 0.5
-        self.t2: Seconds = Seconds(.5) # Turbine power time constant (T2) Typical Value = 0.5
-        self.t3: Seconds = Seconds(3) # Turbine exhaust temperature time constant (T3) Typical Value = 3
-        self.t4: Seconds = Seconds(0) # Governor lead time constant (T4) Typical Value = 0
-        self.t5: Seconds = Seconds(0) # Governor lag time constant (T5) Typical Value = 0
-        self.tltr: Seconds = Seconds(10) # Valve position averaging time constant (Tltr) Typical Value = 10
+        self.t1: Seconds = Seconds(.5)  # Governor mechanism time constant (T1) Typical Value = 0.5
+        self.t2: Seconds = Seconds(.5)  # Turbine power time constant (T2) Typical Value = 0.5
+        self.t3: Seconds = Seconds(3)  # Turbine exhaust temperature time constant (T3) Typical Value = 3
+        self.t4: Seconds = Seconds(0)  # Governor lead time constant (T4) Typical Value = 0
+        self.t5: Seconds = Seconds(0)  # Governor lag time constant (T5) Typical Value = 0
+        self.tltr: Seconds = Seconds(10)  # Valve position averaging time constant (Tltr) Typical Value = 10
         self.vmax: PU = PU(1.0)  # Maximum turbine power, PU of MWbase (Vmax) Typical Value = 1
         self.vmin: PU = PU(.0)  # Minimum turbine power, PU of MWbase (Vmin) Typical Value = 0

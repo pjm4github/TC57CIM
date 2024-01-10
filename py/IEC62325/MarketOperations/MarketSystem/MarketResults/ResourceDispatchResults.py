@@ -1,8 +1,6 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 29 11:15:55 2023
-from datetime import datetime
-from typing import Optional
-
 from IEC61970.Base.Domain.DateTime import DateTime
+from IEC61970.Base.Domain.Seconds import Seconds
 
 
 class ResourceDispatchResults:

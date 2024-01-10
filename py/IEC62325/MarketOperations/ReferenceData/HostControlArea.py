@@ -1,14 +1,17 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Thu Dec 28 12:28:33 2023
 
-from typing import Optional
-
 from IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
 from IEC61970.Base.Domain.Frequency import Frequency
 from IEC62325.InfIEC62325.InfFinancial.ControlAreaOperator import ControlAreaOperator
 from IEC62325.MarketCommon.RegisteredResource import RegisteredResource
 from IEC62325.MarketOperations.MarketSystem.ExternalInputs.SysLoadDistributionFactor import SysLoadDistributionFactor
 from IEC62325.MarketOperations.MarketSystem.ExternalInputs.TransferInterface import TransferInterface
+from IEC62325.MarketOperations.MarketSystem.MarketResults.LossClearingResults import LossClearingResults
 from IEC62325.MarketOperations.MktDomain.AreaControlMode import AreaControlMode
+from IEC62325.MarketOperations.ParticipantInterfaces.BidSelfSched import BidSelfSched
+from IEC62325.MarketOperations.ReferenceData.AdjacentCASet import AdjacentCASet
+from IEC62325.MarketOperations.ReferenceData.CnodeDistributionFactor import CnodeDistributionFactor
+from IEC62325.MarketOperations.ReferenceData.Flowgate import Flowgate
 from IEC62325.MarketOperations.ReferenceData.SubControlArea import SubControlArea
 
 

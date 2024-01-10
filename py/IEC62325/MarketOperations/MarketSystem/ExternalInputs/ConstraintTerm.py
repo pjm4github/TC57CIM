@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Wed Dec 27 15:35:30 2023
-from typing import Any
-
 from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
 

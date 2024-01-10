@@ -6,7 +6,7 @@ from IEC62325.MarketOperations.MktDomain.YesNo import YesNo
 
 class ResourceCertification:
     def __init__(self) -> None:
-        self.market: MarketType = MarketType.DAM # market type
+        self.market: MarketType = MarketType.DAM  # market type
         self.qualification_flag: YesNo = YesNo.NO  # Status of the qualification ('Y' = Active, 'N' = Inactive)
-        self.type: ResourceCertificationKind = ResourceCertificationKind.INTERMITTENT_RESOURCE # Type of service based on ResourceAncillaryServiceType enumeration
-
+        self.type: ResourceCertificationKind = ResourceCertificationKind.INTERMITTENT_RESOURCE  # Type of service
+        # based on ResourceAncillaryServiceType enumeration

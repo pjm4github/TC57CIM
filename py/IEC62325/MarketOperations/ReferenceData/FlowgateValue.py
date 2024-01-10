@@ -1,5 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Thu Dec 28 12:28:33 2023
-from datetime import datetime
 from enum import Enum
 
 from IEC61970.Base.Domain.DateTime import DateTime

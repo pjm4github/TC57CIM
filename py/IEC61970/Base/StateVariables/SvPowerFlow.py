@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:41:01 2023
-from typing import Any
-
 from IEC61970.Base.Core.Terminal import Terminal
 from IEC61970.Base.Domain.ActivePower import ActivePower
 from IEC61970.Base.Domain.ReactivePower import ReactivePower
@@ -14,7 +12,6 @@ from IEC61970.InfIEC61970.EnergyArea.EnergyGroup import EnergyGroup
 # from IEC61970.Wires.PhaseCode import SinglePhaseKind
 # from IEC61970.Base.Core.Terminal import Terminal
 # from IEC61970.Meas.EnergyValues import EnergyGroup
-
 
 
 class SvPowerFlow(StateVariable):
@@ -33,4 +30,3 @@ class SvPowerFlow(StateVariable):
         self.q: ReactivePower = ReactivePower()
         self.terminal: Terminal = Terminal()
         self.energy_group: EnergyGroup = EnergyGroup()
-

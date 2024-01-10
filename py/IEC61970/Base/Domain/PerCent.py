@@ -14,8 +14,8 @@ class PerCent:
     """Percentage on a defined base.   For example, specify as 100 to indicate at the
     defined base.
     """
-    unit = UnitSymbol.none
 
     def __init__(self):
         self.multiplier = UnitMultiplier.none
         self.value = 0.0
+        self.unit = UnitSymbol.none

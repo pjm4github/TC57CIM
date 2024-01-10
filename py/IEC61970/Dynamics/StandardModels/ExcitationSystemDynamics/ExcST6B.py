@@ -23,21 +23,16 @@ class ExcSt6B(ExcitationSystemDynamics):
         # Exciter output current limit reference (Ilr).  Typical Value = 4.164
         self.ilr: float = 4.164
 
-        # Selector (K1).
-        # true = feedback is from Ifd
-        # false = feedback is not from Ifd.
-        # Typical Value = True.
+        # Selector (K1), true = feedback is from Ifd, false = feedback is not from Ifd. Typical Value = True.
         self.k1: bool = True
 
         # Exciter output current limit adjustment (Kcl).  Typical Value = 1.0577
         self.kcl: float = 1.0577
 
-        # Pre-control gain constant of the inner loop field regulator (Kff).  Typical
-        # Value = 1.
+        # Pre-control gain constant of the inner loop field regulator (Kff).  Typical Value = 1.
         self.kff: float = 1.0
 
-        # Feedback gain constant of the inner loop field regulator (Kg).  Typical
-        # Value = 1.
+        # Feedback gain constant of the inner loop field regulator (Kg).  Typical Value = 1.
         self.kg: float = 1.0
 
         # Voltage regulator integral gain (Kia).  Typical Value = 45.094.
@@ -73,10 +68,8 @@ class ExcSt6B(ExcitationSystemDynamics):
         # Minimum voltage regulator output (Vamin).  Typical Value = -3.85.
         self.vamin: float = -3.85
 
-        # Selector (Vilim).
-        # true = Vimin-Vimax limiter is active
-        # false = Vimin-Vimax limiter is not active.
-        # Typical Value = true.
+        # Selector (Vilim). true = Vimin-Vimax limiter is active, false = Vimin-Vimax limiter is not active. Typical
+        # Value = true.
         self.vilim: bool = True
 
         # Maximum voltage regulator input limit (Vimax).  Typical Value = 10.
@@ -85,14 +78,12 @@ class ExcSt6B(ExcitationSystemDynamics):
         # Minimum voltage regulator input limit (Vimin).  Typical Value = -10.
         self.vimin: float = -10.
 
-        # Selector (Vmult).
-        # true = multiply regulator output by terminal voltage
-        # false = do not multiply regulator output by terminal voltage.
-        # Typical Value = true.
+        # Selector (Vmult). true = multiply regulator output by terminal voltage, false = do not multiply regulator
+        # output by terminal voltage.  Typical Value = true.
         self.vmult: bool = True
 
         # Maximum voltage regulator output (Vrmax).  Typical Value = 4.81.
         self.vrmax: float = 4.81
 
         # Minimum voltage regulator output (Vrmin).  Typical Value = -3.85.
-        self.vrmin: float =3.85
+        self.vrmin: float = 3.85

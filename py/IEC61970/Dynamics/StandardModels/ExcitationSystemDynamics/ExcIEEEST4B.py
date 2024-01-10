@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 22:01:48 2023
-from typing import Optional
-
 from IEC61970.Base.Domain.Seconds import Seconds
 from IEC61970.Dynamics.StandardModels.ExcitationSystemDynamics.ExcitationSystemDynamics import ExcitationSystemDynamics
 
@@ -23,12 +21,10 @@ class ExcIeeeSt4B(ExcitationSystemDynamics):
         """
         super().__init__()
         self.kc: float = 0.113
-        # Rectifier loading factor proportional to commutating reactance (K_C).
-        # Typical Value = 0.113.
+        # Rectifier loading factor proportional to commutating reactance (K_C). Typical Value = 0.113.
 
         self.kg: float = 0.0
-        # Feedback gain constant of the inner loop field regulator (K_G).
-        # Typical Value = 0.
+        # Feedback gain constant of the inner loop field regulator (K_G).  Typical Value = 0.
 
         self.ki: float = 0.0
         # Potential circuit gain coefficient (K_I).  Typical Value = 0.

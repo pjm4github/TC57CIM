@@ -15,18 +15,18 @@ class PowerTransformerEnd(TransformerEnd):
 
     def __init__(self):
         super().__init__()
-        self.bOptional[Susceptance] = Susceptance()  # Magnetizing branch susceptance (B mag)
-        self.b0Optional[Susceptance] = Susceptance()  # Zero sequence magnetizing branch susceptance
-        self.connection_kindOptional[WindingConnection] = WindingConnection.D  # Kind of connection
-        self.gOptional[Conductance] = Conductance()  # Magnetizing branch conductance
-        self.g0Optional[Conductance] = Conductance()  # Zero sequence magnetizing branch conductance (star-model)
+        self.b: Optional[Susceptance] = Susceptance()  # Magnetizing branch susceptance (B mag)
+        self.b0: Optional[Susceptance] = Susceptance()  # Zero sequence magnetizing branch susceptance
+        self.connection_kind: Optional[WindingConnection] = WindingConnection.D  # Kind of connection
+        self.g: Optional[Conductance] = Conductance()  # Magnetizing branch conductance
+        self.g0: Optional[Conductance] = Conductance()  # Zero sequence magnetizing branch conductance (star-model)
         self.phase_angle_clock: int = 0  # Terminal voltage phase angle displacement
-        self.rOptional[Resistance] = Resistance()  # Resistance (star-model) of the transformer end
-        self.r0Optional[Resistance] = Resistance()  # Zero sequence series resistance (star-model) of the transformer end
-        self.rated_sOptional[ApparentPower] = ApparentPower()  # Normal apparent power rating
-        self.rated_uOptional[Voltage] = Voltage()  # Rated voltage
-        self.xOptional[Reactance] = Reactance()  # Positive sequence series reactance (star-model) of the transformer end
-        self.x0Optional[Reactance] = Reactance()  # Zero sequence series reactance of the transformer end
+        self.r: Optional[Resistance] = Resistance()  # Resistance (star-model) of the transformer end
+        self.r0: Optional[Resistance] = Resistance()  # Zero sequence series resistance (star-model) of the transformer end
+        self.rated_s: Optional[ApparentPower] = ApparentPower()  # Normal apparent power rating
+        self.rated_u: Optional[Voltage] = Voltage()  # Rated voltage
+        self.x: Optional[Reactance] = Reactance()  # Positive sequence series reactance (star-model) of the transformer end
+        self.x0: Optional[Reactance] = Reactance()  # Zero sequence series reactance of the transformer end
 
     def set_b(self, new_val: Susceptance) -> None:
         self.b = new_val

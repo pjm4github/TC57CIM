@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 22:01:48 2023
-from typing import Any, Union
-
 from IEC61970.Base.Domain.Seconds import Seconds
 from IEC61970.Dynamics.StandardModels.ExcitationSystemDynamics.ExcitationSystemDynamics import ExcitationSystemDynamics
 
@@ -10,7 +8,7 @@ class ExcAc3A(ExcitationSystemDynamics):
     Modified IEEE AC3A alternator-supplied rectifier excitation system with 
     different field current limit.
     """
-    
+
     def __init__(self) -> None:
         super().__init__()
         self.efdn = 2.36  # Value of EFD at which feedback gain changes (Efdn). Typical Value = 2.36
@@ -27,11 +25,12 @@ class ExcAc3A(ExcitationSystemDynamics):
         self.ks = 0.0  # Coefficient to allow different usage of the model-speed coefficient (Ks). Typical Value = 0
         self.seve1 = 1.143  # Exciter saturation function value at the corresponding exciter voltage, Ve1, back of commutating reactance (Se[Ve1]). Typical Value = 1.143
         self.seve2 = 0.1  # Exciter saturation function value at the corresponding exciter voltage, Ve2, back of commutating reactance (Se[Ve2]). Typical Value = 0.1
-        self.ta: Seconds = Seconds(.013)  #Voltage regulator time constant (Ta). Typical Value = 0.013
-        self.tb: Seconds = Seconds(0)  #Voltage regulator time constant (Tb). Typical Value = 0
-        self.tc: Seconds = Seconds(0)  #Voltage regulator time constant (Tc). Typical Value = 0
-        self.te: Seconds = Seconds(1.17)  #Exciter time constant, integration rate associated with exciter control (Te). Typical Value = 1.17
-        self.tf: Seconds = Seconds(1.0)  #Excitation control system stabilizer time constant (Tf). Typical Value = 1
+        self.ta: Seconds = Seconds(.013)  # Voltage regulator time constant (Ta). Typical Value = 0.013
+        self.tb: Seconds = Seconds(0)  # Voltage regulator time constant (Tb). Typical Value = 0
+        self.tc: Seconds = Seconds(0)  # Voltage regulator time constant (Tc). Typical Value = 0
+        self.te: Seconds = Seconds(
+            1.17)  # Exciter time constant, integration rate associated with exciter control (Te). Typical Value = 1.17
+        self.tf: Seconds = Seconds(1.0)  # Excitation control system stabilizer time constant (Tf). Typical Value = 1
         self.vamax = 1.0  # Maximum voltage regulator output (Vamax). Typical Value = 1
         self.vamin = -0.95  # Minimum voltage regulator output (Vamin). Typical Value = -0.95
         self.ve1 = 6.24  # Exciter alternator output voltages back of commutating reactance at which saturation is defined (Ve1) equals Vemax (Ve1). Typical Value = 6.24

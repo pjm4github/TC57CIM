@@ -5,8 +5,6 @@ class MPMResourceStatus:
     associated interval.
     @created 28-Dec-2023 8:22:45 PM
     """
-    
 
-    
     def __init__(self) -> None:
         self.resource_status: str = "N"  # Interval Test Status, 'N' - not applicable

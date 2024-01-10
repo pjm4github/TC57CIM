@@ -9,7 +9,7 @@ class Contingency(IdentifiedObject):
     * @created 29-Dec-2023 1:45:04 PM
     """
     def __init__(self):
-        # Set true if must study this contingency.
+        # Set true if it must study this contingency.
         super().__init__()
         self.must_study = False
 

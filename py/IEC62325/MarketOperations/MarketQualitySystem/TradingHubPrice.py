@@ -9,7 +9,7 @@ class TradingHubPrice:
     """
     def __init__(self):
         self.interval_start_time = DateTime()  # Start time of the interval
-        self.market_type = MarketType()  # Type of market
+        self.market_type = MarketType.RUC  # Type of market
         self.update_time_stamp = DateTime()  # Timestamp of the last update
         self.update_user = str()  # User who last updated the record
         self.trading_hub_values = TradingHubValues()  # Associated TradingHubValues

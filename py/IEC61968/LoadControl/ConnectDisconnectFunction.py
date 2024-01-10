@@ -24,7 +24,7 @@ class ConnectDisconnectFunction(EndDeviceFunction):
         self.is_delayed_discon = False
         # 	/**
         # 	 * If set true and if disconnection can be operated locally, the operation happens
-        # 	 * automatically. Otherwise it happens manually.
+        # 	 * automatically. Otherwise, it happens manually.
         # 	 */
         self.is_local_auto_disconOp = False
         # 	/**

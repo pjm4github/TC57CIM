@@ -14,5 +14,5 @@ class DefaultBidCurve(Curve):
         Constructor for DefaultBidCurve
         """
         super().__init__()
-        self.curve_typeOptional[str] = ""  # To indicate a type used for a default energy bid curve, such as LMP, cost or consultative based.
-        self.deb_adder_flagbool = False  # Default energy bid adder flag
+        self.curve_type: Optional[str] = ""  # To indicate a type used for a default energy bid curve, such as LMP, cost or consultative based.
+        self.deb_adder_flag: bool = False  # Default energy bid adder flag

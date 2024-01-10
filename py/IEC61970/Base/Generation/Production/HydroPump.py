@@ -15,12 +15,15 @@ class HydroPump(Equipment):
     """A synchronous motor-driven pump, typically associated with a pumped storage
     plant.
     """
-
     def __init__(self):
         super().__init__()
+        # The pumping discharge under maximum head conditions, usually at full gate.
         self.pump_disch_at_max_head = VolumeFlowRate()
+        # The pumping discharge under minimum head conditions, usually at full gate.
         self.pump_disch_at_min_head = VolumeFlowRate()
+        # The pumping power under maximum head conditions, usually at full gate.
         self.pump_power_at_max_head = ActivePower()
+        # The pumping power under minimum head conditions, usually at full gate.
         self.pump_power_at_min_head = ActivePower()
-        self.hydro_pump_op_schedule = HydroPumpOpSchedule()  # The hydro pump has a pumping schedule over time,
-        # indicating when pumping is to occur.
+        # The hydro pump has a pumping schedule over time, indicating when pumping is to occur.
+        self.hydro_pump_op_schedule = HydroPumpOpSchedule()

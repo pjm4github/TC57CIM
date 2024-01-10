@@ -28,10 +28,10 @@ class ReadingType(IdentifiedObject):
 
     def __init__(self):
         super().__init__()
-        self.accumulation = AccumulationKind()  # Accumulation behaviour of a reading over time, usually 'measuringPeriod', to be used with individual endpoints (as opposed to 'macroPeriod' and 'aggregate' that are used to describe aggregations of data from individual endpoints).
-        self.aggregate = AggregateKind()  # Salient attribute of the reading data aggregated from individual endpoints. This is mainly used to define a mathematical operation carried out over 'macroPeriod', but may also be used to describe an attribute of the data when the 'macroPeriod' is not defined.
+        self.accumulation = AccumulationKind.BOUNDED_QUANTITY  # Accumulation behaviour of a reading over time, usually 'measuringPeriod', to be used with individual endpoints (as opposed to 'macroPeriod' and 'aggregate' that are used to describe aggregations of data from individual endpoints).
+        self.aggregate = AggregateKind.NONE  # Salient attribute of the reading data aggregated from individual endpoints. This is mainly used to define a mathematical operation carried out over 'macroPeriod', but may also be used to describe an attribute of the data when the 'macroPeriod' is not defined.
         self.argument = RationalNumber()  # Argument used to introduce numbers into the unit of measure description where they are needed (e.g., 4 where the measure needs an argument such as CEMI(n=4)). Most arguments used in practice however will be integers (i.e., 'denominator'=1). Value 0 in 'numerator' and 'denominator' means not applicable.
-        self.commodity = CommodityKind()  # Commodity being measured.
+        self.commodity = CommodityKind.COOLING_FLUID  # Commodity being measured.
         self.consumption_tier = 0  # In case of common flat-rate pricing for power, in which all purchases are at a given rate, 'consumptionTier'=0. Otherwise, the value indicates the consumption tier, which can be used in conjunction with TOU or CPP pricing.
         self.cpp = 0  # Critical peak period (CPP) bucket the reading value is attributed to. Value 0 means not applicable.
         self.currency = Currency()  # Metering-specific currency.
@@ -41,7 +41,7 @@ class ReadingType(IdentifiedObject):
         self.measurement_kind = MeasurementKind.none  # Identifies "what" is being measured, as refinement of 'commodity'. When combined with 'unit', it provides detail to the unit of measure.
         self.measuring_period = MeasuringPeriodKind.none  # Time attribute inherent or fundamental to the reading value (as opposed to 'macroPeriod' that supplies an "adjective" to describe aspects of a time period with regard to the measurement).
         self.multiplier = UnitMultiplier.none  # Metering-specific multiplier.
-        self.phases = PhaseCode()  # Metering-specific phase code.
+        self.phases = PhaseCode()  # Metering-specific phase code1.
         self.tou = 0  # Time of use (TOU) bucket the reading value is attributed to. Value 0 means not applicable.
         self.unit = UnitSymbol.none  # Metering-specific unit.
         self.channel = Channel()  # Channel reporting/collecting register values with this type information.

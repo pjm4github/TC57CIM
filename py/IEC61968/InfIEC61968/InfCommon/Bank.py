@@ -16,7 +16,7 @@ class Bank(OrganisationRole):
     def __init__(self):
 
         super().__init__()
-        # Bank identifier code as defined in ISO 9362; for use in countries wher IBAN is not yet in operation.
+        # Bank identifier code1 as defined in ISO 9362; for use in countries wher IBAN is not yet in operation.
         self.bic = ""
         # International bank account number defined in ISO 13616;
         # for countries where IBAN is not in operation, the existing BIC or SWIFT

@@ -16,9 +16,9 @@ class TradeError:
         """
         Constructor
         """
-        self.end_timeOptional[DateTime] = DateTime()   # hour within the trade for which the error applies
-        self.err_messageOptional[str] = ""  # error message
-        self.err_priorityOptional[int] = 0  # Priority number for the error message
-        self.log_time_stampOptional[DateTime] = DateTime()   # Timestamp of logged error/warning message
-        self.rule_idOptional[int] = 0  # Rule identifier which triggered the error/warning message
-        self.start_timeOptional[DateTime] = DateTime()   # hour within the trade for which the error applies
+        self.end_time: Optional[DateTime] = DateTime()   # hour within the trade for which the error applies
+        self.err_message: Optional[str] = ""  # error message
+        self.err_priority: Optional[int] = 0  # Priority number for the error message
+        self.log_time_stamp: Optional[DateTime] = DateTime()   # Timestamp of logged error/warning message
+        self.rule_id: Optional[int] = 0  # Rule identifier which triggered the error/warning message
+        self.start_time: Optional[DateTime] = DateTime()   # hour within the trade for which the error applies

@@ -10,10 +10,12 @@ from IEC61970.Base.Domain.Voltage import Voltage
 from IEC61970.Base.Core.ConductingEquipment import ConductingEquipment
 from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
+
 class BaseVoltage(IdentifiedObject):
     """
     Defines a system base voltage which is referenced.
     """
+
     def __init__(self):
         super().__init__()
         self.nominal_voltage = Voltage()

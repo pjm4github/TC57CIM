@@ -1,12 +1,17 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Thu Dec 28 12:28:33 2023
 from IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
 from IEC61970.Base.Domain.ActivePower import ActivePower
+from IEC62325.InfIEC62325.InfCongestionRevenueRights.FTR import FTR
+from IEC62325.InfIEC62325.InfMarketResults.InterTieResults import InterTieResults
 from IEC62325.MarketOperations.MarketOpCommon.MktLine import MktLine
 from IEC62325.MarketOperations.MarketOpCommon.MktPowerTransformer import MktPowerTransformer
 from IEC62325.MarketOperations.MarketSystem.ExternalInputs.SecurityConstraints import SecurityConstraints
 from IEC62325.MarketOperations.MarketSystem.ExternalInputs.TransmissionCapacity import TransmissionCapacity
 from IEC62325.MarketOperations.MarketSystem.ExternalInputs.TransmissionInterfaceRightEntitlement import \
     TransmissionInterfaceRightEntitlement
+from IEC62325.MarketOperations.MarketSystem.MarketResults.ConstraintResults import ConstraintResults
+from IEC62325.MarketOperations.MktDomain.InterTieDirection import InterTieDirection
+from IEC62325.MarketOperations.ReferenceData.ContractDistributionFactor import ContractDistributionFactor
 from IEC62325.MarketOperations.ReferenceData.FlowgatePartner import FlowgateValue
 from IEC62325.MarketOperations.ReferenceData.FlowgateRelief import FlowgateRelief
 from IEC62325.MarketOperations.ReferenceData.RegisteredInterTie import RegisteredInterTie
@@ -24,7 +29,7 @@ class Flowgate(PowerSystemResource):
     
     def __init__(self) -> None:
         super().__init__()
-        self.direction: InterTieDirection = InterTieDirection()
+        self.direction: InterTieDirection = InterTieDirection.EXPORT
         self.export_mw_rating: ActivePower = ActivePower()
         self.import_mw_rating: ActivePower = ActivePower()
         self.flowgate_relief: FlowgateRelief = FlowgateRelief()

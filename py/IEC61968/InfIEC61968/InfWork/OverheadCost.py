@@ -15,7 +15,7 @@ class OverheadCost(WorkIdentifiedObject):
 
     def __init__(self) -> None:
         super().__init__()
-        self.code: Optional[str] = str()  # Overhead code.
+        self.code: Optional[str] = str()  # Overhead code1.
         self.cost: Optional[Money] = Money()  # The overhead cost to be applied.
         self.status: Optional[Status] = Status()
         self.work_cost_details: Optional[WorkCostDetail] = WorkCostDetail()

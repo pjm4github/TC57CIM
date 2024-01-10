@@ -1,6 +1,5 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sun Dec 31 17:35:41 2023
 from typing import Optional
-from enum import Enum
 
 from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 from IEC61970.Dynamics.StandardModels.WindDynamics.WindContCurrLimIEC import WindContCurrLimIEC
@@ -17,7 +16,7 @@ from IEC61970.Dynamics.StandardModels.WindDynamics.WindProtectionIEC import Wind
 
 class WindDynamicsLookupTable(IdentifiedObject):
     """
-    The class models a look up table for the purpose of wind standard models.
+    The class models a lookup table for the purpose of wind standard models.
     @author civanov
     @version 1.0
     @created 29-Dec-2023 11:24:20 PM

@@ -3,6 +3,7 @@
 
 from enum import Enum
 
+
 class AssetKind(Enum):
     BREAKER_AIR_BLAST_BREAKER = 1
     BREAKER_BULK_OIL_BREAKER = 2

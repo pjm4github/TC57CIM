@@ -1,6 +1,7 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 from enum import Enum
 
+
 class ChargeKind(Enum):
     CONSUMPTION_CHARGE = 1
     DEMAND_CHARGE = 2

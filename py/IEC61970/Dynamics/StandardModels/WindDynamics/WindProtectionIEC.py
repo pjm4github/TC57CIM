@@ -1,5 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sun Dec 31 17:35:41 2023
-from datetime import datetime
 from typing import Optional
 
 from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
@@ -30,14 +29,14 @@ class WindProtectionIEC(IdentifiedObject):
         self.funder: PU = PU()
         # Wind turbine under frequency protection activation threshold        (<i>f</i><sub>under</sub>). It is project dependent parameter.
 
-        self.mzc: bool  = False
+        self.mzc: bool = False
         # Zero crossing measurement mode (<i>Mzc</i>). True = 1 if the WT protection        system uses zero crossings to detect frequency - otherwise false = 0. It is        type dependent parameter.
 
         self.tfma: Seconds = Seconds()
         # Time interval of moving average window (<i>TfMA</i>). It is type dependent        parameter.
 
         self.uover: PU = PU()
-        # Wind turbine over voltage protection activation threshold        (<i>u</i><sub>over</sub>). It is project dependent parameter.
+        # Wind turbine over-voltage protection activation threshold        (<i>u</i><sub>over</sub>). It is project dependent parameter.
 
         self.uunder: PU = PU()
         # Wind turbine under voltage protection activation threshold        (<i>u</i><sub>under</sub>). It is project dependent parameter.

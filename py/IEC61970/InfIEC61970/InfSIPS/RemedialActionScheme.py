@@ -7,8 +7,6 @@
 # Original author: sveinols
 # 
 #######################################################
-# from IEC61970.Base.Domain.Boolean import Boolean
-from IEC61970.InfIEC61970.InfSIPS.RemedialActionSchemeKind import RemedialActionSchemeKind
 from IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
 from IEC61970.InfIEC61970.InfSIPS.Stage import Stage
 

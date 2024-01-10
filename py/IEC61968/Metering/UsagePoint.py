@@ -1,4 +1,10 @@
 from IEC61968.Common.ConfigurationEvent import ConfigurationEvent
+from IEC61968.Customers.ServiceCategory import ServiceCategory
+from IEC61968.Metering.AmiBillingReadyKind import AmiBillingReadyKind
+from IEC61968.Metering.EndDevice import EndDevice
+from IEC61968.Metering.ServiceMultiplier import ServiceMultiplier
+from IEC61968.Metering.UsagePointConnectedKind import UsagePointConnectedKind
+from IEC61970.Base.Core.Equipment import Equipment
 from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 from IEC61970.Base.Core.PhaseCode import PhaseCode
 from IEC61970.Base.Domain.ActivePower import ActivePower
@@ -18,7 +24,7 @@ class UsagePoint(IdentifiedObject):
         Constructor for UsagePoint.
         """
         super().__init__()
-        self.ami_billing_ready = AmiBillingReadyKind()
+        self.ami_billing_ready = AmiBillingReadyKind.BILLING_APPROVED
         """
         Tracks the lifecycle of the metering installation at a usage point with respect
         to readiness for billing via advanced metering infrastructure reads.
@@ -31,7 +37,7 @@ class UsagePoint(IdentifiedObject):
         should be reset once this potential discrepancy has been resolved.
         """
 
-        self.connection_state = UsagePointConnectedKind()
+        self.connection_state = UsagePointConnectedKind.PHYSICALLY_DISCONNECTED
         """
         State of the usage point with respect to connection to the network.
         """
@@ -82,7 +88,7 @@ class UsagePoint(IdentifiedObject):
 
         self.phase_code = PhaseCode()
         """
-        Phase code. Number of wires and specific nominal phases can be deduced from
+        Phase code1. Number of wires and specific nominal phases can be deduced from
         enumeration literal values. For example, ABCN is three-phase, four-wire, s12n
         (splitSecondary12N) is single-phase, three-wire, and s1n and s2n are single-
         phase, two-wire.

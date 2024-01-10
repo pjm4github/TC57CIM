@@ -4,8 +4,9 @@ from IEC61970.Base.Domain.Duration import Duration
 from IEC61970.Base.Domain.DateTime import DateTime
 from IEC61968.Common.ActivityRecord import ActivityRecord
 
+
 class AssetHealthEvent(ActivityRecord):
-    
+
     def __init__(self):
         super().__init__()
         self.action_recommendation = ""

@@ -3,8 +3,9 @@
 
 from enum import Enum
 
-class IeeeStandardEditionKind(Enum):
-    _1978 = 1978
-    _1995 = 1995
+
+class IEEEStandardEditionKind(Enum):
+    m_1978 = 1978
+    m_1995 = 1995
     none = 0  # "none"
-    unknown = 9999 # "unknown"
+    unknown = 9999  # "unknown"

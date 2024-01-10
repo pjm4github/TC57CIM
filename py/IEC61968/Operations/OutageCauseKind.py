@@ -8,4 +8,4 @@ class OutageCauseKind(Enum):
     ANIMAL = 2  # "ANIMAL"
     LINE_DOWN = 3  # "LINE_DOWN"
     POLE_DOWN = 4  # "POLE_DOWN"
-    TREE_DOWN = 5  #"TREE_DOWN"
+    TREE_DOWN = 5  # "TREE_DOWN"

@@ -10,14 +10,14 @@ from IEC61970.Base.Wires.PowerTransformerEnd import PowerTransformerEnd
 class PowerTransformer:
     
     def __init__(self) -> None:
-        self.before_sh_circuit_highest_operating_currentOptional[CurrentFlow] = CurrentFlow()
-        self.before_sh_circuit_highest_operating_voltageOptional[Voltage] = Voltage()
-        self.before_short_circuit_angle_pfOptional[AngleDegrees] = AngleDegrees()
-        self.high_side_min_operating_uOptional[Voltage] = Voltage()
+        self.before_sh_circuit_highest_operating_current: Optional[CurrentFlow] = CurrentFlow()
+        self.before_sh_circuit_highest_operating_voltage: Optional[Voltage] = Voltage()
+        self.before_short_circuit_angle_pf: Optional[AngleDegrees] = AngleDegrees()
+        self.high_side_min_operating_u: Optional[Voltage] = Voltage()
         self.is_part_of_generator_unit: bool = False
         self.operational_values_considered: bool = True
-        self.vector_groupOptional[str] = ""
-        self.power_transformer_endOptional[PowerTransformerEnd] = PowerTransformerEnd()
+        self.vector_group: Optional[str] = ""
+        self.power_transformer_end: Optional[PowerTransformerEnd] = PowerTransformerEnd()
     
     def get_before_sh_circuit_highest_operating_current(self) -> Optional[CurrentFlow]:
         return self.before_sh_circuit_highest_operating_current

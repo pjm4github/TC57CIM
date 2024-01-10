@@ -14,4 +14,5 @@ class WindPlantIEC(WindPlantDynamics):
 
     def __init__(self) -> None:
         super().__init__()
-        self.wind_plant_reactive_control_iec: WindPlantReactiveControlIEC = WindPlantReactiveControlIEC() # Wind plant model with which this wind reactive control is associated.
+        self.wind_plant_reactive_control_iec: WindPlantReactiveControlIEC = WindPlantReactiveControlIEC()  # Wind
+        # plant model with which this wind reactive control is associated.

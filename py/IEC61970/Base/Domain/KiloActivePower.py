@@ -13,8 +13,8 @@ from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 class KiloActivePower:
     """Active power in kilowatts.
     """
-    unit = UnitSymbol.W
 
     def __init__(self) -> None:
         self.multiplier: UnitMultiplier = UnitMultiplier.k
         self.value: float = 0.0
+        self.unit = UnitSymbol.W

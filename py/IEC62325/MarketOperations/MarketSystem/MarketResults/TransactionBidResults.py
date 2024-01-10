@@ -20,5 +20,5 @@ class TransactionBidResults(IdentifiedObject):
         super().__init__()
         self.cleared_mw: float = 0.0  # The market transaction megawatt
         self.cleared_price: float = 0.0  # The price of the market transaction
-        self.transaction_bidOptional[TransactionBid] = TransactionBid()
-        self.transaction_bid_clearingOptional[TransactionBidClearing] = TransactionBidClearing()
+        self.transaction_bid: Optional[TransactionBid] = TransactionBid()
+        self.transaction_bid_clearing: Optional[TransactionBidClearing] = TransactionBidClearing()

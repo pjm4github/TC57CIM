@@ -17,8 +17,8 @@ class Name:
     """
 
     def __init__(self) -> None:
-        self.nameOptional[str] = ""   # Any free text that name the object.
-        self.name_typeOptional[NameType] = NameType()  # Type of this name.
-        self.identified_objectOptional[IdentifiedObject] = IdentifiedObject()  # Identified object that this name designates.
+        self.name: Optional[str] = ""   # Any free text that name the object.
+        self.name_type: Optional[NameType] = NameType()  # Type of this name.
+        self.identified_object: Optional[IdentifiedObject] = IdentifiedObject()  # Identified object that this name designates.
 
 

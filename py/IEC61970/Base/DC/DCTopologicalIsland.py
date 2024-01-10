@@ -1,5 +1,3 @@
-from typing import Any
-
 from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 from IEC61970.Base.DC.DCTopologicalNode import DCTopologicalNode
 
@@ -10,7 +8,7 @@ class DCTopologicalIsland(IdentifiedObject):
     An electrically connected subset of the network. DC
     topological islands can change as the current network
     state changes: e.g. due to
-    - disconnect switches or breakers change state in a SCADA/EMS
+    - disconnect switches or breakers change state in the SCADA/EMS
     - manual creation, change or deletion of topological nodes in a planning tool.
     @author SELAOST1
     @version 1.0

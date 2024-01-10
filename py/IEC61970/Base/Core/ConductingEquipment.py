@@ -14,11 +14,11 @@ class ConductingEquipment(Equipment):
     """The parts of the AC power system that are designed to carry current or that are
     conductively connected through terminals.
     """
+
     # The operating condition to the Conducting Equipment is changed when protective
     # action adjustment is activated. For Shunt Compensator or other conducting
     # equipment that operates on discrete values (integer), the values given in float
     # will be rounded. 
-
 
     def __init__(self):
         super().__init__()

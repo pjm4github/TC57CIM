@@ -15,8 +15,9 @@ from IEC61968.Work.WorkTask import WorkTask
 class Work(BaseWork):
     """Document used to request, initiate, track and record work.
     """
+
     def __init__(self):
         super().__init__()
         self.project = Project()
         self.work_tasks = WorkTask()  # All tasks in this work.
-        self.erp_project_accounting= ErpProjectAccounting()
+        self.erp_project_accounting = ErpProjectAccounting()

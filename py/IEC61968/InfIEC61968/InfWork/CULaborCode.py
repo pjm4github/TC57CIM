@@ -7,7 +7,7 @@ from IEC61968.InfIEC61968.InfWork.WorkIdentifiedObject import WorkIdentifiedObje
 
 class CULaborCode(WorkIdentifiedObject):
     """
-    Labor code associated with various compatible unit labor items.
+    Labor code1 associated with various compatible unit labor items.
     @created 29-Dec-2023 9:12:22 PM
     """
 

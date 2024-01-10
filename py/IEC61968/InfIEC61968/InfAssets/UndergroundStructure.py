@@ -9,10 +9,10 @@ class UndergroundStructure(Structure):
     Underground structure.
     @created 29-Dec-2023 6:12:28 PM
     """
-    
+
     def __init__(self) -> None:
         super().__init__()
         self.has_ventilation = True  # True if vault is ventilating
         self.kind = UndergroundStructureKind.SUBSURFACE_ENCLOSURE
         self.material = ""  # Primary material of underground structure
-        self.sealing_warranty_expires_date = Date() # Date sealing warranty expires
+        self.sealing_warranty_expires_date = Date()  # Date sealing warranty expires

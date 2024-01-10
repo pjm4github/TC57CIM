@@ -16,14 +16,14 @@ class GenericConstraints(IdentifiedObject):
     a) Thermal MW limit constraints type
     b) Group line flow constraint type
     """
-    
+
     def __init__(self):
         super().__init__()
         """
         Constructor
         """
-        self.interval_end_time = DateTime()  # 	 * Interval End Time
-        self.interval_start_time = DateTime()  #  * Interval Start Time
+        self.interval_end_time = DateTime()  # * Interval End Time
+        self.interval_start_time = DateTime()  # * Interval Start Time
         self.max_limit = 0.0  # Maximum Limit (MW)
         self.min_limit = 0.0  # Minimum Limit (MW)
         self.flowgate = Flowgate()

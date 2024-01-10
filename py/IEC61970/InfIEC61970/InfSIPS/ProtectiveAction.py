@@ -14,7 +14,8 @@ from IEC61970.InfIEC61970.InfSIPS.Gate import Gate
 class ProtectiveAction(IdentifiedObject):
     """A protective action for supporting the integrity of the power system.
     """
+
     def __init__(self):
         super().__init__()
-        self.gate_com_condition= Gate()
-        self.gate_enabled_condition= Gate()
+        self.gate_com_condition = Gate()
+        self.gate_enabled_condition = Gate()

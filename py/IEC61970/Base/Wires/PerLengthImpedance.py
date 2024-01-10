@@ -5,12 +5,12 @@ from IEC61970.Base.Wires.PerLengthLineParameter import PerLengthLineParameter
 
 class PerLengthImpedance(PerLengthLineParameter):
 
-    '''
+    """
     Common type for per-length impedance electrical catalogues.
     @author pmora
     @version 1.0
     @updated 15-Dec-2023 1:39:41 PM
-    '''
+    """
 
     '''
     All line segments described by this per-length impedance.

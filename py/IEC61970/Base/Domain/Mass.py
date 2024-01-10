@@ -13,8 +13,8 @@ from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 class Mass:
     """Unit of length. Never negative.
     """
-    unit = UnitSymbol.kg
 
     def __init__(self, value=None) -> None:
         self.multiplier: UnitMultiplier = UnitMultiplier.none
         self.value: float = 0.0 if not value else value
+        self.unit = UnitSymbol.kg

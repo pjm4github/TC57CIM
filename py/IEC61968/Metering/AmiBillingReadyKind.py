@@ -3,6 +3,7 @@
 
 from enum import Enum
 
+
 class AmiBillingReadyKind(Enum):
     # Usage point is equipped with an AMI capable meter having communications capability.
     ENABLED = 1
@@ -16,7 +17,8 @@ class AmiBillingReadyKind(Enum):
     # Usage point is equipped with a non AMI capable meter.
     NON_AMI = 4
 
-    # Usage point is equipped with an AMI capable meter; however, the AMI functionality has been disabled or is not being used.
+    # Usage point is equipped with an AMI capable meter; however, the AMI functionality has been disabled or is not
+    # being used.
     AMI_DISABLED = 5
 
     # USAGE point is equipped with an AMI capable meter that is not yet currently equipped with a communications module.

@@ -13,9 +13,9 @@ class MarketInvoice:
     #  * @created 27-Dec-2023 5:14:44 PM
     def __init__(self):
         self.amount = Money()  # Total amount due on this invoice based on line items and applicable adjustments.
-        self.bill_media_kind = MktBillMediaKind()  # Kind of media by which the CustomerBillingInfo was delivered.
+        self.bill_media_kind = MktBillMediaKind.PAPER  # Kind of media by which the CustomerBillingInfo was delivered.
         self.due_date = Date()  # Calculated date upon which the Invoice amount is due.
-        self.kind = MktAccountKind()  # Kind of invoice (default is 'sales').
+        self.kind = MktAccountKind.ESTIMATE  # Kind of invoice (default is 'sales').
         self.mailed_date = Date()  # Date on which the customer billing statement/invoice was printed/mailed.
         self.pro_forma = False  # True if payment is to be paid by a Customer to accept a particular ErpQuote (with associated Design) and have work initiated, at which time an associated ErpInvoice should automatically be generated. EprPayment.subjectStatus satisfies terms specificed in the ErpQuote.
         self.reference_number = ""  # Number of an invoice to be reference by this invoice.

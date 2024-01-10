@@ -1,7 +1,6 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:33:10 2023
 import re
 import time
-from typing import Any
 
 
 class Duration:
@@ -13,6 +12,7 @@ class Duration:
     number of seconds. The number of seconds could be
     expressed as a decimal number, but all other numbers are integers.
     """
+
     def __init__(self) -> None:
         self.years = 0
         self.months = 0
@@ -47,15 +47,14 @@ class Duration:
                             (self.months * 30 * 24 * 60 * 60) + \
                             (self.days * 24 * 60 * 60) + \
                             (self.hours * 60 * 60) + \
-                            (self.minutes * 60) + \
-                            self.seconds
+                            (self.minutes * 60) + self.seconds
             leap_years = self.years // 4 - self.years // 100 + self.years // 400
             total_seconds += leap_years * 24 * 60 * 60
             self._duration = int(total_seconds * 1e9)
         else:
             # convert it as a float (in seconds)
 
-            total_seconds = value/1e-9
+            total_seconds = value / 1e-9
             self._duration = value
 
             # Calculate years, months, days, hours, minutes, and seconds
@@ -83,8 +82,8 @@ class Duration:
 
     def __str__(self):
         return f"P{self.years}Y" \
-                f"{self.months}M" \
-                f"{self.days}DT" \
-                f"{self.hours}H"\
-                f"{self.minutes}M" \
-                f"{self.seconds}S"
+               f"{self.months}M" \
+               f"{self.days}DT" \
+               f"{self.hours}H" \
+               f"{self.minutes}M" \
+               f"{self.seconds}S"

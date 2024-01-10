@@ -7,7 +7,6 @@
 # Original author: sveinols
 # 
 #######################################################
-from IEC61970.InfIEC61970.InfSIPS.PinTerminalKind import PinTerminalKind
 from IEC61970.Base.Core.Terminal import Terminal
 from IEC61970.InfIEC61970.InfSIPS.GateInputPin import GateInputPin
 

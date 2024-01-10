@@ -1,5 +1,5 @@
 from IEC61970.Base.Domain.DateTime import DateTime
-
+from IEC62325.MarketOperations.MarketQualitySystem.AllocationResultValues import AllocationResultValues
 
 
 class AllocationResult:

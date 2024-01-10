@@ -47,7 +47,7 @@ class Quality61850:
 
         # Source gives information related to the origin of a value. The value may be
         # acquired from the process, defaulted or substituted.
-        self.source = Source()
+        self.source = Source.PROCESS
 
         # A correlation function has detected that the value is not consistent with other
         # values. Typically set by a network State Estimator.
@@ -57,5 +57,5 @@ class Quality61850:
         self.test = False
 
         # Validity of the measurement value.
-        self.validity = Validity()
+        self.validity = Validity.GOOD
 

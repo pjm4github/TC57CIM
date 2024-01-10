@@ -3,6 +3,7 @@
 
 from enum import Enum
 
+
 class BreakerFailureReasonKind(Enum):
     BLAST_VALVE_FAILURE = 1
     BUSHING_FAILURE = 2

@@ -1,7 +1,6 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 21:57:45 2023
 from IEC61970.Base.Domain.PU import PU
 from IEC61970.Base.Domain.Seconds import Seconds
-from typing import Optional
 
 from IEC61970.Dynamics.StandardModels.AsynchronousMachineDynamics.AsynchronousMachineDynamics import \
     AsynchronousMachineDynamics

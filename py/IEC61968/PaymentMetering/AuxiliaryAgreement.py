@@ -5,8 +5,9 @@ from IEC61970.Base.Domain.Money import Money
 
 from IEC61968.Common.Agreement import Agreement
 
+
 class AuxiliaryAgreement(Agreement):
-    
+
     def __init__(self):
         super().__init__()
         self.arrears_interest = PerCent()

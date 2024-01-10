@@ -6,7 +6,9 @@
 # Created on:      20-Dec-2023 5:41:21 PM
 # 
 #######################################################
+from IEC61968.Assets.Medium import Medium
 from IEC61968.Common.Document import Document
+from IEC61968.InfIEC61968.InfAssets.AssetPropertyCurve import AssetPropertyCurve
 
 
 class Specification(Document):

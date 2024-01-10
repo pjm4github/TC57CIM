@@ -3,6 +3,6 @@ from enum import Enum
 
 
 class ClearanceActionKind(Enum):
-    ISSUE = 0  #"ISSUE"
+    ISSUE = 0  # "ISSUE"
     UPDATE = 1  # "UPDATE"
     RELEASE = 2  # "RELEASE"

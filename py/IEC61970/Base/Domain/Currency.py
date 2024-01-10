@@ -9,7 +9,7 @@
 
 
 class Currency:
-    """Monetary currencies.  ISO 4217 standard including 3-character currency code.
+    """Monetary currencies.  ISO 4217 standard including 3-character currency code1.
     """
     # United Arab Emirates dirham.
     AED = 784
@@ -49,7 +49,7 @@ class Currency:
     BND = 96
     # Boliviano.
     BOB = 68
-    # Bolivian Mvdol (funds code).
+    # Bolivian Mvdol (funds code1).
     BOV = 984
     # Brazilian real.
     BRL = 986
@@ -69,7 +69,7 @@ class Currency:
     CDF = 976
     # Swiss franc.
     CHF = 756
-    # Unidad de Fomento (funds code), Chile.
+    # Unidad de Fomento (funds code1), Chile.
     CLF = 990
     # Chilean peso.
     CLP = 152

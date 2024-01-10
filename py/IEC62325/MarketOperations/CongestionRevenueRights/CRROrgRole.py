@@ -11,6 +11,6 @@ class CRROrgRole(OrganisationRole):
     """
     def __init__(self):
         super().__init__()  # Call to the superclass's constructor
-        self.kind = CRRRoleType.SELLER  # Kind of role the organisation is with regards to the congestion revenue rights.
+        self.kind = CRRRoleType.SELLER  # Kind of role the organisation is regarding the congestion revenue rights.
         self.status = Status()  # Status of congestion revenue rights organisation role.
         self.congestion_revenue_right = CongestionRevenueRight()  # Associated CongestionRevenueRight

@@ -5,6 +5,6 @@ from IEC61970.Base.Domain.Time import Time
 
 class TimeTariffInterval:
     def __init__(self):
-        self.sequence_number =0
+        self.sequence_number = 0
         self.start_time = Time()
         self.charges = Charge()

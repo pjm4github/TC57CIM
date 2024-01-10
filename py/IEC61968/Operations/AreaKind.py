@@ -3,6 +3,7 @@
 
 from enum import Enum
 
+
 class AreaKind(Enum):
     BOROUGH = 1
     COUNTY = 2

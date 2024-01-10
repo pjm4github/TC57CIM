@@ -9,10 +9,12 @@
 from IEC61970.Base.Domain.ApparentPower import ApparentPower
 from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
+
 class BasePower(IdentifiedObject):
-    """The BasePower class defines the base power used in the per unit calculations.
     """
+    The BasePower class defines the base power used in the per-unit calculations.
+    """
+
     def __init__(self):
         super().__init__()
         self.base_power = ApparentPower()
-

@@ -12,5 +12,5 @@ class SwitchStatus:
         """
         Initializes a new instance of SwitchStatus.
         """ 
-        self.switch_status: SwitchStatusType = SwitchStatusType
+        self.switch_status: SwitchStatusType = SwitchStatusType.OPEN
         self.mkt_switch: MktSwitch = MktSwitch()

@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from typing import Any
-
 from IEC61970.Base.Domain.PerCent import PerCent
 from IEC61970.Base.Wires.RatioTapChangerTable import RatioTapChangerTable
 from IEC61970.Base.Wires.TapChanger import TapChanger

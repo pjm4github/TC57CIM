@@ -13,8 +13,8 @@ from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 class Capacitance:
     """Capacitive part of reactance (imaginary part of impedance), at rated frequency.
     """
-    unit = UnitSymbol.F
 
     def __init__(self):
         self.value = 0.0
         self.multiplier = UnitMultiplier.none
+        self.unit = UnitSymbol.F

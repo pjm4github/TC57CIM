@@ -1,6 +1,6 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:38:50 2023
 from IEC61970.Base.Meas import Control
-from typing import Optional
+
 
 class AnalogControl(Control):
     """
@@ -11,5 +11,7 @@ class AnalogControl(Control):
     """
 
     def __init__(self) -> None:
-        self.max_valuefloat = 0.0  # Normal value range maximum for any of the Control.value. Used for scaling, e.g. in bar graphs.
-        self.min_valuefloat = 0.0  # Normal value range minimum for any of the Control.value. Used for scaling, e.g. in bar graphs.
+        self.max_value: float = 0.0  # Normal value range maximum for any of the Control.value. Used for scaling,
+        # e.g. in bar graphs.
+        self.min_value: float = 0.0  # Normal value range minimum for any of the Control.value. Used for scaling,
+        # e.g. in bar graphs.

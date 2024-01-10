@@ -19,8 +19,8 @@ class AggregateNode(IdentifiedObject):
 
     def __init__(self) -> None:
         super().__init__()
-        self.anode_typeOptional[AnodeType] = AnodeType.ACA  # Type of aggregated node
-        self.qualif_as_orderOptional[int] = 0
-        self.pnodeOptional[Pnode] = Pnode()
-        self.cnode_distribution_factorOptional[CnodeDistributionFactor] = CnodeDistributionFactor()
-        self.sub_control_areaOptional[SubControlArea] = SubControlArea()
+        self.anode_type: Optional[AnodeType] = AnodeType.ACA  # Type of aggregated node
+        self.qualif_as_order: Optional[int] = 0
+        self.pnode: Optional[Pnode] = Pnode()
+        self.cnode_distribution_factor: Optional[CnodeDistributionFactor] = CnodeDistributionFactor()
+        self.sub_control_area: Optional[SubControlArea] = SubControlArea()

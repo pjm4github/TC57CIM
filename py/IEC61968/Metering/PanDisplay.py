@@ -7,4 +7,4 @@ class PanDisplay:
         self.confirmation_required = False
         self.priority = ""
         self.text_message = ""
-        self.transmission_mode = TransmissionModeKind()
+        self.transmission_mode = TransmissionModeKind.BOTH

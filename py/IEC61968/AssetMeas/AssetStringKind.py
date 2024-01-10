@@ -3,5 +3,6 @@
 
 from enum import Enum
 
+
 class AssetStringKind(Enum):
     VISUAL_EXAM_REMARKS = 1

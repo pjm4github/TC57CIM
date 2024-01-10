@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sun Dec 31 17:07:00 2023
-from typing import Any
-
 from IEC61970.Base.Wires.SynchronousMachine import SynchronousMachine
 from IEC61970.Dynamics.StandardModels.RotatingMachineDynamics import RotatingMachineDynamics
 from IEC61970.Dynamics.StandardModels.TurbineGovernorDynamics.TurbineGovernorDynamics import TurbineGovernorDynamics

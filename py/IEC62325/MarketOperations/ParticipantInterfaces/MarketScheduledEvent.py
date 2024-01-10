@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Thu Dec 28 17:25:42 2023
-from datetime import timedelta
-from enum import Enum
 
 from IEC61968.Common.Status import Status
 from IEC61970.Base.Domain.Seconds import Seconds

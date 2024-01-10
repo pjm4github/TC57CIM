@@ -1,5 +1,5 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sun Dec 31 17:08:39 2023
-from typing import Optional, Union
+from typing import Optional
 
 from IEC61970.Base.Domain.ActivePower import ActivePower
 from IEC61970.Base.Domain.Frequency import Frequency
@@ -17,8 +17,10 @@ class GovHydroDd(TurbineGovernorDynamics):
         super().__init__()
         self.aturb: PU = PU(-1)  # Turbine numerator multiplier (Aturb) (note 3).  Typical Value = -1.
         self.bturb: PU = PU(.5)  # Turbine denominator multiplier (Bturb) (note 3).  Typical Value = 0.5.
-        self.db1: Optional[Frequency] =  Frequency(0) # Intentional dead-band width (db1).  Unit = Hz.  Typical Value = 0.
-        self.db2: Optional[ActivePower] = ActivePower(0)  # Unintentional dead-band (db2).  Unit = MW.  Typical Value = 0.
+        self.db1: Optional[Frequency] = Frequency(
+            0)  # Intentional dead-band width (db1).  Unit = Hz.  Typical Value = 0.
+        self.db2: Optional[ActivePower] = ActivePower(
+            0)  # Unintentional dead-band (db2).  Unit = MW.  Typical Value = 0.
         self.eps: Optional[Frequency] = Frequency(0)  # Intentional db hysteresis (eps).  Unit = Hz.  Typical Value = 0.
         self.gmax: PU = PU(0)  # Maximum gate opening (Gmax).  Typical Value = 0.
         self.gmin: PU = PU(0)  # Minimum gate opening (Gmin).  Typical Value = 0.
@@ -28,7 +30,9 @@ class GovHydroDd(TurbineGovernorDynamics):
         self.gv4: PU = PU(0)  # Nonlinear gain point 4, PU gv (Gv4).  Typical Value = 0.
         self.gv5: PU = PU(0)  # Nonlinear gain point 5, PU gv (Gv5).  Typical Value = 0.
         self.gv6: PU = PU(0)  # Nonlinear gain point 6, PU gv (Gv6).  Typical Value = 0.
-        self.input_signal: bool  = False  # Input signal switch (Flag). True = Pe input is used. False = feedback is received from CV. Flag is normally dependent on Tt.  If Tf is zero, Flag is set to false. If Tf is not zero, Flag is set to true.  Typical Value = True.
+        self.input_signal: bool = False  # Input signal switch (Flag). True = Pe input is used. False = feedback is
+        # received from CV. Flag is normally dependent on Tt.  If Tf is zero, Flag is set to false. If Tf is not
+        # zero, Flag is set to true.  Typical Value = True.
         self.k1: PU = PU(3.6)  # Single derivative gain (K1).  Typical Value = 3.6.
         self.k2: PU = PU(0.2)  # Double derivative gain (K2).  Typical Value = 0.2.
         self.kg: PU = PU(3)  # Gate servo gain (Kg).  Typical Value = 3.

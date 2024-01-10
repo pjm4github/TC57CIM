@@ -14,8 +14,8 @@ class ReactivePower:
     """Product of RMS value of the voltage and the RMS value of the quadrature
     component of the current.
     """
-    unit = UnitSymbol.VAr
 
     def __init__(self):
         self.multiplier = UnitMultiplier.none
         self.value = 0.0
+        self.unit = UnitSymbol.VAr

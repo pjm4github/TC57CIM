@@ -10,10 +10,10 @@ class PotentialTransformerInfo(AssetInfo):
 
     def __init__(self) -> None:
         super().__init__()
-        self.accuracy_classOptional[str] = ""
-        self.nominal_ratioOptional[Ratio] = Ratio()
-        self.primary_ratioOptional[Ratio] = Ratio()
-        self.pt_classOptional[str] = ""
-        self.rated_voltageOptional[Voltage] = Voltage()
-        self.secondary_ratioOptional[Ratio] = Ratio()
-        self.tertiary_ratioOptional[Ratio] = Ratio()
+        self.accuracy_class: Optional[str] = ""
+        self.nominal_ratio: Optional[Ratio] = Ratio()
+        self.primary_ratio: Optional[Ratio] = Ratio()
+        self.pt_class: Optional[str] = ""
+        self.rated_voltage: Optional[Voltage] = Voltage()
+        self.secondary_ratio: Optional[Ratio] = Ratio()
+        self.tertiary_ratio: Optional[Ratio] = Ratio()

@@ -1,10 +1,6 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 21:51:45 2023
-from typing import Optional
-
 from IEC61970.Dynamics.StandardModels.WindDynamics.WindTurbineType1or2Dynamics import WindTurbineType1or2Dynamics
 from IEC61970.Dynamics.UserDefinedModels.ProprietaryParameterDynamics import ProprietaryParameterDynamics
-
-
 
 
 class WindType1Or2UserDefined(WindTurbineType1or2Dynamics):
@@ -30,4 +26,4 @@ class WindType1Or2UserDefined(WindTurbineType1or2Dynamics):
         false = user-defined model is explicitly defined in terms of control blocks and
         their input and output signals.
         """
-        self.proprietarybool = False
+        self.proprietary: bool = False

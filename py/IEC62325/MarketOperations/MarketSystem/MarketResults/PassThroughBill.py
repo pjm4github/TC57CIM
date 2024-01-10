@@ -75,7 +75,7 @@ class PassThroughBill(Document):
         # The tax on services taken.
         self.tax_amount = Money()
 
-        # The time zone code
+        # The time zone code1
         self.time_zone = ""
 
         # The trade date

@@ -12,15 +12,15 @@ class SchedulingCoordinator(MarketParticipant):
 
     def __init__(self) -> None:
         super().__init__()
-        self.credit_flagOptional[str] = ""  # Flag to indicate creditworthiness (Y, N)
-        self.credit_start_effective_dateOptional[DateTime] = DateTime()  # Date that the scheduling coordinator becomes creditworthy
-        self.last_modifiedOptional[DateTime] = DateTime()  # Indication of the last time this scheduling coordinator information was modified
-        self.qualification_statusOptional[str] = ""  # Scheduling coordinator qualification status, Qualified, Not Qualified, or Disqualified
-        self.scidOptional[str] = ""  # This is the short name or Scheduling Coordinator ID field
-        self.transmission_contract_rightOptional[ContractRight] = ContractRight()
-        self.submit_to_sc_tradeOptional[Trade] = Trade()
-        self.to_sc_tradeOptional[Trade] = Trade()
-        self.from_sc_tradeOptional[Trade] = Trade()
-        self.submit_from_sc_tradeOptional[Trade] = Trade()
-        self.market_participantOptional[MarketParticipant] = MarketParticipant()
-        self.scheduling_coordinator_userOptional[SchedulingCoordinatorUser] = SchedulingCoordinatorUser()
+        self.credit_flag: Optional[str] = ""  # Flag to indicate creditworthiness (Y, N)
+        self.credit_start_effective_date: Optional[DateTime] = DateTime()  # Date that the scheduling coordinator becomes creditworthy
+        self.last_modified: Optional[DateTime] = DateTime()  # Indication of the last time this scheduling coordinator information was modified
+        self.qualification_status: Optional[str] = ""  # Scheduling coordinator qualification status, Qualified, Not Qualified, or Disqualified
+        self.scid: Optional[str] = ""  # This is the short name or Scheduling Coordinator ID field
+        self.transmission_contract_right: Optional[ContractRight] = ContractRight()
+        self.submit_to_sc_trade: Optional[Trade] = Trade()
+        self.to_sc_trade: Optional[Trade] = Trade()
+        self.from_sc_trade: Optional[Trade] = Trade()
+        self.submit_from_sc_trade: Optional[Trade] = Trade()
+        self.market_participant: Optional[MarketParticipant] = MarketParticipant()
+        self.scheduling_coordinator_user: Optional[SchedulingCoordinatorUser] = SchedulingCoordinatorUser()

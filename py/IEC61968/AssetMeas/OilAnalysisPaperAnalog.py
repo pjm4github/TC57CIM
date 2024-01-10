@@ -9,4 +9,4 @@ class OilAnalysisPaperAnalog(AssetAnalog):
         super().__init__()
 
         # Kind of analog representing oil paper degradation analysis result.
-        self.kind = OilAnalysisPaperAnalogKind.ACF
+        self.kind = OilAnalysisPaperAnalogKind.ETHANOL

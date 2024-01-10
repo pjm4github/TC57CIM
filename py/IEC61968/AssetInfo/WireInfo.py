@@ -33,6 +33,6 @@ class WireInfo(AssetInfo):
         self.radius = Length()  # Outside radius of the wire.
         self.rated_current = CurrentFlow()  # Current carrying capacity of the wire under stated thermal conditions.
         self.rDC20 = ResistancePerLength()  # DC resistance per unit length of the conductor at 20 °C.
-        self.size_description = ""  # Describes the wire gauge or cross section.
+        self.size_description = ""  # Describes the wire gauge or crosssection.
         self.strand_count = 1  # Number of strands in the conductor.
         self.wire_phase_info = WirePhaseInfo()

@@ -14,5 +14,5 @@ class SvShuntCompensatorSections(StateVariable):
 
     def __init__(self) -> None:
         super().__init__()
-        self.sectionsfloat = 1.0  # The number of sections in service as a continuous variable. To get integer value, scale with ShuntCompensator.b_per_section.
-        self.shunt_compensatorOptional[ShuntCompensator] = ShuntCompensator()  # The shunt compensator for which the state applies.
+        self.sections: float = 1.0  # The number of sections in service as a continuous variable. To get integer value, scale with ShuntCompensator.b_per_section.
+        self.shunt_compensator: Optional[ShuntCompensator] = ShuntCompensator()  # The shunt compensator for which the state applies.

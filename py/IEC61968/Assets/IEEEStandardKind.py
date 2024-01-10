@@ -3,7 +3,7 @@
 from enum import Enum
 
 
-class IeeeStandardKind(Enum):
+class IEEEStandardKind(Enum):
     # IEEE Guide for Diagnostic Field Testing of Electric Power Apparatus - Part 1:
     # Oil Filled Power Transformers, Regulators, and Reactors -or-
     # IEEE Guide for Field Testing Power Apparatus Insulation.

@@ -2,6 +2,7 @@
 # local import
 from enum import Enum
 
+
 # class name in CamelCase
 class CalculationTechniqueKind(Enum):
     TRUE_RMS = 1

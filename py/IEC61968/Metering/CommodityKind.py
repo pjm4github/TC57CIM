@@ -3,6 +3,7 @@
 
 from enum import Enum
 
+
 class CommodityKind(Enum):
     NONE = 1
     ELECTRICITY_SECONDARY_METERED = 2

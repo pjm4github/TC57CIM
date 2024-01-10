@@ -11,5 +11,4 @@ class FaultIndicatorInfo(AssetInfo):
 
     def __init__(self) -> None:
         super().__init__()
-        self.reset_kind: FaultIndicatorResetKind = FaultIndicatorResetKind.remote
-
+        self.reset_kind: FaultIndicatorResetKind = FaultIndicatorResetKind.REMOTE

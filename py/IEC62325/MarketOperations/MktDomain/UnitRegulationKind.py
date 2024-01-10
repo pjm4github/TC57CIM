@@ -3,8 +3,6 @@
 from enum import Enum
 
 
-
-
 # Convert enum class to Python class
 class UnitRegulationKind(Enum):
     # Unit regulation kind.

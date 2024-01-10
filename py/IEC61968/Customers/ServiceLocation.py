@@ -1,10 +1,13 @@
 # ServiceLocation.py
 from IEC61968.Customers.TroubleTicket import TroubleTicket
+from IEC61968.Metering.EndDevice import EndDevice
 from IEC61968.Metering.UsagePoint import UsagePoint
+from IEC61968.Work.WorkLocation import WorkLocation
 
 
 class ServiceLocation(WorkLocation):
     def __init__(self):
+        super().__init__()
         self.accessMethod = ""
         # Method for the service person to access this service location. For example, a
         # description of where to obtain a key if the facility is unmanned and secured.

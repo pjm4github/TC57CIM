@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 15:58:51 2023
-from typing import Any
-
 from IEC61968.Common.Document import Document
 from IEC61968.InfIEC61968.InfAssetInfo.AssetModelCatalogue import AssetModelCatalogue
 from IEC61968.InfIEC61968.InfERPSupport.ErpPOLineItem import ErpPOLineItem

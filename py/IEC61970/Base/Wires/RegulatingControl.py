@@ -1,5 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from enum import Enum
 from typing import Optional
 
 from IEC61970.Base.Core.PhaseCode import PhaseCode
@@ -27,7 +26,7 @@ class RegulatingControl:
         self.mode: RegulatingControlModeKind = RegulatingControlModeKind.VOLTAGE
         # The regulating control mode presently available.  This specification allows for
         # determining the kind of regulation without need for obtaining the units from a schedule.
-        self.monitored_phaseOptional[PhaseCode] = PhaseCode.A
+        self.monitored_phase: Optional[PhaseCode] = PhaseCode.A
         # Phase voltage controlling this regulator, measured at regulator location.
         self.target_deadband: float = 0.0
         # This is a deadband used with discrete control to avoid excessive update of
@@ -37,7 +36,7 @@ class RegulatingControl:
         # The target value specified for case input.  This value can be used for the
         # target value without the use of schedules. The value has the units appropriate
         # to the mode attribute.
-        self.target_value_unit_multiplierOptional[UnitMultiplier] = UnitMultiplier.none
+        self.target_value_unit_multiplier: Optional[UnitMultiplier] = UnitMultiplier.none
         # Specify the multiplier for used for the targetValue.
 
     def get_discrete(self) -> bool:
@@ -70,7 +69,7 @@ class RegulatingControl:
     def set_mode(self, new_val: RegulatingControlModeKind):
         self.mode = new_val
 
-    def set_monitored_phase(self, new_valOptional[PhaseCode]):
+    def set_monitored_phase(self, new_val: Optional[PhaseCode]):
         self.monitored_phase = new_val
 
     def set_target_deadband(self, new_val: float):
@@ -79,5 +78,5 @@ class RegulatingControl:
     def set_target_value(self, new_val: float):
         self.target_value = new_val
 
-    def set_target_value_unit_multiplier(self, new_valOptional[UnitMultiplier]):
+    def set_target_value_unit_multiplier(self, new_val: Optional[UnitMultiplier]):
         self.target_value_unit_multiplier = new_val

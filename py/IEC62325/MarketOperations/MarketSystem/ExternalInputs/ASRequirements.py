@@ -9,8 +9,6 @@ class ASRequirements:
     requirement is applicable.
     @created 27-Dec-2023 3:24:11 PM
     """
-
-
     def __init__(self) -> None:
         self.interval_start_time: DateTime = DateTime()
         self.reserve_demand_curve: ReserveDemandCurve = ReserveDemandCurve()

@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 22:01:48 2023
-from typing import Optional
-
 from IEC61970.Base.Domain.Seconds import Seconds
 
 
@@ -26,12 +24,14 @@ class ExcAc8B:
         self.pid_lim: bool = False  # PID limiter indicator
         self.se_ve1: float = 1.0  # Exciter saturation function value at the corresponding exciter voltage, Ve1
         self.se_ve2: float = 1.0  # Exciter saturation function value at the corresponding exciter voltage, Ve2
-        self.ta: Seconds = Seconds() # Voltage regulator time constant (Ta)
-        self.tdr: Seconds = Seconds() # Lag time constant (Tdr)
-        self.te: Seconds = Seconds() # Exciter time constant, integration rate associated with exciter control (Te)
+        self.ta: Seconds = Seconds()  # Voltage regulator time constant (Ta)
+        self.tdr: Seconds = Seconds()  # Lag time constant (Tdr)
+        self.te: Seconds = Seconds()  # Exciter time constant, integration rate associated with exciter control (Te)
         self.telim: bool = False  # Selector for the limiter on the block [1/sTe]
-        self.ve1: float = 1.0  # Exciter alternator output voltages back of commutating reactance at which saturation is defined (Ve1)
-        self.ve2: float = 1.0  # Exciter alternator output voltages back of commutating reactance at which saturation is defined (Ve2)
+        self.ve1: float = 1.0  # Exciter alternator output voltages back of commutating reactance at which saturation
+        # is defined (Ve1)
+        self.ve2: float = 1.0  # Exciter alternator output voltages back of commutating reactance at which saturation
+        # is defined (Ve2)
         self.vemin: float = 1.0  # Minimum exciter voltage output (Vemin)
         self.vfemax: float = 1.0  # Exciter field current limit reference (Vfemax)
         self.vimax: float = 1.0  # Input signal maximum (Vimax)

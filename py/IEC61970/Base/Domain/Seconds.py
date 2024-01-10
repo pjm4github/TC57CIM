@@ -9,11 +9,12 @@
 from IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
 from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 
+
 class Seconds:
     """Time, in seconds.
     """
-    unit = UnitSymbol.s
 
-    def __init__(self, v = None):
+    def __init__(self, v=None):
         self.value = v
         self.multiplier = UnitMultiplier.none
+        self.unit = UnitSymbol.s

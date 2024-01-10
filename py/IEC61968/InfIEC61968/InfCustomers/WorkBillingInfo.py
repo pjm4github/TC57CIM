@@ -17,7 +17,7 @@ class WorkBillingInfo(Document):
         super().__init__()
         self.cost_estimate: Money = Money(0)  # Estimated cost for work
         self.deposit: Money = Money(0)  # Amount of price on deposit
-        self.discountfloat = 0.0  # Discount from standard price
+        self.discount: float = 0.0  # Discount from standard price
         self.due_date_time: DateTime = DateTime()  # Date and time by which payment for bill is expected from client
         self.issue_date_time: DateTime = DateTime()  # Date and time bill was issued to client
         self.received_date_time = DateTime()  # Date payment was received from client

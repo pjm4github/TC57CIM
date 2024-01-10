@@ -8,5 +8,6 @@ class AcdcConverterDcTerminal(DCBaseTerminal):
 
     def __init__(self) -> None:
         super().__init__()
-        self.polarity: DCPolarityKind.POSITIVE # Represents the normal network polarity condition.
-        self.dc_conducting_equipment: ACDCConverter = ACDCConverter()  # A DC converter terminal belong to an DC converter.
+        self.polarity: DCPolarityKind.POSITIVE  # Represents the normal network polarity condition.
+        self.dc_conducting_equipment: ACDCConverter = ACDCConverter()  # A DC converter terminal belong to
+        # an DC converter.

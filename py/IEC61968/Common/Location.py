@@ -14,7 +14,6 @@ from IEC61970.Base.Core.PowerSystemResource import PowerSystemResource
 from IEC61968.Operations.SwitchingOrder import SwitchingOrder
 
 
-
 class Location(IdentifiedObject):
 
     def __init__(self):

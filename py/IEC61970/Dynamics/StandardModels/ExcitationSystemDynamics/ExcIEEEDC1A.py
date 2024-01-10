@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 22:01:48 2023
-from typing import Optional
-
 from IEC61970.Base.Domain.Seconds import Seconds
 from IEC61970.Dynamics.StandardModels.ExcitationSystemDynamics.ExcitationSystemDynamics import ExcitationSystemDynamics
 
@@ -30,16 +28,18 @@ class ExcIeeeDc1A(ExcitationSystemDynamics):
         self.ka: float = 0.0  # Voltage regulator gain (K_A).  Typical Value = 46.
         self.ke: float = 0.0  # Exciter constant related to self-excited field (K_E).  Typical Value = 0.
         self.kf: float = 0.0  # Excitation control system stabilizer gain (K_F).  Typical Value = 0.1.
-        self.seefd1: float = 0.0  # Exciter saturation function value at the corresponding exciter voltage, E_FD1 (S_E[E_FD1]).
+        self.seefd1: float = 0.0  # Exciter saturation function value at the corresponding exciter voltage,
+        # E_FD1 (S_E[E_FD1]).
         # Typical Value = 0.33.
-        self.seefd2: float = 0.0  # Exciter saturation function value at the corresponding exciter voltage, E_FD2 (S_E[E_FD2]).
+        self.seefd2: float = 0.0  # Exciter saturation function value at the corresponding exciter voltage,
+        # E_FD2 (S_E[E_FD2]).
         # Typical Value = 0.1.
-        self.ta: Seconds = Seconds() # Voltage regulator time constant (T_A).  Typical Value = 0.06.
-        self.tb: Seconds = Seconds() # Voltage regulator time constant (T_B).  Typical Value = 0.
-        self.tc: Seconds = Seconds() # Voltage regulator time constant (T_C).  Typical Value = 0.
-        self.te: Seconds = Seconds() # Exciter time constant, integration rate associated with exciter control (T_E).
+        self.ta: Seconds = Seconds()  # Voltage regulator time constant (T_A).  Typical Value = 0.06.
+        self.tb: Seconds = Seconds()  # Voltage regulator time constant (T_B).  Typical Value = 0.
+        self.tc: Seconds = Seconds()  # Voltage regulator time constant (T_C).  Typical Value = 0.
+        self.te: Seconds = Seconds()  # Exciter time constant, integration rate associated with exciter control (T_E).
         # Typical Value = 0.46.
-        self.tf: Seconds = Seconds() # Excitation control system stabilizer time constant (T_F).  Typical Value = 1.
+        self.tf: Seconds = Seconds()  # Excitation control system stabilizer time constant (T_F).  Typical Value = 1.
         self.uelin: bool = False  # UEL input (uelin).
         # true = input is connected to the HV gate
         # false = input connects to the error signal. Typical Value = true.

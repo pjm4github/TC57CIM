@@ -20,10 +20,10 @@ class PriceDescriptor:
         pass
         # The time frame for the price, using the standard conventions associated with
         # the MarketType enumeration.
-        self.market_type = MarketType()
+        self.market_type = MarketType.RTM
 
         # The "kind" of price being described. In general, the priceType will either be
         # "total" to signify that the price is the price paid to buy or sell the
         # commodity, sometimes referred to as an "all-in" price, or one of potentially
         # many components.
-        self.price_type = PriceTypeKind()
+        self.price_type = PriceTypeKind.SYSTEM

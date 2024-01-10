@@ -33,4 +33,4 @@ class OilAnalysisFluidDiscreteKind:
         self.tarnish_level = tarnish_level if tarnish_level else "1A"
         # Sludge precipitation test results.
         # Possible values: present, notPresent.
-        self.sludge_precipitation = sludge_precipitation if sludge_precipitation else  "present"
+        self.sludge_precipitation = sludge_precipitation if sludge_precipitation else "present"

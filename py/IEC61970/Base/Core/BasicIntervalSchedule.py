@@ -11,9 +11,11 @@ from IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
 from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
+
 class BasicIntervalSchedule(IdentifiedObject):
     """Schedule of values at points in time.
     """
+
     def __init__(self):
         super().__init__()
         self.start_time = DateTime()

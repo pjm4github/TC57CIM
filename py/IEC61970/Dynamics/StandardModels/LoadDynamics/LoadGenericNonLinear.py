@@ -18,18 +18,18 @@ class LoadGenericNonLinear(LoadDynamics):
     @created 29-Dec-2023 11:24:19 PM
     """
 
-
     def __init__(self) -> None:
         super().__init__()
-        
+
         # Steady state voltage index for reactive power (BS).
         self.bs: Union[float, None] = 1.0
-        
+
         # Transient voltage index for reactive power (BT).
         self.bt: Union[float, None] = 1.0
 
         # Type of generic non-linear load model.
-        self.generic_non_linear_load_model_type: Union[GenericNonLinearLoadModelKind, None] = GenericNonLinearLoadModelKind()
+        self.generic_non_linear_load_model_type: Union[
+            GenericNonLinearLoadModelKind, None] = GenericNonLinearLoadModelKind.LOAD_ADAPTIVE
 
         # Steady state voltage index for active power (LS).
         self.ls: Union[float, None] = 1.0

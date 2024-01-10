@@ -21,7 +21,6 @@ class SecurityConstraintSum(MarketFactors):
     "interface flow shall be less than limit", assuming the terminals are chosen on the importing side of the interface.
     """
 
-
     def __init__(self) -> None:
         super().__init__()
         self.rto: Any = RTO()

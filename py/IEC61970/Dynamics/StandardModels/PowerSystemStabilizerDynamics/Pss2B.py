@@ -4,6 +4,8 @@ from typing import Optional
 from IEC61970.Base.Domain.PU import PU
 from IEC61970.Base.Domain.Seconds import Seconds
 from IEC61970.Dynamics.StandardModels.PowerSystemStabilizerDynamics.InputSignalKind import InputSignalKind
+from IEC61970.Dynamics.StandardModels.PowerSystemStabilizerDynamics.PowerSystemStabilizerDynamics import \
+    PowerSystemStabilizerDynamics
 
 
 class Pss2B(PowerSystemStabilizerDynamics):
@@ -18,15 +20,19 @@ class Pss2B(PowerSystemStabilizerDynamics):
         """
         Constructor
         """
+        super().__init__()
         self.a: float = 1.0  # Numerator constant (a).  Typical Value = 1.
-        self.input_signal_1_type: Optional[InputSignalKind] = InputSignalKind.ROTOR_SPEED  # Type of input signal #1.  Typical Value = rotorSpeed.
-        self.input_signal_2_type: Optional[InputSignalKind] = InputSignalKind.GENERATOR_ELECTRICAL_POWER  # Type of input signal #2.  Typical Value = generatorElectricalPower.
+        self.input_signal_1_type: Optional[
+            InputSignalKind] = InputSignalKind.ROTOR_SPEED  # Type of input signal #1.  Typical Value = rotorSpeed.
+        self.input_signal_2_type: Optional[
+            InputSignalKind] = InputSignalKind.GENERATOR_ELECTRICAL_POWER  # Type of input signal #2.  Typical Value
+        # = generatorElectricalPower.
         self.ks1: PU = PU(12)  # Stabilizer gain (Ks1).  Typical Value = 12.
         self.ks2: PU = PU(.2)  # Gain on signal #2 (Ks2).  Typical Value = 0.2.
         self.ks3: PU = PU(1)  # Gain on signal #2 input before ramp-tracking filter (Ks3).  Typical Value = 1.
         self.ks4: PU = PU(1)  # Gain on signal #2 input after ramp-tracking filter (Ks4).  Typical Value = 1.
-        self.m: Optional[int] = 5 # Denominator order of ramp tracking filter (M).  Typical Value = 5.
-        self.n: Optional[int] = 1 # Order of ramp tracking filter (N).  Typical Value = 1.
+        self.m: Optional[int] = 5  # Denominator order of ramp tracking filter (M).  Typical Value = 5.
+        self.n: Optional[int] = 1  # Order of ramp tracking filter (N).  Typical Value = 1.
         self.t1: Seconds = Seconds(.12)  # Lead/lag time constant (T1).  Typical Value = 0.12.
         self.t10: Seconds = Seconds(0)  # Lead/lag time constant (T10).  Typical Value = 0.
         self.t11: Seconds = Seconds(0)  # Lead/lag time constant (T11).  Typical Value = 0.

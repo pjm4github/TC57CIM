@@ -10,7 +10,7 @@ class PetersenCoil(EarthFaultCompensator):
 
     def __init__(self) -> None:
         super().__init__()
-        self.mode: PetersenCoilModeKind = PetersenCoilModeKind()
+        self.mode: PetersenCoilModeKind = PetersenCoilModeKind.FIXED
         self.nominal_u: Voltage = Voltage()
         self.offset_current: CurrentFlow = CurrentFlow()
         self.position_current: CurrentFlow = CurrentFlow()

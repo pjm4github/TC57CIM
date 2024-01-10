@@ -3,17 +3,17 @@ from IEC61970.Base.Domain.DateTime import DateTime
 
 
 class MarketQualificationRequirement:
-    '''
+    """
     Certain skills are required and shall be certified in order for a person
     (typically a member of a crew) to be qualified to work on types of equipment.
     @created 28-Dec-2023 12:17:20 PM
-    '''
+    """
 
     def __init__(self) -> None:
-        '''
+        """
         Effective date of the privilege, terminate date of the privilege, or effective
         date of the application for the organization
-        '''
+        """
         self.effective_date: DateTime = DateTime()
         '''
         This is the terminate date of the application for the organization.

@@ -9,5 +9,5 @@ from IEC62325.MarketOperations.MarketSystem.MarketResults.PnodeResults import Pn
 class PnodeClearing(MarketFactors):
     def __init__(self) -> None:
         super().__init__()
-        self.commodity_priceOptional[CommodityPrice] = CommodityPrice()
-        self.pnode_resultsOptional[PnodeResults] = PnodeResults()
+        self.commodity_price: Optional[CommodityPrice] = CommodityPrice()
+        self.pnode_results: Optional[PnodeResults] = PnodeResults()

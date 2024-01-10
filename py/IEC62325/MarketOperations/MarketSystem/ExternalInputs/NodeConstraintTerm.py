@@ -1,6 +1,7 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Wed Dec 27 15:35:30 2023
-from IEC62325.MarketOperations.MarketSystem.ConstraintTerm import ConstraintTerm  # Local import for Python
+# from IEC62325.MarketOperations.MarketSystem.ConstraintTerm import ConstraintTerm  # Local import for Python
 from IEC62325.MarketOperations.MarketOpCommon.MktConnectivityNode import MktConnectivityNode
+from IEC62325.MarketOperations.MarketSystem.ExternalInputs.ConstraintTerm import ConstraintTerm
 
 
 class NodeConstraintTerm(ConstraintTerm):
@@ -13,4 +14,4 @@ class NodeConstraintTerm(ConstraintTerm):
 
     def __init__(self) -> None:
         super().__init__()
-        self.mkt_connectivity_node: MktConnectivityNode  = MktConnectivityNode()  # Assuming MktConnectivityNode is available in Python library
+        self.mkt_connectivity_node: MktConnectivityNode = MktConnectivityNode()  # Assuming MktConnectivityNode is available in Python library

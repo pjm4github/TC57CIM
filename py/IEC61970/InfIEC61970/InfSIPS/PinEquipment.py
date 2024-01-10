@@ -7,7 +7,6 @@
 # Original author: sveinols
 # 
 #######################################################
-from IEC61970.InfIEC61970.InfSIPS.PinEquipmentKind import PinEquipmentKind
 from IEC61970.Base.Core.Equipment import Equipment
 from IEC61970.InfIEC61970.InfSIPS.GateInputPin import GateInputPin
 

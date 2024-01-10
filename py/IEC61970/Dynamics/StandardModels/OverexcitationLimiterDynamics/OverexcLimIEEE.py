@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sun Dec 31 17:00:52 2023
-from typing import Union
-
 from IEC61970.Base.Domain.PU import PU
 from IEC61970.Dynamics.StandardModels.OverexcitationLimiterDynamics.OverexcitationLimiterDynamics import \
     OverexcitationLimiterDynamics
@@ -21,32 +19,20 @@ class OverexcLimIeee(OverexcitationLimiterDynamics):
     
     def __init__(self) -> None:
         super().__init__()
-        """
-        OEL pickup/drop-out hysteresis (HYST). Typical Value = 0.03.
-        """
+        # OEL pickup/drop-out hysteresis (HYST). Typical Value = 0.03.
         self.hyst: PU = PU(0.03)
         
-        """
-        OEL timed field current limit (IFDLIM). Typical Value = 1.05.
-        """
+        # OEL timed field current limit (IFDLIM). Typical Value = 1.05.
         self.ifdlim: PU = PU(1.05)
         
-        """
-        OEL instantaneous field current limit (IFDMAX). Typical Value = 1.5.
-        """
+        # OEL instantaneous field current limit (IFDMAX). Typical Value = 1.5.
         self.ifdmax: PU = PU(1.5)
         
-        """
-        OEL timed field current limiter pickup level (ITFPU). Typical Value = 1.05.
-        """
+        # OEL timed field current limiter pickup level (ITFPU). Typical Value = 1.05.
         self.itfpu: PU = PU(1.05)
         
-        """
-        OEL cooldown gain (KCD). Typical Value = 1.
-        """
+        # OEL cooldown gain (KCD). Typical Value = 1.
         self.kcd: PU = PU(1.0)
         
-        """
-        OEL ramped limit rate (KRAMP). Unit = PU/sec. Typical Value = 10.
-        """
+        # OEL ramped limit rate (KRAMP). Unit = PU/sec. Typical Value = 10.
         self.kramp: float = 10.0

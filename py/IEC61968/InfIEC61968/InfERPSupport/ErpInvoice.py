@@ -2,6 +2,7 @@
 from IEC61968.InfIEC61968.InfERPSupport.BillMediaKind import BillMediaKind
 from IEC61968.InfIEC61968.InfERPSupport.ErpDocument import ErpDocument
 from IEC61968.InfIEC61968.InfERPSupport.ErpInvoiceKind import ErpInvoiceKind
+from IEC61970.Base.Domain.Date import Date
 from IEC61970.Base.Domain.DateTime import DateTime
 from IEC61970.Base.Domain.Money import Money
 
@@ -13,7 +14,7 @@ class ErpInvoice(ErpDocument):
         self.amount = Money()
         self.bill_media_kind = BillMediaKind.PAPER
         self.due_date = Date()
-        self.kind = ErpInvoiceKind()
+        self.kind = ErpInvoiceKind.SALE
         self.mailed_date = Date()
         self.pro_forma = True
         self.reference_number = ""

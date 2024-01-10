@@ -22,6 +22,6 @@ class ExPostResourceResults:
         self.max_economic_mw: float = 0.0  # Economic Maximum MW
         self.min_economic_mw: float = 0.0  # Economic Minimum MW
         self.resource_mw: float = 0.0  # Current MW output of the equipment
-        self.statusOptional[EquipmentStatusType] = EquipmentStatusType()  # Status of equipment
-        self.ex_post_resourceOptional[ExPostResource] = ExPostResource()
-        self.registered_resourceOptional[RegisteredResource] = RegisteredResource()
+        self.status: Optional[EquipmentStatusType] = EquipmentStatusType.IN  # Status of equipment
+        self.ex_post_resource: Optional[ExPostResource] = ExPostResource()
+        self.registered_resource: Optional[RegisteredResource] = RegisteredResource()

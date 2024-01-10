@@ -6,5 +6,6 @@ from IEC61968.Operations.PlannedOutage import PlannedOutage
 class OperationalUpdatedRating(OperationalRestriction):
 
     def __init__(self):
+        super().__init__()
         self.change_type = ""
         self.planned_outage = PlannedOutage()

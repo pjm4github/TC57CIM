@@ -1,7 +1,6 @@
 """
-This module converts javacode to python code
+This module converts javacode to python code1
 """
-import codecs
 import os
 from datetime import datetime
 from pathlib import Path
@@ -19,41 +18,41 @@ client = OpenAI(
 )
 MODEL_NAME = "gpt-3.5-turbo-1106"
 
-def remove_multiline_comments(code):
+def remove_multiline_comments(code1):
     """
-    Removes all multiline comments from the given code.
+    Removes all multiline comments from the given code1.
     """
 
     # Create a regular expression that matches multiline comments.
     comment_regex = re.compile(r'/\*(?:[^*]+|\*(?!/)|[^*])*\*/')
 
-    # Remove all multiline comments from the code.
-    return comment_regex.sub('', code)
+    # Remove all multiline comments from the code1.
+    return comment_regex.sub('', code1)
 
 
-def remove_block_comments(code):
+def remove_block_comments(code2):
     """
-    Removes all block comments from Java code.
+    Removes all block comments from Java code1.
     block comments are start with //
     Args:
-      code: The Java code to remove comments from.
+      code2: The Java code1 to remove comments from.
 
     Returns:
-      The Java code with all comments removed.
+      The Java code1 with all comments removed.
     """
 
     # Create a regular expression to match block comments.
     pattern = re.compile(r'/\*.*?\*/')
 
-    # Remove all block comments from the code.
-    return re.sub(pattern, '', code)
+    # Remove all block comments from the code1.
+    return re.sub(pattern, '', code2)
 
 
 def convert_code(code_snippet):
     """
-    Convert the given code snippet using GPT-3.
+    Convert the given code1 snippet using GPT-3.
     """
-    # Call the GPT-3 API to generate the converted code
+    # Call the GPT-3 API to generate the converted code1
     try:
         chat_completion = client.chat.completions.create(
             messages=[
@@ -63,12 +62,12 @@ def convert_code(code_snippet):
                                 Use snake_case attributes including the comments and, instead of the initial value of None, use the java type as a class method call. 
                                 Use the Typical values as an argument to the Java class method call. 
                                 assume the attributes are initialized to the class type as a method call.
-                                include the comments as inline comments for the code when you convert it.
+                                include the comments as inline comments for the code1 when you convert it.
                                 add the super().__init__() call right after the __init__ method definition.
                                 add the comments.
                                 add them as single line comments to the end of the assignment.
                                 add the class comments"""
-                    # "content": "Given this Java class, convert this code to python, using snake_case methods and "
+                    # "content": "Given this Java class, convert this code1 to python, using snake_case methods and "
                     #            "attributes, include the original comments, and add python typing to the python class. "
                     #            "Keep the class name CamelCase. Keep the imports in their original form."
                 },
@@ -78,26 +77,26 @@ def convert_code(code_snippet):
                 }
             ],
             model=MODEL_NAME,
-            # model="code-davinci-002",
+            # model="code1-davinci-002",
             # model="gpt-3.5-turbo",
             # max_tokens=500,  # Adjust as needed
             # temperature=0.7  # Adjust the temperature for creativity
         )
 
-        # Extract and return the generated code from the response
+        # Extract and return the generated code1 from the response
 
-        converted_code = chat_completion.choices[0].message.content
-    except Exception as e:
-        converted_code = ''
-    return converted_code
+        converted_code1 = chat_completion.choices[0].message.content
+    except Exception as e1:
+        print(e1)
+        converted_code1 = ''
+    return converted_code1
 
 
 MAX_TOKENS = 10000  # Maximum number of tokens that can be used with the OPENAI model (model dependant)
 
 
 if __name__ == "__main__":
-    directory_path = f"{os.path.expanduser('~')}/Documents/Git/GitHub/TC57CIM/py/IEC61970/InfIEC61970/InfPart303/NetworkModelProjects/"
-
+    directory_path = f"{os.path.expanduser('~')}/Documents/Git/GitHub/TC57CIM/py/IEC61970/InfIEC61970/SCADA_EMS/Messages/MeasValueConfigurationReply/"
     output_path = f"{directory_path}/Converted/"
     try:
         starting_time = datetime.ctime(datetime.now())
@@ -120,7 +119,7 @@ if __name__ == "__main__":
                                 clean_code.append(line)
                     else:
                         clean_code = code
-                    # create a blob of code
+                    # create a blob of code1
                     code_string = '\n'.join(clean_code)
                     # remove comments
                     if file_size > MAX_TOKENS:
@@ -132,7 +131,7 @@ if __name__ == "__main__":
                     try:
                         code_string.encode('ascii', 'ignore')
                     except UnicodeDecodeError:
-                        raise ValueError('code is not ASCII')
+                        raise ValueError('code1 is not ASCII')
                     encoded_text = urllib.parse.quote(code_string)
                     converted_code = convert_code(encoded_text)
                     if converted_code:

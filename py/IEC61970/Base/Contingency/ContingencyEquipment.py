@@ -5,7 +5,7 @@ from IEC61970.Base.Core.Equipment import Equipment
 
 class ContingencyEquipment(ContingencyElement):
     """
-    A equipment to which the in service status is to change such as a power
+    The equipment to which the in service status is to change such as a power
     transformer or AC line segment.
     @author kdd
     @version 1.0

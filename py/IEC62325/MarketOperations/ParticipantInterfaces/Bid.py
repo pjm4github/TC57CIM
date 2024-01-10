@@ -10,8 +10,6 @@ from IEC62325.MarketOperations.MarketSystem.MarketResults.MitigatedBidSegment im
 from IEC62325.MarketOperations.MktDomain.MarketType import MarketType
 
 
-
-
 class Bid(Document):
     def __init__(self) -> None:
         super().__init__()

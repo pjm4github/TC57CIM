@@ -1,5 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Wed Dec 27 12:50:20 2023
-from datetime import datetime
 from typing import Optional
 
 from IEC62325.MarketOperations.MarketSystem.ExternalInputs.Profile import Profile
@@ -19,4 +18,4 @@ class LossProfile(Profile):
 
     def __init__(self) -> None:
         super().__init__()
-        self.has_lossOptional[TransmissionProvider] = TransmissionProvider()
+        self.has_loss: Optional[TransmissionProvider] = TransmissionProvider()

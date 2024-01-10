@@ -18,7 +18,7 @@ class AccessPermit(WorkDocument):
         """
         Permit application number that is used by municipality, state, province, etc.
         """
-        self.application_number: Optional[str] =  ""
+        self.application_number: Optional[str] = ""
 
         """
         Date that permit became official.

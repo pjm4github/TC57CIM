@@ -1,12 +1,12 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Thu Dec 28 13:18:10 2023
 from IEC62325.MarketOperations.MarketSystem.ExternalInputs.GenDistributionFactor import GenDistributionFactor
 from IEC62325.MarketOperations.MarketSystem.ExternalInputs.LoadDistributionFactor import LoadDistributionFactor
+from IEC62325.MarketOperations.MarketSystem.MarketResults.MPMTestResults import MPMTestResults
 from IEC62325.MarketOperations.MktDomain.ApnodeType import ApnodeType
 from IEC62325.MarketOperations.MktDomain.ParticipationCategoryMPM import ParticipationCategoryMPM
 from IEC62325.MarketOperations.ReferenceData.TACArea import TACArea
 from IEC62325.MarketOperations.ReferenceData.Pnode import Pnode
 from IEC62325.MarketOperations.ReferenceData.PnodeDistributionFactor import PnodeDistributionFactor
-
 
 
 class AggregatedPnode(Pnode):
@@ -22,7 +22,7 @@ class AggregatedPnode(Pnode):
         super().__init__()
 
         # * Aggregate Price Node Types
-        self.apnode_type: ApnodeType = ApnodeType()
+        self.apnode_type: ApnodeType = ApnodeType.BUS
         # 	 * Designated Control Area participation in LMP price measurement
         # 	 *
         # 	 * 'Y' - Participates in both Local Market Power Mitigation (LMPM) and System

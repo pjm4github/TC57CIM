@@ -1,7 +1,7 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Wed Dec 27 15:35:30 2023
-from typing import Any
 
 from IEC61970.Base.Core.Curve import Curve
+from IEC62325.MarketOperations.MarketSystem.ExternalInputs.MWLimitSchedule import MWLimitSchedule
 from IEC62325.MarketOperations.MarketSystem.ExternalInputs.SecurityConstraintSum import SecurityConstraintSum
 from IEC62325.MarketOperations.MarketSystem.ExternalInputs.TransferInterfaceSolution import MktContingency
 

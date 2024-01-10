@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 21:55:16 2023
-from typing import Optional
-
 class DynamicsFunctionBlock:
     """
     Abstract parent class for all Dynamics function blocks.

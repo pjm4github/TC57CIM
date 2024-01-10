@@ -6,8 +6,8 @@ from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 class Speed:
     """Distance per unit of time.
     """
-    unit = UnitSymbol.mPers
 
     def __init__(self) -> None:
         self.multiplier = UnitMultiplier.none
         self.value: float = 0.0
+        self.unit = UnitSymbol.mPers

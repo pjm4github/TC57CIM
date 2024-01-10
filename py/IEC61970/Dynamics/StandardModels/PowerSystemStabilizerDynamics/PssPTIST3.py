@@ -1,6 +1,4 @@
-  # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sun Dec 31 17:03:17 2023
-from typing import Optional, Any
-
+# Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sun Dec 31 17:03:17 2023
 from IEC61970.Base.Domain.PU import PU
 from IEC61970.Base.Domain.Seconds import Seconds
 from IEC61970.Dynamics.StandardModels.PowerSystemStabilizerDynamics.PowerSystemStabilizerDynamics import \
@@ -10,7 +8,6 @@ from IEC61970.Dynamics.StandardModels.PowerSystemStabilizerDynamics.PowerSystemS
 class PssPtist3(PowerSystemStabilizerDynamics):
 
     def __init__(self) -> None:
-        
         super().__init__()
         self.a0: PU = PU(0.0)  # Filter coefficient (A0).
         self.a1: PU = PU(0.0)  # Limiter (Al).
@@ -19,7 +16,8 @@ class PssPtist3(PowerSystemStabilizerDynamics):
         self.a4: PU = PU(0.0)  # Filter coefficient (A4).
         self.a5: PU = PU(0.0)  # Filter coefficient (A5).
         self.al: PU = PU(0.0)  # Limiter (Al).
-        self.athres: PU = PU(0.005)  # Threshold value above which output averaging will be bypassed (Athres).  Typical Value = 0.005.
+        self.athres: PU = PU(
+            0.005)  # Threshold value above which output averaging will be bypassed (Athres).  Typical Value = 0.005.
         self.b0: PU = PU(0.0)  # Filter coefficient (B0).
         self.b1: PU = PU(0.0)  # Filter coefficient (B1).
         self.b2: PU = PU(0.0)  # Filter coefficient (B2).
@@ -27,10 +25,13 @@ class PssPtist3(PowerSystemStabilizerDynamics):
         self.b4: PU = PU(0.0)  # Filter coefficient (B4).
         self.b5: PU = PU(0.0)  # Filter coefficient (B5).
         self.dl: PU = PU(0.0)  # Limiter (Dl).
-        self.dtc: PU = PU(0.025)  # Time step related to activation of controls (0.03 for 50 Hz) (Dtc).  Typical Value = 0.025.
+        self.dtc: PU = PU(
+            0.025)  # Time step related to activation of controls (0.03 for 50 Hz) (Dtc).  Typical Value = 0.025.
         self.dtf: PU = PU(0.025)  # Time step frequency calculation (0.03 for 50 Hz) (Dtf).  Typical Value = 0.025.
-        self.dtp: PU = PU(0.0125)  # Time step active power calculation (0.015 for 50 Hz) (Dtp).  Typical Value = 0.0125.
-        self.isw: bool = False  # Digital/analog output switch (Isw).  true = produce analog output false = convert to digital output, using tap selection table.
+        self.dtp: PU = PU(
+            0.0125)  # Time step active power calculation (0.015 for 50 Hz) (Dtp).  Typical Value = 0.0125.
+        self.isw: bool = False  # Digital/analog output switch (Isw).  true = produce analog output false = convert
+        # to digital output, using tap selection table.
         self.k: PU = PU(9)  # Gain (K).  Typical Value = 9.
         self.lthres: PU = PU(0.0)  # Threshold value (Lthres).
         self.m: PU = PU(5)  # (M).  M=2*H.  Typical Value = 5.

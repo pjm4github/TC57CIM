@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 21:57:45 2023
-from datetime import datetime
-
 from IEC61970.Base.Wires.AsynchronousMachine import AsynchronousMachine
 from IEC61970.Dynamics.StandardModels.RotatingMachineDynamics import RotatingMachineDynamics
 
@@ -15,7 +13,7 @@ class AsynchronousMachineDynamics(RotatingMachineDynamics):
     - Asynchronous machine parameters such as Xl, Xs etc. are actually
         used as inductances (L) in the model, but are commonly referred to as
         reactances since, at nominal frequency,
-        the per unit values are the same.
+        the per-unit values are the same.
     - However, some references use the symbol L instead of X.
     
     @author: tsaxton

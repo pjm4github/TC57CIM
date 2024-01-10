@@ -19,7 +19,7 @@ class StreetAddress:
 
         self.postal_code = ""
         """
-        Postal code for the address.
+        Postal code1 for the address.
         """
 
         self.status = Status()

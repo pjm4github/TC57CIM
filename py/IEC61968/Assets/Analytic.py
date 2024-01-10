@@ -7,6 +7,7 @@ from IEC61968.Assets.AssetHealthEvent import AssetHealthEvent
 from IEC61968.Assets.ScaleKind import ScaleKind
 from IEC61968.Common import Document
 
+
 class Analytic(Document):
     
     def __init__(self):

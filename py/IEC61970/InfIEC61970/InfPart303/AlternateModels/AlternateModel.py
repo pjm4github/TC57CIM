@@ -7,9 +7,11 @@ class AlternateModel(IdentifiedObject):
     """
     Represents an alternate model for a group of alternate models, where one alternate is used.
     """
+
     def __init__(self):
         super().__init__()
-        self.alternate_model_group = AlternateModelGroup()  # The group of alternate models for which one alternate is used.
+        self.alternate_model_group = AlternateModelGroup()  # The group of alternate models for which one alternate
+        # is used.
         self.dataset = DataSet()  # The data belonging to the alternate model.
 
 # end AlternateModel

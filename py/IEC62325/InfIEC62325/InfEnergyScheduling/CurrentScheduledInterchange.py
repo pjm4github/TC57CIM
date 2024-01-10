@@ -12,14 +12,14 @@ class CurrentScheduledInterchange:
     
     def __init__(self) -> None:
         """
-        Current control area net tie MW (the sum of the tie line flows, i.e the sum of
+        Current control area net tie MW (the sum of the tie line flows, i.e. the sum of
         flows into and out of the control area), the current instantaneous scheduled
         interchange.
         
         Use Emergency Schedule
         Attribute Usage: Emergency use indicator, false = Emergency Schedular OFF, true
-        = Emergency Schedular ON.
+       = Emergency Schedular ON.
         """
-        self.current_net_tie_mwfloat = 0.0
-        self.use_emergency_schedulebool = False
-        self.internal_control_areaOptional[InternalControlArea] = InternalControlArea()
+        self.current_net_tie_mw: float = 0.0
+        self.use_emergency_schedule: bool = False
+        self.internal_control_area: Optional[InternalControlArea] = InternalControlArea()

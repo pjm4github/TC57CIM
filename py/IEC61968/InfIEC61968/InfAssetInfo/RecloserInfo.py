@@ -13,27 +13,27 @@ class RecloserInfo(OldSwitchInfo):
 
     def __init__(self) -> None:
         super().__init__()
-        self.ground_trip_capablebool = True
+        self.ground_trip_capable: bool = True
         """
         True if device has ground trip capability.
         """
 
-        self.ground_trip_normal_enabledbool = True
+        self.ground_trip_normal_enabled: bool = True
         """
         True if normal status of ground trip is enabled.
         """
 
-        self.ground_trip_ratingOptional[CurrentFlow] = CurrentFlow()
+        self.ground_trip_rating: Optional[CurrentFlow] = CurrentFlow()
         """
         Ground trip rating.
         """
 
-        self.phase_trip_ratingOptional[CurrentFlow] = CurrentFlow()
+        self.phase_trip_rating: Optional[CurrentFlow] = CurrentFlow()
         """
         Phase trip rating.
         """
 
-        self.reclose_lockout_countOptional[int] = 0
+        self.reclose_lockout_count: Optional[int] = 0
         """
         Total number of phase reclose operations.
         """

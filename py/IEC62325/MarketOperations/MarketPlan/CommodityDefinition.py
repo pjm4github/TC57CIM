@@ -10,7 +10,7 @@ from IEC62325.MarketOperations.MarketPlan.MarketProduct import MarketProduct
 class CommodityDefinition(IdentifiedObject):
     """
     Commodities in the context of IEC 62325 are MarketProducts (energy, regulation,
-    reserve, etc) traded at a specific location, which in this case is a Pnode
+    reserve, etc.) traded at a specific location, which in this case is a Pnode
     (either a specific pricing node or a pricing area or zone defined as a
     collection of pricing nodes).  The CommodityDefinition is a container for these
     two parameters, plus the unit of measure and the currency in which the

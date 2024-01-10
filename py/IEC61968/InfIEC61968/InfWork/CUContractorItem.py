@@ -14,7 +14,7 @@ class CUContractorItem(WorkIdentifiedObject):
 
     def __init__(self) -> None:
         super().__init__()
-        self.activity_code: Optional[str] = ""  # Activity code identifies a specific and distinguishable unit of work.
+        self.activity_code: Optional[str] = ""  # Activity code1 identifies a specific and distinguishable unit of work.
         self.bid_amount: Optional[Money] = Money()  # The amount that a given contractor will charge for performing this unit of work.
         self.status: Optional[Status] = Status()
         self.compatible_units: Optional[CompatibleUnit] = CompatibleUnit()

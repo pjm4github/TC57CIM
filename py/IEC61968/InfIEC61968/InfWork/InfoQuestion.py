@@ -17,7 +17,7 @@ class InfoQuestion(WorkDocument):
         self.answer: Optional[str] = ""  # Answer to question.
         self.answer_date_time: Optional[DateTime] = DateTime()  # The date and time the quesiton was answered.
         self.answer_remark: Optional[str] = ""  # Remarks to qualify the answer.
-        self.question_code: Optional[str] = ""  # The question code. If blank, refer to questionText.
+        self.question_code: Optional[str] = ""  # The question code1. If blank, refer to questionText.
         self.question_remark: Optional[str] = ""  # Remarks to qualify the question in this situation.
         self.question_text: Optional[str] = ""  # For non-coded questions, the question is provided here.
         self.question_type: Optional[str] = ""  # The type of the question.

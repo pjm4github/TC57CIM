@@ -5,7 +5,7 @@ from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 
 class EquipmentLimitSeriesComponent(IdentifiedObject):
     """
-    This represents one instance of an equipment that contributes to the calculation of an operational limit.
+    This represents one instance of equipment that contributes to the calculation of an operational limit.
     """
     def __init__(self):
         super().__init__()

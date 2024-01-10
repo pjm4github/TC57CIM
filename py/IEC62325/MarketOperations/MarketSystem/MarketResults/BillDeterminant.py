@@ -1,6 +1,5 @@
 from IEC61968.Common.Document import Document
 from IEC61970.Base.Domain.DateTime import DateTime
-from IEC62325.MarketOperations.MarketOpCommon import MktUserAttribute
 from IEC62325.MarketOperations.MarketSystem.MarketResults.ChargeProfileData import ChargeProfileData
 
 

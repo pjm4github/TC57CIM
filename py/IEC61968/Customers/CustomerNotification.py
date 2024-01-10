@@ -1,3 +1,5 @@
+from IEC61968.Customers.Customer import Customer
+from IEC61968.Customers.NotificationTriggerKind import NotificationTriggerKind
 from IEC61968.Customers.TroubleTicket import TroubleTicket
 from IEC61970.Base.Domain.DateTime import DateTime
 
@@ -20,6 +22,6 @@ class CustomerNotification:
         self.contactValue = ""
         self.earliestDateTimeToCall = DateTime()
         self.latestDateTimeToCall = DateTime()
-        self.trigger = NotificationTriggerKind()
+        self.trigger = NotificationTriggerKind.INITIAL_ETR
         self.customer = Customer()
         self.troubleTickets = TroubleTicket()

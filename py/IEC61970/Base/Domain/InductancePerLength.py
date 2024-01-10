@@ -7,8 +7,8 @@ from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 class InductancePerLength:
     """Inductance per unit of length.
     """
-    unit = UnitSymbol.HPerm
 
     def __init__(self) -> None:
         self.multiplier: UnitMultiplier = UnitMultiplier.none
         self.value: float = 0.0
+        self.unit = UnitSymbol.HPerm

@@ -1,7 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sun Dec 31 16:32:51 2023
-from datetime import datetime
-from typing import Optional
-
 from IEC61970.Dynamics.StandardModels.LoadDynamics.LoadDynamics import LoadDynamics
 
 

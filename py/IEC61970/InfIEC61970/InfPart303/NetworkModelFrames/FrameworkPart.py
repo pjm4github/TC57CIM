@@ -1,5 +1,6 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Jan  6 16:55:15 2024
 from IEC61970.InfIEC61970.InfPart303.NetworkModelFrames.ModelAuthoritySet import ModelAuthoritySet
+from IEC61970.InfIEC61970.InfPart303.NetworkModelFrames.unused.ModelFrameType import ModelFrameType
 
 
 class FrameworkPart(ModelAuthoritySet):

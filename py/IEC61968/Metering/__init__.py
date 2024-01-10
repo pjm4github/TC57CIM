@@ -1,3 +1,5 @@
 __description__ = """
-This package contains the core information classes that support end device applications with specialized classes for metering and premises area network devices, and remote reading functions. These classes are generally associated with the point where a service is delivered to the customer.
+This package contains the core information classes that support end device applications with specialized classes for
+ metering and premises area network devices, and remote reading functions. These classes are generally associated 
+ with the point where a service is delivered to the customer.
 """

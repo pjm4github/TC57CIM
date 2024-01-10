@@ -76,8 +76,9 @@ class FailureEvent(ActivityRecord):
         self.corporate_code = ""  # Code for asset failure
         self.failure_classification = AssetFailureClassification.MINOR  # Classification of failure
         self.failure_date_time = DateTime()  # Time and date of asset failure
-        self.failure_isolation_method = FailureIsolationMethodKind.MANUALLY_ISOLATED  # How the asset failure was isolated from the system
-        self.failure_mode = AssetFailureMode.FAIL_TO_OPEN # What asset failed to be able to do
+        self.failure_isolation_method = FailureIsolationMethodKind.MANUALLY_ISOLATED  # How the asset failure was
+        # isolated from the system
+        self.failure_mode = AssetFailureMode.FAIL_TO_OPEN  # What asset failed to be able to do
         self.fault_locating_method = ""  # The method used for locating the faulted part of the asset
         self.location = ""  # Failure location on an object
         self.root_cause = ""  # Root cause of asset failure

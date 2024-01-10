@@ -1,4 +1,6 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
+# from IEC61968.Assets.WEPStandardEditionKind import WEPStandardEditionKind
+# from IEC61968.Assets.WEPStandardKind import WEPStandardKind
 from IEC61968.Assets.WEPStandardEditionKind import WEPStandardEditionKind
 from IEC61968.Assets.WEPStandardKind import WEPStandardKind
 

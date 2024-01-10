@@ -17,7 +17,7 @@ class TransformerMeshImpedance:
     """
 
     def __init__(self):
-        self.r: Resistance =  Resistance()  # Resistance between the 'from' and the 'to' end, seen from the 'from' end.
+        self.r: Resistance = Resistance()  # Resistance between the 'from' and the 'to' end, seen from the 'from' end.
         self.r0: Resistance = Resistance()  # Zero-sequence resistance between the 'from' and the 'to' end, seen from the 'from' end.
         self.x: Reactance = Reactance()  # Reactance between the 'from' and the 'to' end, seen from the 'from' end.
         self.x0: Reactance = Reactance()   # Zero-sequence reactance between the 'from' and the 'to' end, seen from the 'from' end.

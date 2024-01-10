@@ -3,6 +3,7 @@
 
 from enum import Enum
 
+
 class BillMediaKind(Enum):
     PAPER = 1
     ELECTRONIC = 2

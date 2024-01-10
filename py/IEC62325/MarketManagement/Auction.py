@@ -1,10 +1,12 @@
 from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 from IEC62325.MarketManagement.TimeSeries import TimeSeries
 
+
 class Auction(IdentifiedObject):
     """
-    A class providing the identification and type of an auction.
+    A class providing the identification and type of auction.
     """
+
     def __init__(self):
         super().__init__()  # Call to the superclass's constructor
         self.allocation_mode = str()  # Identification of the method of allocation in an auction.

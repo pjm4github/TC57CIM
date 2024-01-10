@@ -1,6 +1,7 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 # local import
 from IEC61970.Base.Core.RegularIntervalSchedule import RegularIntervalSchedule
+from IEC62325.MarketOperations.ParticipantInterfaces.ProductBid import ProductBid
 
 
 class BidHourlyProductSchedule(RegularIntervalSchedule):

@@ -13,8 +13,6 @@ class OverexcitationLimiterDynamics(DynamicsFunctionBlock):
     @created 29-Dec-2023 11:24:19 PM
     """
 
-
-
     def __init__(self) -> None:
         super().__init__()
 

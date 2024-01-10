@@ -20,7 +20,7 @@ class Quantity:
         self.time_series = TimeSeries()
         self.point = Point()
         self.domain = Domain()
-
+        self.quantity = 0
 
     # The quantity value. The association role provides the information about what is expressed.
     def set_quantity(self, val):

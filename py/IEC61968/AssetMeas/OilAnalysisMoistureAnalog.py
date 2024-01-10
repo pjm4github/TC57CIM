@@ -7,5 +7,4 @@ class OilAnalysisMoistureAnalog(AssetAnalog):
     
     def __init__(self):
         super().__init__()
-        self.kind = OilAnalysisMoistureAnalogKind.dew_point
-        
+        self.kind = OilAnalysisMoistureAnalogKind.DEW_POINT

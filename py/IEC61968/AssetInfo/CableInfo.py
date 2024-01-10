@@ -13,9 +13,11 @@ from IEC61968.AssetInfo.CableOuterJacketKind import CableOuterJacketKind
 from IEC61968.AssetInfo.CableShieldMaterialKind import CableShieldMaterialKind
 from IEC61968.AssetInfo.WireInfo import WireInfo
 
+
 class CableInfo(WireInfo):
     """Cable data.
     """
+
     def __init__(self):
         super().__init__()
         self.construction_kind = CableConstructionKind.SOLID

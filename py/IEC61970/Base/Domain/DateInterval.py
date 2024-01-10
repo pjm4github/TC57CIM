@@ -1,5 +1,5 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:33:10 2023
-from typing import Any, Optional
+from typing import Optional
 
 from IEC61970.Base.Domain.DateTime import DateTime
 
@@ -13,5 +13,5 @@ class DateInterval:
     """
 
     def __init__(self) -> None:
-        self.startOptional[DateTime] = DateTime()   #  Start date of this interval.
-        self.endOptional[DateTime] = DateTime()   #  End date of this interval.
+        self.start: Optional[DateTime] = DateTime()  # Start date of this interval.
+        self.end: Optional[DateTime] = DateTime()  # End date of this interval.

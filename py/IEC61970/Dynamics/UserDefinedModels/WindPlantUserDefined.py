@@ -8,5 +8,5 @@ class WindPlantUserDefined(WindPlantDynamics):
     
     def __init__(self) -> None:
         super().__init__()
-        self.proprietarybool = False  # Behaviour is based on proprietary model as opposed to detailed model.
+        self.proprietary: bool = False  # Behaviour is based on proprietary model as opposed to detailed model.
         self.proprietary_parameter_dynamics = ProprietaryParameterDynamics()

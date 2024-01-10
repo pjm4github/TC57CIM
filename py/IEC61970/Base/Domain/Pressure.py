@@ -13,7 +13,8 @@ from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 class Pressure:
     """Pressure in Pascal.
     """
-    unit = UnitSymbol.Pa
+
     def __init__(self):
         self.mulitplier = UnitMultiplier.none
         self.value = 0.0
+        self.unit = UnitSymbol.Pa

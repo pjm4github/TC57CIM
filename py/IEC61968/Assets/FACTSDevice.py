@@ -7,4 +7,4 @@ class FACTSDevice(Asset):
     #  * @created 29-Dec-2023 5:25:07 PM
     def __init__(self):
         super().__init__()
-        self.kind = FACTSDeviceKind.SVC  # 	 * Kind of FACTS device.
+        self.kind = FACTSDeviceKind.SVC  # Kind of FACTS device.

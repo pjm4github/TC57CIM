@@ -4,7 +4,7 @@ from IEC61970.Base.LoadModel.SeasonDayTypeSchedule import SeasonDayTypeSchedule
 
 class DayType(IdentifiedObject):
     """
-    Group of similar days. For example it could be used to represent weekdays,
+    Group of similar days. For example, it could be used to represent weekdays,
     weekend, or holidays.
     @created 03-Jan-2024 10:44:40 PM
     """

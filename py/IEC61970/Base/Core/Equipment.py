@@ -11,7 +11,6 @@ from IEC61970.InfIEC61970.InfOperationalLimits.WeatherStation import WeatherStat
 from IEC61970.InfIEC61970.InfOperationalLimits.LimitDependency import LimitDependency
 
 
-
 # from PowerSystemResource import PowerSystemResource
 # from WeatherStation import WeatherStation
 # from LimitDependency import LimitDependency
@@ -19,10 +18,12 @@ from IEC61970.InfIEC61970.InfOperationalLimits.LimitDependency import LimitDepen
 class Equipment(PowerSystemResource):
     def __init__(self):
         super().__init__()
-        self.aggregate = False  # The single instance of equipment represents multiple pieces of equipment that have been modeled together as an aggregate.
+        self.aggregate = False  # The single instance of equipment represents multiple pieces of equipment that have
+        # been modeled together as an aggregate.
         self.in_service = False  # If true, the equipment is in service.
-        self.network_analysis_enabled = False  # The equipment is enabled to participate in network analysis. If unspecified, the value is assumed to be true.
+        self.network_analysis_enabled = False  # The equipment is enabled to participate in network analysis. If
+        # unspecified, the value is assumed to be true.
         self.normally_in_service = False  # If true, the equipment is normally in service.
         self.weather_station = WeatherStation()
-        self.limit_dependency_model = LimitDependency()  # Limit dependency models organized under this equipment as a means for organizing the model in a tree view.
-
+        self.limit_dependency_model = LimitDependency()  # Limit dependency models organized under this equipment as
+        # a means for organizing the model in a tree view.

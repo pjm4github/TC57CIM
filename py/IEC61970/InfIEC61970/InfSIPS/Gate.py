@@ -7,11 +7,11 @@
 # Original author: sveinols
 # 
 #######################################################
-from IEC61970.InfIEC61970.InfSIPS.GateLogicKind import GateLogicKind
 from IEC61970.InfIEC61970.InfSIPS.RemedialActionScheme import RemedialActionScheme
 from IEC61970.InfIEC61970.InfSIPS.PinGate import PinGate
 from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 from IEC61970.InfIEC61970.InfSIPS.GateInputPin import GateInputPin
+
 
 class Gate(IdentifiedObject):
     """Logical gate than support logical operation based on the input.

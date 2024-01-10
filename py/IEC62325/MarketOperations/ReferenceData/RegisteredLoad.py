@@ -23,11 +23,11 @@ class RegisteredLoad(RegisteredResource):
 
     def __init__(self):
         super().__init__()
-        self.block_load_transferbool = False  # Flag to indicate that the Resource is Block
+        self.block_load_transfer: bool = False  # Flag to indicate that the Resource is Block
         # Load pseudo resource.
-        self.dynamically_scheduled_load_resourceOptional[
+        self.dynamically_scheduled_load_resource: Optional[
             bool] = False  # Flag to indicate that a Load Resource is part of a DSR Load
-        self.dynamically_scheduled_qualificationbool = False  # Qualification status
+        self.dynamically_scheduled_qualification: bool = False  # Qualification status
         # (used for DSR qualification)
-        self.load_bidsOptional[LoadBid] = LoadBid()
+        self.load_bids: Optional[LoadBid] = LoadBid()
 

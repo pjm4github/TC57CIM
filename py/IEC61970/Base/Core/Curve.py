@@ -12,8 +12,9 @@ from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
 from IEC61970.Base.Core.CurveData import CurveData
 
+
 class Curve(IdentifiedObject):
-    """A multi-purpose curve or functional relationship between an independent
+    """A multipurpose curve or functional relationship between an independent
     variable (X-axis) and dependent (Y-axis) variables.
     """
 
@@ -28,4 +29,4 @@ class Curve(IdentifiedObject):
         self.y2_unit = UnitSymbol()
         self.y3_mutiplier = UnitMultiplier()
         self.y3_unit = UnitSymbol()
-        self.curve_datas = CurveData() # The point data values that define this curve.
+        self.curve_datas = CurveData()  # The point data values that define this curve.

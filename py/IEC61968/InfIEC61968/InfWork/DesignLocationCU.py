@@ -20,8 +20,8 @@ class DesignLocationCU(WorkIdentifiedObject):
 
     def __init__(self) -> None:
         super().__init__()
-        self.cu_account: Optional[str] = ""  # A code that helps direct accounting (capital, expense, or accounting treatment).
-        self.cu_action: Optional[WorkActionKind] = WorkActionKind()  # A code that instructs the crew what action to perform.
+        self.cu_account: Optional[str] = ""  # A code1 that helps direct accounting (capital, expense, or accounting treatment).
+        self.cu_action: Optional[WorkActionKind] = WorkActionKind.REMOVE  # A code1 that instructs the crew what action to perform.
         self.cu_quantity: Optional[IntegerQuantity] = IntegerQuantity()  # The quantity of the CU being assigned to this location.
         self.cu_usage: Optional[str] = ""  # As the same CU can be used for different purposes and accounting purposes, usage must be specified. Examples include: distribution, transmission, substation.
         self.removal_date: Optional[Date] = Date()  # Year when a CU that represents an asset is removed.

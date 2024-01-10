@@ -8,15 +8,17 @@
 #######################################################
 from IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
 from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
+
+
 # from IEC61970.Base.Domain.Integer import Integer
 
 
 class Classification:
-    """Classification of level.  Specify as 1..n, with 1 being the most detailed,
-    highest priority, etc as described on the attribue using this data type.
+    """Classification of level.  Specify as 1...n, with 1 being the most detailed,
+    highest priority, etc. as described on the attribue using this data type.
     """
-    unit = UnitSymbol.none
 
     def __init__(self):
         self.multiplier = UnitMultiplier.none
         self.value = 0.0
+        self.unit = UnitSymbol.none

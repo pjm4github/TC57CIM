@@ -9,4 +9,4 @@ class DefaultBidCurveData(CurveData):
     def __init__(self) -> None:
         super().__init__()
         # 	 * Type of calculation basis used to define the default bid segment curve.
-        self.bid_segment_calc_type: BidCalculationBasis = BidCalculationBasis()
+        self.bid_segment_calc_type: BidCalculationBasis = BidCalculationBasis.LMP_BASED

@@ -7,4 +7,4 @@ class ActivePowerChangeRate:
         self.multiplier = UnitMultiplier.none  # The unit multiplier for the active power change rate value
         self.value: float = 0.0  # The numerical value of the active power change rate
 
-    unit = UnitSymbol.WPers  # Static constant unit symbol for active power change rate
+        self.unit = UnitSymbol.WPers  # Static constant unit symbol for active power change rate

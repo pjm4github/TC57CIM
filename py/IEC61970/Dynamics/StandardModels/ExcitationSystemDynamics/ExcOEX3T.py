@@ -1,6 +1,6 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sat Dec 30 22:01:48 2023
 from IEC61970.Dynamics.StandardModels.ExcitationSystemDynamics import ExcitationSystemDynamics
-from typing import Any, Union
+from typing import Union
 
 
 class ExcOEX3T(ExcitationSystemDynamics):

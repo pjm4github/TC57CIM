@@ -15,9 +15,6 @@ class WindGenType4IEC(IdentifiedObject):
     @version 1.0
     @created 29-Dec-2023 11:24:21 PM
     """
-    from IEC61970.Base.Domain import PU, Seconds
-    from IEC61970.Base.Core import IdentifiedObject
-
     def __init__(self):
         super().__init__()
         self.dipmax = PU()  # Maximum active current ramp rate (di_pmax)

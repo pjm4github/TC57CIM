@@ -17,7 +17,7 @@ class TransformerObservation(IdentifiedObject):
         self.hot_spot_temp = Temperature()  # Hotspot oil temperature
         self.oil_color = ""  # Oil Quality Analysis-Color
         self.oil_dielectric_strength = Voltage()  # Oil Quality Analysis-Dielectric Strength
-        self.oil_ift = ""  # Oil Quality Analysis- inter facial tension (IFT) - number-Dynes/CM
+        self.oil_ift = ""  # Oil Quality Analysis, interfacial tension (IFT) - number-Dynes/CM
         self.oil_level = ""  # The level of oil in the transformer
         self.oil_neutralization_number = ""  # Oil Quality Analysis-Neutralization Number - Number - Mg KOH
         self.pump_vibration = ""  # Pump vibration

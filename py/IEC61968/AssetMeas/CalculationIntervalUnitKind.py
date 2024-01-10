@@ -3,6 +3,7 @@
 
 from enum import Enum
 
+
 class CalculationIntervalUnitKind(Enum):
     MILLI_SECOND = 1
     PER_CYCLE = 2

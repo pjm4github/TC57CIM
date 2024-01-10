@@ -5,8 +5,6 @@ from IEC62325.Environmental.EnvironmentalAnalog import EnvironmentalAnalog
 
 class SpaceAnalog(EnvironmentalAnalog):
 
-
-    
     def __init__(self):
         super().__init__()
         pass

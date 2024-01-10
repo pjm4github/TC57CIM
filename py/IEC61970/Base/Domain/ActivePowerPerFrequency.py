@@ -14,4 +14,4 @@ class ActivePowerPerFrequency:
         self.multiplier = UnitMultiplier.none
         self.value = 0.0
 
-    unit = UnitSymbol.none
+        self.unit = UnitSymbol.none

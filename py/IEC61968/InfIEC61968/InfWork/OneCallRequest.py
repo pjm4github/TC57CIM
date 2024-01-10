@@ -6,10 +6,13 @@
 # Created on:      19-Dec-2023 8:52:15 PM
 # 
 #######################################################
-from IEC61968 import WorkDocument
+from IEC61968.InfIEC61968.InfWork.WorkDocument import WorkDocument
+
 
 class OneCallRequest(WorkDocument):
     """A request for other utilities to mark their underground facilities prior to
     commencement of construction and/or maintenance.
     """
-    pass
+    def __init__(self):
+        super(OneCallRequest, self).__init__()
+

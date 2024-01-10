@@ -18,6 +18,6 @@ class ActivePower:
     """
     def __init__(self, v=0.0):
         self.multiplier = UnitMultiplier()  # The unit multiplier for the active power value
-        self.uncefact_unit_code = UncefactUnitCode()  # The UN/CEFACT unit code for the active power value
+        self.uncefact_unit_code = UncefactUnitCode()  # The UN/CEFACT unit code1 for the active power value
         self.value: float = v  # The numerical value of the active power
         self.unit = UnitSymbol().W  # Static constant unit symbol for active power

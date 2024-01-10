@@ -6,4 +6,4 @@ from enum import Enum
 class DINStandardEditionKind(Enum):
     _1985 = 1985
     NONE = 0  # 'none'
-    UNKNOWN =  1  # 'unknown'
+    UNKNOWN = 1  # 'unknown'

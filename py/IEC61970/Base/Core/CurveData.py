@@ -1,7 +1,8 @@
 class CurveData:
-    """Multi-purpose data points for defining a curve.  The use of this generic class
-    is discouraged if a more specific class  can be used to specify the x and y
-    axis values along with their specific data types.
+    """
+    Multipurpose data points for defining a curve.  The use of this generic class
+    is discouraged if a more specific class  can be used to specify the x-axis and y-axis
+    values along with their specific data types.
     """
     def __init__(self):
         self.xvalue = 0.0  # The data value of the X-axis variable, depending on the X-axis units.

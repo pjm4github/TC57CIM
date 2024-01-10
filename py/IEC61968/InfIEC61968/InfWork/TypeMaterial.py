@@ -18,7 +18,7 @@ class TypeMaterial(WorkDocument):
     necessarily care what specific supplier is providing the material item. As
     different vendors are used to supply the part, the Stock Code of the material
     item can stay the same. In other cases, each time the vendor changes, a new
-    stock code is set up so they can track material used by vendor. Therefore a
+    stock code1 is set up so they can track material used by vendor. Therefore a
     Material Item "Model" is not typically needed.
     @created 29-Dec-2023 9:19:02 PM
     """

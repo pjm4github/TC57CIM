@@ -25,7 +25,7 @@ class EndDevice(AssetContainer):
     def __init__(self):
         super().__init__()
         self.amr_system = ""  # Automated meter reading (AMR) or other communication system responsible for communications to this end device.
-        self.install_code = ""  # Installation code.
+        self.install_code = ""  # Installation code1.
         self.is_pan = False  # If true, this is a premises area network (PAN) device.
         self.is_smart_inverter = False
         self.is_virtual = False  # If true, there is no physical device. As an example, a virtual meter can be defined to aggregate the consumption for two or more physical meters. Otherwise, this is a physical hardware device.

@@ -23,4 +23,4 @@ class RemoteUnit(PowerSystemResource):
     def __init__(self):
         super().__init__()
         self.remote_points = [RemotePoint()]  # Remote points this Remote unit contains.
-        self.remote_unit_type = RemoteUnitType()
+        self.remote_unit_type = RemoteUnitType.IED

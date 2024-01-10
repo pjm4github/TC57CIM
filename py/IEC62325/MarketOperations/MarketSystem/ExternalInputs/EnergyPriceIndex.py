@@ -19,8 +19,8 @@ class EnergyPriceIndex(IdentifiedObject):
 
     def __init__(self) -> None:
         super().__init__()
-        self.energy_price_indexfloat = 0.0  # Energy price index
-        self.energy_price_index_typeOptional[EnergyPriceIndexType] = EnergyPriceIndexType()  # EPI type such as wholesale or retail
-        self.last_modifiedOptional[DateTime] = DateTime()  # Time updated
-        self.valid_periodOptional[DateTimeInterval] = DateTimeInterval()  # Valid period for which the energy price index is valid.
-        self.registered_generatorOptional[RegisteredGenerator] = RegisteredGenerator()
+        self.energy_price_index: float = 0.0  # Energy price index
+        self.energy_price_index_type: Optional[EnergyPriceIndexType] = EnergyPriceIndexType.BOTH  # EPI type such as wholesale or retail
+        self.last_modified: Optional[DateTime] = DateTime()  # Time updated
+        self.valid_period: Optional[DateTimeInterval] = DateTimeInterval()  # Valid period for which the energy price index is valid.
+        self.registered_generator: Optional[RegisteredGenerator] = RegisteredGenerator()

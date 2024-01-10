@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
-from typing import Any
-
 from IEC61970.Base.Domain.ConductancePerLength import ConductancePerLength
 from IEC61970.Base.Domain.ReactancePerLength import ReactancePerLength
 from IEC61970.Base.Domain.ResistancePerLength import ResistancePerLength

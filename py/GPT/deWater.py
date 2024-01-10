@@ -4,6 +4,7 @@ import sys
 import cv2 as cv
 import numpy as np
 
+
 def refill_boxes(f):
     # Load the image
     image = cv.imread(f)
@@ -43,8 +44,8 @@ def dewatermark2(f):
     image = cv.imread(f)
     cv.imshow('f', np.asarray(image))
     # Define lower and upper limits of what to mask
-    c_lo=np.array([229,229,229], dtype="uint16")
-    c_hi=np.array([255,255,255], dtype="uint16")
+    c_lo = np.array([229, 229, 229], dtype="uint16")
+    c_hi = np.array([255, 255, 255], dtype="uint16")
 
     mask = cv.inRange(image, c_lo, c_hi)
 
@@ -58,9 +59,11 @@ def dewatermark2(f):
 
 if __name__ == "__main__":
     # filename = f"{os.path.expanduser('~')}/Documents/Git/GitHub/TC57CIM/py/IEC61970/IEC61970Dependencies.png"
-    # filename = f"{os.path.expanduser('~')}/Documents/Git/GitHub/TC57CIM/py/IEC61970/Base/AuxiliaryEquipment/AuxiliaryEquipment.png"
+    # filename = f"{os.path.expanduser('~')}/Documents/Git/GitHub/TC57CIM/py/IEC61970/Base/AuxiliaryEquipment
+    # /AuxiliaryEquipment.png"
     # filename = "C:/Users/pmora/Documents/Git/GitHub/TC57CIM/py/IEC61970/Base/DC/ACDCConnectivityModel.png"
-    # filename = "C:/Users/pmora/Documents/Git/GitHub/TC57CIM/py/IEC61970/Base/DC/DocDC/DCContainmentSymmetricalMonopole.png"
+    # filename = "C:/Users/pmora/Documents/Git/GitHub/TC57CIM/py/IEC61970/Base/DC/DocDC
+    # /DCContainmentSymmetricalMonopole.png"
     # filename = "C:/Users/pmora/Documents/Git/GitHub/TC57CIM/py/IEC61968/AssetInfo/DCIMTransformerInfo.png"
     # dewatermark2(filename)
 

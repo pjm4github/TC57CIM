@@ -1,5 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 29 11:15:55 2023
-from datetime import datetime
 from typing import Optional
 
 from IEC61970.Base.Domain.DateTime import DateTime
@@ -22,7 +21,7 @@ class LoadFollowingOperatorInput:
         self.temp_load_following_down_manual_cap: float = 0.0  # Temporarily manually entered LFD capacity
         self.temp_load_following_up_manual_cap: float = 0.0  # Temporarily manually entered LFU capacity
         self.update_time_stamp: DateTime = DateTime()
-        self.update_typeOptional[MQSCHGType] = MQSCHGType.ADD
+        self.update_type: Optional[MQSCHGType] = MQSCHGType.ADD
         self.update_user: str = ""
-        self.registered_resourceOptional[RegisteredResource] = RegisteredResource()
+        self.registered_resource: Optional[RegisteredResource] = RegisteredResource()
 

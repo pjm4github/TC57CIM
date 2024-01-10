@@ -8,6 +8,7 @@ Area's present control mode.
 
 from enum import Enum
 
+
 class AreaControlMode(Enum):
     """
     CF = Constant Frequency

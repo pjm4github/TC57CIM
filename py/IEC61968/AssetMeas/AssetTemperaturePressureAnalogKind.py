@@ -3,6 +3,7 @@
 
 from enum import Enum
 
+
 class AssetTemperaturePressureAnalogKind(Enum):
     OIL_TEMPERATURE_AT_VALVE = 1
     OIL_PRESSURE_AT_VALVE = 2

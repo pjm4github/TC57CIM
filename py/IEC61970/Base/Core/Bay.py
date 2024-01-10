@@ -11,11 +11,13 @@ from IEC61970.Base.Core.BreakerConfiguration import BreakerConfiguration
 from IEC61970.Base.Core.BusbarConfiguration import BusbarConfiguration
 from IEC61970.Base.Core.EquipmentContainer import EquipmentContainer
 
+
 class Bay(EquipmentContainer):
     """A collection of power system resources (within a given substation) including
     conducting equipment, protection relays, measurements, and telemetry.  A bay
     typically represents a physical grouping related to modularization of equipment.
     """
+
     def __init__(self):
         super().__init__()
         self.bay_energy_meas_flag: bool = False

@@ -12,4 +12,4 @@ class AtmosphericAnalog(EnvironmentalAnalog):
 
     def __init__(self):
         super().__init__()
-        self.kind = AtmosphericAnalogKind()    # Kind of atmospheric analog
+        self.kind = AtmosphericAnalogKind.ATMOSPHERIC_PRESSURE  # Kind of atmospheric analog

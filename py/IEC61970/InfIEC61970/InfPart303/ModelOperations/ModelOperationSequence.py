@@ -1,3 +1,6 @@
+from IEC61970.Base.Core.IdentifiedObject import IdentifiedObject
+
+
 class ModelOperationSequence(IdentifiedObject):
     """
     A concrete sequence of operations. This may be used to describe a specific audit trail,

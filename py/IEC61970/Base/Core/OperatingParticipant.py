@@ -1,6 +1,5 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:03:56 2023
 from IEC61970.Base.Core import IdentifiedObject
-from typing import Any
 
 class OperatingParticipant(IdentifiedObject):
     """An operator of multiple power system resource objects. Note multiple operating

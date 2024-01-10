@@ -14,7 +14,7 @@ class Status:
     """
     def __init__(self):
         self.DateTime = DateTime()  # Date and time for which status 'value' applies.
-        self.reason = ""  # Reason code or explanation for why an object went to the current status 'value'.
+        self.reason = ""  # Reason code1 or explanation for why an object went to the current status 'value'.
         self.remark = ""  # Pertinent information regarding the current 'value', as free form text.
         self.value = ""  # Status value at 'dateTime'; prior status changes may have been kept in instances of activity
         # records associated with the object to which this status applies.

@@ -13,10 +13,12 @@ class Skill(Document):
     particular type of asset and/or perform certain types of work.
     @created 29-Dec-2023 6:03:20 PM
     """
+
     def __init__(self) -> None:
         super().__init__()
-        self.certification_period: DateTimeInterval = DateTimeInterval()  # Interval between the certification and its expiry
+        self.certification_period: DateTimeInterval = DateTimeInterval()  # Interval between the certification and
+        # its expiry
         self.effective_date_time: DateTime = DateTime()  # Date and time the skill became effective
-        self.level: SkillLevelKind  = SkillLevelKind.MASTER # Level of skill for a Craft
+        self.level: SkillLevelKind = SkillLevelKind.MASTER  # Level of skill for a Craft
         self.crafts: Craft = Craft()
         self.qualification_requirements: QualificationRequirement = QualificationRequirement()

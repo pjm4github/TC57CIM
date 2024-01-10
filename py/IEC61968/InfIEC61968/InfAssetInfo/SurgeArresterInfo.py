@@ -35,4 +35,4 @@ class SurgeArresterInfo(AssetInfo):
             Voltage, None] = Voltage()  # Residual voltage during a current impulse with front time of 1 microsecond, and magnitude equal to the nominal discharge current level.
 
         self.switching_impulse_discharge_voltage: Union[
-            Voltage, None] = Voltage()  # Residual voltage during a current impulse with front time of at least 30 microseconds, and magnitude specified in IEC 60099 for the line discharge class. Does not apply to line discharge class 0.
+            Voltage, None] = Voltage()  # Residual voltage during a current impulse with front time of at least 30 micro: Seconds, and magnitude specified in IEC 60099 for the line discharge class. Does not apply to line discharge class 0.

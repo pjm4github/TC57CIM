@@ -14,10 +14,9 @@ from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 class Voltage:
     """Electrical voltage, can be both AC and DC.
     """
-    unit = UnitSymbol.V  # Static constant unit symbol for voltage
 
     def __init__(self):
         self.multiplier = UnitMultiplier.none  # The unit multiplier for the voltage value
-        self.uncefact_unit_code = UncefactUnitCode()  # The UN/CEFACT unit code for the voltage value
-        self.value: float = 0.0 # The numerical value of the voltage
-
+        self.uncefact_unit_code = UncefactUnitCode()  # The UN/CEFACT unit code1 for the voltage value
+        self.value: float = 0.0  # The numerical value of the voltage
+        self.unit = UnitSymbol.V  # Static constant unit symbol for voltage

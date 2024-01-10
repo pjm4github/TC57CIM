@@ -14,7 +14,8 @@ class Inductance:
     """
     Inductive part of reactance (imaginary part of impedance), at rated frequency.
     """
-    unit = UnitSymbol.H
+
     def __init__(self):
         self.value = 0.0
         self.multipler = UnitMultiplier.none
+        self.unit = UnitSymbol.H

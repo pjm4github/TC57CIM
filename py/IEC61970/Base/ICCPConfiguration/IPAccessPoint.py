@@ -1,5 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Fri Dec 15 17:37:34 2023
-from datetime import datetime
 from typing import Optional
 
 from IEC61970.Base.ICCPConfiguration.IPAddressKind import IPAddressKind
@@ -15,8 +14,8 @@ class IPAccessPoint(CommunicationLink):
 
     def __init__(self) -> None:
         super().__init__()
-        self.addressOptional[str] = ""
-        self.address_typeOptional[IPAddressKind] = IPAddressKind.IPv4
-        self.gatewayOptional[str] = ""
-        self.subnetOptional[str] = ""
+        self.address: Optional[str] = ""
+        self.address_type: Optional[IPAddressKind] = IPAddressKind.IPv4
+        self.gateway: Optional[str] = ""
+        self.subnet: Optional[str] = ""
 

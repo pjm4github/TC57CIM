@@ -18,4 +18,4 @@ class Tower(Structure):
         """
         Construction structure on the tower.
         """
-        self.construction_kind = TowerConstructionKind()
+        self.construction_kind = TowerConstructionKind.SUSPENSION

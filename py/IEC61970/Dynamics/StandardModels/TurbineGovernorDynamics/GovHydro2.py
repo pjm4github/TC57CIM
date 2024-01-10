@@ -1,6 +1,4 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106 on Sun Dec 31 17:08:39 2023
-from dataclasses import dataclass
-from typing import ClassVar, Optional
 
 from IEC61970.Base.Domain.ActivePower import ActivePower
 from IEC61970.Base.Domain.Frequency import Frequency
@@ -49,4 +47,3 @@ class GovHydro2(TurbineGovernorDynamics):
         self.tw = Seconds(2)  # Water inertia time constant (Tw).  Typical Value = 2.
         self.uc = -.1  # Maximum gate closing velocity (Uc) (<0).  Unit = PU/sec.   Typical Value = -0.1.
         self.uo = .1  # Maximum gate opening velocity (Uo).  Unit = PU/sec.  Typical Value = 0.1.
-

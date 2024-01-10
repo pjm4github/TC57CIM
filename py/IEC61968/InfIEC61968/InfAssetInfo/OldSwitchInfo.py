@@ -14,43 +14,43 @@ class OldSwitchInfo(SwitchInfo):
 
     def __init__(self) -> None:
         super().__init__()
-        self.dielectric_strengthOptional[Voltage] = Voltage()
+        self.dielectric_strength: Optional[Voltage] = Voltage()
         """
         The maximum rms voltage that may be applied across an open contact without
         breaking down the dielectric properties of the switch in the open position.
         """
 
-        self.load_breakbool = False
+        self.load_break: bool = False
         """
         True if switch has load breaking capability. Unless specified false, this is
         always assumed to be true for breakers and reclosers.
         """
 
-        self.making_capacityOptional[CurrentFlow] = CurrentFlow()
+        self.making_capacity: Optional[CurrentFlow] = CurrentFlow()
         """
         The highest value of current the switch can make at the rated voltage under
         specified operating conditions without suffering significant deterioration of
         its performance.
         """
 
-        self.minimum_currentOptional[CurrentFlow] = CurrentFlow()
+        self.minimum_current: Optional[CurrentFlow] = CurrentFlow()
         """
         The lowest value of current that the switch can make, carry and break in
         uninterrupted duty at the rated voltage under specified operating conditions
         without suffering significant deterioration of its performance.
         """
 
-        self.pole_countOptional[int] = 0
+        self.pole_count: Optional[int] = 0
         """
         Number of poles (i.e. of current carrying conductors that are switched).
         """
 
-        self.remotebool = False
+        self.remote: bool = False
         """
         True if device is capable of being operated by remote control.
         """
 
-        self.withstand_currentOptional[CurrentFlow] = CurrentFlow()
+        self.withstand_current: Optional[CurrentFlow] = CurrentFlow()
         """
         The highest value of current the switch can carry in the closed position at the
         rated voltage under specified operating conditions without suffering

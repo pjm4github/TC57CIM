@@ -10,13 +10,13 @@ from IEC61970.Base.Domain.UnitMultiplier import UnitMultiplier
 from IEC61970.Base.Domain.UncefactUnitCode import UncefactUnitCode
 from IEC61970.Base.Domain.UnitSymbol import UnitSymbol
 
+
 class ApparentPower:
     """Product of the RMS value of the voltage and the RMS value of the current.
     """
-    unit = UnitSymbol.VA
 
     def __init__(self):
         self.value = 0.0
         self.mutiplier = UnitMultiplier.none
         self.uncfact_unit_code = UncefactUnitCode()
-
+        self.unit = UnitSymbol.VA

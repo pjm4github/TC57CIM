@@ -1,7 +1,7 @@
 # Converted by an OPENAI API call using model: gpt-3.5-turbo-1106
 from typing import List
 
-from gov_pnnl_goss.cimhub.dto.Switch import Switch
+from IEC61970.Base.Wires.Switch import Switch
 
 
 class CompositeSwitch:

@@ -19,7 +19,7 @@ class CnodeDistributionFactor(IdentifiedObject):
         Initializes a new instance of CnodeDistributionFactor.
         """
         super().__init__()
-        self.factorfloat = 0.0  # Used to calculate "participation" of Cnode in an AggregateNode
-        self.pod_loss_factorfloat = 0.0  # Point of delivery loss factor
-        self.sub_control_areaOptional[SubControlArea] = SubControlArea()
-        self.mkt_connectivity_nodeOptional[MktConnectivityNode] = MktConnectivityNode()
+        self.factor: float = 0.0  # Used to calculate "participation" of Cnode in an AggregateNode
+        self.pod_loss_factor: float = 0.0  # Point of delivery loss factor
+        self.sub_control_area: Optional[SubControlArea] = SubControlArea()
+        self.mkt_connectivity_node: Optional[MktConnectivityNode] = MktConnectivityNode()

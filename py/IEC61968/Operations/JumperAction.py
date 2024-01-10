@@ -10,7 +10,7 @@ class JumperAction(SwitchingAction):
 
     def __init__(self):
         super().__init__()
-        self.kind = TempEquipActionKind()
+        self.kind = TempEquipActionKind.REMOVE
         self.jumper = Jumper()
         self.along_ac_line_segments = ACLineSegment()
         self.jumped_equipments = ConductingEquipment()

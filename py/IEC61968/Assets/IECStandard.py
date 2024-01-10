@@ -7,4 +7,4 @@ class IECStandard:
 
     def __init__(self):
         self.standard_edition = IECStandardEditionKind.NONE
-        self.standard_number = IECStandardKind._60156
+        self.standard_number = IECStandardKind.m_60156
